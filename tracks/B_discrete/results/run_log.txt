@@ -1,0 +1,69 @@
+Python 3.13.18 on Linux-6.18.44-fc-v180-x86_64-with-glibc2.39
+Exp 1: knapsack methods
+   uncorrelated         n=  50 seed=0 ref=23321
+   uncorrelated         n=  50 seed=1 ref=23108
+   uncorrelated         n=  50 seed=2 ref=19676
+   uncorrelated         n= 100 seed=0 ref=41568
+   uncorrelated         n= 100 seed=1 ref=43203
+   uncorrelated         n= 100 seed=2 ref=44559
+   uncorrelated         n= 200 seed=0 ref=79262
+   uncorrelated         n= 200 seed=1 ref=78273
+   uncorrelated         n= 200 seed=2 ref=77803
+   uncorrelated         n= 400 seed=0 ref=163588
+   uncorrelated         n= 400 seed=1 ref=159849
+   uncorrelated         n= 400 seed=2 ref=163576
+   uncorrelated         n= 800 seed=0 ref=315494
+   uncorrelated         n= 800 seed=1 ref=325350
+   uncorrelated         n= 800 seed=2 ref=322318
+   weakly_correlated    n=  50 seed=0 ref=14998
+   weakly_correlated    n=  50 seed=1 ref=13918
+   weakly_correlated    n=  50 seed=2 ref=15337
+   weakly_correlated    n= 100 seed=0 ref=30269
+   weakly_correlated    n= 100 seed=1 ref=29742
+   weakly_correlated    n= 100 seed=2 ref=29833
+   weakly_correlated    n= 200 seed=0 ref=58746
+   weakly_correlated    n= 200 seed=1 ref=59103
+   weakly_correlated    n= 200 seed=2 ref=60096
+   weakly_correlated    n= 400 seed=0 ref=111536
+   weakly_correlated    n= 400 seed=1 ref=113609
+   weakly_correlated    n= 400 seed=2 ref=112256
+   weakly_correlated    n= 800 seed=0 ref=220999
+   weakly_correlated    n= 800 seed=1 ref=223371
+   weakly_correlated    n= 800 seed=2 ref=224939
+   strongly_correlated  n=  50 seed=0 ref=17166
+   strongly_correlated  n=  50 seed=1 ref=16022
+   strongly_correlated  n=  50 seed=2 ref=17493
+   strongly_correlated  n= 100 seed=0 ref=34710
+   strongly_correlated  n= 100 seed=1 ref=33799
+   strongly_correlated  n= 100 seed=2 ref=34047
+   strongly_correlated  n= 200 seed=0 ref=67411
+   strongly_correlated  n= 200 seed=1 ref=68605
+   strongly_correlated  n= 200 seed=2 ref=69189
+   strongly_correlated  n= 400 seed=0 ref=129926
+   strongly_correlated  n= 400 seed=1 ref=132190
+   strongly_correlated  n= 400 seed=2 ref=129948
+   strongly_correlated  n= 800 seed=0 ref=258252 (NOT proven)
+   strongly_correlated  n= 800 seed=1 ref=259287
+   strongly_correlated  n= 800 seed=2 ref=260869 (NOT proven)
+Exp 2: DP vs capacity
+   R=100 C=1578
+   R=1000 C=16613
+   R=10000 C=156204
+   R=50000 C=799703
+   R=200000 C=3198768
+Exp 3: knapsack QUBO penalty sweep
+   P=0.001*max(v): feasible 0/30, optimal 0/30
+   P=0.01*max(v): feasible 1/30, optimal 1/30
+   P=0.05*max(v): feasible 14/30, optimal 14/30
+   P=0.1*max(v): feasible 18/30, optimal 18/30
+   P=0.2*max(v): feasible 25/30, optimal 25/30
+   P=0.5*max(v): feasible 29/30, optimal 29/30
+   P=1*max(v): feasible 30/30, optimal 30/30
+   P=2*max(v): feasible 30/30, optimal 30/30
+   P=5*max(v): feasible 30/30, optimal 30/30
+Exp 4: Max-Cut QUBO/Ising
+   Max-Cut: {'n_nodes': 10, 'n_edges': 19, 'total_weight': 19, 'optimal_cut': 14, 'optimal_states': 8, 'approx_ratio_mean': 0.95}
+Exp 5: feature selection
+   d=12, k=4: exhaustive 0.9455 (495 evals), greedy 0.9438 (42 evals), random 0.9425
+Done. See results/
+EXIT 0

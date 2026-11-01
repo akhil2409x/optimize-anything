@@ -61,7 +61,8 @@ class _HiGHSWarm(pulp.HiGHS):
 
 def _solver(time_limit: float, msg: bool, warm: bool = False):
     cls = _HiGHSWarm if warm else pulp.HiGHS
-    return cls(msg=msg, timeLimit=time_limit)
+    # gapRel=0: HiGHS otherwise stops at a 0.01% gap and still says "Optimal" (failure log F4)
+    return cls(msg=msg, timeLimit=time_limit, gapRel=0.0)
 
 
 def _bound(prob) -> float | None:

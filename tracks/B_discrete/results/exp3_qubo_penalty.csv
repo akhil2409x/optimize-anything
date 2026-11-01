@@ -1,0 +1,10 @@
+penalty_over_max_value,instances,ground_state_feasible,ground_state_optimal,qubits
+0.001,30,0/30,0/30,6 items + 5 slack
+0.01,30,1/30,1/30,6 items + 5 slack
+0.05,30,14/30,14/30,6 items + 5 slack
+0.1,30,18/30,18/30,6 items + 5 slack
+0.2,30,25/30,25/30,6 items + 5 slack
+0.5,30,29/30,29/30,6 items + 5 slack
+1,30,30/30,30/30,6 items + 5 slack
+2,30,30/30,30/30,6 items + 5 slack
+5,30,30/30,30/30,6 items + 5 slack

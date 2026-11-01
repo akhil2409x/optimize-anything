@@ -52,6 +52,25 @@ produced, how the error was caught, the fix, and the lesson.
 - **Lesson:** AI tools write code for the library versions they were trained
   on. Pin versions and record them.
 
+## F4 · Track B (also E) · ILP said "Optimal" but was off by one
+
+- **Tool:** Claude (claude.ai, Claude Opus 5.5), 2026-10-28
+- **What happened:** the knapsack ILP called HiGHS with default settings. On a
+  strongly correlated instance with 100 items it returned value **34709** with
+  status *Optimal*, while dynamic programming and branch-and-bound both found
+  **34710**. Same on a weakly correlated 200-item instance (58745 vs 58746).
+- **Cause:** HiGHS stops when the gap between incumbent and bound is below
+  0.01% (`mip_rel_gap = 1e-4`) and still reports the run as optimal. On values
+  around 35,000 that allows an error of up to 3.
+- **How it was caught:** running three independent exact methods and checking
+  they agree; the small brute-force tests (n = 14) were too small to show it.
+- **Fix:** `gapRel=0.0, gapAbs=0.5` in `knapsack.py` (integer values, so a gap
+  below 1 means truly optimal); `gapRel=0.0` added to Track E's ILP for
+  consistency. Regression test `test_ilp_is_exactly_optimal_on_larger_instances`.
+- **Lesson:** "Optimal" from a MIP solver means "optimal within tolerance".
+  Cross-check exact methods against each other at realistic sizes, not only on
+  toy instances.
+
 ---
 
 *(Add entries from Tracks A–J below as they happen — xv6 and SQL rewrites usually supply several.)*

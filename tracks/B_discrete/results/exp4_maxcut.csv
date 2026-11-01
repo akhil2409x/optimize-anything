@@ -1,0 +1,3 @@
+method,runs,best_cut,mean_cut,hit_optimum,seconds
+brute force (2^10 states),1,14,14,1/1,0.0002
+one-flip local search,200,14,13.29,78/200,

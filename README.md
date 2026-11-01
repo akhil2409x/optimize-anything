@@ -47,7 +47,7 @@ Tracks G (xv6) and H (PostgreSQL) have their own setup notes in their folders.
 | Track | Topic | Status |
 |---|---|---|
 | A | Continuous optimization | not started |
-| B | Discrete optimization | not started |
+| B | Discrete optimization | knapsack ×5 methods, QUBO/Ising, feature selection, 31 tests, results |
 | C | Quantum optimization | not started |
 | D | Submodular / parallel / distributed | not started |
 | E | Exam timetabling (main case study) | baseline + 5 heuristics + 2 ILPs, 18 tests, first results |
@@ -63,7 +63,7 @@ Every AI tool used anywhere in this repository is listed here (Section 8 of the 
 
 | Tool | Model / version | Tracks | Dates | Kind of work |
 |---|---|---|---|---|
-| Claude (claude.ai) | Claude Opus 5.5 | E, repo scaffold | 2026-10-28 | planning, code generation, testing, debugging, documentation |
+| Claude (claude.ai) | Claude Opus 5.5 | B, E, repo scaffold | 2026-10-28 | planning, code generation, testing, debugging, documentation |
 | | | | | |
 
 ## Commit convention
@@ -98,12 +98,12 @@ match the exact Chapter 6 syllabus taught in class — add or remove rows to mat
 | Continuous | Fisher / diagonal / low-rank curvature, Hessian-vector products | A | | |
 | Continuous | Convergence: convex, strongly convex, non-convex | A | | |
 | Continuous | Step-size / optimizer tuning; noisy objectives | A | | |
-| Discrete | Greedy | B, E | `tracks/E_exam_timetabling/timetabling/greedy.py` | Exp. 1 |
-| Discrete | Integer Linear Programming | B, E | `tracks/E_exam_timetabling/timetabling/ilp.py` | Exp. 1–2 |
-| Discrete | Branch-and-bound | B, E | B: own implementation; E: inside HiGHS | Exp. 2 |
-| Discrete | Dynamic programming | B, F/H | | |
-| Discrete | Feature selection / combinatorial applications | B, J | | |
-| Discrete | QUBO / Ising, binary-to-spin, penalty terms | B | | |
+| Discrete | Greedy | B, E | `tracks/B_discrete/discrete/knapsack.py`, `tracks/E_exam_timetabling/timetabling/greedy.py` | B Exp. 1, E Exp. 1 |
+| Discrete | Integer Linear Programming | B, E | `tracks/B_discrete/discrete/knapsack.py` (`ilp`), `tracks/E_exam_timetabling/timetabling/ilp.py` | B Exp. 1, E Exp. 1–2 |
+| Discrete | Branch-and-bound | B, E | `tracks/B_discrete/discrete/knapsack.py` (`branch_and_bound`, own code) | B Exp. 1–2 |
+| Discrete | Dynamic programming | B, F/H | `tracks/B_discrete/discrete/knapsack.py` (`dp`) | B Exp. 1–2 |
+| Discrete | Feature selection / combinatorial applications | B, J | `tracks/B_discrete/discrete/feature_selection.py` | B Exp. 5 |
+| Discrete | QUBO / Ising, binary-to-spin, penalty terms | B | `tracks/B_discrete/discrete/qubo.py` | B Exp. 3–4 |
 | Quantum | QAOA | C | | |
 | Quantum | VQE | C | | |
 | Quantum | PQCs / QNNs | C | | |

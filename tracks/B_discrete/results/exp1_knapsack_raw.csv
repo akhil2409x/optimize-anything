@@ -1,0 +1,217 @@
+kind,n,seed,capacity,method,value,reference,reference_proven,gap_percent,status,seconds,nodes
+uncorrelated,50,0,13766,greedy_ratio (baseline),23321,23321,True,0.0,Heuristic,5.96e-05,0
+uncorrelated,50,0,13766,greedy_half,23321,23321,True,0.0,Heuristic,4.98e-05,0
+uncorrelated,50,0,13766,dp,23321,23321,True,0.0,Optimal,0.0567846,0
+uncorrelated,50,0,13766,branch_and_bound,23321,23321,True,0.0,Optimal,0.0002406,86
+uncorrelated,50,0,13766,ilp_highs,23321,23321,True,0.0,Optimal,0.0082536,0
+uncorrelated,50,1,12522,greedy_ratio (baseline),22880,23108,True,0.9867,Heuristic,2.96e-05,0
+uncorrelated,50,1,12522,greedy_half,22880,23108,True,0.9867,Heuristic,2.99e-05,0
+uncorrelated,50,1,12522,dp,23108,23108,True,0.0,Optimal,0.0473376,0
+uncorrelated,50,1,12522,branch_and_bound,23108,23108,True,0.0,Optimal,0.0003116,301
+uncorrelated,50,1,12522,ilp_highs,23108,23108,True,0.0,Optimal,0.0200167,0
+uncorrelated,50,2,14093,greedy_ratio (baseline),19676,19676,True,0.0,Heuristic,2.95e-05,0
+uncorrelated,50,2,14093,greedy_half,19676,19676,True,0.0,Heuristic,2.67e-05,0
+uncorrelated,50,2,14093,dp,19676,19676,True,0.0,Optimal,0.0437438,0
+uncorrelated,50,2,14093,branch_and_bound,19676,19676,True,0.0,Optimal,0.000181,83
+uncorrelated,50,2,14093,ilp_highs,19676,19676,True,0.0,Optimal,0.0057353,0
+uncorrelated,100,0,27910,greedy_ratio (baseline),41541,41568,True,0.065,Heuristic,4.4e-05,0
+uncorrelated,100,0,27910,greedy_half,41541,41568,True,0.065,Heuristic,7.7e-05,0
+uncorrelated,100,0,27910,dp,41568,41568,True,0.0,Optimal,0.2662406,0
+uncorrelated,100,0,27910,branch_and_bound,41568,41568,True,0.0,Optimal,0.000844,441
+uncorrelated,100,0,27910,ilp_highs,41568,41568,True,0.0,Optimal,0.0266482,0
+uncorrelated,100,1,26899,greedy_ratio (baseline),43173,43203,True,0.0694,Heuristic,5.2e-05,0
+uncorrelated,100,1,26899,greedy_half,43173,43203,True,0.0694,Heuristic,4.59e-05,0
+uncorrelated,100,1,26899,dp,43203,43203,True,0.0,Optimal,0.1798089,0
+uncorrelated,100,1,26899,branch_and_bound,43203,43203,True,0.0,Optimal,0.0008095,548
+uncorrelated,100,1,26899,ilp_highs,43203,43203,True,0.0,Optimal,0.0257294,0
+uncorrelated,100,2,27147,greedy_ratio (baseline),44504,44559,True,0.1234,Heuristic,5.29e-05,0
+uncorrelated,100,2,27147,greedy_half,44504,44559,True,0.1234,Heuristic,4.48e-05,0
+uncorrelated,100,2,27147,dp,44559,44559,True,0.0,Optimal,0.1932142,0
+uncorrelated,100,2,27147,branch_and_bound,44559,44559,True,0.0,Optimal,0.0006716,578
+uncorrelated,100,2,27147,ilp_highs,44559,44559,True,0.0,Optimal,0.0708503,0
+uncorrelated,200,0,53611,greedy_ratio (baseline),79226,79262,True,0.0454,Heuristic,0.0001421,0
+uncorrelated,200,0,53611,greedy_half,79226,79262,True,0.0454,Heuristic,0.0001078,0
+uncorrelated,200,0,53611,dp,79262,79262,True,0.0,Optimal,0.9688157,0
+uncorrelated,200,0,53611,branch_and_bound,79262,79262,True,0.0,Optimal,0.0018416,788
+uncorrelated,200,0,53611,ilp_highs,79262,79262,True,0.0,Optimal,0.0503205,0
+uncorrelated,200,1,54905,greedy_ratio (baseline),78130,78273,True,0.1827,Heuristic,0.0001561,0
+uncorrelated,200,1,54905,greedy_half,78130,78273,True,0.1827,Heuristic,0.0001367,0
+uncorrelated,200,1,54905,dp,78273,78273,True,0.0,Optimal,1.0633256,0
+uncorrelated,200,1,54905,branch_and_bound,78273,78273,True,0.0,Optimal,0.0016624,1044
+uncorrelated,200,1,54905,ilp_highs,78273,78273,True,0.0,Optimal,0.0554979,0
+uncorrelated,200,2,55489,greedy_ratio (baseline),77775,77803,True,0.036,Heuristic,0.0001168,0
+uncorrelated,200,2,55489,greedy_half,77775,77803,True,0.036,Heuristic,9.31e-05,0
+uncorrelated,200,2,55489,dp,77803,77803,True,0.0,Optimal,1.1247682,0
+uncorrelated,200,2,55489,branch_and_bound,77803,77803,True,0.0,Optimal,0.0027092,1368
+uncorrelated,200,2,55489,ilp_highs,77803,77803,True,0.0,Optimal,0.0500573,0
+uncorrelated,400,0,101926,greedy_ratio (baseline),163573,163588,True,0.0092,Heuristic,0.0002614,0
+uncorrelated,400,0,101926,greedy_half,163573,163588,True,0.0092,Heuristic,0.0002971,0
+uncorrelated,400,0,101926,dp,163588,163588,True,0.0,Optimal,3.5372814,0
+uncorrelated,400,0,101926,branch_and_bound,163588,163588,True,0.0,Optimal,0.0057782,1116
+uncorrelated,400,0,101926,ilp_highs,163588,163588,True,0.0,Optimal,0.0653146,0
+uncorrelated,400,1,104190,greedy_ratio (baseline),159825,159849,True,0.015,Heuristic,0.0002082,0
+uncorrelated,400,1,104190,greedy_half,159825,159849,True,0.015,Heuristic,0.0001947,0
+uncorrelated,400,1,104190,dp,159849,159849,True,0.0,Optimal,3.4793036,0
+uncorrelated,400,1,104190,branch_and_bound,159849,159849,True,0.0,Optimal,0.006794,3326
+uncorrelated,400,1,104190,ilp_highs,159849,159849,True,0.0,Optimal,0.1364421,0
+uncorrelated,400,2,101648,greedy_ratio (baseline),163548,163576,True,0.0171,Heuristic,0.0001938,0
+uncorrelated,400,2,101648,greedy_half,163548,163576,True,0.0171,Heuristic,0.000211,0
+uncorrelated,400,2,101648,dp,163576,163576,True,0.0,Optimal,3.1090995,0
+uncorrelated,400,2,101648,branch_and_bound,163576,163576,True,0.0,Optimal,0.0057691,1719
+uncorrelated,400,2,101648,ilp_highs,163576,163576,True,0.0,Optimal,0.0788625,0
+uncorrelated,800,0,201752,greedy_ratio (baseline),315473,315494,True,0.0067,Heuristic,0.0004038,0
+uncorrelated,800,0,201752,greedy_half,315473,315494,True,0.0067,Heuristic,0.0004088,0
+uncorrelated,800,0,201752,branch_and_bound,315494,315494,True,0.0,Optimal,0.022043,2926
+uncorrelated,800,0,201752,ilp_highs,315494,315494,True,0.0,Optimal,0.3179641,0
+uncorrelated,800,1,202587,greedy_ratio (baseline),325303,325350,True,0.0144,Heuristic,0.0004006,0
+uncorrelated,800,1,202587,greedy_half,325303,325350,True,0.0144,Heuristic,0.0004196,0
+uncorrelated,800,1,202587,branch_and_bound,325350,325350,True,0.0,Optimal,0.0235493,5288
+uncorrelated,800,1,202587,ilp_highs,325350,325350,True,0.0,Optimal,0.3361965,0
+uncorrelated,800,2,204769,greedy_ratio (baseline),322298,322318,True,0.0062,Heuristic,0.0003753,0
+uncorrelated,800,2,204769,greedy_half,322298,322318,True,0.0062,Heuristic,0.0004225,0
+uncorrelated,800,2,204769,branch_and_bound,322318,322318,True,0.0,Optimal,0.0222922,2946
+uncorrelated,800,2,204769,ilp_highs,322318,322318,True,0.0,Optimal,0.253001,0
+weakly_correlated,50,0,13766,greedy_ratio (baseline),14957,14998,True,0.2734,Heuristic,3.69e-05,0
+weakly_correlated,50,0,13766,greedy_half,14957,14998,True,0.2734,Heuristic,3.08e-05,0
+weakly_correlated,50,0,13766,dp,14998,14998,True,0.0,Optimal,0.0404391,0
+weakly_correlated,50,0,13766,branch_and_bound,14998,14998,True,0.0,Optimal,0.0005792,644
+weakly_correlated,50,0,13766,ilp_highs,14998,14998,True,0.0,Optimal,0.0608039,0
+weakly_correlated,50,1,12522,greedy_ratio (baseline),13818,13918,True,0.7185,Heuristic,2.97e-05,0
+weakly_correlated,50,1,12522,greedy_half,13818,13918,True,0.7185,Heuristic,2.5e-05,0
+weakly_correlated,50,1,12522,dp,13918,13918,True,0.0,Optimal,0.0346908,0
+weakly_correlated,50,1,12522,branch_and_bound,13918,13918,True,0.0,Optimal,0.000839,1765
+weakly_correlated,50,1,12522,ilp_highs,13918,13918,True,0.0,Optimal,0.0409424,0
+weakly_correlated,50,2,14093,greedy_ratio (baseline),15337,15337,True,0.0,Heuristic,2.89e-05,0
+weakly_correlated,50,2,14093,greedy_half,15337,15337,True,0.0,Heuristic,2.41e-05,0
+weakly_correlated,50,2,14093,dp,15337,15337,True,0.0,Optimal,0.0389273,0
+weakly_correlated,50,2,14093,branch_and_bound,15337,15337,True,0.0,Optimal,0.000533,857
+weakly_correlated,50,2,14093,ilp_highs,15337,15337,True,0.0,Optimal,0.0505881,0
+weakly_correlated,100,0,27910,greedy_ratio (baseline),30259,30269,True,0.033,Heuristic,5.42e-05,0
+weakly_correlated,100,0,27910,greedy_half,30259,30269,True,0.033,Heuristic,4.28e-05,0
+weakly_correlated,100,0,27910,dp,30269,30269,True,0.0,Optimal,0.2299079,0
+weakly_correlated,100,0,27910,branch_and_bound,30269,30269,True,0.0,Optimal,0.0006002,505
+weakly_correlated,100,0,27910,ilp_highs,30269,30269,True,0.0,Optimal,0.0448251,0
+weakly_correlated,100,1,26899,greedy_ratio (baseline),29640,29742,True,0.3429,Heuristic,6.09e-05,0
+weakly_correlated,100,1,26899,greedy_half,29640,29742,True,0.3429,Heuristic,4.32e-05,0
+weakly_correlated,100,1,26899,dp,29742,29742,True,0.0,Optimal,0.1723898,0
+weakly_correlated,100,1,26899,branch_and_bound,29742,29742,True,0.0,Optimal,0.0011314,1684
+weakly_correlated,100,1,26899,ilp_highs,29742,29742,True,0.0,Optimal,0.2389332,0
+weakly_correlated,100,2,27147,greedy_ratio (baseline),29814,29833,True,0.0637,Heuristic,5.13e-05,0
+weakly_correlated,100,2,27147,greedy_half,29814,29833,True,0.0637,Heuristic,4.32e-05,0
+weakly_correlated,100,2,27147,dp,29833,29833,True,0.0,Optimal,0.168233,0
+weakly_correlated,100,2,27147,branch_and_bound,29833,29833,True,0.0,Optimal,0.0006229,857
+weakly_correlated,100,2,27147,ilp_highs,29833,29833,True,0.0,Optimal,0.0567374,0
+weakly_correlated,200,0,53611,greedy_ratio (baseline),58730,58746,True,0.0272,Heuristic,0.0001372,0
+weakly_correlated,200,0,53611,greedy_half,58730,58746,True,0.0272,Heuristic,8.87e-05,0
+weakly_correlated,200,0,53611,dp,58746,58746,True,0.0,Optimal,0.8384089,0
+weakly_correlated,200,0,53611,branch_and_bound,58746,58746,True,0.0,Optimal,0.0030318,3484
+weakly_correlated,200,0,53611,ilp_highs,58746,58746,True,0.0,Optimal,0.7081896,0
+weakly_correlated,200,1,54905,greedy_ratio (baseline),59088,59103,True,0.0254,Heuristic,0.0001114,0
+weakly_correlated,200,1,54905,greedy_half,59088,59103,True,0.0254,Heuristic,9.32e-05,0
+weakly_correlated,200,1,54905,dp,59103,59103,True,0.0,Optimal,0.9118076,0
+weakly_correlated,200,1,54905,branch_and_bound,59103,59103,True,0.0,Optimal,0.0038549,2933
+weakly_correlated,200,1,54905,ilp_highs,59103,59103,True,0.0,Optimal,0.0952373,0
+weakly_correlated,200,2,55489,greedy_ratio (baseline),60080,60096,True,0.0266,Heuristic,0.0001429,0
+weakly_correlated,200,2,55489,greedy_half,60080,60096,True,0.0266,Heuristic,9.4e-05,0
+weakly_correlated,200,2,55489,dp,60096,60096,True,0.0,Optimal,0.8542613,0
+weakly_correlated,200,2,55489,branch_and_bound,60096,60096,True,0.0,Optimal,0.0057726,4580
+weakly_correlated,200,2,55489,ilp_highs,60096,60096,True,0.0,Optimal,0.1457729,0
+weakly_correlated,400,0,101926,greedy_ratio (baseline),111522,111536,True,0.0126,Heuristic,0.0002033,0
+weakly_correlated,400,0,101926,greedy_half,111522,111536,True,0.0126,Heuristic,0.0001841,0
+weakly_correlated,400,0,101926,dp,111536,111536,True,0.0,Optimal,3.342039,0
+weakly_correlated,400,0,101926,branch_and_bound,111536,111536,True,0.0,Optimal,0.0111824,10007
+weakly_correlated,400,0,101926,ilp_highs,111536,111536,True,0.0,Optimal,0.1895906,0
+weakly_correlated,400,1,104190,greedy_ratio (baseline),113603,113609,True,0.0053,Heuristic,0.0002176,0
+weakly_correlated,400,1,104190,greedy_half,113603,113609,True,0.0053,Heuristic,0.0001953,0
+weakly_correlated,400,1,104190,dp,113609,113609,True,0.0,Optimal,3.4092457,0
+weakly_correlated,400,1,104190,branch_and_bound,113609,113609,True,0.0,Optimal,0.0060462,2882
+weakly_correlated,400,1,104190,ilp_highs,113609,113609,True,0.0,Optimal,0.2409862,0
+weakly_correlated,400,2,101648,greedy_ratio (baseline),112235,112256,True,0.0187,Heuristic,0.0003332,0
+weakly_correlated,400,2,101648,greedy_half,112235,112256,True,0.0187,Heuristic,0.0003344,0
+weakly_correlated,400,2,101648,dp,112256,112256,True,0.0,Optimal,3.4059779,0
+weakly_correlated,400,2,101648,branch_and_bound,112256,112256,True,0.0,Optimal,0.0060709,4266
+weakly_correlated,400,2,101648,ilp_highs,112256,112256,True,0.0,Optimal,0.1521217,0
+weakly_correlated,800,0,201752,greedy_ratio (baseline),220986,220999,True,0.0059,Heuristic,0.0006853,0
+weakly_correlated,800,0,201752,greedy_half,220986,220999,True,0.0059,Heuristic,0.0004523,0
+weakly_correlated,800,0,201752,branch_and_bound,220999,220999,True,0.0,Optimal,0.0178787,7092
+weakly_correlated,800,0,201752,ilp_highs,220999,220999,True,0.0,Optimal,0.1876985,0
+weakly_correlated,800,1,202587,greedy_ratio (baseline),223354,223371,True,0.0076,Heuristic,0.0004572,0
+weakly_correlated,800,1,202587,greedy_half,223354,223371,True,0.0076,Heuristic,0.0004932,0
+weakly_correlated,800,1,202587,branch_and_bound,223371,223371,True,0.0,Optimal,0.0211987,13135
+weakly_correlated,800,1,202587,ilp_highs,223371,223371,True,0.0,Optimal,0.2167323,0
+weakly_correlated,800,2,204769,greedy_ratio (baseline),224934,224939,True,0.0022,Heuristic,0.000439,0
+weakly_correlated,800,2,204769,greedy_half,224934,224939,True,0.0022,Heuristic,0.0004654,0
+weakly_correlated,800,2,204769,branch_and_bound,224939,224939,True,0.0,Optimal,0.0188461,7709
+weakly_correlated,800,2,204769,ilp_highs,224939,224939,True,0.0,Optimal,0.1793156,0
+strongly_correlated,50,0,13766,greedy_ratio (baseline),16662,17166,True,2.936,Heuristic,7.34e-05,0
+strongly_correlated,50,0,13766,greedy_half,16662,17166,True,2.936,Heuristic,3.6e-05,0
+strongly_correlated,50,0,13766,dp,17166,17166,True,0.0,Optimal,0.0489122,0
+strongly_correlated,50,0,13766,branch_and_bound,17166,17166,True,0.0,Optimal,0.0335661,81733
+strongly_correlated,50,0,13766,ilp_highs,17166,17166,True,0.0,Optimal,0.037675,0
+strongly_correlated,50,1,12522,greedy_ratio (baseline),15574,16022,True,2.7962,Heuristic,3.19e-05,0
+strongly_correlated,50,1,12522,greedy_half,15574,16022,True,2.7962,Heuristic,4.06e-05,0
+strongly_correlated,50,1,12522,dp,16022,16022,True,0.0,Optimal,0.0424324,0
+strongly_correlated,50,1,12522,branch_and_bound,16022,16022,True,0.0,Optimal,0.0249176,62770
+strongly_correlated,50,1,12522,ilp_highs,16022,16022,True,0.0,Optimal,0.0213574,0
+strongly_correlated,50,2,14093,greedy_ratio (baseline),16989,17493,True,2.8812,Heuristic,3.78e-05,0
+strongly_correlated,50,2,14093,greedy_half,16989,17493,True,2.8812,Heuristic,3e-05,0
+strongly_correlated,50,2,14093,dp,17493,17493,True,0.0,Optimal,0.0504388,0
+strongly_correlated,50,2,14093,branch_and_bound,17493,17493,True,0.0,Optimal,0.027987,68002
+strongly_correlated,50,2,14093,ilp_highs,17493,17493,True,0.0,Optimal,0.0291197,0
+strongly_correlated,100,0,27910,greedy_ratio (baseline),34119,34710,True,1.7027,Heuristic,5.93e-05,0
+strongly_correlated,100,0,27910,greedy_half,34119,34710,True,1.7027,Heuristic,5.01e-05,0
+strongly_correlated,100,0,27910,dp,34710,34710,True,0.0,Optimal,0.2149956,0
+strongly_correlated,100,0,27910,branch_and_bound,34710,34710,True,0.0,Limit-Feasible,2.338971,5000001
+strongly_correlated,100,0,27910,ilp_highs,34710,34710,True,0.0,Optimal,0.0616997,0
+strongly_correlated,100,1,26899,greedy_ratio (baseline),33246,33799,True,1.6361,Heuristic,7.18e-05,0
+strongly_correlated,100,1,26899,greedy_half,33246,33799,True,1.6361,Heuristic,7.02e-05,0
+strongly_correlated,100,1,26899,dp,33799,33799,True,0.0,Optimal,0.1956358,0
+strongly_correlated,100,1,26899,branch_and_bound,33799,33799,True,0.0,Limit-Feasible,2.1106525,5000001
+strongly_correlated,100,1,26899,ilp_highs,33799,33799,True,0.0,Optimal,0.0712037,0
+strongly_correlated,100,2,27147,greedy_ratio (baseline),33763,34047,True,0.8341,Heuristic,6.96e-05,0
+strongly_correlated,100,2,27147,greedy_half,33763,34047,True,0.8341,Heuristic,5.76e-05,0
+strongly_correlated,100,2,27147,dp,34047,34047,True,0.0,Optimal,0.265079,0
+strongly_correlated,100,2,27147,branch_and_bound,34047,34047,True,0.0,Optimal,0.0898858,149582
+strongly_correlated,100,2,27147,ilp_highs,34047,34047,True,0.0,Optimal,0.0457725,0
+strongly_correlated,200,0,53611,greedy_ratio (baseline),66823,67411,True,0.8723,Heuristic,0.0001849,0
+strongly_correlated,200,0,53611,greedy_half,66823,67411,True,0.8723,Heuristic,0.0001456,0
+strongly_correlated,200,0,53611,dp,67411,67411,True,0.0,Optimal,0.9695747,0
+strongly_correlated,200,0,53611,branch_and_bound,67411,67411,True,0.0,Limit-Feasible,2.2683507,5000001
+strongly_correlated,200,0,53611,ilp_highs,67411,67411,True,0.0,Optimal,0.092217,0
+strongly_correlated,200,1,54905,greedy_ratio (baseline),68149,68605,True,0.6647,Heuristic,0.0001094,0
+strongly_correlated,200,1,54905,greedy_half,68149,68605,True,0.6647,Heuristic,0.0001257,0
+strongly_correlated,200,1,54905,dp,68605,68605,True,0.0,Optimal,0.7183011,0
+strongly_correlated,200,1,54905,branch_and_bound,68605,68605,True,0.0,Limit-Feasible,2.0806102,5000001
+strongly_correlated,200,1,54905,ilp_highs,68605,68605,True,0.0,Optimal,0.255599,0
+strongly_correlated,200,2,55489,greedy_ratio (baseline),69094,69189,True,0.1373,Heuristic,0.0001029,0
+strongly_correlated,200,2,55489,greedy_half,69094,69189,True,0.1373,Heuristic,8.86e-05,0
+strongly_correlated,200,2,55489,dp,69189,69189,True,0.0,Optimal,0.7713215,0
+strongly_correlated,200,2,55489,branch_and_bound,69189,69189,True,0.0,Optimal,0.1112101,276513
+strongly_correlated,200,2,55489,ilp_highs,69189,69189,True,0.0,Optimal,0.0792289,0
+strongly_correlated,400,0,101926,greedy_ratio (baseline),129243,129926,True,0.5257,Heuristic,0.0002485,0
+strongly_correlated,400,0,101926,greedy_half,129243,129926,True,0.5257,Heuristic,0.0002114,0
+strongly_correlated,400,0,101926,dp,129926,129926,True,0.0,Optimal,3.2125888,0
+strongly_correlated,400,0,101926,branch_and_bound,129828,129926,True,0.0754,Limit-Feasible,2.4670391,5000001
+strongly_correlated,400,0,101926,ilp_highs,129926,129926,True,0.0,Limit-Feasible,30.0248792,0
+strongly_correlated,400,1,104190,greedy_ratio (baseline),131834,132190,True,0.2693,Heuristic,0.0003098,0
+strongly_correlated,400,1,104190,greedy_half,131834,132190,True,0.2693,Heuristic,0.0002755,0
+strongly_correlated,400,1,104190,dp,132190,132190,True,0.0,Optimal,3.3974344,0
+strongly_correlated,400,1,104190,branch_and_bound,132190,132190,True,0.0,Limit-Feasible,2.3601098,5000001
+strongly_correlated,400,1,104190,ilp_highs,132190,132190,True,0.0,Optimal,0.3398229,0
+strongly_correlated,400,2,101648,greedy_ratio (baseline),129814,129948,True,0.1031,Heuristic,0.0002102,0
+strongly_correlated,400,2,101648,greedy_half,129814,129948,True,0.1031,Heuristic,0.0002458,0
+strongly_correlated,400,2,101648,dp,129948,129948,True,0.0,Optimal,3.3065577,0
+strongly_correlated,400,2,101648,branch_and_bound,129948,129948,True,0.0,Limit-Feasible,2.2824815,5000001
+strongly_correlated,400,2,101648,ilp_highs,129948,129948,True,0.0,Optimal,0.0798409,0
+strongly_correlated,800,0,201752,greedy_ratio (baseline),257952,258252,False,0.1162,Heuristic,0.0003918,0
+strongly_correlated,800,0,201752,greedy_half,257952,258252,False,0.1162,Heuristic,0.0004186,0
+strongly_correlated,800,0,201752,branch_and_bound,258252,258252,False,0.0,Limit-Feasible,2.4232579,5000001
+strongly_correlated,800,0,201752,ilp_highs,258252,258252,False,0.0,Limit-Feasible,30.037314,0
+strongly_correlated,800,1,202587,greedy_ratio (baseline),259146,259287,True,0.0544,Heuristic,0.0004149,0
+strongly_correlated,800,1,202587,greedy_half,259146,259287,True,0.0544,Heuristic,0.0004512,0
+strongly_correlated,800,1,202587,branch_and_bound,259287,259287,True,0.0,Limit-Feasible,2.2996111,5000001
+strongly_correlated,800,1,202587,ilp_highs,259287,259287,True,0.0,Optimal,0.2022219,0
+strongly_correlated,800,2,204769,greedy_ratio (baseline),260198,260869,False,0.2572,Heuristic,0.0003953,0
+strongly_correlated,800,2,204769,greedy_half,260198,260869,False,0.2572,Heuristic,0.0004822,0
+strongly_correlated,800,2,204769,branch_and_bound,260754,260869,False,0.0441,Limit-Feasible,2.4922691,5000001
+strongly_correlated,800,2,204769,ilp_highs,260869,260869,False,0.0,Limit-Feasible,30.036363,0

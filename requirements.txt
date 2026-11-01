@@ -4,6 +4,8 @@ highspy>=1.7
 matplotlib>=3.8
 pandas>=2.0
 pytest>=8.0
+numpy>=1.26
+scikit-learn>=1.4    # Track B feature selection
 
 # Add per-track dependencies as tracks are started, e.g.
-# numpy, torch (A, D); pennylane or qiskit, qiskit-aer (C, I); psycopg[binary] (H); coverage (J)
+# torch (A, D); pennylane or qiskit, qiskit-aer (C, I); psycopg[binary] (H); coverage (J)
