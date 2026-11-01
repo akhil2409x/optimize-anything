@@ -1,0 +1,11 @@
+workload,variant,runs,fork_cycle_us,pages_copied_at_fork,cow_faults,cow_copies,min_free_pages,live_children
+forkexit,original,5,25003 ± 1885,20580,0,0,30434,
+forkexit,cow,5,1734 ± 267,0,41,21,31462,
+forkexec,original,5,26233 ± 1449,20580,0,0,30434,
+forkexec,cow,5,3757 ± 431,0,41,21,31462,
+forkread,original,5,24887 ± 1821,20580,0,0,30434,
+forkread,cow,5,2141 ± 392,0,41,21,31462,
+forkwrite,original,5,24701 ± 1739,20580,0,0,30434,
+forkwrite,cow,5,56107 ± 3809,0,20521,20501,31462,
+capacity,original,5,,28295,0,0,3702,6
+capacity,cow,5,,0,120,120,27730,40

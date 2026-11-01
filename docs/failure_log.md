@@ -130,6 +130,29 @@ the post-processing yields only trivial factors. The test was corrected to
 expect this failure. AI-written tests can encode wrong expectations as easily
 as AI-written code.
 
+## F8 · Track G · Benchmark gave the two schedulers different amounts of work
+
+- **Tool:** Claude (claude.ai, Claude Opus 5.5), 2026-10-28
+- **What happened:** `schedbench` sized every job in loop iterations, using
+  a calibration it ran at the start of every run. The results said MLFQ made
+  4 CPU-bound jobs 7–8% slower, in two separate runs.
+- **How it was caught:**
+  - **No idle time:** CPU utilization (CPU time ÷ makespan) was 99.6% for both
+    kernels, so the slowdown wasn't idle CPU.
+  - **Different calibration:** the MLFQ runs had calibrated to 40.6 million
+    iterations per tick against 37.2 million for round robin.
+  - **No real slowdown:** throughput in iterations per second was about the
+    same, about 1% better for MLFQ.
+- **Cause:** the calibration loop is itself preempted by the scheduler. MLFQ
+  interrupts a CPU-bound process less often than round robin, so the loop
+  measured about 9% more iterations per tick and every MLFQ job got 9% more
+  work.
+- **Fix:** `schedbench calib` measures once, on the original kernel, and the
+  same iteration count is passed to every run on both kernels. The two earlier
+  runs are kept in `tracks/G_xv6/results/superseded/` as evidence.
+- **Lesson:** a benchmark's own measurement step must not depend on the thing
+  being measured. Check that both sides did the same work before comparing times.
+
 ---
 
 *(Add entries from Tracks A–J below as they happen — xv6 and SQL rewrites usually supply several.)*

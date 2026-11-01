@@ -1,0 +1,60 @@
+Scheduler benchmarks
+   original repeat 1/5 done
+   original repeat 2/5 done
+   original repeat 3/5 done
+   original repeat 4/5 done
+   original repeat 5/5 done
+   mlfq repeat 1/5 done
+   mlfq repeat 2/5 done
+   mlfq repeat 3/5 done
+   mlfq repeat 4/5 done
+   mlfq repeat 5/5 done
+COW benchmarks
+   original repeat 1/5 done
+   original repeat 2/5 done
+   original repeat 3/5 done
+   original repeat 4/5 done
+   original repeat 5/5 done
+   cow repeat 1/5 done
+   cow repeat 2/5 done
+   cow repeat 3/5 done
+   cow repeat 4/5 done
+   cow repeat 5/5 done
+Correctness: cowtest + usertests on every variant
+   original cpus=1: cowtest OK, usertests ALL TESTS PASSED
+   original cpus=3: cowtest OK, usertests ALL TESTS PASSED
+   mlfq cpus=1: cowtest OK, usertests ALL TESTS PASSED
+   mlfq cpus=3: cowtest OK, usertests ALL TESTS PASSED
+   cow cpus=1: cowtest OK, usertests ALL TESTS PASSED
+   cow cpus=3: cowtest OK, usertests ALL TESTS PASSED
+   both cpus=1: cowtest OK, usertests ALL TESTS PASSED
+   both cpus=3: cowtest OK, usertests ALL TESTS PASSED
+Done. See results/
+EXIT 0
+Scheduler benchmarks
+   original repeat 1/5 done
+   original repeat 2/5 done
+   original repeat 3/5 done
+   original repeat 4/5 done
+   original repeat 5/5 done
+   mlfq repeat 1/5 done
+   mlfq repeat 2/5 done
+   mlfq repeat 3/5 done
+   mlfq repeat 4/5 done
+   mlfq repeat 5/5 done
+Done. See results/
+EXIT 0
+Scheduler benchmarks
+   calibrated: 39489513 iterations per tick (median of 3, original kernel)
+   original repeat 1/5 done
+   original repeat 2/5 done
+   original repeat 3/5 done
+   original repeat 4/5 done
+   original repeat 5/5 done
+   mlfq repeat 1/5 done
+   mlfq repeat 2/5 done
+   mlfq repeat 3/5 done
+   mlfq repeat 4/5 done
+   mlfq repeat 5/5 done
+Done. See results/
+EXIT 0

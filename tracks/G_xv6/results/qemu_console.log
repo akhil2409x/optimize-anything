@@ -1,0 +1,4293 @@
+
+xv6 kernel is booting
+
+init: starting sh
+$ schedbench cpu
+schedbench cpu
+R wl=cpu cls=cpu turn=6840772 resp=1165 run=1714570 nsched=18 level=0
+R wl=cpu cls=cpu turn=6847323 resp=96775 run=1714159 nsched=18 level=0
+R wl=cpu cls=cpu turn=6886643 resp=197015 run=1747048 nsched=18 level=0
+R wl=cpu cls=cpu turn=6893263 resp=297212 run=1716146 nsched=18 level=0
+T wl=cpu makespan=6920208 iters_per_tick=34611356
+$ schedbench mixed
+schedbench mixed
+R wl=mixed cls=cpu turn=8268894 resp=77023 run=2766832 nsched=28 level=0
+R wl=mixed cls=cpu turn=8272846 resp=177209 run=2716387 nsched=28 level=0
+R wl=mixed cls=cpu turn=8391246 resp=1102 run=2775311 nsched=30 level=0
+R wl=mixed cls=interactive turn=9554590 resp=277482 run=86115 nsched=41 level=0
+R wl=mixed cls=interactive turn=9554633 resp=279521 run=81090 nsched=41 level=0
+L wl=mixed lat_mean=229897 lat_max=331974 rounds=40
+L wl=mixed lat_mean=229906 lat_max=331931 rounds=40
+T wl=mixed makespan=9580181 iters_per_tick=37217294
+$ schedbench shortlong
+schedbench shortlong
+R wl=shortlong cls=short turn=1479398 resp=200612 run=274785 nsched=3 level=0
+R wl=shortlong cls=short turn=1581332 resp=401165 run=276673 nsched=3 level=0
+R wl=shortlong cls=short turn=1855822 resp=300863 run=276015 nsched=4 level=0
+R wl=shortlong cls=short turn=2117208 resp=501355 run=286051 nsched=5 level=0
+R wl=shortlong cls=long turn=9226184 resp=735 run=4049620 nsched=41 level=0
+R wl=shortlong cls=long turn=9265251 resp=75448 run=4065382 nsched=42 level=0
+T wl=shortlong makespan=9272059 iters_per_tick=40239400
+$ xQEMU: Terminated
+
+xv6 kernel is booting
+
+init: starting sh
+$ schedbench cpu
+schedbench cpu
+R wl=cpu cls=cpu turn=7237260 resp=802 run=1808003 nsched=19 level=0
+R wl=cpu cls=cpu turn=7263152 resp=34893 run=1834288 nsched=19 level=0
+R wl=cpu cls=cpu turn=7287027 resp=235428 run=1824672 nsched=19 level=0
+R wl=cpu cls=cpu turn=7328722 resp=135118 run=1840736 nsched=20 level=0
+T wl=cpu makespan=7335337 iters_per_tick=36356806
+$ schedbench mixed
+schedbench mixed
+R wl=mixed cls=cpu turn=8061582 resp=128574 run=2709024 nsched=27 level=0
+R wl=mixed cls=cpu turn=8235557 resp=28235 run=2779444 nsched=28 level=0
+R wl=mixed cls=cpu turn=8325415 resp=925 run=2711024 nsched=30 level=0
+R wl=mixed cls=interactive turn=9476534 resp=229002 run=78989 nsched=41 level=0
+R wl=mixed cls=interactive turn=9476576 resp=230861 run=77679 nsched=41 level=0
+L wl=mixed lat_mean=229333 lat_max=302318 rounds=40
+L wl=mixed lat_mean=229257 lat_max=302931 rounds=40
+T wl=mixed makespan=9501279 iters_per_tick=35896164
+$ schedbench shortlong
+schedbench shortlong
+R wl=shortlong cls=short turn=2031042 resp=200797 run=311357 nsched=4 level=0
+R wl=shortlong cls=short turn=2032496 resp=301058 run=314958 nsched=4 level=0
+R wl=shortlong cls=short turn=2052807 resp=401386 run=321906 nsched=4 level=0
+R wl=shortlong cls=short turn=2071789 resp=501702 run=320440 nsched=4 level=0
+R wl=shortlong cls=long turn=9728317 resp=41972 run=4246280 nsched=43 level=0
+R wl=shortlong cls=long turn=9792353 resp=543 run=4238937 nsched=44 level=0
+T wl=shortlong makespan=9809327 iters_per_tick=41757382
+$ xQEMU: Terminated
+
+xv6 kernel is booting
+
+init: starting sh
+$ schedbench cpu
+schedbench cpu
+R wl=cpu cls=cpu turn=7371979 resp=36863 run=1886715 nsched=19 level=0
+R wl=cpu cls=cpu turn=7474235 resp=237456 run=1896860 nsched=19 level=0
+R wl=cpu cls=cpu turn=7518904 resp=137132 run=1869317 nsched=20 level=0
+R wl=cpu cls=cpu turn=7541821 resp=808 run=1867658 nsched=21 level=0
+T wl=cpu makespan=7548151 iters_per_tick=37804035
+$ schedbench mixed
+schedbench mixed
+R wl=mixed cls=cpu turn=9461845 resp=96680 run=3119889 nsched=32 level=0
+R wl=mixed cls=cpu turn=9482266 resp=196856 run=3135560 nsched=32 level=0
+R wl=mixed cls=cpu turn=9576833 resp=974 run=3146529 nsched=34 level=0
+R wl=mixed cls=interactive turn=10363552 resp=297143 run=95508 nsched=41 level=0
+R wl=mixed cls=interactive turn=10363595 resp=299604 run=90350 nsched=41 level=0
+L wl=mixed lat_mean=249405 lat_max=311787 rounds=40
+L wl=mixed lat_mean=249403 lat_max=311810 rounds=40
+T wl=mixed makespan=10392677 iters_per_tick=41303579
+$ schedbench shortlong
+schedbench shortlong
+R wl=shortlong cls=short turn=2012088 resp=200751 run=304189 nsched=4 level=0
+R wl=shortlong cls=short turn=2025119 resp=300904 run=314587 nsched=4 level=0
+R wl=shortlong cls=short turn=2059755 resp=401224 run=336038 nsched=4 level=0
+R wl=shortlong cls=short turn=2080565 resp=501503 run=322182 nsched=4 level=0
+R wl=shortlong cls=long turn=9822488 resp=34834 run=4289338 nsched=43 level=0
+R wl=shortlong cls=long turn=9896023 resp=369 run=4292542 nsched=45 level=0
+T wl=shortlong makespan=9904934 iters_per_tick=42933327
+$ xQEMU: Terminated
+
+xv6 kernel is booting
+
+init: starting sh
+$ schedbench cpu
+schedbench cpu
+R wl=cpu cls=cpu turn=8110136 resp=15745 run=2063214 nsched=21 level=0
+R wl=cpu cls=cpu turn=8145640 resp=116000 run=2045685 nsched=21 level=0
+R wl=cpu cls=cpu turn=8252039 resp=907 run=2105643 nsched=22 level=0
+R wl=cpu cls=cpu turn=8362050 resp=216316 run=2126319 nsched=24 level=0
+T wl=cpu makespan=8369451 iters_per_tick=40932092
+$ schedbench mixed
+schedbench mixed
+R wl=mixed cls=cpu turn=8795359 resp=37710 run=2929606 nsched=30 level=0
+R wl=mixed cls=cpu turn=8831227 resp=137839 run=2950963 nsched=30 level=0
+R wl=mixed cls=cpu turn=8979362 resp=1045 run=2953052 nsched=32 level=0
+R wl=mixed cls=interactive turn=9886531 resp=238091 run=89137 nsched=41 level=0
+R wl=mixed cls=interactive turn=9886831 resp=240144 run=84516 nsched=41 level=0
+L wl=mixed lat_mean=239134 lat_max=301492 rounds=40
+L wl=mixed lat_mean=239111 lat_max=301496 rounds=40
+T wl=mixed makespan=9923302 iters_per_tick=39404135
+$ schedbench shortlong
+schedbench shortlong
+R wl=shortlong cls=short turn=1511309 resp=200737 run=293100 nsched=3 level=0
+R wl=shortlong cls=short turn=1597088 resp=401316 run=292057 nsched=3 level=0
+R wl=shortlong cls=short turn=1905873 resp=301017 run=294441 nsched=4 level=0
+R wl=shortlong cls=short turn=2201384 resp=514717 run=318102 nsched=5 level=0
+R wl=shortlong cls=long turn=9450498 resp=88374 run=4126452 nsched=42 level=0
+R wl=shortlong cls=long turn=9542205 resp=374 run=4177930 nsched=43 level=0
+T wl=shortlong makespan=9552084 iters_per_tick=39792913
+$ xQEMU: Terminated
+
+xv6 kernel is booting
+
+init: starting sh
+$ schedbench cpu
+schedbench cpu
+R wl=cpu cls=cpu turn=7890872 resp=1241 run=2043438 nsched=20 level=0
+R wl=cpu cls=cpu turn=7973274 resp=199670 run=2019182 nsched=20 level=0
+R wl=cpu cls=cpu turn=8200222 resp=299785 run=2102835 nsched=21 level=0
+R wl=cpu cls=cpu turn=8242543 resp=99517 run=2055494 nsched=23 level=0
+T wl=cpu makespan=8252065 iters_per_tick=41088442
+$ schedbench mixed
+schedbench mixed
+R wl=mixed cls=cpu turn=8632530 resp=57170 run=2906959 nsched=29 level=0
+R wl=mixed cls=cpu turn=8938766 resp=1574 run=2943703 nsched=31 level=0
+R wl=mixed cls=cpu turn=8953479 resp=157253 run=2953908 nsched=32 level=0
+R wl=mixed cls=interactive turn=9947926 resp=257367 run=88700 nsched=41 level=0
+R wl=mixed cls=interactive turn=9947877 resp=259432 run=84160 nsched=41 level=0
+L wl=mixed lat_mean=240170 lat_max=327123 rounds=40
+L wl=mixed lat_mean=240160 lat_max=327194 rounds=40
+T wl=mixed makespan=9972153 iters_per_tick=39449661
+$ schedbench shortlong
+schedbench shortlong
+R wl=shortlong cls=short turn=1495816 resp=200791 run=285960 nsched=3 level=0
+R wl=shortlong cls=short turn=1696513 resp=506248 run=286589 nsched=3 level=0
+R wl=shortlong cls=short turn=1900548 resp=300949 run=309481 nsched=4 level=0
+R wl=shortlong cls=short turn=1902844 resp=406005 run=303695 nsched=4 level=0
+R wl=shortlong cls=long turn=9036648 resp=70146 run=3937303 nsched=40 level=0
+R wl=shortlong cls=long turn=9109106 resp=418 run=3946323 nsched=41 level=0
+T wl=shortlong makespan=9115486 iters_per_tick=38618906
+$ xQEMU: Terminated
+
+xv6 kernel is booting
+
+init: starting sh
+$ schedbench cpu
+schedbench cpu
+R wl=cpu cls=cpu turn=7080223 resp=1102 run=2000877 nsched=8 level=2
+R wl=cpu cls=cpu turn=7211916 resp=25953 run=1987596 nsched=8 level=2
+R wl=cpu cls=cpu turn=7742918 resp=226331 run=2005602 nsched=8 level=2
+R wl=cpu cls=cpu turn=8051084 resp=126138 run=2037336 nsched=8 level=2
+T wl=cpu makespan=8058413 iters_per_tick=39203292
+$ schedbench mixed
+schedbench mixed
+R wl=mixed cls=interactive turn=4264554 resp=217270 run=86219 nsched=41 level=0
+R wl=mixed cls=interactive turn=4264577 resp=219390 run=82732 nsched=41 level=0
+R wl=mixed cls=cpu turn=9199216 resp=16656 run=3066486 nsched=21 level=2
+R wl=mixed cls=cpu turn=9312530 resp=116978 run=3093244 nsched=21 level=2
+R wl=mixed cls=cpu turn=9471005 resp=955 run=3110715 nsched=21 level=2
+L wl=mixed lat_mean=99112 lat_max=118267 rounds=40
+L wl=mixed lat_mean=99115 lat_max=118268 rounds=40
+T wl=mixed makespan=9485802 iters_per_tick=40727786
+$ schedbench shortlong
+schedbench shortlong
+R wl=shortlong cls=short turn=2020199 resp=1043 run=311153 nsched=3 level=2
+R wl=shortlong cls=short turn=2029381 resp=99967 run=310867 nsched=3 level=2
+R wl=shortlong cls=short turn=2037386 resp=200206 run=309681 nsched=3 level=2
+R wl=shortlong cls=short turn=2052420 resp=300476 run=316579 nsched=3 level=2
+R wl=shortlong cls=long turn=9391549 resp=501 run=4282606 nsched=15 level=1
+R wl=shortlong cls=long turn=9977835 resp=27879 run=4409751 nsched=14 level=2
+T wl=shortlong makespan=9985363 iters_per_tick=42880892
+$ xQEMU: Terminated
+
+xv6 kernel is booting
+
+init: starting sh
+$ schedbench cpu
+schedbench cpu
+R wl=cpu cls=cpu turn=7185553 resp=810 run=2160663 nsched=8 level=2
+R wl=cpu cls=cpu turn=7453846 resp=73104 run=2070325 nsched=8 level=2
+R wl=cpu cls=cpu turn=8115384 resp=273589 run=2108641 nsched=8 level=2
+R wl=cpu cls=cpu turn=8378681 resp=173373 run=2016271 nsched=8 level=2
+T wl=cpu makespan=8385298 iters_per_tick=41107105
+$ schedbench mixed
+schedbench mixed
+R wl=mixed cls=interactive turn=4253029 resp=231453 run=92808 nsched=41 level=0
+R wl=mixed cls=interactive turn=4253060 resp=233697 run=90580 nsched=41 level=0
+R wl=mixed cls=cpu turn=9062159 resp=131142 run=3129213 nsched=20 level=2
+R wl=mixed cls=cpu turn=9323314 resp=977 run=3125383 nsched=21 level=2
+R wl=mixed cls=cpu turn=9629508 resp=30892 run=3161768 nsched=22 level=2
+L wl=mixed lat_mean=98311 lat_max=99611 rounds=40
+L wl=mixed lat_mean=98282 lat_max=99711 rounds=40
+T wl=mixed makespan=9643363 iters_per_tick=42989499
+$ schedbench shortlong
+schedbench shortlong
+R wl=shortlong cls=short turn=2023846 resp=943 run=311230 nsched=3 level=2
+R wl=shortlong cls=short turn=2050272 resp=99918 run=328169 nsched=3 level=2
+R wl=shortlong cls=short turn=2076898 resp=200118 run=328258 nsched=3 level=2
+R wl=shortlong cls=short turn=2087075 resp=300435 run=311628 nsched=3 level=2
+R wl=shortlong cls=long turn=9493178 resp=53477 run=4407818 nsched=15 level=2
+R wl=shortlong cls=long turn=9981182 resp=379 run=4257708 nsched=15 level=2
+T wl=shortlong makespan=9987556 iters_per_tick=42302547
+$ xQEMU: Terminated
+
+xv6 kernel is booting
+
+init: starting sh
+$ schedbench cpu
+schedbench cpu
+R wl=cpu cls=cpu turn=6912322 resp=1032 run=1872038 nsched=8 level=2
+R wl=cpu cls=cpu turn=6999115 resp=53702 run=1888905 nsched=8 level=2
+R wl=cpu cls=cpu turn=7489155 resp=254162 run=1893204 nsched=8 level=2
+R wl=cpu cls=cpu turn=7571550 resp=153898 run=1897281 nsched=8 level=2
+T wl=cpu makespan=7578158 iters_per_tick=37581960
+$ schedbench mixed
+schedbench mixed
+R wl=mixed cls=interactive turn=4252172 resp=228303 run=86076 nsched=41 level=0
+R wl=mixed cls=interactive turn=4252188 resp=230509 run=82160 nsched=41 level=0
+R wl=mixed cls=cpu turn=8622153 resp=128049 run=2908230 nsched=20 level=2
+R wl=mixed cls=cpu turn=8670722 resp=984 run=2928042 nsched=21 level=2
+R wl=mixed cls=cpu turn=8992351 resp=27614 run=2958576 nsched=21 level=2
+L wl=mixed lat_mean=98530 lat_max=100764 rounds=40
+L wl=mixed lat_mean=98540 lat_max=101652 rounds=40
+T wl=mixed makespan=9007138 iters_per_tick=40401697
+$ schedbench shortlong
+schedbench shortlong
+R wl=shortlong cls=short turn=1097298 resp=200542 run=293906 nsched=2 level=1
+R wl=shortlong cls=short turn=2033962 resp=796 run=306855 nsched=3 level=2
+R wl=shortlong cls=short turn=2042982 resp=100092 run=304674 nsched=3 level=2
+R wl=shortlong cls=short turn=2157931 resp=300817 run=310973 nsched=3 level=2
+R wl=shortlong cls=long turn=9103267 resp=8412 run=4139167 nsched=14 level=2
+R wl=shortlong cls=long turn=9507023 resp=405 run=4113525 nsched=15 level=2
+T wl=shortlong makespan=9513588 iters_per_tick=41256718
+$ xQEMU: Terminated
+
+xv6 kernel is booting
+
+init: starting sh
+$ schedbench cpu
+schedbench cpu
+R wl=cpu cls=cpu turn=7204869 resp=984 run=2177730 nsched=8 level=2
+R wl=cpu cls=cpu turn=8313872 resp=275418 run=2175632 nsched=8 level=2
+R wl=cpu cls=cpu turn=8350340 resp=74914 run=2171578 nsched=9 level=2
+R wl=cpu cls=cpu turn=8662174 resp=175146 run=2116449 nsched=8 level=2
+T wl=cpu makespan=8670402 iters_per_tick=41855660
+$ schedbench mixed
+schedbench mixed
+R wl=mixed cls=interactive turn=4484274 resp=259485 run=84097 nsched=41 level=0
+R wl=mixed cls=interactive turn=4484177 resp=261393 run=83102 nsched=41 level=0
+R wl=mixed cls=cpu turn=8572746 resp=58505 run=2855361 nsched=20 level=2
+R wl=mixed cls=cpu turn=8631797 resp=158918 run=2891879 nsched=20 level=2
+R wl=mixed cls=cpu turn=8776800 resp=1401 run=2829435 nsched=20 level=2
+L wl=mixed lat_mean=103617 lat_max=298465 rounds=40
+L wl=mixed lat_mean=103548 lat_max=297640 rounds=40
+T wl=mixed makespan=8793644 iters_per_tick=37900455
+$ schedbench shortlong
+schedbench shortlong
+R wl=shortlong cls=short turn=602062 resp=758 run=299858 nsched=2 level=1
+R wl=shortlong cls=short turn=1901718 resp=100010 run=295463 nsched=3 level=2
+R wl=shortlong cls=short turn=1907062 resp=200345 run=306747 nsched=3 level=2
+R wl=shortlong cls=short turn=1098556 resp=300593 run=295941 nsched=2 level=1
+R wl=shortlong cls=long turn=9340140 resp=80102 run=4334490 nsched=14 level=0
+R wl=shortlong cls=long turn=9821463 resp=486 run=4252514 nsched=15 level=2
+T wl=shortlong makespan=9828728 iters_per_tick=41395271
+$ xQEMU: Terminated
+
+xv6 kernel is booting
+
+init: starting sh
+$ schedbench cpu
+schedbench cpu
+R wl=cpu cls=cpu turn=7296862 resp=1087 run=2063264 nsched=8 level=2
+R wl=cpu cls=cpu turn=7572723 resp=30071 run=2163235 nsched=8 level=2
+R wl=cpu cls=cpu turn=8283128 resp=230422 run=2121111 nsched=8 level=2
+R wl=cpu cls=cpu turn=8507195 resp=130220 run=2138026 nsched=8 level=2
+T wl=cpu makespan=8514331 iters_per_tick=41691044
+$ schedbench mixed
+schedbench mixed
+R wl=mixed cls=interactive turn=4484136 resp=250508 run=87803 nsched=41 level=0
+R wl=mixed cls=interactive turn=4484162 resp=252817 run=91425 nsched=41 level=0
+R wl=mixed cls=cpu turn=8869958 resp=50026 run=3037342 nsched=20 level=2
+R wl=mixed cls=cpu turn=9110820 resp=150296 run=3091069 nsched=20 level=2
+R wl=mixed cls=cpu turn=9377995 resp=1143 run=3039486 nsched=21 level=1
+L wl=mixed lat_mean=103740 lat_max=299473 rounds=40
+L wl=mixed lat_mean=103556 lat_max=297461 rounds=40
+T wl=mixed makespan=9392170 iters_per_tick=41084551
+$ schedbench shortlong
+schedbench shortlong
+R wl=shortlong cls=short turn=2049686 resp=711 run=337798 nsched=3 level=2
+R wl=shortlong cls=short turn=2050920 resp=100047 run=302843 nsched=3 level=2
+R wl=shortlong cls=short turn=2062352 resp=200405 run=312852 nsched=3 level=2
+R wl=shortlong cls=short turn=2125311 resp=300655 run=365238 nsched=3 level=2
+R wl=shortlong cls=long turn=9170859 resp=606 run=3905023 nsched=13 level=1
+R wl=shortlong cls=long turn=9211460 resp=31833 run=3953001 nsched=14 level=1
+T wl=shortlong makespan=9220228 iters_per_tick=39225540
+$ xQEMU: Terminated
+
+xv6 kernel is booting
+
+init: starting sh
+$ cowbench forkexit
+cowbench forkexit
+C wl=forkexit iters=20 mean_us=25050 copied=20580 cow_faults=0 cow_copies=0 free_min=30434
+$ cowbench forkexec
+cowbench forkexec
+C wl=forkexec iters=20 mean_us=25968 copied=20580 cow_faults=0 cow_copies=0 free_min=30434
+$ cowbench forkread
+cowbench forkread
+C wl=forkread iters=20 mean_us=22665 copied=20580 cow_faults=0 cow_copies=0 free_min=30434
+$ cowbench forkwrite
+cowbench forkwrite
+C wl=forkwrite iters=20 mean_us=22679 copied=20580 cow_faults=0 cow_copies=0 free_min=30434
+$ cowbench capacity
+cowbench capacity
+C wl=capacity iters=6 mean_us=0 copied=28295 cow_faults=0 cow_copies=0 free_min=3702 children=6
+$ xQEMU: Terminated
+
+xv6 kernel is booting
+
+init: starting sh
+$ cowbench forkexit
+cowbench forkexit
+C wl=forkexit iters=20 mean_us=23059 copied=20580 cow_faults=0 cow_copies=0 free_min=30434
+$ cowbench forkexec
+cowbench forkexec
+C wl=forkexec iters=20 mean_us=23608 copied=20580 cow_faults=0 cow_copies=0 free_min=30434
+$ cowbench forkread
+cowbench forkread
+C wl=forkread iters=20 mean_us=23431 copied=20580 cow_faults=0 cow_copies=0 free_min=30434
+$ cowbench forkwrite
+cowbench forkwrite
+C wl=forkwrite iters=20 mean_us=23400 copied=20580 cow_faults=0 cow_copies=0 free_min=30434
+$ cowbench capacity
+cowbench capacity
+C wl=capacity iters=6 mean_us=0 copied=28295 cow_faults=0 cow_copies=0 free_min=3702 children=6
+$ xQEMU: Terminated
+
+xv6 kernel is booting
+
+init: starting sh
+$ cowbench forkexit
+cowbench forkexit
+C wl=forkexit iters=20 mean_us=26427 copied=20580 cow_faults=0 cow_copies=0 free_min=30434
+$ cowbench forkexec
+cowbench forkexec
+C wl=forkexec iters=20 mean_us=27707 copied=20580 cow_faults=0 cow_copies=0 free_min=30434
+$ cowbench forkread
+cowbench forkread
+C wl=forkread iters=20 mean_us=27941 copied=20580 cow_faults=0 cow_copies=0 free_min=30434
+$ cowbench forkwrite
+cowbench forkwrite
+C wl=forkwrite iters=20 mean_us=24065 copied=20580 cow_faults=0 cow_copies=0 free_min=30434
+$ cowbench capacity
+cowbench capacity
+C wl=capacity iters=6 mean_us=0 copied=28295 cow_faults=0 cow_copies=0 free_min=3702 children=6
+$ xQEMU: Terminated
+
+xv6 kernel is booting
+
+init: starting sh
+$ cowbench forkexit
+cowbench forkexit
+C wl=forkexit iters=20 mean_us=27674 copied=20580 cow_faults=0 cow_copies=0 free_min=30434
+$ cowbench forkexec
+cowbench forkexec
+C wl=forkexec iters=20 mean_us=27365 copied=20580 cow_faults=0 cow_copies=0 free_min=30434
+$ cowbench forkread
+cowbench forkread
+C wl=forkread iters=20 mean_us=25176 copied=20580 cow_faults=0 cow_copies=0 free_min=30434
+$ cowbench forkwrite
+cowbench forkwrite
+C wl=forkwrite iters=20 mean_us=27423 copied=20580 cow_faults=0 cow_copies=0 free_min=30434
+$ cowbench capacity
+cowbench capacity
+C wl=capacity iters=6 mean_us=0 copied=28295 cow_faults=0 cow_copies=0 free_min=3702 children=6
+$ xQEMU: Terminated
+
+xv6 kernel is booting
+
+init: starting sh
+$ cowbench forkexit
+cowbench forkexit
+C wl=forkexit iters=20 mean_us=22806 copied=20580 cow_faults=0 cow_copies=0 free_min=30434
+$ cowbench forkexec
+cowbench forkexec
+C wl=forkexec iters=20 mean_us=26519 copied=20580 cow_faults=0 cow_copies=0 free_min=30434
+$ cowbench forkread
+cowbench forkread
+C wl=forkread iters=20 mean_us=25220 copied=20580 cow_faults=0 cow_copies=0 free_min=30434
+$ cowbench forkwrite
+cowbench forkwrite
+C wl=forkwrite iters=20 mean_us=25936 copied=20580 cow_faults=0 cow_copies=0 free_min=30434
+$ cowbench capacity
+cowbench capacity
+C wl=capacity iters=6 mean_us=0 copied=28295 cow_faults=0 cow_copies=0 free_min=3702 children=6
+$ xQEMU: Terminated
+
+xv6 kernel is booting
+
+init: starting sh
+$ cowbench forkexit
+cowbench forkexit
+C wl=forkexit iters=20 mean_us=1445 copied=0 cow_faults=41 cow_copies=21 free_min=31462
+$ cowbench forkexec
+cowbench forkexec
+C wl=forkexec iters=20 mean_us=3273 copied=0 cow_faults=41 cow_copies=21 free_min=31462
+$ cowbench forkread
+cowbench forkread
+C wl=forkread iters=20 mean_us=2052 copied=0 cow_faults=41 cow_copies=21 free_min=31462
+$ cowbench forkwrite
+cowbench forkwrite
+C wl=forkwrite iters=20 mean_us=55177 copied=0 cow_faults=20521 cow_copies=20501 free_min=31462
+$ cowbench capacity
+cowbench capacity
+C wl=capacity iters=40 mean_us=0 copied=0 cow_faults=120 cow_copies=120 free_min=27722 children=40
+$ xQEMU: Terminated
+
+xv6 kernel is booting
+
+init: starting sh
+$ cowbench forkexit
+cowbench forkexit
+C wl=forkexit iters=20 mean_us=1583 copied=0 cow_faults=41 cow_copies=21 free_min=31462
+$ cowbench forkexec
+cowbench forkexec
+C wl=forkexec iters=20 mean_us=4417 copied=0 cow_faults=41 cow_copies=21 free_min=31462
+$ cowbench forkread
+cowbench forkread
+C wl=forkread iters=20 mean_us=2747 copied=0 cow_faults=41 cow_copies=21 free_min=31462
+$ cowbench forkwrite
+cowbench forkwrite
+C wl=forkwrite iters=20 mean_us=53170 copied=0 cow_faults=20521 cow_copies=20501 free_min=31462
+$ cowbench capacity
+cowbench capacity
+C wl=capacity iters=40 mean_us=0 copied=0 cow_faults=120 cow_copies=120 free_min=27726 children=40
+$ xQEMU: Terminated
+
+xv6 kernel is booting
+
+init: starting sh
+$ cowbench forkexit
+cowbench forkexit
+C wl=forkexit iters=20 mean_us=2069 copied=0 cow_faults=41 cow_copies=21 free_min=31462
+$ cowbench forkexec
+cowbench forkexec
+C wl=forkexec iters=20 mean_us=3580 copied=0 cow_faults=41 cow_copies=21 free_min=31462
+$ cowbench forkread
+cowbench forkread
+C wl=forkread iters=20 mean_us=2375 copied=0 cow_faults=41 cow_copies=21 free_min=31462
+$ cowbench forkwrite
+cowbench forkwrite
+C wl=forkwrite iters=20 mean_us=63574 copied=0 cow_faults=20521 cow_copies=20501 free_min=31462
+$ cowbench capacity
+cowbench capacity
+C wl=capacity iters=40 mean_us=0 copied=0 cow_faults=120 cow_copies=120 free_min=27721 children=40
+$ xQEMU: Terminated
+
+xv6 kernel is booting
+
+init: starting sh
+$ cowbench forkexit
+cowbench forkexit
+C wl=forkexit iters=20 mean_us=2043 copied=0 cow_faults=41 cow_copies=21 free_min=31462
+$ cowbench forkexec
+cowbench forkexec
+C wl=forkexec iters=20 mean_us=3421 copied=0 cow_faults=42 cow_copies=21 free_min=31461
+$ cowbench forkread
+cowbench forkread
+C wl=forkread iters=20 mean_us=1598 copied=0 cow_faults=41 cow_copies=21 free_min=31462
+$ cowbench forkwrite
+cowbench forkwrite
+C wl=forkwrite iters=20 mean_us=54947 copied=0 cow_faults=20521 cow_copies=20501 free_min=31462
+$ cowbench capacity
+cowbench capacity
+C wl=capacity iters=40 mean_us=0 copied=0 cow_faults=120 cow_copies=120 free_min=27730 children=40
+$ xQEMU: Terminated
+
+xv6 kernel is booting
+
+init: starting sh
+$ cowbench forkexit
+cowbench forkexit
+C wl=forkexit iters=20 mean_us=1530 copied=0 cow_faults=41 cow_copies=21 free_min=31462
+$ cowbench forkexec
+cowbench forkexec
+C wl=forkexec iters=20 mean_us=4093 copied=0 cow_faults=41 cow_copies=21 free_min=31462
+$ cowbench forkread
+cowbench forkread
+C wl=forkread iters=20 mean_us=1932 copied=0 cow_faults=41 cow_copies=21 free_min=31462
+$ cowbench forkwrite
+cowbench forkwrite
+C wl=forkwrite iters=20 mean_us=53667 copied=0 cow_faults=20521 cow_copies=20501 free_min=31462
+$ cowbench capacity
+cowbench capacity
+C wl=capacity iters=40 mean_us=0 copied=0 cow_faults=120 cow_copies=120 free_min=27751 children=40
+$ xQEMU: Terminated
+
+xv6 kernel is booting
+
+init: starting sh
+$ cowtest
+cowtest
+cowtest: OK
+$ usertests
+usertests
+usertests starting
+test copyin: OK
+test copyout: OK
+test copyinstr1: OK
+test copyinstr2: OK
+test copyinstr3: OK
+test rwsbrk: OK
+test truncate1: OK
+test truncate2: OK
+test truncate3: OK
+test openiput: OK
+test exitiput: OK
+test iput: OK
+test opentest: OK
+test writetest: OK
+test writebig: OK
+test createtest: OK
+test dirtest: OK
+test exectest: OK
+test pipe1: OK
+test killstatus: OK
+test killzero: OK
+test preempt: kill... wait... OK
+test exitwait: OK
+test reparent: OK
+test twochildren: OK
+test forkfork: OK
+test forkforkfork: OK
+test reparent2: OK
+test mem: OK
+test sharedfd: OK
+test fourfiles: OK
+test createdelete: OK
+test unlinkread: OK
+test linktest: OK
+test concreate: OK
+test linkunlink: OK
+test subdir: OK
+test bigwrite: OK
+test bigfile: OK
+test fourteen: OK
+test rmdot: OK
+test dirfile: OK
+test iref: OK
+test forktest: OK
+test sbrkbasic: OK
+test sbrkmuch: OK
+test kernmem: usertrap(): unexpected scause 0xd pid=6512
+            sepc=0x1a86 stval=0x80000000
+usertrap(): unexpected scause 0xd pid=6513
+            sepc=0x1a86 stval=0x8000c350
+usertrap(): unexpected scause 0xd pid=6514
+            sepc=0x1a86 stval=0x800186a0
+usertrap(): unexpected scause 0xd pid=6515
+            sepc=0x1a86 stval=0x800249f0
+usertrap(): unexpected scause 0xd pid=6516
+            sepc=0x1a86 stval=0x80030d40
+usertrap(): unexpected scause 0xd pid=6517
+            sepc=0x1a86 stval=0x8003d090
+usertrap(): unexpected scause 0xd pid=6518
+            sepc=0x1a86 stval=0x800493e0
+usertrap(): unexpected scause 0xd pid=6519
+            sepc=0x1a86 stval=0x80055730
+usertrap(): unexpected scause 0xd pid=6520
+            sepc=0x1a86 stval=0x80061a80
+usertrap(): unexpected scause 0xd pid=6521
+            sepc=0x1a86 stval=0x8006ddd0
+usertrap(): unexpected scause 0xd pid=6522
+            sepc=0x1a86 stval=0x8007a120
+usertrap(): unexpected scause 0xd pid=6523
+            sepc=0x1a86 stval=0x80086470
+usertrap(): unexpected scause 0xd pid=6524
+            sepc=0x1a86 stval=0x800927c0
+usertrap(): unexpected scause 0xd pid=6525
+            sepc=0x1a86 stval=0x8009eb10
+usertrap(): unexpected scause 0xd pid=6526
+            sepc=0x1a86 stval=0x800aae60
+usertrap(): unexpected scause 0xd pid=6527
+            sepc=0x1a86 stval=0x800b71b0
+usertrap(): unexpected scause 0xd pid=6528
+            sepc=0x1a86 stval=0x800c3500
+usertrap(): unexpected scause 0xd pid=6529
+            sepc=0x1a86 stval=0x800cf850
+usertrap(): unexpected scause 0xd pid=6530
+            sepc=0x1a86 stval=0x800dbba0
+usertrap(): unexpected scause 0xd pid=6531
+            sepc=0x1a86 stval=0x800e7ef0
+usertrap(): unexpected scause 0xd pid=6532
+            sepc=0x1a86 stval=0x800f4240
+usertrap(): unexpected scause 0xd pid=6533
+            sepc=0x1a86 stval=0x80100590
+usertrap(): unexpected scause 0xd pid=6534
+            sepc=0x1a86 stval=0x8010c8e0
+usertrap(): unexpected scause 0xd pid=6535
+            sepc=0x1a86 stval=0x80118c30
+usertrap(): unexpected scause 0xd pid=6536
+            sepc=0x1a86 stval=0x80124f80
+usertrap(): unexpected scause 0xd pid=6537
+            sepc=0x1a86 stval=0x801312d0
+usertrap(): unexpected scause 0xd pid=6538
+            sepc=0x1a86 stval=0x8013d620
+usertrap(): unexpected scause 0xd pid=6539
+            sepc=0x1a86 stval=0x80149970
+usertrap(): unexpected scause 0xd pid=6540
+            sepc=0x1a86 stval=0x80155cc0
+usertrap(): unexpected scause 0xd pid=6541
+            sepc=0x1a86 stval=0x80162010
+usertrap(): unexpected scause 0xd pid=6542
+            sepc=0x1a86 stval=0x8016e360
+usertrap(): unexpected scause 0xd pid=6543
+            sepc=0x1a86 stval=0x8017a6b0
+usertrap(): unexpected scause 0xd pid=6544
+            sepc=0x1a86 stval=0x80186a00
+usertrap(): unexpected scause 0xd pid=6545
+            sepc=0x1a86 stval=0x80192d50
+usertrap(): unexpected scause 0xd pid=6546
+            sepc=0x1a86 stval=0x8019f0a0
+usertrap(): unexpected scause 0xd pid=6547
+            sepc=0x1a86 stval=0x801ab3f0
+usertrap(): unexpected scause 0xd pid=6548
+            sepc=0x1a86 stval=0x801b7740
+usertrap(): unexpected scause 0xd pid=6549
+            sepc=0x1a86 stval=0x801c3a90
+usertrap(): unexpected scause 0xd pid=6550
+            sepc=0x1a86 stval=0x801cfde0
+usertrap(): unexpected scause 0xd pid=6551
+            sepc=0x1a86 stval=0x801dc130
+OK
+test MAXVAplus: usertrap(): unexpected scause 0xf pid=6553
+            sepc=0x1b16 stval=0x4000000000
+usertrap(): unexpected scause 0xf pid=6554
+            sepc=0x1b16 stval=0x8000000000
+usertrap(): unexpected scause 0xf pid=6555
+            sepc=0x1b16 stval=0x10000000000
+usertrap(): unexpected scause 0xf pid=6556
+            sepc=0x1b16 stval=0x20000000000
+usertrap(): unexpected scause 0xf pid=6557
+            sepc=0x1b16 stval=0x40000000000
+usertrap(): unexpected scause 0xf pid=6558
+            sepc=0x1b16 stval=0x80000000000
+usertrap(): unexpected scause 0xf pid=6559
+            sepc=0x1b16 stval=0x100000000000
+usertrap(): unexpected scause 0xf pid=6560
+            sepc=0x1b16 stval=0x200000000000
+usertrap(): unexpected scause 0xf pid=6561
+            sepc=0x1b16 stval=0x400000000000
+usertrap(): unexpected scause 0xf pid=6562
+            sepc=0x1b16 stval=0x800000000000
+usertrap(): unexpected scause 0xf pid=6563
+            sepc=0x1b16 stval=0x1000000000000
+usertrap(): unexpected scause 0xf pid=6564
+            sepc=0x1b16 stval=0x2000000000000
+usertrap(): unexpected scause 0xf pid=6565
+            sepc=0x1b16 stval=0x4000000000000
+usertrap(): unexpected scause 0xf pid=6566
+            sepc=0x1b16 stval=0x8000000000000
+usertrap(): unexpected scause 0xf pid=6567
+            sepc=0x1b16 stval=0x10000000000000
+usertrap(): unexpected scause 0xf pid=6568
+            sepc=0x1b16 stval=0x20000000000000
+usertrap(): unexpected scause 0xf pid=6569
+            sepc=0x1b16 stval=0x40000000000000
+usertrap(): unexpected scause 0xf pid=6570
+            sepc=0x1b16 stval=0x80000000000000
+usertrap(): unexpected scause 0xf pid=6571
+            sepc=0x1b16 stval=0x100000000000000
+usertrap(): unexpected scause 0xf pid=6572
+            sepc=0x1b16 stval=0x200000000000000
+usertrap(): unexpected scause 0xf pid=6573
+            sepc=0x1b16 stval=0x400000000000000
+usertrap(): unexpected scause 0xf pid=6574
+            sepc=0x1b16 stval=0x800000000000000
+usertrap(): unexpected scause 0xf pid=6575
+            sepc=0x1b16 stval=0x1000000000000000
+usertrap(): unexpected scause 0xf pid=6576
+            sepc=0x1b16 stval=0x2000000000000000
+usertrap(): unexpected scause 0xf pid=6577
+            sepc=0x1b16 stval=0x4000000000000000
+usertrap(): unexpected scause 0xf pid=6578
+            sepc=0x1b16 stval=0x8000000000000000
+OK
+test sbrkfail: OK
+test sbrkarg: OK
+test validatetest: OK
+test bsstest: OK
+test bigargtest: OK
+test argptest: OK
+test stacktest: usertrap(): unexpected scause 0xd pid=6598
+            sepc=0x1b6a stval=0x11ea0
+OK
+test nowrite: usertrap(): unexpected scause 0xf pid=6600
+            sepc=0x1c10 stval=0x0
+usertrap(): unexpected scause 0xf pid=6601
+            sepc=0x1c10 stval=0x80000000
+usertrap(): unexpected scause 0xf pid=6602
+            sepc=0x1c10 stval=0x3fffffe000
+usertrap(): unexpected scause 0xf pid=6603
+            sepc=0x1c10 stval=0x3ffffff000
+usertrap(): unexpected scause 0xf pid=6604
+            sepc=0x1c10 stval=0x4000000000
+usertrap(): unexpected scause 0xf pid=6605
+            sepc=0x1c10 stval=0xffffffffffffffff
+OK
+test pgbug: OK
+test sbrkbugs: usertrap(): unexpected scause 0xc pid=6608
+            sepc=0x554a stval=0x554a
+usertrap(): unexpected scause 0xc pid=6609
+            sepc=0x554a stval=0x554a
+usertrap(): unexpected scause 0xd pid=6610
+            sepc=0x5496 stval=0x12eb8
+OK
+test sbrklast: OK
+test sbrk8000: OK
+test badarg: OK
+test lazy_alloc: OK
+test lazy_unmap: usertrap(): unexpected scause 0xf pid=6616
+            sepc=0x488e stval=0x14000
+usertrap(): unexpected scause 0xf pid=6617
+            sepc=0x488e stval=0x1014000
+usertrap(): unexpected scause 0xf pid=6618
+            sepc=0x488e stval=0x2014000
+usertrap(): unexpected scause 0xf pid=6619
+            sepc=0x488e stval=0x3014000
+usertrap(): unexpected scause 0xf pid=6620
+            sepc=0x488e stval=0x4014000
+usertrap(): unexpected scause 0xf pid=6621
+            sepc=0x488e stval=0x5014000
+usertrap(): unexpected scause 0xf pid=6622
+            sepc=0x488e stval=0x6014000
+usertrap(): unexpected scause 0xf pid=6623
+            sepc=0x488e stval=0x7014000
+usertrap(): unexpected scause 0xf pid=6624
+            sepc=0x488e stval=0x8014000
+usertrap(): unexpected scause 0xf pid=6625
+            sepc=0x488e stval=0x9014000
+usertrap(): unexpected scause 0xf pid=6626
+            sepc=0x488e stval=0xa014000
+usertrap(): unexpected scause 0xf pid=6627
+            sepc=0x488e stval=0xb014000
+usertrap(): unexpected scause 0xf pid=6628
+            sepc=0x488e stval=0xc014000
+usertrap(): unexpected scause 0xf pid=6629
+            sepc=0x488e stval=0xd014000
+usertrap(): unexpected scause 0xf pid=6630
+            sepc=0x488e stval=0xe014000
+usertrap(): unexpected scause 0xf pid=6631
+            sepc=0x488e stval=0xf014000
+usertrap(): unexpected scause 0xf pid=6632
+            sepc=0x488e stval=0x10014000
+usertrap(): unexpected scause 0xf pid=6633
+            sepc=0x488e stval=0x11014000
+usertrap(): unexpected scause 0xf pid=6634
+            sepc=0x488e stval=0x12014000
+usertrap(): unexpected scause 0xf pid=6635
+            sepc=0x488e stval=0x13014000
+usertrap(): unexpected scause 0xf pid=6636
+            sepc=0x488e stval=0x14014000
+usertrap(): unexpected scause 0xf pid=6637
+            sepc=0x488e stval=0x15014000
+usertrap(): unexpected scause 0xf pid=6638
+            sepc=0x488e stval=0x16014000
+usertrap(): unexpected scause 0xf pid=6639
+            sepc=0x488e stval=0x17014000
+usertrap(): unexpected scause 0xf pid=6640
+            sepc=0x488e stval=0x18014000
+usertrap(): unexpected scause 0xf pid=6641
+            sepc=0x488e stval=0x19014000
+usertrap(): unexpected scause 0xf pid=6642
+            sepc=0x488e stval=0x1a014000
+usertrap(): unexpected scause 0xf pid=6643
+            sepc=0x488e stval=0x1b014000
+usertrap(): unexpected scause 0xf pid=6644
+            sepc=0x488e stval=0x1c014000
+usertrap(): unexpected scause 0xf pid=6645
+            sepc=0x488e stval=0x1d014000
+usertrap(): unexpected scause 0xf pid=6646
+            sepc=0x488e stval=0x1e014000
+usertrap(): unexpected scause 0xf pid=6647
+            sepc=0x488e stval=0x1f014000
+usertrap(): unexpected scause 0xf pid=6648
+            sepc=0x488e stval=0x20014000
+usertrap(): unexpected scause 0xf pid=6649
+            sepc=0x488e stval=0x21014000
+usertrap(): unexpected scause 0xf pid=6650
+            sepc=0x488e stval=0x22014000
+usertrap(): unexpected scause 0xf pid=6651
+            sepc=0x488e stval=0x23014000
+usertrap(): unexpected scause 0xf pid=6652
+            sepc=0x488e stval=0x24014000
+usertrap(): unexpected scause 0xf pid=6653
+            sepc=0x488e stval=0x25014000
+usertrap(): unexpected scause 0xf pid=6654
+            sepc=0x488e stval=0x26014000
+usertrap(): unexpected scause 0xf pid=6655
+            sepc=0x488e stval=0x27014000
+usertrap(): unexpected scause 0xf pid=6656
+            sepc=0x488e stval=0x28014000
+usertrap(): unexpected scause 0xf pid=6657
+            sepc=0x488e stval=0x29014000
+usertrap(): unexpected scause 0xf pid=6658
+            sepc=0x488e stval=0x2a014000
+usertrap(): unexpected scause 0xf pid=6659
+            sepc=0x488e stval=0x2b014000
+usertrap(): unexpected scause 0xf pid=6660
+            sepc=0x488e stval=0x2c014000
+usertrap(): unexpected scause 0xf pid=6661
+            sepc=0x488e stval=0x2d014000
+usertrap(): unexpected scause 0xf pid=6662
+            sepc=0x488e stval=0x2e014000
+usertrap(): unexpected scause 0xf pid=6663
+            sepc=0x488e stval=0x2f014000
+usertrap(): unexpected scause 0xf pid=6664
+            sepc=0x488e stval=0x30014000
+usertrap(): unexpected scause 0xf pid=6665
+            sepc=0x488e stval=0x31014000
+usertrap(): unexpected scause 0xf pid=6666
+            sepc=0x488e stval=0x32014000
+usertrap(): unexpected scause 0xf pid=6667
+            sepc=0x488e stval=0x33014000
+usertrap(): unexpected scause 0xf pid=6668
+            sepc=0x488e stval=0x34014000
+usertrap(): unexpected scause 0xf pid=6669
+            sepc=0x488e stval=0x35014000
+usertrap(): unexpected scause 0xf pid=6670
+            sepc=0x488e stval=0x36014000
+usertrap(): unexpected scause 0xf pid=6671
+            sepc=0x488e stval=0x37014000
+usertrap(): unexpected scause 0xf pid=6672
+            sepc=0x488e stval=0x38014000
+usertrap(): unexpected scause 0xf pid=6673
+            sepc=0x488e stval=0x39014000
+usertrap(): unexpected scause 0xf pid=6674
+            sepc=0x488e stval=0x3a014000
+usertrap(): unexpected scause 0xf pid=6675
+            sepc=0x488e stval=0x3b014000
+usertrap(): unexpected scause 0xf pid=6676
+            sepc=0x488e stval=0x3c014000
+usertrap(): unexpected scause 0xf pid=6677
+            sepc=0x488e stval=0x3d014000
+usertrap(): unexpected scause 0xf pid=6678
+            sepc=0x488e stval=0x3e014000
+usertrap(): unexpected scause 0xf pid=6679
+            sepc=0x488e stval=0x3f014000
+OK
+test lazy_copy: OK
+test lazy_copyinstr: OK
+test lazy_sbrk: OK
+test partial_write: OK
+test unlinkcwd: OK
+usertests slow tests starting
+test bigdir: OK
+test manywrites: OK
+test badwrite: OK
+test execout: OK
+test diskfull: balloc: out of blocks
+balloc: out of blocks
+OK
+test outofinodes: ialloc: no inodes
+OK
+ALL TESTS PASSED
+$ xQEMU: Terminated
+
+xv6 kernel is booting
+
+hart 2 starting
+hart 1 starting
+init: starting sh
+$ cowtest
+cowtest
+cowtest: OK
+$ usertests
+usertests
+usertests starting
+test copyin: OK
+test copyout: OK
+test copyinstr1: OK
+test copyinstr2: OK
+test copyinstr3: OK
+test rwsbrk: OK
+test truncate1: OK
+test truncate2: OK
+test truncate3: OK
+test openiput: OK
+test exitiput: OK
+test iput: OK
+test opentest: OK
+test writetest: OK
+test writebig: OK
+test createtest: OK
+test dirtest: OK
+test exectest: OK
+test pipe1: OK
+test killstatus: OK
+test killzero: OK
+test preempt: kill... wait... OK
+test exitwait: OK
+test reparent: OK
+test twochildren: OK
+test forkfork: OK
+test forkforkfork: OK
+test reparent2: OK
+test mem: OK
+test sharedfd: OK
+test fourfiles: OK
+test createdelete: OK
+test unlinkread: OK
+test linktest: OK
+test concreate: OK
+test linkunlink: OK
+test subdir: OK
+test bigwrite: OK
+test bigfile: OK
+test fourteen: OK
+test rmdot: OK
+test dirfile: OK
+test iref: OK
+test forktest: OK
+test sbrkbasic: OK
+test sbrkmuch: OK
+test kernmem: usertrap(): unexpected scause 0xd pid=6512
+            sepc=0x1a86 stval=0x80000000
+usertrap(): unexpected scause 0xd pid=6513
+            sepc=0x1a86 stval=0x8000c350
+usertrap(): unexpected scause 0xd pid=6514
+            sepc=0x1a86 stval=0x800186a0
+usertrap(): unexpected scause 0xd pid=6515
+            sepc=0x1a86 stval=0x800249f0
+usertrap(): unexpected scause 0xd pid=6516
+            sepc=0x1a86 stval=0x80030d40
+usertrap(): unexpected scause 0xd pid=6517
+            sepc=0x1a86 stval=0x8003d090
+usertrap(): unexpected scause 0xd pid=6518
+            sepc=0x1a86 stval=0x800493e0
+usertrap(): unexpected scause 0xd pid=6519
+            sepc=0x1a86 stval=0x80055730
+usertrap(): unexpected scause 0xd pid=6520
+            sepc=0x1a86 stval=0x80061a80
+usertrap(): unexpected scause 0xd pid=6521
+            sepc=0x1a86 stval=0x8006ddd0
+usertrap(): unexpected scause 0xd pid=6522
+            sepc=0x1a86 stval=0x8007a120
+usertrap(): unexpected scause 0xd pid=6523
+            sepc=0x1a86 stval=0x80086470
+usertrap(): unexpected scause 0xd pid=6524
+            sepc=0x1a86 stval=0x800927c0
+usertrap(): unexpected scause 0xd pid=6525
+            sepc=0x1a86 stval=0x8009eb10
+usertrap(): unexpected scause 0xd pid=6526
+            sepc=0x1a86 stval=0x800aae60
+usertrap(): unexpected scause 0xd pid=6527
+            sepc=0x1a86 stval=0x800b71b0
+usertrap(): unexpected scause 0xd pid=6528
+            sepc=0x1a86 stval=0x800c3500
+usertrap(): unexpected scause 0xd pid=6529
+            sepc=0x1a86 stval=0x800cf850
+usertrap(): unexpected scause 0xd pid=6530
+            sepc=0x1a86 stval=0x800dbba0
+usertrap(): unexpected scause 0xd pid=6531
+            sepc=0x1a86 stval=0x800e7ef0
+usertrap(): unexpected scause 0xd pid=6532
+            sepc=0x1a86 stval=0x800f4240
+usertrap(): unexpected scause 0xd pid=6533
+            sepc=0x1a86 stval=0x80100590
+usertrap(): unexpected scause 0xd pid=6534
+            sepc=0x1a86 stval=0x8010c8e0
+usertrap(): unexpected scause 0xd pid=6535
+            sepc=0x1a86 stval=0x80118c30
+usertrap(): unexpected scause 0xd pid=6536
+            sepc=0x1a86 stval=0x80124f80
+usertrap(): unexpected scause 0xd pid=6537
+            sepc=0x1a86 stval=0x801312d0
+usertrap(): unexpected scause 0xd pid=6538
+            sepc=0x1a86 stval=0x8013d620
+usertrap(): unexpected scause 0xd pid=6539
+            sepc=0x1a86 stval=0x80149970
+usertrap(): unexpected scause 0xd pid=6540
+            sepc=0x1a86 stval=0x80155cc0
+usertrap(): unexpected scause 0xd pid=6541
+            sepc=0x1a86 stval=0x80162010
+usertrap(): unexpected scause 0xd pid=6542
+            sepc=0x1a86 stval=0x8016e360
+usertrap(): unexpected scause 0xd pid=6543
+            sepc=0x1a86 stval=0x8017a6b0
+usertrap(): unexpected scause 0xd pid=6544
+            sepc=0x1a86 stval=0x80186a00
+usertrap(): unexpected scause 0xd pid=6545
+            sepc=0x1a86 stval=0x80192d50
+usertrap(): unexpected scause 0xd pid=6546
+            sepc=0x1a86 stval=0x8019f0a0
+usertrap(): unexpected scause 0xd pid=6547
+            sepc=0x1a86 stval=0x801ab3f0
+usertrap(): unexpected scause 0xd pid=6548
+            sepc=0x1a86 stval=0x801b7740
+usertrap(): unexpected scause 0xd pid=6549
+            sepc=0x1a86 stval=0x801c3a90
+usertrap(): unexpected scause 0xd pid=6550
+            sepc=0x1a86 stval=0x801cfde0
+usertrap(): unexpected scause 0xd pid=6551
+            sepc=0x1a86 stval=0x801dc130
+OK
+test MAXVAplus: usertrap(): unexpected scause 0xf pid=6553
+            sepc=0x1b16 stval=0x4000000000
+usertrap(): unexpected scause 0xf pid=6554
+            sepc=0x1b16 stval=0x8000000000
+usertrap(): unexpected scause 0xf pid=6555
+            sepc=0x1b16 stval=0x10000000000
+usertrap(): unexpected scause 0xf pid=6556
+            sepc=0x1b16 stval=0x20000000000
+usertrap(): unexpected scause 0xf pid=6557
+            sepc=0x1b16 stval=0x40000000000
+usertrap(): unexpected scause 0xf pid=6558
+            sepc=0x1b16 stval=0x80000000000
+usertrap(): unexpected scause 0xf pid=6559
+            sepc=0x1b16 stval=0x100000000000
+usertrap(): unexpected scause 0xf pid=6560
+            sepc=0x1b16 stval=0x200000000000
+usertrap(): unexpected scause 0xf pid=6561
+            sepc=0x1b16 stval=0x400000000000
+usertrap(): unexpected scause 0xf pid=6562
+            sepc=0x1b16 stval=0x800000000000
+usertrap(): unexpected scause 0xf pid=6563
+            sepc=0x1b16 stval=0x1000000000000
+usertrap(): unexpected scause 0xf pid=6564
+            sepc=0x1b16 stval=0x2000000000000
+usertrap(): unexpected scause 0xf pid=6565
+            sepc=0x1b16 stval=0x4000000000000
+usertrap(): unexpected scause 0xf pid=6566
+            sepc=0x1b16 stval=0x8000000000000
+usertrap(): unexpected scause 0xf pid=6567
+            sepc=0x1b16 stval=0x10000000000000
+usertrap(): unexpected scause 0xf pid=6568
+            sepc=0x1b16 stval=0x20000000000000
+usertrap(): unexpected scause 0xf pid=6569
+            sepc=0x1b16 stval=0x40000000000000
+usertrap(): unexpected scause 0xf pid=6570
+            sepc=0x1b16 stval=0x80000000000000
+usertrap(): unexpected scause 0xf pid=6571
+            sepc=0x1b16 stval=0x100000000000000
+usertrap(): unexpected scause 0xf pid=6572
+            sepc=0x1b16 stval=0x200000000000000
+usertrap(): unexpected scause 0xf pid=6573
+            sepc=0x1b16 stval=0x400000000000000
+usertrap(): unexpected scause 0xf pid=6574
+            sepc=0x1b16 stval=0x800000000000000
+usertrap(): unexpected scause 0xf pid=6575
+            sepc=0x1b16 stval=0x1000000000000000
+usertrap(): unexpected scause 0xf pid=6576
+            sepc=0x1b16 stval=0x2000000000000000
+usertrap(): unexpected scause 0xf pid=6577
+            sepc=0x1b16 stval=0x4000000000000000
+usertrap(): unexpected scause 0xf pid=6578
+            sepc=0x1b16 stval=0x8000000000000000
+OK
+test sbrkfail: OK
+test sbrkarg: OK
+test validatetest: OK
+test bsstest: OK
+test bigargtest: OK
+test argptest: OK
+test stacktest: usertrap(): unexpected scause 0xd pid=6598
+            sepc=0x1b6a stval=0x11ea0
+OK
+test nowrite: usertrap(): unexpected scause 0xf pid=6600
+            sepc=0x1c10 stval=0x0
+usertrap(): unexpected scause 0xf pid=6601
+            sepc=0x1c10 stval=0x80000000
+usertrap(): unexpected scause 0xf pid=6602
+            sepc=0x1c10 stval=0x3fffffe000
+usertrap(): unexpected scause 0xf pid=6603
+            sepc=0x1c10 stval=0x3ffffff000
+usertrap(): unexpected scause 0xf pid=6604
+            sepc=0x1c10 stval=0x4000000000
+usertrap(): unexpected scause 0xf pid=6605
+            sepc=0x1c10 stval=0xffffffffffffffff
+OK
+test pgbug: OK
+test sbrkbugs: usertrap(): unexpected scause 0xc pid=6608
+            sepc=0x554a stval=0x554a
+usertrap(): unexpected scause 0xc pid=6609
+            sepc=0x554a stval=0x554a
+usertrap(): unexpected scause 0xd pid=6610
+            sepc=0x5496 stval=0x12eb8
+OK
+test sbrklast: OK
+test sbrk8000: OK
+test badarg: OK
+test lazy_alloc: OK
+test lazy_unmap: usertrap(): unexpected scause 0xf pid=6616
+            sepc=0x488e stval=0x14000
+usertrap(): unexpected scause 0xf pid=6617
+            sepc=0x488e stval=0x1014000
+usertrap(): unexpected scause 0xf pid=6618
+            sepc=0x488e stval=0x2014000
+usertrap(): unexpected scause 0xf pid=6619
+            sepc=0x488e stval=0x3014000
+usertrap(): unexpected scause 0xf pid=6620
+            sepc=0x488e stval=0x4014000
+usertrap(): unexpected scause 0xf pid=6621
+            sepc=0x488e stval=0x5014000
+usertrap(): unexpected scause 0xf pid=6622
+            sepc=0x488e stval=0x6014000
+usertrap(): unexpected scause 0xf pid=6623
+            sepc=0x488e stval=0x7014000
+usertrap(): unexpected scause 0xf pid=6624
+            sepc=0x488e stval=0x8014000
+usertrap(): unexpected scause 0xf pid=6625
+            sepc=0x488e stval=0x9014000
+usertrap(): unexpected scause 0xf pid=6626
+            sepc=0x488e stval=0xa014000
+usertrap(): unexpected scause 0xf pid=6627
+            sepc=0x488e stval=0xb014000
+usertrap(): unexpected scause 0xf pid=6628
+            sepc=0x488e stval=0xc014000
+usertrap(): unexpected scause 0xf pid=6629
+            sepc=0x488e stval=0xd014000
+usertrap(): unexpected scause 0xf pid=6630
+            sepc=0x488e stval=0xe014000
+usertrap(): unexpected scause 0xf pid=6631
+            sepc=0x488e stval=0xf014000
+usertrap(): unexpected scause 0xf pid=6632
+            sepc=0x488e stval=0x10014000
+usertrap(): unexpected scause 0xf pid=6633
+            sepc=0x488e stval=0x11014000
+usertrap(): unexpected scause 0xf pid=6634
+            sepc=0x488e stval=0x12014000
+usertrap(): unexpected scause 0xf pid=6635
+            sepc=0x488e stval=0x13014000
+usertrap(): unexpected scause 0xf pid=6636
+            sepc=0x488e stval=0x14014000
+usertrap(): unexpected scause 0xf pid=6637
+            sepc=0x488e stval=0x15014000
+usertrap(): unexpected scause 0xf pid=6638
+            sepc=0x488e stval=0x16014000
+usertrap(): unexpected scause 0xf pid=6639
+            sepc=0x488e stval=0x17014000
+usertrap(): unexpected scause 0xf pid=6640
+            sepc=0x488e stval=0x18014000
+usertrap(): unexpected scause 0xf pid=6641
+            sepc=0x488e stval=0x19014000
+usertrap(): unexpected scause 0xf pid=6642
+            sepc=0x488e stval=0x1a014000
+usertrap(): unexpected scause 0xf pid=6643
+            sepc=0x488e stval=0x1b014000
+usertrap(): unexpected scause 0xf pid=6644
+            sepc=0x488e stval=0x1c014000
+usertrap(): unexpected scause 0xf pid=6645
+            sepc=0x488e stval=0x1d014000
+usertrap(): unexpected scause 0xf pid=6646
+            sepc=0x488e stval=0x1e014000
+usertrap(): unexpected scause 0xf pid=6647
+            sepc=0x488e stval=0x1f014000
+usertrap(): unexpected scause 0xf pid=6648
+            sepc=0x488e stval=0x20014000
+usertrap(): unexpected scause 0xf pid=6649
+            sepc=0x488e stval=0x21014000
+usertrap(): unexpected scause 0xf pid=6650
+            sepc=0x488e stval=0x22014000
+usertrap(): unexpected scause 0xf pid=6651
+            sepc=0x488e stval=0x23014000
+usertrap(): unexpected scause 0xf pid=6652
+            sepc=0x488e stval=0x24014000
+usertrap(): unexpected scause 0xf pid=6653
+            sepc=0x488e stval=0x25014000
+usertrap(): unexpected scause 0xf pid=6654
+            sepc=0x488e stval=0x26014000
+usertrap(): unexpected scause 0xf pid=6655
+            sepc=0x488e stval=0x27014000
+usertrap(): unexpected scause 0xf pid=6656
+            sepc=0x488e stval=0x28014000
+usertrap(): unexpected scause 0xf pid=6657
+            sepc=0x488e stval=0x29014000
+usertrap(): unexpected scause 0xf pid=6658
+            sepc=0x488e stval=0x2a014000
+usertrap(): unexpected scause 0xf pid=6659
+            sepc=0x488e stval=0x2b014000
+usertrap(): unexpected scause 0xf pid=6660
+            sepc=0x488e stval=0x2c014000
+usertrap(): unexpected scause 0xf pid=6661
+            sepc=0x488e stval=0x2d014000
+usertrap(): unexpected scause 0xf pid=6662
+            sepc=0x488e stval=0x2e014000
+usertrap(): unexpected scause 0xf pid=6663
+            sepc=0x488e stval=0x2f014000
+usertrap(): unexpected scause 0xf pid=6664
+            sepc=0x488e stval=0x30014000
+usertrap(): unexpected scause 0xf pid=6665
+            sepc=0x488e stval=0x31014000
+usertrap(): unexpected scause 0xf pid=6666
+            sepc=0x488e stval=0x32014000
+usertrap(): unexpected scause 0xf pid=6667
+            sepc=0x488e stval=0x33014000
+usertrap(): unexpected scause 0xf pid=6668
+            sepc=0x488e stval=0x34014000
+usertrap(): unexpected scause 0xf pid=6669
+            sepc=0x488e stval=0x35014000
+usertrap(): unexpected scause 0xf pid=6670
+            sepc=0x488e stval=0x36014000
+usertrap(): unexpected scause 0xf pid=6671
+            sepc=0x488e stval=0x37014000
+usertrap(): unexpected scause 0xf pid=6672
+            sepc=0x488e stval=0x38014000
+usertrap(): unexpected scause 0xf pid=6673
+            sepc=0x488e stval=0x39014000
+usertrap(): unexpected scause 0xf pid=6674
+            sepc=0x488e stval=0x3a014000
+usertrap(): unexpected scause 0xf pid=6675
+            sepc=0x488e stval=0x3b014000
+usertrap(): unexpected scause 0xf pid=6676
+            sepc=0x488e stval=0x3c014000
+usertrap(): unexpected scause 0xf pid=6677
+            sepc=0x488e stval=0x3d014000
+usertrap(): unexpected scause 0xf pid=6678
+            sepc=0x488e stval=0x3e014000
+usertrap(): unexpected scause 0xf pid=6679
+            sepc=0x488e stval=0x3f014000
+OK
+test lazy_copy: OK
+test lazy_copyinstr: OK
+test lazy_sbrk: OK
+test partial_write: OK
+test unlinkcwd: OK
+usertests slow tests starting
+test bigdir: OK
+test manywrites: OK
+test badwrite: OK
+test execout: OK
+test diskfull: balloc: out of blocks
+balloc: out of blocks
+OK
+test outofinodes: ialloc: no inodes
+OK
+ALL TESTS PASSED
+$ xQEMU: Terminated
+
+xv6 kernel is booting
+
+init: starting sh
+$ cowtest
+cowtest
+cowtest: OK
+$ usertests
+usertests
+usertests starting
+test copyin: OK
+test copyout: OK
+test copyinstr1: OK
+test copyinstr2: OK
+test copyinstr3: OK
+test rwsbrk: OK
+test truncate1: OK
+test truncate2: OK
+test truncate3: OK
+test openiput: OK
+test exitiput: OK
+test iput: OK
+test opentest: OK
+test writetest: OK
+test writebig: OK
+test createtest: OK
+test dirtest: OK
+test exectest: OK
+test pipe1: OK
+test killstatus: OK
+test killzero: OK
+test preempt: kill... wait... OK
+test exitwait: OK
+test reparent: OK
+test twochildren: OK
+test forkfork: OK
+test forkforkfork: OK
+test reparent2: OK
+test mem: OK
+test sharedfd: OK
+test fourfiles: OK
+test createdelete: OK
+test unlinkread: OK
+test linktest: OK
+test concreate: OK
+test linkunlink: OK
+test subdir: OK
+test bigwrite: OK
+test bigfile: OK
+test fourteen: OK
+test rmdot: OK
+test dirfile: OK
+test iref: OK
+test forktest: OK
+test sbrkbasic: OK
+test sbrkmuch: OK
+test kernmem: usertrap(): unexpected scause 0xd pid=6178
+            sepc=0x1a86 stval=0x80000000
+usertrap(): unexpected scause 0xd pid=6179
+            sepc=0x1a86 stval=0x8000c350
+usertrap(): unexpected scause 0xd pid=6180
+            sepc=0x1a86 stval=0x800186a0
+usertrap(): unexpected scause 0xd pid=6181
+            sepc=0x1a86 stval=0x800249f0
+usertrap(): unexpected scause 0xd pid=6182
+            sepc=0x1a86 stval=0x80030d40
+usertrap(): unexpected scause 0xd pid=6183
+            sepc=0x1a86 stval=0x8003d090
+usertrap(): unexpected scause 0xd pid=6184
+            sepc=0x1a86 stval=0x800493e0
+usertrap(): unexpected scause 0xd pid=6185
+            sepc=0x1a86 stval=0x80055730
+usertrap(): unexpected scause 0xd pid=6186
+            sepc=0x1a86 stval=0x80061a80
+usertrap(): unexpected scause 0xd pid=6187
+            sepc=0x1a86 stval=0x8006ddd0
+usertrap(): unexpected scause 0xd pid=6188
+            sepc=0x1a86 stval=0x8007a120
+usertrap(): unexpected scause 0xd pid=6189
+            sepc=0x1a86 stval=0x80086470
+usertrap(): unexpected scause 0xd pid=6190
+            sepc=0x1a86 stval=0x800927c0
+usertrap(): unexpected scause 0xd pid=6191
+            sepc=0x1a86 stval=0x8009eb10
+usertrap(): unexpected scause 0xd pid=6192
+            sepc=0x1a86 stval=0x800aae60
+usertrap(): unexpected scause 0xd pid=6193
+            sepc=0x1a86 stval=0x800b71b0
+usertrap(): unexpected scause 0xd pid=6194
+            sepc=0x1a86 stval=0x800c3500
+usertrap(): unexpected scause 0xd pid=6195
+            sepc=0x1a86 stval=0x800cf850
+usertrap(): unexpected scause 0xd pid=6196
+            sepc=0x1a86 stval=0x800dbba0
+usertrap(): unexpected scause 0xd pid=6197
+            sepc=0x1a86 stval=0x800e7ef0
+usertrap(): unexpected scause 0xd pid=6198
+            sepc=0x1a86 stval=0x800f4240
+usertrap(): unexpected scause 0xd pid=6199
+            sepc=0x1a86 stval=0x80100590
+usertrap(): unexpected scause 0xd pid=6200
+            sepc=0x1a86 stval=0x8010c8e0
+usertrap(): unexpected scause 0xd pid=6201
+            sepc=0x1a86 stval=0x80118c30
+usertrap(): unexpected scause 0xd pid=6202
+            sepc=0x1a86 stval=0x80124f80
+usertrap(): unexpected scause 0xd pid=6203
+            sepc=0x1a86 stval=0x801312d0
+usertrap(): unexpected scause 0xd pid=6204
+            sepc=0x1a86 stval=0x8013d620
+usertrap(): unexpected scause 0xd pid=6205
+            sepc=0x1a86 stval=0x80149970
+usertrap(): unexpected scause 0xd pid=6206
+            sepc=0x1a86 stval=0x80155cc0
+usertrap(): unexpected scause 0xd pid=6207
+            sepc=0x1a86 stval=0x80162010
+usertrap(): unexpected scause 0xd pid=6208
+            sepc=0x1a86 stval=0x8016e360
+usertrap(): unexpected scause 0xd pid=6209
+            sepc=0x1a86 stval=0x8017a6b0
+usertrap(): unexpected scause 0xd pid=6210
+            sepc=0x1a86 stval=0x80186a00
+usertrap(): unexpected scause 0xd pid=6211
+            sepc=0x1a86 stval=0x80192d50
+usertrap(): unexpected scause 0xd pid=6212
+            sepc=0x1a86 stval=0x8019f0a0
+usertrap(): unexpected scause 0xd pid=6213
+            sepc=0x1a86 stval=0x801ab3f0
+usertrap(): unexpected scause 0xd pid=6214
+            sepc=0x1a86 stval=0x801b7740
+usertrap(): unexpected scause 0xd pid=6215
+            sepc=0x1a86 stval=0x801c3a90
+usertrap(): unexpected scause 0xd pid=6216
+            sepc=0x1a86 stval=0x801cfde0
+usertrap(): unexpected scause 0xd pid=6217
+            sepc=0x1a86 stval=0x801dc130
+OK
+test MAXVAplus: usertrap(): unexpected scause 0xf pid=6219
+            sepc=0x1b16 stval=0x4000000000
+usertrap(): unexpected scause 0xf pid=6220
+            sepc=0x1b16 stval=0x8000000000
+usertrap(): unexpected scause 0xf pid=6221
+            sepc=0x1b16 stval=0x10000000000
+usertrap(): unexpected scause 0xf pid=6222
+            sepc=0x1b16 stval=0x20000000000
+usertrap(): unexpected scause 0xf pid=6223
+            sepc=0x1b16 stval=0x40000000000
+usertrap(): unexpected scause 0xf pid=6224
+            sepc=0x1b16 stval=0x80000000000
+usertrap(): unexpected scause 0xf pid=6225
+            sepc=0x1b16 stval=0x100000000000
+usertrap(): unexpected scause 0xf pid=6226
+            sepc=0x1b16 stval=0x200000000000
+usertrap(): unexpected scause 0xf pid=6227
+            sepc=0x1b16 stval=0x400000000000
+usertrap(): unexpected scause 0xf pid=6228
+            sepc=0x1b16 stval=0x800000000000
+usertrap(): unexpected scause 0xf pid=6229
+            sepc=0x1b16 stval=0x1000000000000
+usertrap(): unexpected scause 0xf pid=6230
+            sepc=0x1b16 stval=0x2000000000000
+usertrap(): unexpected scause 0xf pid=6231
+            sepc=0x1b16 stval=0x4000000000000
+usertrap(): unexpected scause 0xf pid=6232
+            sepc=0x1b16 stval=0x8000000000000
+usertrap(): unexpected scause 0xf pid=6233
+            sepc=0x1b16 stval=0x10000000000000
+usertrap(): unexpected scause 0xf pid=6234
+            sepc=0x1b16 stval=0x20000000000000
+usertrap(): unexpected scause 0xf pid=6235
+            sepc=0x1b16 stval=0x40000000000000
+usertrap(): unexpected scause 0xf pid=6236
+            sepc=0x1b16 stval=0x80000000000000
+usertrap(): unexpected scause 0xf pid=6237
+            sepc=0x1b16 stval=0x100000000000000
+usertrap(): unexpected scause 0xf pid=6238
+            sepc=0x1b16 stval=0x200000000000000
+usertrap(): unexpected scause 0xf pid=6239
+            sepc=0x1b16 stval=0x400000000000000
+usertrap(): unexpected scause 0xf pid=6240
+            sepc=0x1b16 stval=0x800000000000000
+usertrap(): unexpected scause 0xf pid=6241
+            sepc=0x1b16 stval=0x1000000000000000
+usertrap(): unexpected scause 0xf pid=6242
+            sepc=0x1b16 stval=0x2000000000000000
+usertrap(): unexpected scause 0xf pid=6243
+            sepc=0x1b16 stval=0x4000000000000000
+usertrap(): unexpected scause 0xf pid=6244
+            sepc=0x1b16 stval=0x8000000000000000
+OK
+test sbrkfail: OK
+test sbrkarg: OK
+test validatetest: OK
+test bsstest: OK
+test bigargtest: OK
+test argptest: OK
+test stacktest: usertrap(): unexpected scause 0xd pid=6264
+            sepc=0x1b6a stval=0x11ea0
+OK
+test nowrite: usertrap(): unexpected scause 0xf pid=6266
+            sepc=0x1c10 stval=0x0
+usertrap(): unexpected scause 0xf pid=6267
+            sepc=0x1c10 stval=0x80000000
+usertrap(): unexpected scause 0xf pid=6268
+            sepc=0x1c10 stval=0x3fffffe000
+usertrap(): unexpected scause 0xf pid=6269
+            sepc=0x1c10 stval=0x3ffffff000
+usertrap(): unexpected scause 0xf pid=6270
+            sepc=0x1c10 stval=0x4000000000
+usertrap(): unexpected scause 0xf pid=6271
+            sepc=0x1c10 stval=0xffffffffffffffff
+OK
+test pgbug: OK
+test sbrkbugs: usertrap(): unexpected scause 0xc pid=6274
+            sepc=0x554a stval=0x554a
+usertrap(): unexpected scause 0xc pid=6275
+            sepc=0x554a stval=0x554a
+usertrap(): unexpected scause 0xd pid=6276
+            sepc=0x5496 stval=0x12eb8
+OK
+test sbrklast: OK
+test sbrk8000: OK
+test badarg: OK
+test lazy_alloc: OK
+test lazy_unmap: usertrap(): unexpected scause 0xf pid=6282
+            sepc=0x488e stval=0x14000
+usertrap(): unexpected scause 0xf pid=6283
+            sepc=0x488e stval=0x1014000
+usertrap(): unexpected scause 0xf pid=6284
+            sepc=0x488e stval=0x2014000
+usertrap(): unexpected scause 0xf pid=6285
+            sepc=0x488e stval=0x3014000
+usertrap(): unexpected scause 0xf pid=6286
+            sepc=0x488e stval=0x4014000
+usertrap(): unexpected scause 0xf pid=6287
+            sepc=0x488e stval=0x5014000
+usertrap(): unexpected scause 0xf pid=6288
+            sepc=0x488e stval=0x6014000
+usertrap(): unexpected scause 0xf pid=6289
+            sepc=0x488e stval=0x7014000
+usertrap(): unexpected scause 0xf pid=6290
+            sepc=0x488e stval=0x8014000
+usertrap(): unexpected scause 0xf pid=6291
+            sepc=0x488e stval=0x9014000
+usertrap(): unexpected scause 0xf pid=6292
+            sepc=0x488e stval=0xa014000
+usertrap(): unexpected scause 0xf pid=6293
+            sepc=0x488e stval=0xb014000
+usertrap(): unexpected scause 0xf pid=6294
+            sepc=0x488e stval=0xc014000
+usertrap(): unexpected scause 0xf pid=6295
+            sepc=0x488e stval=0xd014000
+usertrap(): unexpected scause 0xf pid=6296
+            sepc=0x488e stval=0xe014000
+usertrap(): unexpected scause 0xf pid=6297
+            sepc=0x488e stval=0xf014000
+usertrap(): unexpected scause 0xf pid=6298
+            sepc=0x488e stval=0x10014000
+usertrap(): unexpected scause 0xf pid=6299
+            sepc=0x488e stval=0x11014000
+usertrap(): unexpected scause 0xf pid=6300
+            sepc=0x488e stval=0x12014000
+usertrap(): unexpected scause 0xf pid=6301
+            sepc=0x488e stval=0x13014000
+usertrap(): unexpected scause 0xf pid=6302
+            sepc=0x488e stval=0x14014000
+usertrap(): unexpected scause 0xf pid=6303
+            sepc=0x488e stval=0x15014000
+usertrap(): unexpected scause 0xf pid=6304
+            sepc=0x488e stval=0x16014000
+usertrap(): unexpected scause 0xf pid=6305
+            sepc=0x488e stval=0x17014000
+usertrap(): unexpected scause 0xf pid=6306
+            sepc=0x488e stval=0x18014000
+usertrap(): unexpected scause 0xf pid=6307
+            sepc=0x488e stval=0x19014000
+usertrap(): unexpected scause 0xf pid=6308
+            sepc=0x488e stval=0x1a014000
+usertrap(): unexpected scause 0xf pid=6309
+            sepc=0x488e stval=0x1b014000
+usertrap(): unexpected scause 0xf pid=6310
+            sepc=0x488e stval=0x1c014000
+usertrap(): unexpected scause 0xf pid=6311
+            sepc=0x488e stval=0x1d014000
+usertrap(): unexpected scause 0xf pid=6312
+            sepc=0x488e stval=0x1e014000
+usertrap(): unexpected scause 0xf pid=6313
+            sepc=0x488e stval=0x1f014000
+usertrap(): unexpected scause 0xf pid=6314
+            sepc=0x488e stval=0x20014000
+usertrap(): unexpected scause 0xf pid=6315
+            sepc=0x488e stval=0x21014000
+usertrap(): unexpected scause 0xf pid=6316
+            sepc=0x488e stval=0x22014000
+usertrap(): unexpected scause 0xf pid=6317
+            sepc=0x488e stval=0x23014000
+usertrap(): unexpected scause 0xf pid=6318
+            sepc=0x488e stval=0x24014000
+usertrap(): unexpected scause 0xf pid=6319
+            sepc=0x488e stval=0x25014000
+usertrap(): unexpected scause 0xf pid=6320
+            sepc=0x488e stval=0x26014000
+usertrap(): unexpected scause 0xf pid=6321
+            sepc=0x488e stval=0x27014000
+usertrap(): unexpected scause 0xf pid=6322
+            sepc=0x488e stval=0x28014000
+usertrap(): unexpected scause 0xf pid=6323
+            sepc=0x488e stval=0x29014000
+usertrap(): unexpected scause 0xf pid=6324
+            sepc=0x488e stval=0x2a014000
+usertrap(): unexpected scause 0xf pid=6325
+            sepc=0x488e stval=0x2b014000
+usertrap(): unexpected scause 0xf pid=6326
+            sepc=0x488e stval=0x2c014000
+usertrap(): unexpected scause 0xf pid=6327
+            sepc=0x488e stval=0x2d014000
+usertrap(): unexpected scause 0xf pid=6328
+            sepc=0x488e stval=0x2e014000
+usertrap(): unexpected scause 0xf pid=6329
+            sepc=0x488e stval=0x2f014000
+usertrap(): unexpected scause 0xf pid=6330
+            sepc=0x488e stval=0x30014000
+usertrap(): unexpected scause 0xf pid=6331
+            sepc=0x488e stval=0x31014000
+usertrap(): unexpected scause 0xf pid=6332
+            sepc=0x488e stval=0x32014000
+usertrap(): unexpected scause 0xf pid=6333
+            sepc=0x488e stval=0x33014000
+usertrap(): unexpected scause 0xf pid=6334
+            sepc=0x488e stval=0x34014000
+usertrap(): unexpected scause 0xf pid=6335
+            sepc=0x488e stval=0x35014000
+usertrap(): unexpected scause 0xf pid=6336
+            sepc=0x488e stval=0x36014000
+usertrap(): unexpected scause 0xf pid=6337
+            sepc=0x488e stval=0x37014000
+usertrap(): unexpected scause 0xf pid=6338
+            sepc=0x488e stval=0x38014000
+usertrap(): unexpected scause 0xf pid=6339
+            sepc=0x488e stval=0x39014000
+usertrap(): unexpected scause 0xf pid=6340
+            sepc=0x488e stval=0x3a014000
+usertrap(): unexpected scause 0xf pid=6341
+            sepc=0x488e stval=0x3b014000
+usertrap(): unexpected scause 0xf pid=6342
+            sepc=0x488e stval=0x3c014000
+usertrap(): unexpected scause 0xf pid=6343
+            sepc=0x488e stval=0x3d014000
+usertrap(): unexpected scause 0xf pid=6344
+            sepc=0x488e stval=0x3e014000
+usertrap(): unexpected scause 0xf pid=6345
+            sepc=0x488e stval=0x3f014000
+OK
+test lazy_copy: OK
+test lazy_copyinstr: OK
+test lazy_sbrk: OK
+test partial_write: OK
+test unlinkcwd: OK
+usertests slow tests starting
+test bigdir: OK
+test manywrites: OK
+test badwrite: OK
+test execout: OK
+test diskfull: balloc: out of blocks
+balloc: out of blocks
+OK
+test outofinodes: ialloc: no inodes
+OK
+ALL TESTS PASSED
+$ xQEMU: Terminated
+
+xv6 kernel is booting
+
+hart 1 starting
+hart 2 starting
+init: starting sh
+$ cowtest
+cowtest
+cowtest: OK
+$ usertests
+usertests
+usertests starting
+test copyin: OK
+test copyout: OK
+test copyinstr1: OK
+test copyinstr2: OK
+test copyinstr3: OK
+test rwsbrk: OK
+test truncate1: OK
+test truncate2: OK
+test truncate3: OK
+test openiput: OK
+test exitiput: OK
+test iput: OK
+test opentest: OK
+test writetest: OK
+test writebig: OK
+test createtest: OK
+test dirtest: OK
+test exectest: OK
+test pipe1: OK
+test killstatus: OK
+test killzero: OK
+test preempt: kill... wait... OK
+test exitwait: OK
+test reparent: OK
+test twochildren: OK
+test forkfork: OK
+test forkforkfork: OK
+test reparent2: OK
+test mem: OK
+test sharedfd: OK
+test fourfiles: OK
+test createdelete: OK
+test unlinkread: OK
+test linktest: OK
+test concreate: OK
+test linkunlink: OK
+test subdir: OK
+test bigwrite: OK
+test bigfile: OK
+test fourteen: OK
+test rmdot: OK
+test dirfile: OK
+test iref: OK
+test forktest: OK
+test sbrkbasic: OK
+test sbrkmuch: OK
+test kernmem: usertrap(): unexpected scause 0xd pid=6357
+            sepc=0x1a86 stval=0x80000000
+usertrap(): unexpected scause 0xd pid=6358
+            sepc=0x1a86 stval=0x8000c350
+usertrap(): unexpected scause 0xd pid=6359
+            sepc=0x1a86 stval=0x800186a0
+usertrap(): unexpected scause 0xd pid=6360
+            sepc=0x1a86 stval=0x800249f0
+usertrap(): unexpected scause 0xd pid=6361
+            sepc=0x1a86 stval=0x80030d40
+usertrap(): unexpected scause 0xd pid=6362
+            sepc=0x1a86 stval=0x8003d090
+usertrap(): unexpected scause 0xd pid=6363
+            sepc=0x1a86 stval=0x800493e0
+usertrap(): unexpected scause 0xd pid=6364
+            sepc=0x1a86 stval=0x80055730
+usertrap(): unexpected scause 0xd pid=6365
+            sepc=0x1a86 stval=0x80061a80
+usertrap(): unexpected scause 0xd pid=6366
+            sepc=0x1a86 stval=0x8006ddd0
+usertrap(): unexpected scause 0xd pid=6367
+            sepc=0x1a86 stval=0x8007a120
+usertrap(): unexpected scause 0xd pid=6368
+            sepc=0x1a86 stval=0x80086470
+usertrap(): unexpected scause 0xd pid=6369
+            sepc=0x1a86 stval=0x800927c0
+usertrap(): unexpected scause 0xd pid=6370
+            sepc=0x1a86 stval=0x8009eb10
+usertrap(): unexpected scause 0xd pid=6371
+            sepc=0x1a86 stval=0x800aae60
+usertrap(): unexpected scause 0xd pid=6372
+            sepc=0x1a86 stval=0x800b71b0
+usertrap(): unexpected scause 0xd pid=6373
+            sepc=0x1a86 stval=0x800c3500
+usertrap(): unexpected scause 0xd pid=6374
+            sepc=0x1a86 stval=0x800cf850
+usertrap(): unexpected scause 0xd pid=6375
+            sepc=0x1a86 stval=0x800dbba0
+usertrap(): unexpected scause 0xd pid=6376
+            sepc=0x1a86 stval=0x800e7ef0
+usertrap(): unexpected scause 0xd pid=6377
+            sepc=0x1a86 stval=0x800f4240
+usertrap(): unexpected scause 0xd pid=6378
+            sepc=0x1a86 stval=0x80100590
+usertrap(): unexpected scause 0xd pid=6379
+            sepc=0x1a86 stval=0x8010c8e0
+usertrap(): unexpected scause 0xd pid=6380
+            sepc=0x1a86 stval=0x80118c30
+usertrap(): unexpected scause 0xd pid=6381
+            sepc=0x1a86 stval=0x80124f80
+usertrap(): unexpected scause 0xd pid=6382
+            sepc=0x1a86 stval=0x801312d0
+usertrap(): unexpected scause 0xd pid=6383
+            sepc=0x1a86 stval=0x8013d620
+usertrap(): unexpected scause 0xd pid=6384
+            sepc=0x1a86 stval=0x80149970
+usertrap(): unexpected scause 0xd pid=6385
+            sepc=0x1a86 stval=0x80155cc0
+usertrap(): unexpected scause 0xd pid=6386
+            sepc=0x1a86 stval=0x80162010
+usertrap(): unexpected scause 0xd pid=6387
+            sepc=0x1a86 stval=0x8016e360
+usertrap(): unexpected scause 0xd pid=6388
+            sepc=0x1a86 stval=0x8017a6b0
+usertrap(): unexpected scause 0xd pid=6389
+            sepc=0x1a86 stval=0x80186a00
+usertrap(): unexpected scause 0xd pid=6390
+            sepc=0x1a86 stval=0x80192d50
+usertrap(): unexpected scause 0xd pid=6391
+            sepc=0x1a86 stval=0x8019f0a0
+usertrap(): unexpected scause 0xd pid=6392
+            sepc=0x1a86 stval=0x801ab3f0
+usertrap(): unexpected scause 0xd pid=6393
+            sepc=0x1a86 stval=0x801b7740
+usertrap(): unexpected scause 0xd pid=6394
+            sepc=0x1a86 stval=0x801c3a90
+usertrap(): unexpected scause 0xd pid=6395
+            sepc=0x1a86 stval=0x801cfde0
+usertrap(): unexpected scause 0xd pid=6396
+            sepc=0x1a86 stval=0x801dc130
+OK
+test MAXVAplus: usertrap(): unexpected scause 0xf pid=6398
+            sepc=0x1b16 stval=0x4000000000
+usertrap(): unexpected scause 0xf pid=6399
+            sepc=0x1b16 stval=0x8000000000
+usertrap(): unexpected scause 0xf pid=6400
+            sepc=0x1b16 stval=0x10000000000
+usertrap(): unexpected scause 0xf pid=6401
+            sepc=0x1b16 stval=0x20000000000
+usertrap(): unexpected scause 0xf pid=6402
+            sepc=0x1b16 stval=0x40000000000
+usertrap(): unexpected scause 0xf pid=6403
+            sepc=0x1b16 stval=0x80000000000
+usertrap(): unexpected scause 0xf pid=6404
+            sepc=0x1b16 stval=0x100000000000
+usertrap(): unexpected scause 0xf pid=6405
+            sepc=0x1b16 stval=0x200000000000
+usertrap(): unexpected scause 0xf pid=6406
+            sepc=0x1b16 stval=0x400000000000
+usertrap(): unexpected scause 0xf pid=6407
+            sepc=0x1b16 stval=0x800000000000
+usertrap(): unexpected scause 0xf pid=6408
+            sepc=0x1b16 stval=0x1000000000000
+usertrap(): unexpected scause 0xf pid=6409
+            sepc=0x1b16 stval=0x2000000000000
+usertrap(): unexpected scause 0xf pid=6410
+            sepc=0x1b16 stval=0x4000000000000
+usertrap(): unexpected scause 0xf pid=6411
+            sepc=0x1b16 stval=0x8000000000000
+usertrap(): unexpected scause 0xf pid=6412
+            sepc=0x1b16 stval=0x10000000000000
+usertrap(): unexpected scause 0xf pid=6413
+            sepc=0x1b16 stval=0x20000000000000
+usertrap(): unexpected scause 0xf pid=6414
+            sepc=0x1b16 stval=0x40000000000000
+usertrap(): unexpected scause 0xf pid=6415
+            sepc=0x1b16 stval=0x80000000000000
+usertrap(): unexpected scause 0xf pid=6416
+            sepc=0x1b16 stval=0x100000000000000
+usertrap(): unexpected scause 0xf pid=6417
+            sepc=0x1b16 stval=0x200000000000000
+usertrap(): unexpected scause 0xf pid=6418
+            sepc=0x1b16 stval=0x400000000000000
+usertrap(): unexpected scause 0xf pid=6419
+            sepc=0x1b16 stval=0x800000000000000
+usertrap(): unexpected scause 0xf pid=6420
+            sepc=0x1b16 stval=0x1000000000000000
+usertrap(): unexpected scause 0xf pid=6421
+            sepc=0x1b16 stval=0x2000000000000000
+usertrap(): unexpected scause 0xf pid=6422
+            sepc=0x1b16 stval=0x4000000000000000
+usertrap(): unexpected scause 0xf pid=6423
+            sepc=0x1b16 stval=0x8000000000000000
+OK
+test sbrkfail: OK
+test sbrkarg: OK
+test validatetest: OK
+test bsstest: OK
+test bigargtest: OK
+test argptest: OK
+test stacktest: usertrap(): unexpected scause 0xd pid=6443
+            sepc=0x1b6a stval=0x11ea0
+OK
+test nowrite: usertrap(): unexpected scause 0xf pid=6445
+            sepc=0x1c10 stval=0x0
+usertrap(): unexpected scause 0xf pid=6446
+            sepc=0x1c10 stval=0x80000000
+usertrap(): unexpected scause 0xf pid=6447
+            sepc=0x1c10 stval=0x3fffffe000
+usertrap(): unexpected scause 0xf pid=6448
+            sepc=0x1c10 stval=0x3ffffff000
+usertrap(): unexpected scause 0xf pid=6449
+            sepc=0x1c10 stval=0x4000000000
+usertrap(): unexpected scause 0xf pid=6450
+            sepc=0x1c10 stval=0xffffffffffffffff
+OK
+test pgbug: OK
+test sbrkbugs: usertrap(): unexpected scause 0xc pid=6453
+            sepc=0x554a stval=0x554a
+usertrap(): unexpected scause 0xc pid=6454
+            sepc=0x554a stval=0x554a
+usertrap(): unexpected scause 0xd pid=6455
+            sepc=0x5496 stval=0x12eb8
+OK
+test sbrklast: OK
+test sbrk8000: OK
+test badarg: OK
+test lazy_alloc: OK
+test lazy_unmap: usertrap(): unexpected scause 0xf pid=6461
+            sepc=0x488e stval=0x14000
+usertrap(): unexpected scause 0xf pid=6462
+            sepc=0x488e stval=0x1014000
+usertrap(): unexpected scause 0xf pid=6463
+            sepc=0x488e stval=0x2014000
+usertrap(): unexpected scause 0xf pid=6464
+            sepc=0x488e stval=0x3014000
+usertrap(): unexpected scause 0xf pid=6465
+            sepc=0x488e stval=0x4014000
+usertrap(): unexpected scause 0xf pid=6466
+            sepc=0x488e stval=0x5014000
+usertrap(): unexpected scause 0xf pid=6467
+            sepc=0x488e stval=0x6014000
+usertrap(): unexpected scause 0xf pid=6468
+            sepc=0x488e stval=0x7014000
+usertrap(): unexpected scause 0xf pid=6469
+            sepc=0x488e stval=0x8014000
+usertrap(): unexpected scause 0xf pid=6470
+            sepc=0x488e stval=0x9014000
+usertrap(): unexpected scause 0xf pid=6471
+            sepc=0x488e stval=0xa014000
+usertrap(): unexpected scause 0xf pid=6472
+            sepc=0x488e stval=0xb014000
+usertrap(): unexpected scause 0xf pid=6473
+            sepc=0x488e stval=0xc014000
+usertrap(): unexpected scause 0xf pid=6474
+            sepc=0x488e stval=0xd014000
+usertrap(): unexpected scause 0xf pid=6475
+            sepc=0x488e stval=0xe014000
+usertrap(): unexpected scause 0xf pid=6476
+            sepc=0x488e stval=0xf014000
+usertrap(): unexpected scause 0xf pid=6477
+            sepc=0x488e stval=0x10014000
+usertrap(): unexpected scause 0xf pid=6478
+            sepc=0x488e stval=0x11014000
+usertrap(): unexpected scause 0xf pid=6479
+            sepc=0x488e stval=0x12014000
+usertrap(): unexpected scause 0xf pid=6480
+            sepc=0x488e stval=0x13014000
+usertrap(): unexpected scause 0xf pid=6481
+            sepc=0x488e stval=0x14014000
+usertrap(): unexpected scause 0xf pid=6482
+            sepc=0x488e stval=0x15014000
+usertrap(): unexpected scause 0xf pid=6483
+            sepc=0x488e stval=0x16014000
+usertrap(): unexpected scause 0xf pid=6484
+            sepc=0x488e stval=0x17014000
+usertrap(): unexpected scause 0xf pid=6485
+            sepc=0x488e stval=0x18014000
+usertrap(): unexpected scause 0xf pid=6486
+            sepc=0x488e stval=0x19014000
+usertrap(): unexpected scause 0xf pid=6487
+            sepc=0x488e stval=0x1a014000
+usertrap(): unexpected scause 0xf pid=6488
+            sepc=0x488e stval=0x1b014000
+usertrap(): unexpected scause 0xf pid=6489
+            sepc=0x488e stval=0x1c014000
+usertrap(): unexpected scause 0xf pid=6490
+            sepc=0x488e stval=0x1d014000
+usertrap(): unexpected scause 0xf pid=6491
+            sepc=0x488e stval=0x1e014000
+usertrap(): unexpected scause 0xf pid=6492
+            sepc=0x488e stval=0x1f014000
+usertrap(): unexpected scause 0xf pid=6493
+            sepc=0x488e stval=0x20014000
+usertrap(): unexpected scause 0xf pid=6494
+            sepc=0x488e stval=0x21014000
+usertrap(): unexpected scause 0xf pid=6495
+            sepc=0x488e stval=0x22014000
+usertrap(): unexpected scause 0xf pid=6496
+            sepc=0x488e stval=0x23014000
+usertrap(): unexpected scause 0xf pid=6497
+            sepc=0x488e stval=0x24014000
+usertrap(): unexpected scause 0xf pid=6498
+            sepc=0x488e stval=0x25014000
+usertrap(): unexpected scause 0xf pid=6499
+            sepc=0x488e stval=0x26014000
+usertrap(): unexpected scause 0xf pid=6500
+            sepc=0x488e stval=0x27014000
+usertrap(): unexpected scause 0xf pid=6501
+            sepc=0x488e stval=0x28014000
+usertrap(): unexpected scause 0xf pid=6502
+            sepc=0x488e stval=0x29014000
+usertrap(): unexpected scause 0xf pid=6503
+            sepc=0x488e stval=0x2a014000
+usertrap(): unexpected scause 0xf pid=6504
+            sepc=0x488e stval=0x2b014000
+usertrap(): unexpected scause 0xf pid=6505
+            sepc=0x488e stval=0x2c014000
+usertrap(): unexpected scause 0xf pid=6506
+            sepc=0x488e stval=0x2d014000
+usertrap(): unexpected scause 0xf pid=6507
+            sepc=0x488e stval=0x2e014000
+usertrap(): unexpected scause 0xf pid=6508
+            sepc=0x488e stval=0x2f014000
+usertrap(): unexpected scause 0xf pid=6509
+            sepc=0x488e stval=0x30014000
+usertrap(): unexpected scause 0xf pid=6510
+            sepc=0x488e stval=0x31014000
+usertrap(): unexpected scause 0xf pid=6511
+            sepc=0x488e stval=0x32014000
+usertrap(): unexpected scause 0xf pid=6512
+            sepc=0x488e stval=0x33014000
+usertrap(): unexpected scause 0xf pid=6513
+            sepc=0x488e stval=0x34014000
+usertrap(): unexpected scause 0xf pid=6514
+            sepc=0x488e stval=0x35014000
+usertrap(): unexpected scause 0xf pid=6515
+            sepc=0x488e stval=0x36014000
+usertrap(): unexpected scause 0xf pid=6516
+            sepc=0x488e stval=0x37014000
+usertrap(): unexpected scause 0xf pid=6517
+            sepc=0x488e stval=0x38014000
+usertrap(): unexpected scause 0xf pid=6518
+            sepc=0x488e stval=0x39014000
+usertrap(): unexpected scause 0xf pid=6519
+            sepc=0x488e stval=0x3a014000
+usertrap(): unexpected scause 0xf pid=6520
+            sepc=0x488e stval=0x3b014000
+usertrap(): unexpected scause 0xf pid=6521
+            sepc=0x488e stval=0x3c014000
+usertrap(): unexpected scause 0xf pid=6522
+            sepc=0x488e stval=0x3d014000
+usertrap(): unexpected scause 0xf pid=6523
+            sepc=0x488e stval=0x3e014000
+usertrap(): unexpected scause 0xf pid=6524
+            sepc=0x488e stval=0x3f014000
+OK
+test lazy_copy: OK
+test lazy_copyinstr: OK
+test lazy_sbrk: OK
+test partial_write: OK
+test unlinkcwd: OK
+usertests slow tests starting
+test bigdir: OK
+test manywrites: OK
+test badwrite: OK
+test execout: OK
+test diskfull: balloc: out of blocks
+balloc: out of blocks
+OK
+test outofinodes: ialloc: no inodes
+OK
+ALL TESTS PASSED
+$ xQEMU: Terminated
+
+xv6 kernel is booting
+
+init: starting sh
+$ cowtest
+cowtest
+cowtest: OK
+$ usertests
+usertests
+usertests starting
+test copyin: OK
+test copyout: OK
+test copyinstr1: OK
+test copyinstr2: OK
+test copyinstr3: OK
+test rwsbrk: OK
+test truncate1: OK
+test truncate2: OK
+test truncate3: OK
+test openiput: OK
+test exitiput: OK
+test iput: OK
+test opentest: OK
+test writetest: OK
+test writebig: OK
+test createtest: OK
+test dirtest: OK
+test exectest: OK
+test pipe1: OK
+test killstatus: OK
+test killzero: OK
+test preempt: kill... wait... OK
+test exitwait: OK
+test reparent: OK
+test twochildren: OK
+test forkfork: OK
+test forkforkfork: OK
+test reparent2: OK
+test mem: OK
+test sharedfd: OK
+test fourfiles: OK
+test createdelete: OK
+test unlinkread: OK
+test linktest: OK
+test concreate: OK
+test linkunlink: OK
+test subdir: OK
+test bigwrite: OK
+test bigfile: OK
+test fourteen: OK
+test rmdot: OK
+test dirfile: OK
+test iref: OK
+test forktest: OK
+test sbrkbasic: OK
+test sbrkmuch: OK
+test kernmem: usertrap(): unexpected scause 0xd pid=6512
+            sepc=0x1a86 stval=0x80000000
+usertrap(): unexpected scause 0xd pid=6513
+            sepc=0x1a86 stval=0x8000c350
+usertrap(): unexpected scause 0xd pid=6514
+            sepc=0x1a86 stval=0x800186a0
+usertrap(): unexpected scause 0xd pid=6515
+            sepc=0x1a86 stval=0x800249f0
+usertrap(): unexpected scause 0xd pid=6516
+            sepc=0x1a86 stval=0x80030d40
+usertrap(): unexpected scause 0xd pid=6517
+            sepc=0x1a86 stval=0x8003d090
+usertrap(): unexpected scause 0xd pid=6518
+            sepc=0x1a86 stval=0x800493e0
+usertrap(): unexpected scause 0xd pid=6519
+            sepc=0x1a86 stval=0x80055730
+usertrap(): unexpected scause 0xd pid=6520
+            sepc=0x1a86 stval=0x80061a80
+usertrap(): unexpected scause 0xd pid=6521
+            sepc=0x1a86 stval=0x8006ddd0
+usertrap(): unexpected scause 0xd pid=6522
+            sepc=0x1a86 stval=0x8007a120
+usertrap(): unexpected scause 0xd pid=6523
+            sepc=0x1a86 stval=0x80086470
+usertrap(): unexpected scause 0xd pid=6524
+            sepc=0x1a86 stval=0x800927c0
+usertrap(): unexpected scause 0xd pid=6525
+            sepc=0x1a86 stval=0x8009eb10
+usertrap(): unexpected scause 0xd pid=6526
+            sepc=0x1a86 stval=0x800aae60
+usertrap(): unexpected scause 0xd pid=6527
+            sepc=0x1a86 stval=0x800b71b0
+usertrap(): unexpected scause 0xd pid=6528
+            sepc=0x1a86 stval=0x800c3500
+usertrap(): unexpected scause 0xd pid=6529
+            sepc=0x1a86 stval=0x800cf850
+usertrap(): unexpected scause 0xd pid=6530
+            sepc=0x1a86 stval=0x800dbba0
+usertrap(): unexpected scause 0xd pid=6531
+            sepc=0x1a86 stval=0x800e7ef0
+usertrap(): unexpected scause 0xd pid=6532
+            sepc=0x1a86 stval=0x800f4240
+usertrap(): unexpected scause 0xd pid=6533
+            sepc=0x1a86 stval=0x80100590
+usertrap(): unexpected scause 0xd pid=6534
+            sepc=0x1a86 stval=0x8010c8e0
+usertrap(): unexpected scause 0xd pid=6535
+            sepc=0x1a86 stval=0x80118c30
+usertrap(): unexpected scause 0xd pid=6536
+            sepc=0x1a86 stval=0x80124f80
+usertrap(): unexpected scause 0xd pid=6537
+            sepc=0x1a86 stval=0x801312d0
+usertrap(): unexpected scause 0xd pid=6538
+            sepc=0x1a86 stval=0x8013d620
+usertrap(): unexpected scause 0xd pid=6539
+            sepc=0x1a86 stval=0x80149970
+usertrap(): unexpected scause 0xd pid=6540
+            sepc=0x1a86 stval=0x80155cc0
+usertrap(): unexpected scause 0xd pid=6541
+            sepc=0x1a86 stval=0x80162010
+usertrap(): unexpected scause 0xd pid=6542
+            sepc=0x1a86 stval=0x8016e360
+usertrap(): unexpected scause 0xd pid=6543
+            sepc=0x1a86 stval=0x8017a6b0
+usertrap(): unexpected scause 0xd pid=6544
+            sepc=0x1a86 stval=0x80186a00
+usertrap(): unexpected scause 0xd pid=6545
+            sepc=0x1a86 stval=0x80192d50
+usertrap(): unexpected scause 0xd pid=6546
+            sepc=0x1a86 stval=0x8019f0a0
+usertrap(): unexpected scause 0xd pid=6547
+            sepc=0x1a86 stval=0x801ab3f0
+usertrap(): unexpected scause 0xd pid=6548
+            sepc=0x1a86 stval=0x801b7740
+usertrap(): unexpected scause 0xd pid=6549
+            sepc=0x1a86 stval=0x801c3a90
+usertrap(): unexpected scause 0xd pid=6550
+            sepc=0x1a86 stval=0x801cfde0
+usertrap(): unexpected scause 0xd pid=6551
+            sepc=0x1a86 stval=0x801dc130
+OK
+test MAXVAplus: usertrap(): unexpected scause 0xf pid=6553
+            sepc=0x1b16 stval=0x4000000000
+usertrap(): unexpected scause 0xf pid=6554
+            sepc=0x1b16 stval=0x8000000000
+usertrap(): unexpected scause 0xf pid=6555
+            sepc=0x1b16 stval=0x10000000000
+usertrap(): unexpected scause 0xf pid=6556
+            sepc=0x1b16 stval=0x20000000000
+usertrap(): unexpected scause 0xf pid=6557
+            sepc=0x1b16 stval=0x40000000000
+usertrap(): unexpected scause 0xf pid=6558
+            sepc=0x1b16 stval=0x80000000000
+usertrap(): unexpected scause 0xf pid=6559
+            sepc=0x1b16 stval=0x100000000000
+usertrap(): unexpected scause 0xf pid=6560
+            sepc=0x1b16 stval=0x200000000000
+usertrap(): unexpected scause 0xf pid=6561
+            sepc=0x1b16 stval=0x400000000000
+usertrap(): unexpected scause 0xf pid=6562
+            sepc=0x1b16 stval=0x800000000000
+usertrap(): unexpected scause 0xf pid=6563
+            sepc=0x1b16 stval=0x1000000000000
+usertrap(): unexpected scause 0xf pid=6564
+            sepc=0x1b16 stval=0x2000000000000
+usertrap(): unexpected scause 0xf pid=6565
+            sepc=0x1b16 stval=0x4000000000000
+usertrap(): unexpected scause 0xf pid=6566
+            sepc=0x1b16 stval=0x8000000000000
+usertrap(): unexpected scause 0xf pid=6567
+            sepc=0x1b16 stval=0x10000000000000
+usertrap(): unexpected scause 0xf pid=6568
+            sepc=0x1b16 stval=0x20000000000000
+usertrap(): unexpected scause 0xf pid=6569
+            sepc=0x1b16 stval=0x40000000000000
+usertrap(): unexpected scause 0xf pid=6570
+            sepc=0x1b16 stval=0x80000000000000
+usertrap(): unexpected scause 0xf pid=6571
+            sepc=0x1b16 stval=0x100000000000000
+usertrap(): unexpected scause 0xf pid=6572
+            sepc=0x1b16 stval=0x200000000000000
+usertrap(): unexpected scause 0xf pid=6573
+            sepc=0x1b16 stval=0x400000000000000
+usertrap(): unexpected scause 0xf pid=6574
+            sepc=0x1b16 stval=0x800000000000000
+usertrap(): unexpected scause 0xf pid=6575
+            sepc=0x1b16 stval=0x1000000000000000
+usertrap(): unexpected scause 0xf pid=6576
+            sepc=0x1b16 stval=0x2000000000000000
+usertrap(): unexpected scause 0xf pid=6577
+            sepc=0x1b16 stval=0x4000000000000000
+usertrap(): unexpected scause 0xf pid=6578
+            sepc=0x1b16 stval=0x8000000000000000
+OK
+test sbrkfail: OK
+test sbrkarg: OK
+test validatetest: OK
+test bsstest: OK
+test bigargtest: OK
+test argptest: OK
+test stacktest: usertrap(): unexpected scause 0xd pid=6598
+            sepc=0x1b6a stval=0x11ea0
+OK
+test nowrite: usertrap(): unexpected scause 0xf pid=6600
+            sepc=0x1c10 stval=0x0
+usertrap(): unexpected scause 0xf pid=6601
+            sepc=0x1c10 stval=0x80000000
+usertrap(): unexpected scause 0xf pid=6602
+            sepc=0x1c10 stval=0x3fffffe000
+usertrap(): unexpected scause 0xf pid=6603
+            sepc=0x1c10 stval=0x3ffffff000
+usertrap(): unexpected scause 0xf pid=6604
+            sepc=0x1c10 stval=0x4000000000
+usertrap(): unexpected scause 0xf pid=6605
+            sepc=0x1c10 stval=0xffffffffffffffff
+OK
+test pgbug: OK
+test sbrkbugs: usertrap(): unexpected scause 0xc pid=6608
+            sepc=0x554a stval=0x554a
+usertrap(): unexpected scause 0xc pid=6609
+            sepc=0x554a stval=0x554a
+usertrap(): unexpected scause 0xd pid=6610
+            sepc=0x5496 stval=0x12eb8
+OK
+test sbrklast: OK
+test sbrk8000: OK
+test badarg: OK
+test lazy_alloc: OK
+test lazy_unmap: usertrap(): unexpected scause 0xf pid=6616
+            sepc=0x488e stval=0x14000
+usertrap(): unexpected scause 0xf pid=6617
+            sepc=0x488e stval=0x1014000
+usertrap(): unexpected scause 0xf pid=6618
+            sepc=0x488e stval=0x2014000
+usertrap(): unexpected scause 0xf pid=6619
+            sepc=0x488e stval=0x3014000
+usertrap(): unexpected scause 0xf pid=6620
+            sepc=0x488e stval=0x4014000
+usertrap(): unexpected scause 0xf pid=6621
+            sepc=0x488e stval=0x5014000
+usertrap(): unexpected scause 0xf pid=6622
+            sepc=0x488e stval=0x6014000
+usertrap(): unexpected scause 0xf pid=6623
+            sepc=0x488e stval=0x7014000
+usertrap(): unexpected scause 0xf pid=6624
+            sepc=0x488e stval=0x8014000
+usertrap(): unexpected scause 0xf pid=6625
+            sepc=0x488e stval=0x9014000
+usertrap(): unexpected scause 0xf pid=6626
+            sepc=0x488e stval=0xa014000
+usertrap(): unexpected scause 0xf pid=6627
+            sepc=0x488e stval=0xb014000
+usertrap(): unexpected scause 0xf pid=6628
+            sepc=0x488e stval=0xc014000
+usertrap(): unexpected scause 0xf pid=6629
+            sepc=0x488e stval=0xd014000
+usertrap(): unexpected scause 0xf pid=6630
+            sepc=0x488e stval=0xe014000
+usertrap(): unexpected scause 0xf pid=6631
+            sepc=0x488e stval=0xf014000
+usertrap(): unexpected scause 0xf pid=6632
+            sepc=0x488e stval=0x10014000
+usertrap(): unexpected scause 0xf pid=6633
+            sepc=0x488e stval=0x11014000
+usertrap(): unexpected scause 0xf pid=6634
+            sepc=0x488e stval=0x12014000
+usertrap(): unexpected scause 0xf pid=6635
+            sepc=0x488e stval=0x13014000
+usertrap(): unexpected scause 0xf pid=6636
+            sepc=0x488e stval=0x14014000
+usertrap(): unexpected scause 0xf pid=6637
+            sepc=0x488e stval=0x15014000
+usertrap(): unexpected scause 0xf pid=6638
+            sepc=0x488e stval=0x16014000
+usertrap(): unexpected scause 0xf pid=6639
+            sepc=0x488e stval=0x17014000
+usertrap(): unexpected scause 0xf pid=6640
+            sepc=0x488e stval=0x18014000
+usertrap(): unexpected scause 0xf pid=6641
+            sepc=0x488e stval=0x19014000
+usertrap(): unexpected scause 0xf pid=6642
+            sepc=0x488e stval=0x1a014000
+usertrap(): unexpected scause 0xf pid=6643
+            sepc=0x488e stval=0x1b014000
+usertrap(): unexpected scause 0xf pid=6644
+            sepc=0x488e stval=0x1c014000
+usertrap(): unexpected scause 0xf pid=6645
+            sepc=0x488e stval=0x1d014000
+usertrap(): unexpected scause 0xf pid=6646
+            sepc=0x488e stval=0x1e014000
+usertrap(): unexpected scause 0xf pid=6647
+            sepc=0x488e stval=0x1f014000
+usertrap(): unexpected scause 0xf pid=6648
+            sepc=0x488e stval=0x20014000
+usertrap(): unexpected scause 0xf pid=6649
+            sepc=0x488e stval=0x21014000
+usertrap(): unexpected scause 0xf pid=6650
+            sepc=0x488e stval=0x22014000
+usertrap(): unexpected scause 0xf pid=6651
+            sepc=0x488e stval=0x23014000
+usertrap(): unexpected scause 0xf pid=6652
+            sepc=0x488e stval=0x24014000
+usertrap(): unexpected scause 0xf pid=6653
+            sepc=0x488e stval=0x25014000
+usertrap(): unexpected scause 0xf pid=6654
+            sepc=0x488e stval=0x26014000
+usertrap(): unexpected scause 0xf pid=6655
+            sepc=0x488e stval=0x27014000
+usertrap(): unexpected scause 0xf pid=6656
+            sepc=0x488e stval=0x28014000
+usertrap(): unexpected scause 0xf pid=6657
+            sepc=0x488e stval=0x29014000
+usertrap(): unexpected scause 0xf pid=6658
+            sepc=0x488e stval=0x2a014000
+usertrap(): unexpected scause 0xf pid=6659
+            sepc=0x488e stval=0x2b014000
+usertrap(): unexpected scause 0xf pid=6660
+            sepc=0x488e stval=0x2c014000
+usertrap(): unexpected scause 0xf pid=6661
+            sepc=0x488e stval=0x2d014000
+usertrap(): unexpected scause 0xf pid=6662
+            sepc=0x488e stval=0x2e014000
+usertrap(): unexpected scause 0xf pid=6663
+            sepc=0x488e stval=0x2f014000
+usertrap(): unexpected scause 0xf pid=6664
+            sepc=0x488e stval=0x30014000
+usertrap(): unexpected scause 0xf pid=6665
+            sepc=0x488e stval=0x31014000
+usertrap(): unexpected scause 0xf pid=6666
+            sepc=0x488e stval=0x32014000
+usertrap(): unexpected scause 0xf pid=6667
+            sepc=0x488e stval=0x33014000
+usertrap(): unexpected scause 0xf pid=6668
+            sepc=0x488e stval=0x34014000
+usertrap(): unexpected scause 0xf pid=6669
+            sepc=0x488e stval=0x35014000
+usertrap(): unexpected scause 0xf pid=6670
+            sepc=0x488e stval=0x36014000
+usertrap(): unexpected scause 0xf pid=6671
+            sepc=0x488e stval=0x37014000
+usertrap(): unexpected scause 0xf pid=6672
+            sepc=0x488e stval=0x38014000
+usertrap(): unexpected scause 0xf pid=6673
+            sepc=0x488e stval=0x39014000
+usertrap(): unexpected scause 0xf pid=6674
+            sepc=0x488e stval=0x3a014000
+usertrap(): unexpected scause 0xf pid=6675
+            sepc=0x488e stval=0x3b014000
+usertrap(): unexpected scause 0xf pid=6676
+            sepc=0x488e stval=0x3c014000
+usertrap(): unexpected scause 0xf pid=6677
+            sepc=0x488e stval=0x3d014000
+usertrap(): unexpected scause 0xf pid=6678
+            sepc=0x488e stval=0x3e014000
+usertrap(): unexpected scause 0xf pid=6679
+            sepc=0x488e stval=0x3f014000
+OK
+test lazy_copy: OK
+test lazy_copyinstr: OK
+test lazy_sbrk: OK
+test partial_write: OK
+test unlinkcwd: OK
+usertests slow tests starting
+test bigdir: OK
+test manywrites: OK
+test badwrite: OK
+test execout: OK
+test diskfull: balloc: out of blocks
+balloc: out of blocks
+OK
+test outofinodes: ialloc: no inodes
+OK
+ALL TESTS PASSED
+$ xQEMU: Terminated
+
+xv6 kernel is booting
+
+hart 2 starting
+hart 1 starting
+init: starting sh
+$ cowtest
+cowtest
+cowtest: OK
+$ usertests
+usertests
+usertests starting
+test copyin: OK
+test copyout: OK
+test copyinstr1: OK
+test copyinstr2: OK
+test copyinstr3: OK
+test rwsbrk: OK
+test truncate1: OK
+test truncate2: OK
+test truncate3: OK
+test openiput: OK
+test exitiput: OK
+test iput: OK
+test opentest: OK
+test writetest: OK
+test writebig: OK
+test createtest: OK
+test dirtest: OK
+test exectest: OK
+test pipe1: OK
+test killstatus: OK
+test killzero: OK
+test preempt: kill... wait... OK
+test exitwait: OK
+test reparent: OK
+test twochildren: OK
+test forkfork: OK
+test forkforkfork: OK
+test reparent2: OK
+test mem: OK
+test sharedfd: OK
+test fourfiles: OK
+test createdelete: OK
+test unlinkread: OK
+test linktest: OK
+test concreate: OK
+test linkunlink: OK
+test subdir: OK
+test bigwrite: OK
+test bigfile: OK
+test fourteen: OK
+test rmdot: OK
+test dirfile: OK
+test iref: OK
+test forktest: OK
+test sbrkbasic: OK
+test sbrkmuch: OK
+test kernmem: usertrap(): unexpected scause 0xd pid=6512
+            sepc=0x1a86 stval=0x80000000
+usertrap(): unexpected scause 0xd pid=6513
+            sepc=0x1a86 stval=0x8000c350
+usertrap(): unexpected scause 0xd pid=6514
+            sepc=0x1a86 stval=0x800186a0
+usertrap(): unexpected scause 0xd pid=6515
+            sepc=0x1a86 stval=0x800249f0
+usertrap(): unexpected scause 0xd pid=6516
+            sepc=0x1a86 stval=0x80030d40
+usertrap(): unexpected scause 0xd pid=6517
+            sepc=0x1a86 stval=0x8003d090
+usertrap(): unexpected scause 0xd pid=6518
+            sepc=0x1a86 stval=0x800493e0
+usertrap(): unexpected scause 0xd pid=6519
+            sepc=0x1a86 stval=0x80055730
+usertrap(): unexpected scause 0xd pid=6520
+            sepc=0x1a86 stval=0x80061a80
+usertrap(): unexpected scause 0xd pid=6521
+            sepc=0x1a86 stval=0x8006ddd0
+usertrap(): unexpected scause 0xd pid=6522
+            sepc=0x1a86 stval=0x8007a120
+usertrap(): unexpected scause 0xd pid=6523
+            sepc=0x1a86 stval=0x80086470
+usertrap(): unexpected scause 0xd pid=6524
+            sepc=0x1a86 stval=0x800927c0
+usertrap(): unexpected scause 0xd pid=6525
+            sepc=0x1a86 stval=0x8009eb10
+usertrap(): unexpected scause 0xd pid=6526
+            sepc=0x1a86 stval=0x800aae60
+usertrap(): unexpected scause 0xd pid=6527
+            sepc=0x1a86 stval=0x800b71b0
+usertrap(): unexpected scause 0xd pid=6528
+            sepc=0x1a86 stval=0x800c3500
+usertrap(): unexpected scause 0xd pid=6529
+            sepc=0x1a86 stval=0x800cf850
+usertrap(): unexpected scause 0xd pid=6530
+            sepc=0x1a86 stval=0x800dbba0
+usertrap(): unexpected scause 0xd pid=6531
+            sepc=0x1a86 stval=0x800e7ef0
+usertrap(): unexpected scause 0xd pid=6532
+            sepc=0x1a86 stval=0x800f4240
+usertrap(): unexpected scause 0xd pid=6533
+            sepc=0x1a86 stval=0x80100590
+usertrap(): unexpected scause 0xd pid=6534
+            sepc=0x1a86 stval=0x8010c8e0
+usertrap(): unexpected scause 0xd pid=6535
+            sepc=0x1a86 stval=0x80118c30
+usertrap(): unexpected scause 0xd pid=6536
+            sepc=0x1a86 stval=0x80124f80
+usertrap(): unexpected scause 0xd pid=6537
+            sepc=0x1a86 stval=0x801312d0
+usertrap(): unexpected scause 0xd pid=6538
+            sepc=0x1a86 stval=0x8013d620
+usertrap(): unexpected scause 0xd pid=6539
+            sepc=0x1a86 stval=0x80149970
+usertrap(): unexpected scause 0xd pid=6540
+            sepc=0x1a86 stval=0x80155cc0
+usertrap(): unexpected scause 0xd pid=6541
+            sepc=0x1a86 stval=0x80162010
+usertrap(): unexpected scause 0xd pid=6542
+            sepc=0x1a86 stval=0x8016e360
+usertrap(): unexpected scause 0xd pid=6543
+            sepc=0x1a86 stval=0x8017a6b0
+usertrap(): unexpected scause 0xd pid=6544
+            sepc=0x1a86 stval=0x80186a00
+usertrap(): unexpected scause 0xd pid=6545
+            sepc=0x1a86 stval=0x80192d50
+usertrap(): unexpected scause 0xd pid=6546
+            sepc=0x1a86 stval=0x8019f0a0
+usertrap(): unexpected scause 0xd pid=6547
+            sepc=0x1a86 stval=0x801ab3f0
+usertrap(): unexpected scause 0xd pid=6548
+            sepc=0x1a86 stval=0x801b7740
+usertrap(): unexpected scause 0xd pid=6549
+            sepc=0x1a86 stval=0x801c3a90
+usertrap(): unexpected scause 0xd pid=6550
+            sepc=0x1a86 stval=0x801cfde0
+usertrap(): unexpected scause 0xd pid=6551
+            sepc=0x1a86 stval=0x801dc130
+OK
+test MAXVAplus: usertrap(): unexpected scause 0xf pid=6553
+            sepc=0x1b16 stval=0x4000000000
+usertrap(): unexpected scause 0xf pid=6554
+            sepc=0x1b16 stval=0x8000000000
+usertrap(): unexpected scause 0xf pid=6555
+            sepc=0x1b16 stval=0x10000000000
+usertrap(): unexpected scause 0xf pid=6556
+            sepc=0x1b16 stval=0x20000000000
+usertrap(): unexpected scause 0xf pid=6557
+            sepc=0x1b16 stval=0x40000000000
+usertrap(): unexpected scause 0xf pid=6558
+            sepc=0x1b16 stval=0x80000000000
+usertrap(): unexpected scause 0xf pid=6559
+            sepc=0x1b16 stval=0x100000000000
+usertrap(): unexpected scause 0xf pid=6560
+            sepc=0x1b16 stval=0x200000000000
+usertrap(): unexpected scause 0xf pid=6561
+            sepc=0x1b16 stval=0x400000000000
+usertrap(): unexpected scause 0xf pid=6562
+            sepc=0x1b16 stval=0x800000000000
+usertrap(): unexpected scause 0xf pid=6563
+            sepc=0x1b16 stval=0x1000000000000
+usertrap(): unexpected scause 0xf pid=6564
+            sepc=0x1b16 stval=0x2000000000000
+usertrap(): unexpected scause 0xf pid=6565
+            sepc=0x1b16 stval=0x4000000000000
+usertrap(): unexpected scause 0xf pid=6566
+            sepc=0x1b16 stval=0x8000000000000
+usertrap(): unexpected scause 0xf pid=6567
+            sepc=0x1b16 stval=0x10000000000000
+usertrap(): unexpected scause 0xf pid=6568
+            sepc=0x1b16 stval=0x20000000000000
+usertrap(): unexpected scause 0xf pid=6569
+            sepc=0x1b16 stval=0x40000000000000
+usertrap(): unexpected scause 0xf pid=6570
+            sepc=0x1b16 stval=0x80000000000000
+usertrap(): unexpected scause 0xf pid=6571
+            sepc=0x1b16 stval=0x100000000000000
+usertrap(): unexpected scause 0xf pid=6572
+            sepc=0x1b16 stval=0x200000000000000
+usertrap(): unexpected scause 0xf pid=6573
+            sepc=0x1b16 stval=0x400000000000000
+usertrap(): unexpected scause 0xf pid=6574
+            sepc=0x1b16 stval=0x800000000000000
+usertrap(): unexpected scause 0xf pid=6575
+            sepc=0x1b16 stval=0x1000000000000000
+usertrap(): unexpected scause 0xf pid=6576
+            sepc=0x1b16 stval=0x2000000000000000
+usertrap(): unexpected scause 0xf pid=6577
+            sepc=0x1b16 stval=0x4000000000000000
+usertrap(): unexpected scause 0xf pid=6578
+            sepc=0x1b16 stval=0x8000000000000000
+OK
+test sbrkfail: OK
+test sbrkarg: OK
+test validatetest: OK
+test bsstest: OK
+test bigargtest: OK
+test argptest: OK
+test stacktest: usertrap(): unexpected scause 0xd pid=6598
+            sepc=0x1b6a stval=0x11ea0
+OK
+test nowrite: usertrap(): unexpected scause 0xf pid=6600
+            sepc=0x1c10 stval=0x0
+usertrap(): unexpected scause 0xf pid=6601
+            sepc=0x1c10 stval=0x80000000
+usertrap(): unexpected scause 0xf pid=6602
+            sepc=0x1c10 stval=0x3fffffe000
+usertrap(): unexpected scause 0xf pid=6603
+            sepc=0x1c10 stval=0x3ffffff000
+usertrap(): unexpected scause 0xf pid=6604
+            sepc=0x1c10 stval=0x4000000000
+usertrap(): unexpected scause 0xf pid=6605
+            sepc=0x1c10 stval=0xffffffffffffffff
+OK
+test pgbug: OK
+test sbrkbugs: usertrap(): unexpected scause 0xc pid=6608
+            sepc=0x554a stval=0x554a
+usertrap(): unexpected scause 0xc pid=6609
+            sepc=0x554a stval=0x554a
+usertrap(): unexpected scause 0xd pid=6610
+            sepc=0x5496 stval=0x12eb8
+OK
+test sbrklast: OK
+test sbrk8000: OK
+test badarg: OK
+test lazy_alloc: OK
+test lazy_unmap: usertrap(): unexpected scause 0xf pid=6616
+            sepc=0x488e stval=0x14000
+usertrap(): unexpected scause 0xf pid=6617
+            sepc=0x488e stval=0x1014000
+usertrap(): unexpected scause 0xf pid=6618
+            sepc=0x488e stval=0x2014000
+usertrap(): unexpected scause 0xf pid=6619
+            sepc=0x488e stval=0x3014000
+usertrap(): unexpected scause 0xf pid=6620
+            sepc=0x488e stval=0x4014000
+usertrap(): unexpected scause 0xf pid=6621
+            sepc=0x488e stval=0x5014000
+usertrap(): unexpected scause 0xf pid=6622
+            sepc=0x488e stval=0x6014000
+usertrap(): unexpected scause 0xf pid=6623
+            sepc=0x488e stval=0x7014000
+usertrap(): unexpected scause 0xf pid=6624
+            sepc=0x488e stval=0x8014000
+usertrap(): unexpected scause 0xf pid=6625
+            sepc=0x488e stval=0x9014000
+usertrap(): unexpected scause 0xf pid=6626
+            sepc=0x488e stval=0xa014000
+usertrap(): unexpected scause 0xf pid=6627
+            sepc=0x488e stval=0xb014000
+usertrap(): unexpected scause 0xf pid=6628
+            sepc=0x488e stval=0xc014000
+usertrap(): unexpected scause 0xf pid=6629
+            sepc=0x488e stval=0xd014000
+usertrap(): unexpected scause 0xf pid=6630
+            sepc=0x488e stval=0xe014000
+usertrap(): unexpected scause 0xf pid=6631
+            sepc=0x488e stval=0xf014000
+usertrap(): unexpected scause 0xf pid=6632
+            sepc=0x488e stval=0x10014000
+usertrap(): unexpected scause 0xf pid=6633
+            sepc=0x488e stval=0x11014000
+usertrap(): unexpected scause 0xf pid=6634
+            sepc=0x488e stval=0x12014000
+usertrap(): unexpected scause 0xf pid=6635
+            sepc=0x488e stval=0x13014000
+usertrap(): unexpected scause 0xf pid=6636
+            sepc=0x488e stval=0x14014000
+usertrap(): unexpected scause 0xf pid=6637
+            sepc=0x488e stval=0x15014000
+usertrap(): unexpected scause 0xf pid=6638
+            sepc=0x488e stval=0x16014000
+usertrap(): unexpected scause 0xf pid=6639
+            sepc=0x488e stval=0x17014000
+usertrap(): unexpected scause 0xf pid=6640
+            sepc=0x488e stval=0x18014000
+usertrap(): unexpected scause 0xf pid=6641
+            sepc=0x488e stval=0x19014000
+usertrap(): unexpected scause 0xf pid=6642
+            sepc=0x488e stval=0x1a014000
+usertrap(): unexpected scause 0xf pid=6643
+            sepc=0x488e stval=0x1b014000
+usertrap(): unexpected scause 0xf pid=6644
+            sepc=0x488e stval=0x1c014000
+usertrap(): unexpected scause 0xf pid=6645
+            sepc=0x488e stval=0x1d014000
+usertrap(): unexpected scause 0xf pid=6646
+            sepc=0x488e stval=0x1e014000
+usertrap(): unexpected scause 0xf pid=6647
+            sepc=0x488e stval=0x1f014000
+usertrap(): unexpected scause 0xf pid=6648
+            sepc=0x488e stval=0x20014000
+usertrap(): unexpected scause 0xf pid=6649
+            sepc=0x488e stval=0x21014000
+usertrap(): unexpected scause 0xf pid=6650
+            sepc=0x488e stval=0x22014000
+usertrap(): unexpected scause 0xf pid=6651
+            sepc=0x488e stval=0x23014000
+usertrap(): unexpected scause 0xf pid=6652
+            sepc=0x488e stval=0x24014000
+usertrap(): unexpected scause 0xf pid=6653
+            sepc=0x488e stval=0x25014000
+usertrap(): unexpected scause 0xf pid=6654
+            sepc=0x488e stval=0x26014000
+usertrap(): unexpected scause 0xf pid=6655
+            sepc=0x488e stval=0x27014000
+usertrap(): unexpected scause 0xf pid=6656
+            sepc=0x488e stval=0x28014000
+usertrap(): unexpected scause 0xf pid=6657
+            sepc=0x488e stval=0x29014000
+usertrap(): unexpected scause 0xf pid=6658
+            sepc=0x488e stval=0x2a014000
+usertrap(): unexpected scause 0xf pid=6659
+            sepc=0x488e stval=0x2b014000
+usertrap(): unexpected scause 0xf pid=6660
+            sepc=0x488e stval=0x2c014000
+usertrap(): unexpected scause 0xf pid=6661
+            sepc=0x488e stval=0x2d014000
+usertrap(): unexpected scause 0xf pid=6662
+            sepc=0x488e stval=0x2e014000
+usertrap(): unexpected scause 0xf pid=6663
+            sepc=0x488e stval=0x2f014000
+usertrap(): unexpected scause 0xf pid=6664
+            sepc=0x488e stval=0x30014000
+usertrap(): unexpected scause 0xf pid=6665
+            sepc=0x488e stval=0x31014000
+usertrap(): unexpected scause 0xf pid=6666
+            sepc=0x488e stval=0x32014000
+usertrap(): unexpected scause 0xf pid=6667
+            sepc=0x488e stval=0x33014000
+usertrap(): unexpected scause 0xf pid=6668
+            sepc=0x488e stval=0x34014000
+usertrap(): unexpected scause 0xf pid=6669
+            sepc=0x488e stval=0x35014000
+usertrap(): unexpected scause 0xf pid=6670
+            sepc=0x488e stval=0x36014000
+usertrap(): unexpected scause 0xf pid=6671
+            sepc=0x488e stval=0x37014000
+usertrap(): unexpected scause 0xf pid=6672
+            sepc=0x488e stval=0x38014000
+usertrap(): unexpected scause 0xf pid=6673
+            sepc=0x488e stval=0x39014000
+usertrap(): unexpected scause 0xf pid=6674
+            sepc=0x488e stval=0x3a014000
+usertrap(): unexpected scause 0xf pid=6675
+            sepc=0x488e stval=0x3b014000
+usertrap(): unexpected scause 0xf pid=6676
+            sepc=0x488e stval=0x3c014000
+usertrap(): unexpected scause 0xf pid=6677
+            sepc=0x488e stval=0x3d014000
+usertrap(): unexpected scause 0xf pid=6678
+            sepc=0x488e stval=0x3e014000
+usertrap(): unexpected scause 0xf pid=6679
+            sepc=0x488e stval=0x3f014000
+OK
+test lazy_copy: OK
+test lazy_copyinstr: OK
+test lazy_sbrk: OK
+test partial_write: OK
+test unlinkcwd: OK
+usertests slow tests starting
+test bigdir: OK
+test manywrites: OK
+test badwrite: OK
+test execout: OK
+test diskfull: balloc: out of blocks
+balloc: out of blocks
+OK
+test outofinodes: ialloc: no inodes
+OK
+ALL TESTS PASSED
+$ xQEMU: Terminated
+
+xv6 kernel is booting
+
+init: starting sh
+$ cowtest
+cowtest
+cowtest: OK
+$ usertests
+usertests
+usertests starting
+test copyin: OK
+test copyout: OK
+test copyinstr1: OK
+test copyinstr2: OK
+test copyinstr3: OK
+test rwsbrk: OK
+test truncate1: OK
+test truncate2: OK
+test truncate3: OK
+test openiput: OK
+test exitiput: OK
+test iput: OK
+test opentest: OK
+test writetest: OK
+test writebig: OK
+test createtest: OK
+test dirtest: OK
+test exectest: OK
+test pipe1: OK
+test killstatus: OK
+test killzero: OK
+test preempt: kill... wait... OK
+test exitwait: OK
+test reparent: OK
+test twochildren: OK
+test forkfork: OK
+test forkforkfork: OK
+test reparent2: OK
+test mem: OK
+test sharedfd: OK
+test fourfiles: OK
+test createdelete: OK
+test unlinkread: OK
+test linktest: OK
+test concreate: OK
+test linkunlink: OK
+test subdir: OK
+test bigwrite: OK
+test bigfile: OK
+test fourteen: OK
+test rmdot: OK
+test dirfile: OK
+test iref: OK
+test forktest: OK
+test sbrkbasic: OK
+test sbrkmuch: OK
+test kernmem: usertrap(): unexpected scause 0xd pid=6512
+            sepc=0x1a86 stval=0x80000000
+usertrap(): unexpected scause 0xd pid=6513
+            sepc=0x1a86 stval=0x8000c350
+usertrap(): unexpected scause 0xd pid=6514
+            sepc=0x1a86 stval=0x800186a0
+usertrap(): unexpected scause 0xd pid=6515
+            sepc=0x1a86 stval=0x800249f0
+usertrap(): unexpected scause 0xd pid=6516
+            sepc=0x1a86 stval=0x80030d40
+usertrap(): unexpected scause 0xd pid=6517
+            sepc=0x1a86 stval=0x8003d090
+usertrap(): unexpected scause 0xd pid=6518
+            sepc=0x1a86 stval=0x800493e0
+usertrap(): unexpected scause 0xd pid=6519
+            sepc=0x1a86 stval=0x80055730
+usertrap(): unexpected scause 0xd pid=6520
+            sepc=0x1a86 stval=0x80061a80
+usertrap(): unexpected scause 0xd pid=6521
+            sepc=0x1a86 stval=0x8006ddd0
+usertrap(): unexpected scause 0xd pid=6522
+            sepc=0x1a86 stval=0x8007a120
+usertrap(): unexpected scause 0xd pid=6523
+            sepc=0x1a86 stval=0x80086470
+usertrap(): unexpected scause 0xd pid=6524
+            sepc=0x1a86 stval=0x800927c0
+usertrap(): unexpected scause 0xd pid=6525
+            sepc=0x1a86 stval=0x8009eb10
+usertrap(): unexpected scause 0xd pid=6526
+            sepc=0x1a86 stval=0x800aae60
+usertrap(): unexpected scause 0xd pid=6527
+            sepc=0x1a86 stval=0x800b71b0
+usertrap(): unexpected scause 0xd pid=6528
+            sepc=0x1a86 stval=0x800c3500
+usertrap(): unexpected scause 0xd pid=6529
+            sepc=0x1a86 stval=0x800cf850
+usertrap(): unexpected scause 0xd pid=6530
+            sepc=0x1a86 stval=0x800dbba0
+usertrap(): unexpected scause 0xd pid=6531
+            sepc=0x1a86 stval=0x800e7ef0
+usertrap(): unexpected scause 0xd pid=6532
+            sepc=0x1a86 stval=0x800f4240
+usertrap(): unexpected scause 0xd pid=6533
+            sepc=0x1a86 stval=0x80100590
+usertrap(): unexpected scause 0xd pid=6534
+            sepc=0x1a86 stval=0x8010c8e0
+usertrap(): unexpected scause 0xd pid=6535
+            sepc=0x1a86 stval=0x80118c30
+usertrap(): unexpected scause 0xd pid=6536
+            sepc=0x1a86 stval=0x80124f80
+usertrap(): unexpected scause 0xd pid=6537
+            sepc=0x1a86 stval=0x801312d0
+usertrap(): unexpected scause 0xd pid=6538
+            sepc=0x1a86 stval=0x8013d620
+usertrap(): unexpected scause 0xd pid=6539
+            sepc=0x1a86 stval=0x80149970
+usertrap(): unexpected scause 0xd pid=6540
+            sepc=0x1a86 stval=0x80155cc0
+usertrap(): unexpected scause 0xd pid=6541
+            sepc=0x1a86 stval=0x80162010
+usertrap(): unexpected scause 0xd pid=6542
+            sepc=0x1a86 stval=0x8016e360
+usertrap(): unexpected scause 0xd pid=6543
+            sepc=0x1a86 stval=0x8017a6b0
+usertrap(): unexpected scause 0xd pid=6544
+            sepc=0x1a86 stval=0x80186a00
+usertrap(): unexpected scause 0xd pid=6545
+            sepc=0x1a86 stval=0x80192d50
+usertrap(): unexpected scause 0xd pid=6546
+            sepc=0x1a86 stval=0x8019f0a0
+usertrap(): unexpected scause 0xd pid=6547
+            sepc=0x1a86 stval=0x801ab3f0
+usertrap(): unexpected scause 0xd pid=6548
+            sepc=0x1a86 stval=0x801b7740
+usertrap(): unexpected scause 0xd pid=6549
+            sepc=0x1a86 stval=0x801c3a90
+usertrap(): unexpected scause 0xd pid=6550
+            sepc=0x1a86 stval=0x801cfde0
+usertrap(): unexpected scause 0xd pid=6551
+            sepc=0x1a86 stval=0x801dc130
+OK
+test MAXVAplus: usertrap(): unexpected scause 0xf pid=6553
+            sepc=0x1b16 stval=0x4000000000
+usertrap(): unexpected scause 0xf pid=6554
+            sepc=0x1b16 stval=0x8000000000
+usertrap(): unexpected scause 0xf pid=6555
+            sepc=0x1b16 stval=0x10000000000
+usertrap(): unexpected scause 0xf pid=6556
+            sepc=0x1b16 stval=0x20000000000
+usertrap(): unexpected scause 0xf pid=6557
+            sepc=0x1b16 stval=0x40000000000
+usertrap(): unexpected scause 0xf pid=6558
+            sepc=0x1b16 stval=0x80000000000
+usertrap(): unexpected scause 0xf pid=6559
+            sepc=0x1b16 stval=0x100000000000
+usertrap(): unexpected scause 0xf pid=6560
+            sepc=0x1b16 stval=0x200000000000
+usertrap(): unexpected scause 0xf pid=6561
+            sepc=0x1b16 stval=0x400000000000
+usertrap(): unexpected scause 0xf pid=6562
+            sepc=0x1b16 stval=0x800000000000
+usertrap(): unexpected scause 0xf pid=6563
+            sepc=0x1b16 stval=0x1000000000000
+usertrap(): unexpected scause 0xf pid=6564
+            sepc=0x1b16 stval=0x2000000000000
+usertrap(): unexpected scause 0xf pid=6565
+            sepc=0x1b16 stval=0x4000000000000
+usertrap(): unexpected scause 0xf pid=6566
+            sepc=0x1b16 stval=0x8000000000000
+usertrap(): unexpected scause 0xf pid=6567
+            sepc=0x1b16 stval=0x10000000000000
+usertrap(): unexpected scause 0xf pid=6568
+            sepc=0x1b16 stval=0x20000000000000
+usertrap(): unexpected scause 0xf pid=6569
+            sepc=0x1b16 stval=0x40000000000000
+usertrap(): unexpected scause 0xf pid=6570
+            sepc=0x1b16 stval=0x80000000000000
+usertrap(): unexpected scause 0xf pid=6571
+            sepc=0x1b16 stval=0x100000000000000
+usertrap(): unexpected scause 0xf pid=6572
+            sepc=0x1b16 stval=0x200000000000000
+usertrap(): unexpected scause 0xf pid=6573
+            sepc=0x1b16 stval=0x400000000000000
+usertrap(): unexpected scause 0xf pid=6574
+            sepc=0x1b16 stval=0x800000000000000
+usertrap(): unexpected scause 0xf pid=6575
+            sepc=0x1b16 stval=0x1000000000000000
+usertrap(): unexpected scause 0xf pid=6576
+            sepc=0x1b16 stval=0x2000000000000000
+usertrap(): unexpected scause 0xf pid=6577
+            sepc=0x1b16 stval=0x4000000000000000
+usertrap(): unexpected scause 0xf pid=6578
+            sepc=0x1b16 stval=0x8000000000000000
+OK
+test sbrkfail: OK
+test sbrkarg: OK
+test validatetest: OK
+test bsstest: OK
+test bigargtest: OK
+test argptest: OK
+test stacktest: usertrap(): unexpected scause 0xd pid=6598
+            sepc=0x1b6a stval=0x11ea0
+OK
+test nowrite: usertrap(): unexpected scause 0xf pid=6600
+            sepc=0x1c10 stval=0x0
+usertrap(): unexpected scause 0xf pid=6601
+            sepc=0x1c10 stval=0x80000000
+usertrap(): unexpected scause 0xf pid=6602
+            sepc=0x1c10 stval=0x3fffffe000
+usertrap(): unexpected scause 0xf pid=6603
+            sepc=0x1c10 stval=0x3ffffff000
+usertrap(): unexpected scause 0xf pid=6604
+            sepc=0x1c10 stval=0x4000000000
+usertrap(): unexpected scause 0xf pid=6605
+            sepc=0x1c10 stval=0xffffffffffffffff
+OK
+test pgbug: OK
+test sbrkbugs: usertrap(): unexpected scause 0xc pid=6608
+            sepc=0x554a stval=0x554a
+usertrap(): unexpected scause 0xc pid=6609
+            sepc=0x554a stval=0x554a
+usertrap(): unexpected scause 0xd pid=6610
+            sepc=0x5496 stval=0x12eb8
+OK
+test sbrklast: OK
+test sbrk8000: OK
+test badarg: OK
+test lazy_alloc: OK
+test lazy_unmap: usertrap(): unexpected scause 0xf pid=6616
+            sepc=0x488e stval=0x14000
+usertrap(): unexpected scause 0xf pid=6617
+            sepc=0x488e stval=0x1014000
+usertrap(): unexpected scause 0xf pid=6618
+            sepc=0x488e stval=0x2014000
+usertrap(): unexpected scause 0xf pid=6619
+            sepc=0x488e stval=0x3014000
+usertrap(): unexpected scause 0xf pid=6620
+            sepc=0x488e stval=0x4014000
+usertrap(): unexpected scause 0xf pid=6621
+            sepc=0x488e stval=0x5014000
+usertrap(): unexpected scause 0xf pid=6622
+            sepc=0x488e stval=0x6014000
+usertrap(): unexpected scause 0xf pid=6623
+            sepc=0x488e stval=0x7014000
+usertrap(): unexpected scause 0xf pid=6624
+            sepc=0x488e stval=0x8014000
+usertrap(): unexpected scause 0xf pid=6625
+            sepc=0x488e stval=0x9014000
+usertrap(): unexpected scause 0xf pid=6626
+            sepc=0x488e stval=0xa014000
+usertrap(): unexpected scause 0xf pid=6627
+            sepc=0x488e stval=0xb014000
+usertrap(): unexpected scause 0xf pid=6628
+            sepc=0x488e stval=0xc014000
+usertrap(): unexpected scause 0xf pid=6629
+            sepc=0x488e stval=0xd014000
+usertrap(): unexpected scause 0xf pid=6630
+            sepc=0x488e stval=0xe014000
+usertrap(): unexpected scause 0xf pid=6631
+            sepc=0x488e stval=0xf014000
+usertrap(): unexpected scause 0xf pid=6632
+            sepc=0x488e stval=0x10014000
+usertrap(): unexpected scause 0xf pid=6633
+            sepc=0x488e stval=0x11014000
+usertrap(): unexpected scause 0xf pid=6634
+            sepc=0x488e stval=0x12014000
+usertrap(): unexpected scause 0xf pid=6635
+            sepc=0x488e stval=0x13014000
+usertrap(): unexpected scause 0xf pid=6636
+            sepc=0x488e stval=0x14014000
+usertrap(): unexpected scause 0xf pid=6637
+            sepc=0x488e stval=0x15014000
+usertrap(): unexpected scause 0xf pid=6638
+            sepc=0x488e stval=0x16014000
+usertrap(): unexpected scause 0xf pid=6639
+            sepc=0x488e stval=0x17014000
+usertrap(): unexpected scause 0xf pid=6640
+            sepc=0x488e stval=0x18014000
+usertrap(): unexpected scause 0xf pid=6641
+            sepc=0x488e stval=0x19014000
+usertrap(): unexpected scause 0xf pid=6642
+            sepc=0x488e stval=0x1a014000
+usertrap(): unexpected scause 0xf pid=6643
+            sepc=0x488e stval=0x1b014000
+usertrap(): unexpected scause 0xf pid=6644
+            sepc=0x488e stval=0x1c014000
+usertrap(): unexpected scause 0xf pid=6645
+            sepc=0x488e stval=0x1d014000
+usertrap(): unexpected scause 0xf pid=6646
+            sepc=0x488e stval=0x1e014000
+usertrap(): unexpected scause 0xf pid=6647
+            sepc=0x488e stval=0x1f014000
+usertrap(): unexpected scause 0xf pid=6648
+            sepc=0x488e stval=0x20014000
+usertrap(): unexpected scause 0xf pid=6649
+            sepc=0x488e stval=0x21014000
+usertrap(): unexpected scause 0xf pid=6650
+            sepc=0x488e stval=0x22014000
+usertrap(): unexpected scause 0xf pid=6651
+            sepc=0x488e stval=0x23014000
+usertrap(): unexpected scause 0xf pid=6652
+            sepc=0x488e stval=0x24014000
+usertrap(): unexpected scause 0xf pid=6653
+            sepc=0x488e stval=0x25014000
+usertrap(): unexpected scause 0xf pid=6654
+            sepc=0x488e stval=0x26014000
+usertrap(): unexpected scause 0xf pid=6655
+            sepc=0x488e stval=0x27014000
+usertrap(): unexpected scause 0xf pid=6656
+            sepc=0x488e stval=0x28014000
+usertrap(): unexpected scause 0xf pid=6657
+            sepc=0x488e stval=0x29014000
+usertrap(): unexpected scause 0xf pid=6658
+            sepc=0x488e stval=0x2a014000
+usertrap(): unexpected scause 0xf pid=6659
+            sepc=0x488e stval=0x2b014000
+usertrap(): unexpected scause 0xf pid=6660
+            sepc=0x488e stval=0x2c014000
+usertrap(): unexpected scause 0xf pid=6661
+            sepc=0x488e stval=0x2d014000
+usertrap(): unexpected scause 0xf pid=6662
+            sepc=0x488e stval=0x2e014000
+usertrap(): unexpected scause 0xf pid=6663
+            sepc=0x488e stval=0x2f014000
+usertrap(): unexpected scause 0xf pid=6664
+            sepc=0x488e stval=0x30014000
+usertrap(): unexpected scause 0xf pid=6665
+            sepc=0x488e stval=0x31014000
+usertrap(): unexpected scause 0xf pid=6666
+            sepc=0x488e stval=0x32014000
+usertrap(): unexpected scause 0xf pid=6667
+            sepc=0x488e stval=0x33014000
+usertrap(): unexpected scause 0xf pid=6668
+            sepc=0x488e stval=0x34014000
+usertrap(): unexpected scause 0xf pid=6669
+            sepc=0x488e stval=0x35014000
+usertrap(): unexpected scause 0xf pid=6670
+            sepc=0x488e stval=0x36014000
+usertrap(): unexpected scause 0xf pid=6671
+            sepc=0x488e stval=0x37014000
+usertrap(): unexpected scause 0xf pid=6672
+            sepc=0x488e stval=0x38014000
+usertrap(): unexpected scause 0xf pid=6673
+            sepc=0x488e stval=0x39014000
+usertrap(): unexpected scause 0xf pid=6674
+            sepc=0x488e stval=0x3a014000
+usertrap(): unexpected scause 0xf pid=6675
+            sepc=0x488e stval=0x3b014000
+usertrap(): unexpected scause 0xf pid=6676
+            sepc=0x488e stval=0x3c014000
+usertrap(): unexpected scause 0xf pid=6677
+            sepc=0x488e stval=0x3d014000
+usertrap(): unexpected scause 0xf pid=6678
+            sepc=0x488e stval=0x3e014000
+usertrap(): unexpected scause 0xf pid=6679
+            sepc=0x488e stval=0x3f014000
+OK
+test lazy_copy: OK
+test lazy_copyinstr: OK
+test lazy_sbrk: OK
+test partial_write: OK
+test unlinkcwd: OK
+usertests slow tests starting
+test bigdir: OK
+test manywrites: OK
+test badwrite: OK
+test execout: OK
+test diskfull: balloc: out of blocks
+balloc: out of blocks
+OK
+test outofinodes: ialloc: no inodes
+OK
+ALL TESTS PASSED
+$ xQEMU: Terminated
+
+xv6 kernel is booting
+
+hart 2 starting
+hart 1 starting
+init: starting sh
+$ cowtest
+cowtest
+cowtest: OK
+$ usertests
+usertests
+usertests starting
+test copyin: OK
+test copyout: OK
+test copyinstr1: OK
+test copyinstr2: OK
+test copyinstr3: OK
+test rwsbrk: OK
+test truncate1: OK
+test truncate2: OK
+test truncate3: OK
+test openiput: OK
+test exitiput: OK
+test iput: OK
+test opentest: OK
+test writetest: OK
+test writebig: OK
+test createtest: OK
+test dirtest: OK
+test exectest: OK
+test pipe1: OK
+test killstatus: OK
+test killzero: OK
+test preempt: kill... wait... OK
+test exitwait: OK
+test reparent: OK
+test twochildren: OK
+test forkfork: OK
+test forkforkfork: OK
+test reparent2: OK
+test mem: OK
+test sharedfd: OK
+test fourfiles: OK
+test createdelete: OK
+test unlinkread: OK
+test linktest: OK
+test concreate: OK
+test linkunlink: OK
+test subdir: OK
+test bigwrite: OK
+test bigfile: OK
+test fourteen: OK
+test rmdot: OK
+test dirfile: OK
+test iref: OK
+test forktest: OK
+test sbrkbasic: OK
+test sbrkmuch: OK
+test kernmem: usertrap(): unexpected scause 0xd pid=5678
+            sepc=0x1a86 stval=0x80000000
+usertrap(): unexpected scause 0xd pid=5679
+            sepc=0x1a86 stval=0x8000c350
+usertrap(): unexpected scause 0xd pid=5680
+            sepc=0x1a86 stval=0x800186a0
+usertrap(): unexpected scause 0xd pid=5681
+            sepc=0x1a86 stval=0x800249f0
+usertrap(): unexpected scause 0xd pid=5682
+            sepc=0x1a86 stval=0x80030d40
+usertrap(): unexpected scause 0xd pid=5683
+            sepc=0x1a86 stval=0x8003d090
+usertrap(): unexpected scause 0xd pid=5684
+            sepc=0x1a86 stval=0x800493e0
+usertrap(): unexpected scause 0xd pid=5685
+            sepc=0x1a86 stval=0x80055730
+usertrap(): unexpected scause 0xd pid=5686
+            sepc=0x1a86 stval=0x80061a80
+usertrap(): unexpected scause 0xd pid=5687
+            sepc=0x1a86 stval=0x8006ddd0
+usertrap(): unexpected scause 0xd pid=5688
+            sepc=0x1a86 stval=0x8007a120
+usertrap(): unexpected scause 0xd pid=5689
+            sepc=0x1a86 stval=0x80086470
+usertrap(): unexpected scause 0xd pid=5690
+            sepc=0x1a86 stval=0x800927c0
+usertrap(): unexpected scause 0xd pid=5691
+            sepc=0x1a86 stval=0x8009eb10
+usertrap(): unexpected scause 0xd pid=5692
+            sepc=0x1a86 stval=0x800aae60
+usertrap(): unexpected scause 0xd pid=5693
+            sepc=0x1a86 stval=0x800b71b0
+usertrap(): unexpected scause 0xd pid=5694
+            sepc=0x1a86 stval=0x800c3500
+usertrap(): unexpected scause 0xd pid=5695
+            sepc=0x1a86 stval=0x800cf850
+usertrap(): unexpected scause 0xd pid=5696
+            sepc=0x1a86 stval=0x800dbba0
+usertrap(): unexpected scause 0xd pid=5697
+            sepc=0x1a86 stval=0x800e7ef0
+usertrap(): unexpected scause 0xd pid=5698
+            sepc=0x1a86 stval=0x800f4240
+usertrap(): unexpected scause 0xd pid=5699
+            sepc=0x1a86 stval=0x80100590
+usertrap(): unexpected scause 0xd pid=5700
+            sepc=0x1a86 stval=0x8010c8e0
+usertrap(): unexpected scause 0xd pid=5701
+            sepc=0x1a86 stval=0x80118c30
+usertrap(): unexpected scause 0xd pid=5702
+            sepc=0x1a86 stval=0x80124f80
+usertrap(): unexpected scause 0xd pid=5703
+            sepc=0x1a86 stval=0x801312d0
+usertrap(): unexpected scause 0xd pid=5704
+            sepc=0x1a86 stval=0x8013d620
+usertrap(): unexpected scause 0xd pid=5705
+            sepc=0x1a86 stval=0x80149970
+usertrap(): unexpected scause 0xd pid=5706
+            sepc=0x1a86 stval=0x80155cc0
+usertrap(): unexpected scause 0xd pid=5707
+            sepc=0x1a86 stval=0x80162010
+usertrap(): unexpected scause 0xd pid=5708
+            sepc=0x1a86 stval=0x8016e360
+usertrap(): unexpected scause 0xd pid=5709
+            sepc=0x1a86 stval=0x8017a6b0
+usertrap(): unexpected scause 0xd pid=5710
+            sepc=0x1a86 stval=0x80186a00
+usertrap(): unexpected scause 0xd pid=5711
+            sepc=0x1a86 stval=0x80192d50
+usertrap(): unexpected scause 0xd pid=5712
+            sepc=0x1a86 stval=0x8019f0a0
+usertrap(): unexpected scause 0xd pid=5713
+            sepc=0x1a86 stval=0x801ab3f0
+usertrap(): unexpected scause 0xd pid=5714
+            sepc=0x1a86 stval=0x801b7740
+usertrap(): unexpected scause 0xd pid=5715
+            sepc=0x1a86 stval=0x801c3a90
+usertrap(): unexpected scause 0xd pid=5716
+            sepc=0x1a86 stval=0x801cfde0
+usertrap(): unexpected scause 0xd pid=5717
+            sepc=0x1a86 stval=0x801dc130
+OK
+test MAXVAplus: usertrap(): unexpected scause 0xf pid=5719
+            sepc=0x1b16 stval=0x4000000000
+usertrap(): unexpected scause 0xf pid=5720
+            sepc=0x1b16 stval=0x8000000000
+usertrap(): unexpected scause 0xf pid=5721
+            sepc=0x1b16 stval=0x10000000000
+usertrap(): unexpected scause 0xf pid=5722
+            sepc=0x1b16 stval=0x20000000000
+usertrap(): unexpected scause 0xf pid=5723
+            sepc=0x1b16 stval=0x40000000000
+usertrap(): unexpected scause 0xf pid=5724
+            sepc=0x1b16 stval=0x80000000000
+usertrap(): unexpected scause 0xf pid=5725
+            sepc=0x1b16 stval=0x100000000000
+usertrap(): unexpected scause 0xf pid=5726
+            sepc=0x1b16 stval=0x200000000000
+usertrap(): unexpected scause 0xf pid=5727
+            sepc=0x1b16 stval=0x400000000000
+usertrap(): unexpected scause 0xf pid=5728
+            sepc=0x1b16 stval=0x800000000000
+usertrap(): unexpected scause 0xf pid=5729
+            sepc=0x1b16 stval=0x1000000000000
+usertrap(): unexpected scause 0xf pid=5730
+            sepc=0x1b16 stval=0x2000000000000
+usertrap(): unexpected scause 0xf pid=5731
+            sepc=0x1b16 stval=0x4000000000000
+usertrap(): unexpected scause 0xf pid=5732
+            sepc=0x1b16 stval=0x8000000000000
+usertrap(): unexpected scause 0xf pid=5733
+            sepc=0x1b16 stval=0x10000000000000
+usertrap(): unexpected scause 0xf pid=5734
+            sepc=0x1b16 stval=0x20000000000000
+usertrap(): unexpected scause 0xf pid=5735
+            sepc=0x1b16 stval=0x40000000000000
+usertrap(): unexpected scause 0xf pid=5736
+            sepc=0x1b16 stval=0x80000000000000
+usertrap(): unexpected scause 0xf pid=5737
+            sepc=0x1b16 stval=0x100000000000000
+usertrap(): unexpected scause 0xf pid=5738
+            sepc=0x1b16 stval=0x200000000000000
+usertrap(): unexpected scause 0xf pid=5739
+            sepc=0x1b16 stval=0x400000000000000
+usertrap(): unexpected scause 0xf pid=5740
+            sepc=0x1b16 stval=0x800000000000000
+usertrap(): unexpected scause 0xf pid=5741
+            sepc=0x1b16 stval=0x1000000000000000
+usertrap(): unexpected scause 0xf pid=5742
+            sepc=0x1b16 stval=0x2000000000000000
+usertrap(): unexpected scause 0xf pid=5743
+            sepc=0x1b16 stval=0x4000000000000000
+usertrap(): unexpected scause 0xf pid=5744
+            sepc=0x1b16 stval=0x8000000000000000
+OK
+test sbrkfail: OK
+test sbrkarg: OK
+test validatetest: OK
+test bsstest: OK
+test bigargtest: OK
+test argptest: OK
+test stacktest: usertrap(): unexpected scause 0xd pid=5764
+            sepc=0x1b6a stval=0x11ea0
+OK
+test nowrite: usertrap(): unexpected scause 0xf pid=5766
+            sepc=0x1c10 stval=0x0
+usertrap(): unexpected scause 0xf pid=5767
+            sepc=0x1c10 stval=0x80000000
+usertrap(): unexpected scause 0xf pid=5768
+            sepc=0x1c10 stval=0x3fffffe000
+usertrap(): unexpected scause 0xf pid=5769
+            sepc=0x1c10 stval=0x3ffffff000
+usertrap(): unexpected scause 0xf pid=5770
+            sepc=0x1c10 stval=0x4000000000
+usertrap(): unexpected scause 0xf pid=5771
+            sepc=0x1c10 stval=0xffffffffffffffff
+OK
+test pgbug: OK
+test sbrkbugs: usertrap(): unexpected scause 0xc pid=5774
+            sepc=0x554a stval=0x554a
+usertrap(): unexpected scause 0xc pid=5775
+            sepc=0x554a stval=0x554a
+usertrap(): unexpected scause 0xd pid=5776
+            sepc=0x5496 stval=0x12eb8
+OK
+test sbrklast: OK
+test sbrk8000: OK
+test badarg: OK
+test lazy_alloc: OK
+test lazy_unmap: usertrap(): unexpected scause 0xf pid=5782
+            sepc=0x488e stval=0x14000
+usertrap(): unexpected scause 0xf pid=5783
+            sepc=0x488e stval=0x1014000
+usertrap(): unexpected scause 0xf pid=5784
+            sepc=0x488e stval=0x2014000
+usertrap(): unexpected scause 0xf pid=5785
+            sepc=0x488e stval=0x3014000
+usertrap(): unexpected scause 0xf pid=5786
+            sepc=0x488e stval=0x4014000
+usertrap(): unexpected scause 0xf pid=5787
+            sepc=0x488e stval=0x5014000
+usertrap(): unexpected scause 0xf pid=5788
+            sepc=0x488e stval=0x6014000
+usertrap(): unexpected scause 0xf pid=5789
+            sepc=0x488e stval=0x7014000
+usertrap(): unexpected scause 0xf pid=5790
+            sepc=0x488e stval=0x8014000
+usertrap(): unexpected scause 0xf pid=5791
+            sepc=0x488e stval=0x9014000
+usertrap(): unexpected scause 0xf pid=5792
+            sepc=0x488e stval=0xa014000
+usertrap(): unexpected scause 0xf pid=5793
+            sepc=0x488e stval=0xb014000
+usertrap(): unexpected scause 0xf pid=5794
+            sepc=0x488e stval=0xc014000
+usertrap(): unexpected scause 0xf pid=5795
+            sepc=0x488e stval=0xd014000
+usertrap(): unexpected scause 0xf pid=5796
+            sepc=0x488e stval=0xe014000
+usertrap(): unexpected scause 0xf pid=5797
+            sepc=0x488e stval=0xf014000
+usertrap(): unexpected scause 0xf pid=5798
+            sepc=0x488e stval=0x10014000
+usertrap(): unexpected scause 0xf pid=5799
+            sepc=0x488e stval=0x11014000
+usertrap(): unexpected scause 0xf pid=5800
+            sepc=0x488e stval=0x12014000
+usertrap(): unexpected scause 0xf pid=5801
+            sepc=0x488e stval=0x13014000
+usertrap(): unexpected scause 0xf pid=5802
+            sepc=0x488e stval=0x14014000
+usertrap(): unexpected scause 0xf pid=5803
+            sepc=0x488e stval=0x15014000
+usertrap(): unexpected scause 0xf pid=5804
+            sepc=0x488e stval=0x16014000
+usertrap(): unexpected scause 0xf pid=5805
+            sepc=0x488e stval=0x17014000
+usertrap(): unexpected scause 0xf pid=5806
+            sepc=0x488e stval=0x18014000
+usertrap(): unexpected scause 0xf pid=5807
+            sepc=0x488e stval=0x19014000
+usertrap(): unexpected scause 0xf pid=5808
+            sepc=0x488e stval=0x1a014000
+usertrap(): unexpected scause 0xf pid=5809
+            sepc=0x488e stval=0x1b014000
+usertrap(): unexpected scause 0xf pid=5810
+            sepc=0x488e stval=0x1c014000
+usertrap(): unexpected scause 0xf pid=5811
+            sepc=0x488e stval=0x1d014000
+usertrap(): unexpected scause 0xf pid=5812
+            sepc=0x488e stval=0x1e014000
+usertrap(): unexpected scause 0xf pid=5813
+            sepc=0x488e stval=0x1f014000
+usertrap(): unexpected scause 0xf pid=5814
+            sepc=0x488e stval=0x20014000
+usertrap(): unexpected scause 0xf pid=5815
+            sepc=0x488e stval=0x21014000
+usertrap(): unexpected scause 0xf pid=5816
+            sepc=0x488e stval=0x22014000
+usertrap(): unexpected scause 0xf pid=5817
+            sepc=0x488e stval=0x23014000
+usertrap(): unexpected scause 0xf pid=5818
+            sepc=0x488e stval=0x24014000
+usertrap(): unexpected scause 0xf pid=5819
+            sepc=0x488e stval=0x25014000
+usertrap(): unexpected scause 0xf pid=5820
+            sepc=0x488e stval=0x26014000
+usertrap(): unexpected scause 0xf pid=5821
+            sepc=0x488e stval=0x27014000
+usertrap(): unexpected scause 0xf pid=5822
+            sepc=0x488e stval=0x28014000
+usertrap(): unexpected scause 0xf pid=5823
+            sepc=0x488e stval=0x29014000
+usertrap(): unexpected scause 0xf pid=5824
+            sepc=0x488e stval=0x2a014000
+usertrap(): unexpected scause 0xf pid=5825
+            sepc=0x488e stval=0x2b014000
+usertrap(): unexpected scause 0xf pid=5826
+            sepc=0x488e stval=0x2c014000
+usertrap(): unexpected scause 0xf pid=5827
+            sepc=0x488e stval=0x2d014000
+usertrap(): unexpected scause 0xf pid=5828
+            sepc=0x488e stval=0x2e014000
+usertrap(): unexpected scause 0xf pid=5829
+            sepc=0x488e stval=0x2f014000
+usertrap(): unexpected scause 0xf pid=5830
+            sepc=0x488e stval=0x30014000
+usertrap(): unexpected scause 0xf pid=5831
+            sepc=0x488e stval=0x31014000
+usertrap(): unexpected scause 0xf pid=5832
+            sepc=0x488e stval=0x32014000
+usertrap(): unexpected scause 0xf pid=5833
+            sepc=0x488e stval=0x33014000
+usertrap(): unexpected scause 0xf pid=5834
+            sepc=0x488e stval=0x34014000
+usertrap(): unexpected scause 0xf pid=5835
+            sepc=0x488e stval=0x35014000
+usertrap(): unexpected scause 0xf pid=5836
+            sepc=0x488e stval=0x36014000
+usertrap(): unexpected scause 0xf pid=5837
+            sepc=0x488e stval=0x37014000
+usertrap(): unexpected scause 0xf pid=5838
+            sepc=0x488e stval=0x38014000
+usertrap(): unexpected scause 0xf pid=5839
+            sepc=0x488e stval=0x39014000
+usertrap(): unexpected scause 0xf pid=5840
+            sepc=0x488e stval=0x3a014000
+usertrap(): unexpected scause 0xf pid=5841
+            sepc=0x488e stval=0x3b014000
+usertrap(): unexpected scause 0xf pid=5842
+            sepc=0x488e stval=0x3c014000
+usertrap(): unexpected scause 0xf pid=5843
+            sepc=0x488e stval=0x3d014000
+usertrap(): unexpected scause 0xf pid=5844
+            sepc=0x488e stval=0x3e014000
+usertrap(): unexpected scause 0xf pid=5845
+            sepc=0x488e stval=0x3f014000
+OK
+test lazy_copy: OK
+test lazy_copyinstr: OK
+test lazy_sbrk: OK
+test partial_write: OK
+test unlinkcwd: OK
+usertests slow tests starting
+test bigdir: OK
+test manywrites: OK
+test badwrite: OK
+test execout: OK
+test diskfull: balloc: out of blocks
+balloc: out of blocks
+OK
+test outofinodes: ialloc: no inodes
+OK
+ALL TESTS PASSED
+$ xQEMU: Terminated
+
+xv6 kernel is booting
+
+init: starting sh
+$ schedbench cpu
+schedbench cpu
+R wl=cpu cls=cpu turn=7309610 resp=836 run=1879504 nsched=19 level=0
+R wl=cpu cls=cpu turn=7387025 resp=184875 run=1874414 nsched=19 level=0
+R wl=cpu cls=cpu turn=7488573 resp=84569 run=1876043 nsched=20 level=0
+R wl=cpu cls=cpu turn=7502929 resp=285144 run=1858730 nsched=20 level=0
+T wl=cpu makespan=7516664 iters_per_tick=37059569
+$ schedbench mixed
+schedbench mixed
+R wl=mixed cls=cpu turn=7989629 resp=69661 run=2696247 nsched=27 level=0
+R wl=mixed cls=cpu turn=8193935 resp=169880 run=2716202 nsched=28 level=0
+R wl=mixed cls=cpu turn=8254185 resp=924 run=2706482 nsched=30 level=0
+R wl=mixed cls=interactive turn=9416559 resp=270159 run=86489 nsched=41 level=0
+R wl=mixed cls=interactive turn=9416555 resp=272651 run=82649 nsched=41 level=0
+L wl=mixed lat_mean=226631 lat_max=301827 rounds=40
+L wl=mixed lat_mean=226592 lat_max=301916 rounds=40
+T wl=mixed makespan=9440482 iters_per_tick=36146685
+$ schedbench shortlong
+schedbench shortlong
+R wl=shortlong cls=short turn=1493192 resp=200732 run=287589 nsched=3 level=0
+R wl=shortlong cls=short turn=2028165 resp=401164 run=320001 nsched=4 level=0
+R wl=shortlong cls=short turn=2040111 resp=501595 run=313442 nsched=4 level=0
+R wl=shortlong cls=short turn=2217023 resp=300923 run=321438 nsched=5 level=0
+R wl=shortlong cls=long turn=9198410 resp=81547 run=3992891 nsched=40 level=0
+R wl=shortlong cls=long turn=9324324 resp=541 run=4041593 nsched=42 level=0
+T wl=shortlong makespan=9331241 iters_per_tick=39947374
+$ schedbench shortlate
+schedbench shortlate
+R wl=shortlate cls=short turn=1700035 resp=402207 run=291808 nsched=3 level=0
+R wl=shortlate cls=short turn=1913528 resp=200889 run=304972 nsched=4 level=0
+R wl=shortlate cls=short turn=1918658 resp=301979 run=306681 nsched=4 level=0
+R wl=shortlate cls=short turn=2221398 resp=502538 run=313752 nsched=5 level=0
+R wl=shortlate cls=long turn=9290379 resp=6487 run=4049373 nsched=41 level=0
+R wl=shortlate cls=long turn=9401312 resp=384 run=4095501 nsched=43 level=0
+T wl=shortlate makespan=9408352 iters_per_tick=40005750
+$ xQEMU: Terminated
+
+xv6 kernel is booting
+
+init: starting sh
+$ schedbench cpu
+schedbench cpu
+R wl=cpu cls=cpu turn=7303953 resp=26249 run=1850872 nsched=19 level=0
+R wl=cpu cls=cpu turn=7376615 resp=126537 run=1881820 nsched=19 level=0
+R wl=cpu cls=cpu turn=7434624 resp=825 run=1851970 nsched=20 level=0
+R wl=cpu cls=cpu turn=7507975 resp=227382 run=1894292 nsched=21 level=0
+T wl=cpu makespan=7515046 iters_per_tick=36586879
+$ schedbench mixed
+schedbench mixed
+R wl=mixed cls=cpu turn=8214818 resp=29344 run=2755625 nsched=28 level=0
+R wl=mixed cls=cpu turn=8241139 resp=129833 run=2740369 nsched=28 level=0
+R wl=mixed cls=cpu turn=8342026 resp=1079 run=2720616 nsched=30 level=0
+R wl=mixed cls=interactive turn=9484274 resp=230456 run=79784 nsched=41 level=0
+R wl=mixed cls=interactive turn=9484259 resp=232342 run=75486 nsched=41 level=0
+L wl=mixed lat_mean=229469 lat_max=303150 rounds=40
+L wl=mixed lat_mean=229465 lat_max=303172 rounds=40
+T wl=mixed makespan=9510163 iters_per_tick=36904079
+$ schedbench shortlong
+schedbench shortlong
+R wl=shortlong cls=short turn=1492213 resp=200765 run=287147 nsched=3 level=0
+R wl=shortlong cls=short turn=1594376 resp=400956 run=289436 nsched=3 level=0
+R wl=shortlong cls=short turn=1885000 resp=300934 run=292524 nsched=4 level=0
+R wl=shortlong cls=short turn=2161599 resp=501008 run=288837 nsched=5 level=0
+R wl=shortlong cls=long turn=9169470 resp=664 run=3961055 nsched=41 level=0
+R wl=shortlong cls=long turn=9173076 resp=25349 run=4022737 nsched=41 level=0
+T wl=shortlong makespan=9187533 iters_per_tick=40425334
+$ schedbench shortlate
+schedbench shortlate
+R wl=shortlate cls=short turn=1802762 resp=501692 run=293595 nsched=3 level=0
+R wl=shortlate cls=short turn=1922979 resp=200669 run=312116 nsched=4 level=0
+R wl=shortlate cls=short turn=1925923 resp=301122 run=304576 nsched=4 level=0
+R wl=shortlate cls=short turn=1931350 resp=401381 run=306713 nsched=4 level=0
+R wl=shortlate cls=long turn=9304687 resp=88608 run=4089261 nsched=41 level=0
+R wl=shortlate cls=long turn=9446592 resp=378 run=4103542 nsched=43 level=0
+T wl=shortlate makespan=9454875 iters_per_tick=41758412
+$ xQEMU: Terminated
+
+xv6 kernel is booting
+
+init: starting sh
+$ schedbench cpu
+schedbench cpu
+R wl=cpu cls=cpu turn=7645998 resp=775 run=1920091 nsched=20 level=0
+R wl=cpu cls=cpu turn=7674459 resp=91565 run=1936366 nsched=20 level=0
+R wl=cpu cls=cpu turn=7683514 resp=191773 run=1917068 nsched=20 level=0
+R wl=cpu cls=cpu turn=7710927 resp=291968 run=1935892 nsched=20 level=0
+T wl=cpu makespan=7745159 iters_per_tick=39284613
+$ schedbench mixed
+schedbench mixed
+R wl=mixed cls=cpu turn=8944427 resp=94850 run=3003041 nsched=30 level=0
+R wl=mixed cls=cpu turn=9109598 resp=195171 run=2978648 nsched=31 level=0
+R wl=mixed cls=cpu turn=9155195 resp=983 run=3022460 nsched=32 level=0
+R wl=mixed cls=interactive turn=10062426 resp=295444 run=95331 nsched=41 level=0
+R wl=mixed cls=interactive turn=10062407 resp=297514 run=89508 nsched=41 level=0
+L wl=mixed lat_mean=241938 lat_max=318792 rounds=40
+L wl=mixed lat_mean=241943 lat_max=318765 rounds=40
+T wl=mixed makespan=10088694 iters_per_tick=40180340
+$ schedbench shortlong
+schedbench shortlong
+R wl=shortlong cls=short turn=1495398 resp=200610 run=289329 nsched=3 level=0
+R wl=shortlong cls=short turn=1591407 resp=400986 run=285968 nsched=3 level=0
+R wl=shortlong cls=short turn=1880647 resp=300790 run=284891 nsched=4 level=0
+R wl=shortlong cls=short turn=2148403 resp=501157 run=284596 nsched=5 level=0
+R wl=shortlong cls=long turn=9052479 resp=37151 run=3967825 nsched=40 level=0
+R wl=shortlong cls=long turn=9071852 resp=385 run=3918332 nsched=41 level=0
+T wl=shortlong makespan=9078676 iters_per_tick=38527359
+$ schedbench shortlate
+schedbench shortlate
+R wl=shortlate cls=short turn=2058675 resp=200872 run=350543 nsched=4 level=0
+R wl=shortlate cls=short turn=2089561 resp=300693 run=333043 nsched=4 level=0
+R wl=shortlate cls=short turn=2189730 resp=501420 run=382162 nsched=4 level=0
+R wl=shortlate cls=short turn=2441800 resp=401136 run=352616 nsched=5 level=0
+R wl=shortlate cls=long turn=9351913 resp=28753 run=3994564 nsched=40 level=0
+R wl=shortlate cls=long turn=9423677 resp=442 run=3973037 nsched=42 level=0
+T wl=shortlate makespan=9429774 iters_per_tick=38601051
+$ xQEMU: Terminated
+
+xv6 kernel is booting
+
+init: starting sh
+$ schedbench cpu
+schedbench cpu
+R wl=cpu cls=cpu turn=6249277 resp=59000 run=1662128 nsched=16 level=0
+R wl=cpu cls=cpu turn=6600527 resp=259495 run=1633934 nsched=17 level=0
+R wl=cpu cls=cpu turn=6614336 resp=1925 run=1662834 nsched=18 level=0
+R wl=cpu cls=cpu turn=6615437 resp=159059 run=1640556 nsched=18 level=0
+T wl=cpu makespan=6628402 iters_per_tick=32304627
+$ schedbench mixed
+schedbench mixed
+R wl=mixed cls=cpu turn=8584395 resp=56427 run=2900825 nsched=29 level=0
+R wl=mixed cls=cpu turn=8768389 resp=156641 run=2896968 nsched=30 level=0
+R wl=mixed cls=cpu turn=8875764 resp=977 run=2926311 nsched=32 level=0
+R wl=mixed cls=interactive turn=9806189 resp=256892 run=92133 nsched=41 level=0
+R wl=mixed cls=interactive turn=9806209 resp=259017 run=87816 nsched=41 level=0
+L wl=mixed lat_mean=236595 lat_max=300425 rounds=40
+L wl=mixed lat_mean=236545 lat_max=300465 rounds=40
+T wl=mixed makespan=9829638 iters_per_tick=39030927
+$ schedbench shortlong
+schedbench shortlong
+R wl=shortlong cls=short turn=1479823 resp=200815 run=274182 nsched=3 level=0
+R wl=shortlong cls=short turn=1584726 resp=401296 run=279184 nsched=3 level=0
+R wl=shortlong cls=short turn=1853213 resp=300978 run=273215 nsched=4 level=0
+R wl=shortlong cls=short turn=1897701 resp=501547 run=268171 nsched=4 level=0
+R wl=shortlong cls=long turn=8556026 resp=407 run=3714737 nsched=38 level=0
+R wl=shortlong cls=long turn=8576308 resp=56947 run=3737184 nsched=38 level=0
+T wl=shortlong makespan=8589932 iters_per_tick=37660530
+$ schedbench shortlate
+schedbench shortlate
+R wl=shortlate cls=short turn=1504643 resp=200756 run=298910 nsched=3 level=0
+R wl=shortlate cls=short turn=2026876 resp=401074 run=319663 nsched=4 level=0
+R wl=shortlate cls=short turn=1706328 resp=501401 run=300659 nsched=3 level=0
+R wl=shortlate cls=short turn=2224333 resp=300774 run=318403 nsched=5 level=0
+R wl=shortlate cls=long turn=9325222 resp=39369 run=4060931 nsched=41 level=0
+R wl=shortlate cls=long turn=9410056 resp=435 run=4070010 nsched=43 level=0
+T wl=shortlate makespan=9416159 iters_per_tick=41691383
+$ xQEMU: Terminated
+
+xv6 kernel is booting
+
+init: starting sh
+$ schedbench cpu
+schedbench cpu
+R wl=cpu cls=cpu turn=7741853 resp=8700 run=2006749 nsched=20 level=0
+R wl=cpu cls=cpu turn=7929083 resp=1034 run=1998350 nsched=21 level=0
+R wl=cpu cls=cpu turn=7840591 resp=209232 run=2002896 nsched=20 level=0
+R wl=cpu cls=cpu turn=8064305 resp=108977 run=2035288 nsched=23 level=0
+T wl=cpu makespan=8071326 iters_per_tick=40712095
+$ schedbench mixed
+schedbench mixed
+R wl=mixed cls=cpu turn=8600982 resp=72431 run=2903089 nsched=29 level=0
+R wl=mixed cls=cpu turn=8875050 resp=917 run=2914265 nsched=31 level=0
+R wl=mixed cls=cpu turn=8907754 resp=172774 run=2956544 nsched=31 level=0
+R wl=mixed cls=interactive turn=9921578 resp=273182 run=88298 nsched=41 level=0
+R wl=mixed cls=interactive turn=9921601 resp=275322 run=81652 nsched=41 level=0
+L wl=mixed lat_mean=239120 lat_max=300115 rounds=40
+L wl=mixed lat_mean=239169 lat_max=300317 rounds=40
+T wl=mixed makespan=9950529 iters_per_tick=40578006
+$ schedbench shortlong
+schedbench shortlong
+R wl=shortlong cls=short turn=1607149 resp=300345 run=294992 nsched=3 level=0
+R wl=shortlong cls=short turn=1925342 resp=200716 run=318393 nsched=4 level=0
+R wl=shortlong cls=short turn=2037764 resp=500928 run=324139 nsched=4 level=0
+R wl=shortlong cls=short turn=2252317 resp=400679 run=333954 nsched=5 level=0
+R wl=shortlong cls=long turn=9487643 resp=19270 run=4134638 nsched=42 level=0
+R wl=shortlong cls=long turn=9535380 resp=389 run=4091316 nsched=43 level=0
+T wl=shortlong makespan=9541911 iters_per_tick=41868213
+$ schedbench shortlate
+schedbench shortlate
+R wl=shortlate cls=short turn=1704907 resp=400889 run=293640 nsched=3 level=0
+R wl=shortlate cls=short turn=1955559 resp=200678 run=310451 nsched=4 level=0
+R wl=shortlate cls=short turn=1956632 resp=300791 run=302732 nsched=4 level=0
+R wl=shortlate cls=short turn=2040072 resp=501140 run=292741 nsched=4 level=0
+R wl=shortlate cls=long turn=9110918 resp=397 run=3962022 nsched=40 level=0
+R wl=shortlate cls=long turn=9147218 resp=60760 run=3953967 nsched=40 level=0
+T wl=shortlate makespan=9161218 iters_per_tick=39929250
+$ xQEMU: Terminated
+
+xv6 kernel is booting
+
+init: starting sh
+$ schedbench cpu
+schedbench cpu
+R wl=cpu cls=cpu turn=7527058 resp=12981 run=2088943 nsched=8 level=2
+R wl=cpu cls=cpu turn=8080821 resp=213547 run=2039901 nsched=8 level=2
+R wl=cpu cls=cpu turn=8091277 resp=758 run=2124116 nsched=9 level=2
+R wl=cpu cls=cpu turn=8384155 resp=113306 run=2111246 nsched=8 level=2
+T wl=cpu makespan=8391348 iters_per_tick=41609659
+$ schedbench mixed
+schedbench mixed
+R wl=mixed cls=interactive turn=4520932 resp=296991 run=90625 nsched=41 level=0
+R wl=mixed cls=interactive turn=4520858 resp=299093 run=87654 nsched=41 level=0
+R wl=mixed cls=cpu turn=9015944 resp=95246 run=3075115 nsched=20 level=2
+R wl=mixed cls=cpu turn=9217030 resp=195423 run=3106581 nsched=20 level=2
+R wl=mixed cls=cpu turn=9440602 resp=1120 run=3050968 nsched=21 level=1
+L wl=mixed lat_mean=103434 lat_max=299308 rounds=40
+L wl=mixed lat_mean=103411 lat_max=297609 rounds=40
+T wl=mixed makespan=9454808 iters_per_tick=41451968
+$ schedbench shortlong
+schedbench shortlong
+R wl=shortlong cls=short turn=593684 resp=952 run=291553 nsched=2 level=1
+R wl=shortlong cls=short turn=1908608 resp=99875 run=294398 nsched=3 level=2
+R wl=shortlong cls=short turn=1945009 resp=200047 run=354771 nsched=3 level=2
+R wl=shortlong cls=short turn=1100383 resp=300269 run=280815 nsched=2 level=1
+R wl=shortlong cls=long turn=8551834 resp=425 run=3788060 nsched=13 level=2
+R wl=shortlong cls=long turn=8877672 resp=73005 run=3834728 nsched=12 level=2
+T wl=shortlong makespan=8895079 iters_per_tick=39627248
+$ schedbench shortlate
+schedbench shortlate
+R wl=shortlate cls=short turn=1928635 resp=722 run=319489 nsched=3 level=0
+R wl=shortlate cls=short turn=1955256 resp=100064 run=328094 nsched=3 level=0
+R wl=shortlate cls=short turn=1967525 resp=200327 run=313572 nsched=3 level=0
+R wl=shortlate cls=short turn=1968935 resp=300579 run=302762 nsched=3 level=0
+R wl=shortlate cls=long turn=8907819 resp=437 run=4100211 nsched=13 level=2
+R wl=shortlate cls=long turn=9445729 resp=87693 run=4048001 nsched=14 level=2
+T wl=shortlate makespan=9452658 iters_per_tick=41082755
+$ xQEMU: Terminated
+
+xv6 kernel is booting
+
+init: starting sh
+$ schedbench cpu
+schedbench cpu
+R wl=cpu cls=cpu turn=6872725 resp=755 run=1848942 nsched=8 level=2
+R wl=cpu cls=cpu turn=6917960 resp=60451 run=1847265 nsched=8 level=2
+R wl=cpu cls=cpu turn=7352675 resp=260975 run=1868097 nsched=8 level=2
+R wl=cpu cls=cpu turn=7517347 resp=160728 run=1932884 nsched=8 level=2
+T wl=cpu makespan=7526991 iters_per_tick=38460086
+$ schedbench mixed
+schedbench mixed
+R wl=mixed cls=interactive turn=4262388 resp=241382 run=86324 nsched=41 level=0
+R wl=mixed cls=interactive turn=4262417 resp=243463 run=84780 nsched=41 level=0
+R wl=mixed cls=cpu turn=8896104 resp=976 run=3106876 nsched=21 level=2
+R wl=mixed cls=cpu turn=9393165 resp=141162 run=3065566 nsched=21 level=2
+R wl=mixed cls=cpu turn=9507494 resp=40914 run=3133184 nsched=21 level=2
+L wl=mixed lat_mean=98457 lat_max=100075 rounds=40
+L wl=mixed lat_mean=98408 lat_max=99959 rounds=40
+T wl=mixed makespan=9522588 iters_per_tick=41614952
+$ schedbench shortlong
+schedbench shortlong
+R wl=shortlong cls=short turn=594706 resp=728 run=292730 nsched=2 level=1
+R wl=shortlong cls=short turn=1897083 resp=100128 run=297934 nsched=3 level=2
+R wl=shortlong cls=short turn=1911396 resp=200363 run=315782 nsched=3 level=2
+R wl=shortlong cls=short turn=1084629 resp=300622 run=281803 nsched=2 level=1
+R wl=shortlong cls=long turn=9262027 resp=94058 run=4045200 nsched=13 level=2
+R wl=shortlong cls=long turn=9279046 resp=430 run=4011531 nsched=13 level=2
+T wl=shortlong makespan=9285213 iters_per_tick=40508075
+$ schedbench shortlate
+schedbench shortlate
+R wl=shortlate cls=short turn=1911879 resp=986 run=303000 nsched=3 level=2
+R wl=shortlate cls=short turn=1942416 resp=100076 run=332153 nsched=3 level=2
+R wl=shortlate cls=short turn=1962797 resp=200224 run=322136 nsched=3 level=2
+R wl=shortlate cls=short turn=1202596 resp=300680 run=299268 nsched=2 level=1
+R wl=shortlate cls=long turn=8896070 resp=79518 run=3992670 nsched=13 level=2
+R wl=shortlate cls=long turn=9259282 resp=422 run=3972892 nsched=14 level=1
+T wl=shortlate makespan=9265678 iters_per_tick=40262041
+$ xQEMU: Terminated
+
+xv6 kernel is booting
+
+init: starting sh
+$ schedbench cpu
+schedbench cpu
+R wl=cpu cls=cpu turn=7011354 resp=853 run=1986449 nsched=8 level=2
+R wl=cpu cls=cpu turn=7271205 resp=53746 run=2061451 nsched=8 level=2
+R wl=cpu cls=cpu turn=7768644 resp=254367 run=1986600 nsched=8 level=2
+R wl=cpu cls=cpu turn=8060131 resp=154095 run=2004941 nsched=8 level=2
+T wl=cpu makespan=8069921 iters_per_tick=40694452
+$ schedbench mixed
+schedbench mixed
+R wl=mixed cls=interactive turn=4287059 resp=265863 run=80407 nsched=41 level=0
+R wl=mixed cls=interactive turn=4286925 resp=267411 run=73952 nsched=41 level=0
+R wl=mixed cls=cpu turn=7757382 resp=1771 run=2562309 nsched=20 level=2
+R wl=mixed cls=cpu turn=7778435 resp=65683 run=2575515 nsched=20 level=2
+R wl=mixed cls=cpu turn=7916451 resp=165808 run=2593692 nsched=19 level=2
+L wl=mixed lat_mean=98611 lat_max=99880 rounds=40
+L wl=mixed lat_mean=98697 lat_max=102443 rounds=40
+T wl=mixed makespan=7932501 iters_per_tick=34359481
+$ schedbench shortlong
+schedbench shortlong
+R wl=shortlong cls=short turn=1095116 resp=300606 run=292049 nsched=2 level=1
+R wl=shortlong cls=short turn=2415294 resp=100200 run=306700 nsched=3 level=2
+R wl=shortlong cls=short turn=2427866 resp=200435 run=307554 nsched=3 level=2
+R wl=shortlong cls=short turn=2565334 resp=400768 run=333434 nsched=3 level=2
+R wl=shortlong cls=long turn=9201749 resp=539 run=4015065 nsched=14 level=2
+R wl=shortlong cls=long turn=9295061 resp=94864 run=4004245 nsched=14 level=2
+T wl=shortlong makespan=9302128 iters_per_tick=39648921
+$ schedbench shortlate
+schedbench shortlate
+R wl=shortlate cls=short turn=1355919 resp=811 run=349104 nsched=3 level=2
+R wl=shortlate cls=short turn=1371425 resp=99961 run=307427 nsched=3 level=2
+R wl=shortlate cls=short turn=1418966 resp=200159 run=339625 nsched=3 level=2
+R wl=shortlate cls=short turn=1497124 resp=300824 run=369356 nsched=3 level=2
+R wl=shortlate cls=long turn=9806287 resp=486 run=4276432 nsched=19 level=2
+R wl=shortlate cls=long turn=9984000 resp=12575 run=4290768 nsched=18 level=2
+T wl=shortlate makespan=9990989 iters_per_tick=42036452
+$ xQEMU: Terminated
+
+xv6 kernel is booting
+
+init: starting sh
+$ schedbench cpu
+schedbench cpu
+R wl=cpu cls=cpu turn=7141253 resp=1073 run=2117362 nsched=8 level=2
+R wl=cpu cls=cpu turn=7399607 resp=76887 run=2056919 nsched=8 level=2
+R wl=cpu cls=cpu turn=8018178 resp=277446 run=2116084 nsched=8 level=2
+R wl=cpu cls=cpu turn=8408368 resp=177128 run=2095208 nsched=8 level=2
+T wl=cpu makespan=8415903 iters_per_tick=41842713
+$ schedbench mixed
+schedbench mixed
+R wl=mixed cls=interactive turn=4436473 resp=213755 run=84410 nsched=41 level=0
+R wl=mixed cls=interactive turn=4436468 resp=215782 run=82485 nsched=41 level=0
+R wl=mixed cls=cpu turn=8761366 resp=13041 run=2965650 nsched=20 level=2
+R wl=mixed cls=cpu turn=8853454 resp=113468 run=2943113 nsched=20 level=2
+R wl=mixed cls=cpu turn=9026865 resp=947 run=2920635 nsched=20 level=2
+L wl=mixed lat_mean=103552 lat_max=299434 rounds=40
+L wl=mixed lat_mean=103510 lat_max=297918 rounds=40
+T wl=mixed makespan=9041675 iters_per_tick=40157106
+$ schedbench shortlong
+schedbench shortlong
+R wl=shortlong cls=short turn=1824189 resp=897 run=316628 nsched=3 level=2
+R wl=shortlong cls=short turn=794538 resp=100012 run=292812 nsched=2 level=1
+R wl=shortlong cls=short turn=1909918 resp=200316 run=295749 nsched=3 level=2
+R wl=shortlong cls=short turn=1102529 resp=300545 run=299608 nsched=2 level=1
+R wl=shortlong cls=long turn=8797537 resp=24578 run=3950397 nsched=13 level=2
+R wl=shortlong cls=long turn=9212916 resp=448 run=4019286 nsched=14 level=1
+T wl=shortlong makespan=9220253 iters_per_tick=39327326
+$ schedbench shortlate
+schedbench shortlate
+R wl=shortlate cls=short turn=1918521 resp=828 run=308822 nsched=3 level=0
+R wl=shortlate cls=short turn=1931801 resp=100008 run=315030 nsched=3 level=0
+R wl=shortlate cls=short turn=1940080 resp=200258 run=310067 nsched=3 level=0
+R wl=shortlate cls=short turn=1953230 resp=300866 run=314579 nsched=3 level=0
+R wl=shortlate cls=long turn=8955025 resp=439 run=4062080 nsched=14 level=0
+R wl=shortlate cls=long turn=9471171 resp=6025 run=4126595 nsched=14 level=2
+T wl=shortlate makespan=9478179 iters_per_tick=42266831
+$ xQEMU: Terminated
+
+xv6 kernel is booting
+
+init: starting sh
+$ schedbench cpu
+schedbench cpu
+R wl=cpu cls=cpu turn=7143704 resp=762 run=2017430 nsched=8 level=2
+R wl=cpu cls=cpu turn=7389065 resp=10444 run=2047433 nsched=8 level=2
+R wl=cpu cls=cpu turn=7954067 resp=211065 run=2010171 nsched=8 level=2
+R wl=cpu cls=cpu turn=8091623 resp=110793 run=1997992 nsched=8 level=2
+T wl=cpu makespan=8102841 iters_per_tick=40429931
+$ schedbench mixed
+schedbench mixed
+R wl=mixed cls=interactive turn=4320330 resp=283002 run=93309 nsched=41 level=0
+R wl=mixed cls=interactive turn=4320403 resp=284999 run=89871 nsched=41 level=0
+R wl=mixed cls=cpu turn=9265436 resp=82533 run=3093024 nsched=21 level=2
+R wl=mixed cls=cpu turn=9428982 resp=182739 run=3108643 nsched=21 level=2
+R wl=mixed cls=cpu turn=9671773 resp=959 run=3252864 nsched=21 level=2
+L wl=mixed lat_mean=98700 lat_max=117204 rounds=40
+L wl=mixed lat_mean=98701 lat_max=117681 rounds=40
+T wl=mixed makespan=9687126 iters_per_tick=41975057
+$ schedbench shortlong
+schedbench shortlong
+R wl=shortlong cls=short turn=596920 resp=791 run=294973 nsched=2 level=1
+R wl=shortlong cls=short turn=1911637 resp=100093 run=310751 nsched=3 level=2
+R wl=shortlong cls=short turn=902619 resp=200361 run=300431 nsched=2 level=1
+R wl=shortlong cls=short turn=2029839 resp=300540 run=320020 nsched=3 level=2
+R wl=shortlong cls=long turn=8786138 resp=454 run=4016617 nsched=13 level=2
+R wl=shortlong cls=long turn=9363340 resp=48989 run=4085097 nsched=14 level=2
+T wl=shortlong makespan=9370453 iters_per_tick=40668334
+$ schedbench shortlate
+schedbench shortlate
+R wl=shortlate cls=short turn=572231 resp=713 run=270238 nsched=2 level=0
+R wl=shortlate cls=short turn=1083869 resp=300585 run=281179 nsched=2 level=0
+R wl=shortlate cls=short turn=1561194 resp=100025 run=286192 nsched=3 level=0
+R wl=shortlate cls=short turn=1579212 resp=200293 run=319399 nsched=3 level=0
+R wl=shortlate cls=long turn=8574427 resp=8077 run=3832457 nsched=13 level=0
+R wl=shortlate cls=long turn=8842424 resp=661 run=3817375 nsched=14 level=2
+T wl=shortlate makespan=8849571 iters_per_tick=38494221
+$ xQEMU: Terminated
+
+xv6 kernel is booting
+
+init: starting sh
+$ schedbench calib
+schedbench calib
+CALIB iters_per_tick=39489513
+$ schedbench calib
+schedbench calib
+CALIB iters_per_tick=39008929
+$ schedbench calib
+schedbench calib
+CALIB iters_per_tick=40635839
+$ xQEMU: Terminated
+
+xv6 kernel is booting
+
+init: starting sh
+$ schedbench cpu 39489513
+schedbench cpu 39489513
+R wl=cpu cls=cpu turn=7683735 resp=963 run=1952857 nsched=20 level=0
+R wl=cpu cls=cpu turn=7710306 resp=89413 run=1938893 nsched=20 level=0
+R wl=cpu cls=cpu turn=7771949 resp=289980 run=1953383 nsched=20 level=0
+R wl=cpu cls=cpu turn=7855423 resp=189541 run=1983849 nsched=22 level=0
+T wl=cpu makespan=7865496 iters_per_tick=39489513
+$ schedbench mixed 39489513
+schedbench mixed 39489513
+R wl=mixed cls=cpu turn=8885517 resp=93136 run=2964787 nsched=30 level=0
+R wl=mixed cls=cpu turn=9061401 resp=193287 run=2988935 nsched=31 level=0
+R wl=mixed cls=cpu turn=9103657 resp=1321 run=2999367 nsched=32 level=0
+R wl=mixed cls=interactive turn=10042940 resp=293485 run=86642 nsched=41 level=0
+R wl=mixed cls=interactive turn=10042838 resp=295478 run=87884 nsched=41 level=0
+L wl=mixed lat_mean=241689 lat_max=300165 rounds=40
+L wl=mixed lat_mean=241545 lat_max=300454 rounds=40
+T wl=mixed makespan=10079250 iters_per_tick=39489513
+$ schedbench shortlong 39489513
+schedbench shortlong 39489513
+R wl=shortlong cls=short turn=1508500 resp=200671 run=300859 nsched=3 level=0
+R wl=shortlong cls=short turn=1605008 resp=401114 run=300024 nsched=3 level=0
+R wl=shortlong cls=short turn=1896754 resp=300872 run=287903 nsched=4 level=0
+R wl=shortlong cls=short turn=2188697 resp=503979 run=296032 nsched=5 level=0
+R wl=shortlong cls=long turn=9073109 resp=97006 run=3950651 nsched=40 level=0
+R wl=shortlong cls=long turn=9098384 resp=401 run=3925445 nsched=41 level=0
+T wl=shortlong makespan=9105938 iters_per_tick=39489513
+$ schedbench shortlate 39489513
+schedbench shortlate 39489513
+R wl=shortlate cls=short turn=1594302 resp=300704 run=289229 nsched=3 level=0
+R wl=shortlate cls=short turn=1693205 resp=501166 run=288272 nsched=3 level=0
+R wl=shortlate cls=short turn=1927857 resp=200588 run=321637 nsched=4 level=0
+R wl=shortlate cls=short turn=1993118 resp=400981 run=278403 nsched=4 level=0
+R wl=shortlate cls=long turn=9073922 resp=71448 run=3978189 nsched=40 level=0
+R wl=shortlate cls=long turn=9158355 resp=481 run=3965470 nsched=42 level=0
+T wl=shortlate makespan=9165355 iters_per_tick=39489513
+$ xQEMU: Terminated
+
+xv6 kernel is booting
+
+init: starting sh
+$ schedbench cpu 39489513
+schedbench cpu 39489513
+R wl=cpu cls=cpu turn=7829184 resp=95849 run=2004950 nsched=20 level=0
+R wl=cpu cls=cpu turn=7919345 resp=296026 run=1994007 nsched=20 level=0
+R wl=cpu cls=cpu turn=8039710 resp=1495 run=2008263 nsched=22 level=0
+R wl=cpu cls=cpu turn=8052134 resp=195877 run=2030290 nsched=22 level=0
+T wl=cpu makespan=8065524 iters_per_tick=39489513
+$ schedbench mixed 39489513
+schedbench mixed 39489513
+R wl=mixed cls=cpu turn=8541490 resp=6521 run=2908691 nsched=29 level=0
+R wl=mixed cls=cpu turn=8915666 resp=106798 run=2986116 nsched=31 level=0
+R wl=mixed cls=cpu turn=8976278 resp=899 run=2931917 nsched=33 level=0
+R wl=mixed cls=interactive turn=9853845 resp=207023 run=87424 nsched=41 level=0
+R wl=mixed cls=interactive turn=9853835 resp=209022 run=83197 nsched=41 level=0
+L wl=mixed lat_mean=239130 lat_max=300359 rounds=40
+L wl=mixed lat_mean=239096 lat_max=300383 rounds=40
+T wl=mixed makespan=9876737 iters_per_tick=39489513
+$ schedbench shortlong 39489513
+schedbench shortlong 39489513
+R wl=shortlong cls=short turn=1489687 resp=200670 run=283262 nsched=3 level=0
+R wl=shortlong cls=short turn=1587850 resp=401187 run=281285 nsched=3 level=0
+R wl=shortlong cls=short turn=1882803 resp=300889 run=293036 nsched=4 level=0
+R wl=shortlong cls=short turn=2146942 resp=501390 run=285601 nsched=5 level=0
+R wl=shortlong cls=long turn=9189698 resp=13194 run=4049202 nsched=41 level=0
+R wl=shortlong cls=long turn=9255780 resp=378 run=4023075 nsched=42 level=0
+T wl=shortlong makespan=9262799 iters_per_tick=39489513
+$ schedbench shortlate 39489513
+schedbench shortlate 39489513
+R wl=shortlate cls=short turn=1499334 resp=200771 run=293888 nsched=3 level=0
+R wl=shortlate cls=short turn=1597390 resp=401441 run=291904 nsched=3 level=0
+R wl=shortlate cls=short turn=1902456 resp=301110 run=302996 nsched=4 level=0
+R wl=shortlate cls=short turn=2201525 resp=501555 run=309030 nsched=5 level=0
+R wl=shortlate cls=long turn=9066681 resp=369 run=3914644 nsched=40 level=0
+R wl=shortlate cls=long turn=9089473 resp=32336 run=3936120 nsched=41 level=0
+T wl=shortlate makespan=9097993 iters_per_tick=39489513
+$ xQEMU: Terminated
+
+xv6 kernel is booting
+
+init: starting sh
+$ schedbench cpu 39489513
+schedbench cpu 39489513
+R wl=cpu cls=cpu turn=7740423 resp=10577 run=1974534 nsched=20 level=0
+R wl=cpu cls=cpu turn=7962455 resp=728 run=2006605 nsched=21 level=0
+R wl=cpu cls=cpu turn=7874019 resp=211022 run=2009479 nsched=20 level=0
+R wl=cpu cls=cpu turn=8024713 resp=110706 run=2013658 nsched=22 level=0
+T wl=cpu makespan=8031217 iters_per_tick=39489513
+$ schedbench mixed 39489513
+schedbench mixed 39489513
+R wl=mixed cls=cpu turn=9059584 resp=178091 run=3026452 nsched=30 level=0
+R wl=mixed cls=cpu turn=9118584 resp=77868 run=3055295 nsched=31 level=0
+R wl=mixed cls=cpu turn=9228365 resp=1483 run=2993817 nsched=33 level=0
+R wl=mixed cls=interactive turn=10083110 resp=278252 run=90661 nsched=41 level=0
+R wl=mixed cls=interactive turn=10083018 resp=280167 run=87381 nsched=41 level=0
+L wl=mixed lat_mean=242997 lat_max=328351 rounds=40
+L wl=mixed lat_mean=242949 lat_max=328575 rounds=40
+T wl=mixed makespan=10107194 iters_per_tick=39489513
+$ schedbench shortlong 39489513
+schedbench shortlong 39489513
+R wl=shortlong cls=short turn=1492225 resp=200626 run=287266 nsched=3 level=0
+R wl=shortlong cls=short turn=1588256 resp=401129 run=283247 nsched=3 level=0
+R wl=shortlong cls=short turn=1877843 resp=300815 run=285168 nsched=4 level=0
+R wl=shortlong cls=short turn=2145092 resp=501485 run=285702 nsched=5 level=0
+R wl=shortlong cls=long turn=9230423 resp=11481 run=4094298 nsched=41 level=0
+R wl=shortlong cls=long turn=9333775 resp=354 run=4059521 nsched=43 level=0
+T wl=shortlong makespan=9342377 iters_per_tick=39489513
+$ schedbench shortlate 39489513
+schedbench shortlate 39489513
+R wl=shortlate cls=short turn=1501157 resp=201341 run=294937 nsched=3 level=0
+R wl=shortlate cls=short turn=1600082 resp=401505 run=294407 nsched=3 level=0
+R wl=shortlate cls=short turn=1896122 resp=301247 run=295144 nsched=4 level=0
+R wl=shortlate cls=short turn=2200071 resp=501899 run=311211 nsched=5 level=0
+R wl=shortlate cls=long turn=9138146 resp=46924 run=3968022 nsched=40 level=0
+R wl=shortlate cls=long turn=9150742 resp=346 run=3944158 nsched=41 level=0
+T wl=shortlate makespan=9157173 iters_per_tick=39489513
+$ xQEMU: Terminated
+
+xv6 kernel is booting
+
+init: starting sh
+$ schedbench cpu 39489513
+schedbench cpu 39489513
+R wl=cpu cls=cpu turn=7716291 resp=13312 run=1976351 nsched=20 level=0
+R wl=cpu cls=cpu turn=7837255 resp=213913 run=1997721 nsched=20 level=0
+R wl=cpu cls=cpu turn=7966472 resp=113563 run=1957989 nsched=21 level=0
+R wl=cpu cls=cpu turn=7988953 resp=751 run=2032108 nsched=22 level=0
+T wl=cpu makespan=7997909 iters_per_tick=39489513
+$ schedbench mixed 39489513
+schedbench mixed 39489513
+R wl=mixed cls=cpu turn=8831607 resp=82340 run=2922108 nsched=30 level=0
+R wl=mixed cls=cpu turn=8898971 resp=182392 run=2981992 nsched=30 level=0
+R wl=mixed cls=cpu turn=9011942 resp=1594 run=2961110 nsched=32 level=0
+R wl=mixed cls=interactive turn=9928737 resp=282570 run=88055 nsched=41 level=0
+R wl=mixed cls=interactive turn=9928644 resp=285149 run=82861 nsched=41 level=0
+L wl=mixed lat_mean=239080 lat_max=301214 rounds=40
+L wl=mixed lat_mean=239069 lat_max=301257 rounds=40
+T wl=mixed makespan=9952787 iters_per_tick=39489513
+$ schedbench shortlong 39489513
+schedbench shortlong 39489513
+R wl=shortlong cls=short turn=1491905 resp=200632 run=287074 nsched=3 level=0
+R wl=shortlong cls=short turn=1592071 resp=401232 run=287122 nsched=3 level=0
+R wl=shortlong cls=short turn=1876610 resp=300947 run=284494 nsched=4 level=0
+R wl=shortlong cls=short turn=2162078 resp=501556 run=299863 nsched=5 level=0
+R wl=shortlong cls=long turn=9152271 resp=9413 run=4019499 nsched=41 level=0
+R wl=shortlong cls=long turn=9243301 resp=374 run=4028974 nsched=42 level=0
+T wl=shortlong makespan=9249666 iters_per_tick=39489513
+$ schedbench shortlate 39489513
+schedbench shortlate 39489513
+R wl=shortlate cls=short turn=1494011 resp=201460 run=287852 nsched=3 level=0
+R wl=shortlate cls=short turn=1598351 resp=401547 run=292470 nsched=3 level=0
+R wl=shortlate cls=short turn=1887419 resp=301300 run=293527 nsched=4 level=0
+R wl=shortlate cls=short turn=2175329 resp=501733 run=297638 nsched=5 level=0
+R wl=shortlate cls=long turn=8880013 resp=34891 run=3917850 nsched=39 level=0
+R wl=shortlate cls=long turn=9062623 resp=384 run=3930796 nsched=41 level=0
+T wl=shortlate makespan=9069397 iters_per_tick=39489513
+$ xQEMU: Terminated
+
+xv6 kernel is booting
+
+init: starting sh
+$ schedbench cpu 39489513
+schedbench cpu 39489513
+R wl=cpu cls=cpu turn=7729277 resp=4094 run=1997717 nsched=20 level=0
+R wl=cpu cls=cpu turn=8103825 resp=204795 run=2071964 nsched=21 level=0
+R wl=cpu cls=cpu turn=8146064 resp=104382 run=2024771 nsched=22 level=0
+R wl=cpu cls=cpu turn=8152138 resp=841 run=2037598 nsched=23 level=0
+T wl=cpu makespan=8157682 iters_per_tick=39489513
+$ schedbench mixed 39489513
+schedbench mixed 39489513
+R wl=mixed cls=cpu turn=9141656 resp=21205 run=3087194 nsched=31 level=0
+R wl=mixed cls=cpu turn=9277471 resp=121423 run=3049790 nsched=32 level=0
+R wl=mixed cls=cpu turn=9360618 resp=973 run=3065151 nsched=33 level=0
+R wl=mixed cls=interactive turn=10175268 resp=221682 run=91594 nsched=41 level=0
+R wl=mixed cls=interactive turn=10175295 resp=223797 run=85635 nsched=41 level=0
+L wl=mixed lat_mean=246682 lat_max=302201 rounds=40
+L wl=mixed lat_mean=246704 lat_max=302096 rounds=40
+T wl=mixed makespan=10212759 iters_per_tick=39489513
+$ schedbench shortlong 39489513
+schedbench shortlong 39489513
+R wl=shortlong cls=short turn=1603788 resp=301271 run=295990 nsched=3 level=0
+R wl=shortlong cls=short turn=1911193 resp=200915 run=301992 nsched=4 level=0
+R wl=shortlong cls=short turn=2053907 resp=502012 run=344517 nsched=4 level=0
+R wl=shortlong cls=short turn=2223497 resp=401496 run=317935 nsched=5 level=0
+R wl=shortlong cls=long turn=9046498 resp=96520 run=3911845 nsched=39 level=0
+R wl=shortlong cls=long turn=9196788 resp=333 run=3982802 nsched=42 level=0
+T wl=shortlong makespan=9203406 iters_per_tick=39489513
+$ schedbench shortlate 39489513
+schedbench shortlate 39489513
+R wl=shortlate cls=short turn=1796833 resp=501371 run=290823 nsched=3 level=0
+R wl=shortlate cls=short turn=1942702 resp=200613 run=335702 nsched=4 level=0
+R wl=shortlate cls=short turn=1976270 resp=300748 run=335337 nsched=4 level=0
+R wl=shortlate cls=short turn=1984278 resp=401038 run=309809 nsched=4 level=0
+R wl=shortlate cls=long turn=9109497 resp=84508 run=4001597 nsched=40 level=0
+R wl=shortlate cls=long turn=9317477 resp=585 run=4006659 nsched=43 level=0
+T wl=shortlate makespan=9323956 iters_per_tick=39489513
+$ xQEMU: Terminated
+
+xv6 kernel is booting
+
+init: starting sh
+$ schedbench cpu 39489513
+schedbench cpu 39489513
+R wl=cpu cls=cpu turn=7621748 resp=62608 run=2034619 nsched=8 level=2
+R wl=cpu cls=cpu turn=7783846 resp=162996 run=1959378 nsched=8 level=2
+R wl=cpu cls=cpu turn=7985685 resp=263303 run=2002374 nsched=8 level=2
+R wl=cpu cls=cpu turn=8007703 resp=907 run=1985577 nsched=8 level=2
+T wl=cpu makespan=8013333 iters_per_tick=39489513
+$ schedbench mixed 39489513
+schedbench mixed 39489513
+R wl=mixed cls=interactive turn=4443815 resp=223280 run=87852 nsched=41 level=0
+R wl=mixed cls=interactive turn=4443680 resp=225327 run=83660 nsched=41 level=0
+R wl=mixed cls=cpu turn=8151187 resp=123095 run=2933036 nsched=20 level=2
+R wl=mixed cls=cpu turn=8669654 resp=23081 run=2957096 nsched=22 level=2
+R wl=mixed cls=cpu turn=9049768 resp=1728 run=2955523 nsched=21 level=2
+L wl=mixed lat_mean=103408 lat_max=299389 rounds=40
+L wl=mixed lat_mean=103427 lat_max=299384 rounds=40
+T wl=mixed makespan=9065044 iters_per_tick=39489513
+$ schedbench shortlong 39489513
+schedbench shortlong 39489513
+R wl=shortlong cls=short turn=696846 resp=763 run=293938 nsched=2 level=1
+R wl=shortlong cls=short turn=1202972 resp=300941 run=299062 nsched=2 level=1
+R wl=shortlong cls=short turn=1713392 resp=100034 run=308045 nsched=3 level=2
+R wl=shortlong cls=short turn=1734726 resp=200555 run=316439 nsched=3 level=2
+R wl=shortlong cls=long turn=8350383 resp=34957 run=3980285 nsched=15 level=2
+R wl=shortlong cls=long turn=9212316 resp=461 run=3979780 nsched=15 level=2
+T wl=shortlong makespan=9222019 iters_per_tick=39489513
+$ schedbench shortlate 39489513
+schedbench shortlate 39489513
+R wl=shortlate cls=short turn=596436 resp=719 run=294482 nsched=2 level=1
+R wl=shortlate cls=short turn=889068 resp=200248 run=287076 nsched=2 level=1
+R wl=shortlate cls=short turn=1109207 resp=100068 run=297889 nsched=3 level=2
+R wl=shortlate cls=short turn=1196269 resp=300547 run=295576 nsched=3 level=2
+R wl=shortlate cls=long turn=8618124 resp=571 run=3996265 nsched=17 level=1
+R wl=shortlate cls=long turn=9256727 resp=95440 run=4047523 nsched=18 level=2
+T wl=shortlate makespan=9265004 iters_per_tick=39489513
+$ xQEMU: Terminated
+
+xv6 kernel is booting
+
+init: starting sh
+$ schedbench cpu 39489513
+schedbench cpu 39489513
+R wl=cpu cls=cpu turn=7402753 resp=1045 run=1968761 nsched=7 level=2
+R wl=cpu cls=cpu turn=7551682 resp=2553 run=1951210 nsched=8 level=2
+R wl=cpu cls=cpu turn=7749904 resp=102831 run=2007911 nsched=8 level=2
+R wl=cpu cls=cpu turn=7937702 resp=203060 run=1990208 nsched=8 level=2
+T wl=cpu makespan=7944289 iters_per_tick=39489513
+$ schedbench mixed 39489513
+schedbench mixed 39489513
+R wl=mixed cls=interactive turn=4462208 resp=242602 run=83512 nsched=41 level=0
+R wl=mixed cls=interactive turn=4462211 resp=244575 run=81603 nsched=41 level=0
+R wl=mixed cls=cpu turn=8266631 resp=42133 run=3029285 nsched=21 level=2
+R wl=mixed cls=cpu turn=8855693 resp=933 run=2940697 nsched=22 level=2
+R wl=mixed cls=cpu turn=9118126 resp=142421 run=2953335 nsched=20 level=2
+L wl=mixed lat_mean=103493 lat_max=299523 rounds=40
+L wl=mixed lat_mean=103461 lat_max=299671 rounds=40
+T wl=mixed makespan=9133299 iters_per_tick=39489513
+$ schedbench shortlong 39489513
+schedbench shortlong 39489513
+R wl=shortlong cls=short turn=695840 resp=776 run=293436 nsched=2 level=1
+R wl=shortlong cls=short turn=996173 resp=200424 run=293818 nsched=2 level=1
+R wl=shortlong cls=short turn=1191115 resp=300687 run=288206 nsched=2 level=1
+R wl=shortlong cls=short turn=1288026 resp=100151 run=288816 nsched=3 level=2
+R wl=shortlong cls=long turn=8986168 resp=14225 run=4145504 nsched=16 level=2
+R wl=shortlong cls=long turn=9346262 resp=357 run=3995547 nsched=15 level=2
+T wl=shortlong makespan=9352658 iters_per_tick=39489513
+$ schedbench shortlate 39489513
+schedbench shortlate 39489513
+R wl=shortlate cls=short turn=600563 resp=845 run=298420 nsched=2 level=1
+R wl=shortlate cls=short turn=793730 resp=100122 run=291903 nsched=2 level=1
+R wl=shortlate cls=short turn=1097693 resp=300613 run=294916 nsched=2 level=1
+R wl=shortlate cls=short turn=1195221 resp=200361 run=288775 nsched=3 level=2
+R wl=shortlate cls=long turn=8890695 resp=339 run=4068511 nsched=19 level=2
+R wl=shortlate cls=long turn=9281687 resp=44703 run=4001698 nsched=19 level=2
+T wl=shortlate makespan=9290533 iters_per_tick=39489513
+$ xQEMU: Terminated
+
+xv6 kernel is booting
+
+init: starting sh
+$ schedbench cpu 39489513
+schedbench cpu 39489513
+R wl=cpu cls=cpu turn=7394469 resp=1324 run=1966494 nsched=7 level=2
+R wl=cpu cls=cpu turn=7568645 resp=25592 run=1977255 nsched=8 level=2
+R wl=cpu cls=cpu turn=7717851 resp=125608 run=1953233 nsched=8 level=2
+R wl=cpu cls=cpu turn=7863406 resp=225696 run=1948461 nsched=8 level=2
+T wl=cpu makespan=7870307 iters_per_tick=39489513
+$ schedbench mixed 39489513
+schedbench mixed 39489513
+R wl=mixed cls=interactive turn=4449834 resp=230166 run=80531 nsched=41 level=0
+R wl=mixed cls=interactive turn=4449853 resp=232110 run=87417 nsched=41 level=0
+R wl=mixed cls=cpu turn=8226882 resp=29585 run=2905895 nsched=21 level=2
+R wl=mixed cls=cpu turn=8840169 resp=815 run=2946759 nsched=21 level=2
+R wl=mixed cls=cpu turn=9103301 resp=129846 run=3043850 nsched=21 level=2
+L wl=mixed lat_mean=103561 lat_max=299359 rounds=40
+L wl=mixed lat_mean=103309 lat_max=299355 rounds=40
+T wl=mixed makespan=9118897 iters_per_tick=39489513
+$ schedbench shortlong 39489513
+schedbench shortlong 39489513
+R wl=shortlong cls=short turn=694359 resp=783 run=291717 nsched=2 level=1
+R wl=shortlong cls=short turn=1333209 resp=100314 run=328073 nsched=3 level=2
+R wl=shortlong cls=short turn=1363527 resp=200617 run=322640 nsched=3 level=2
+R wl=shortlong cls=short turn=1414667 resp=300962 run=344875 nsched=3 level=2
+R wl=shortlong cls=long turn=8607242 resp=378 run=4067396 nsched=15 level=2
+R wl=shortlong cls=long turn=9371650 resp=90971 run=3973771 nsched=15 level=2
+T wl=shortlong makespan=9379922 iters_per_tick=39489513
+$ schedbench shortlate 39489513
+schedbench shortlate 39489513
+R wl=shortlate cls=short turn=587174 resp=871 run=284960 nsched=2 level=1
+R wl=shortlate cls=short turn=1098571 resp=300456 run=295958 nsched=2 level=1
+R wl=shortlate cls=short turn=1577020 resp=100037 run=287023 nsched=3 level=2
+R wl=shortlate cls=short turn=1607181 resp=200289 run=325033 nsched=3 level=2
+R wl=shortlate cls=long turn=8759357 resp=96098 run=4028184 nsched=17 level=1
+R wl=shortlate cls=long turn=9376264 resp=560 run=4117993 nsched=18 level=2
+T wl=shortlate makespan=9383050 iters_per_tick=39489513
+$ xQEMU: Terminated
+
+xv6 kernel is booting
+
+init: starting sh
+$ schedbench cpu 39489513
+schedbench cpu 39489513
+R wl=cpu cls=cpu turn=7606011 resp=93018 run=1958165 nsched=8 level=2
+R wl=cpu cls=cpu turn=7864345 resp=193098 run=2088126 nsched=8 level=2
+R wl=cpu cls=cpu turn=8098301 resp=293416 run=2030792 nsched=8 level=2
+R wl=cpu cls=cpu turn=8144775 resp=1323 run=2039581 nsched=8 level=2
+T wl=cpu makespan=8151090 iters_per_tick=39489513
+$ schedbench mixed 39489513
+schedbench mixed 39489513
+R wl=mixed cls=interactive turn=4459335 resp=238543 run=85021 nsched=41 level=0
+R wl=mixed cls=interactive turn=4459269 resp=240554 run=82966 nsched=41 level=0
+R wl=mixed cls=cpu turn=8159415 resp=138375 run=3025543 nsched=21 level=2
+R wl=mixed cls=cpu turn=8744466 resp=38347 run=2918956 nsched=21 level=2
+R wl=mixed cls=cpu turn=9059402 resp=1467 run=2915878 nsched=21 level=2
+L wl=mixed lat_mean=103492 lat_max=299663 rounds=40
+L wl=mixed lat_mean=103450 lat_max=299680 rounds=40
+T wl=mixed makespan=9074634 iters_per_tick=39489513
+$ schedbench shortlong 39489513
+schedbench shortlong 39489513
+R wl=shortlong cls=short turn=900394 resp=100101 run=297863 nsched=2 level=1
+R wl=shortlong cls=short turn=1718595 resp=740 run=311519 nsched=3 level=2
+R wl=shortlong cls=short turn=1751218 resp=200579 run=327882 nsched=3 level=2
+R wl=shortlong cls=short turn=1775366 resp=300817 run=319302 nsched=3 level=2
+R wl=shortlong cls=long turn=8315897 resp=43650 run=4048130 nsched=15 level=2
+R wl=shortlong cls=long turn=9265115 resp=369 run=3924558 nsched=15 level=2
+T wl=shortlong makespan=9272591 iters_per_tick=39489513
+$ schedbench shortlate 39489513
+schedbench shortlate 39489513
+R wl=shortlate cls=short turn=993546 resp=200108 run=291328 nsched=2 level=1
+R wl=shortlate cls=short turn=1123978 resp=1309 run=319126 nsched=3 level=2
+R wl=shortlate cls=short turn=1138270 resp=99905 run=307202 nsched=3 level=2
+R wl=shortlate cls=short turn=1239549 resp=300283 run=296362 nsched=3 level=2
+R wl=shortlate cls=long turn=8308404 resp=328 run=3844238 nsched=18 level=1
+R wl=shortlate cls=long turn=9091478 resp=59963 run=3988246 nsched=19 level=2
+T wl=shortlate makespan=9098339 iters_per_tick=39489513
+$ xQEMU: Terminated
+
+xv6 kernel is booting
+
+init: starting sh
+$ schedbench cpu 39489513
+schedbench cpu 39489513
+R wl=cpu cls=cpu turn=7635275 resp=6619 run=1993320 nsched=8 level=2
+R wl=cpu cls=cpu turn=7895426 resp=106582 run=2062814 nsched=8 level=2
+R wl=cpu cls=cpu turn=8166285 resp=206998 run=2076852 nsched=8 level=2
+R wl=cpu cls=cpu turn=8356150 resp=1365 run=2202861 nsched=8 level=2
+T wl=cpu makespan=8365137 iters_per_tick=39489513
+$ schedbench mixed 39489513
+schedbench mixed 39489513
+R wl=mixed cls=interactive turn=4436236 resp=215203 run=85620 nsched=41 level=0
+R wl=mixed cls=interactive turn=4436227 resp=218368 run=83072 nsched=41 level=0
+R wl=mixed cls=cpu turn=8780510 resp=975 run=2894446 nsched=21 level=2
+R wl=mixed cls=cpu turn=8935193 resp=14573 run=2903549 nsched=21 level=2
+R wl=mixed cls=cpu turn=8976244 resp=114901 run=2979691 nsched=21 level=2
+L wl=mixed lat_mean=103491 lat_max=299130 rounds=40
+L wl=mixed lat_mean=103428 lat_max=298629 rounds=40
+T wl=mixed makespan=8997240 iters_per_tick=39489513
+$ schedbench shortlong 39489513
+schedbench shortlong 39489513
+R wl=shortlong cls=short turn=890198 resp=100042 run=287890 nsched=2 level=1
+R wl=shortlong cls=short turn=1197756 resp=300621 run=294560 nsched=2 level=1
+R wl=shortlong cls=short turn=1303155 resp=200362 run=306378 nsched=3 level=2
+R wl=shortlong cls=short turn=1948172 resp=835 run=340356 nsched=3 level=0
+R wl=shortlong cls=long turn=8100169 resp=349 run=3922416 nsched=15 level=2
+R wl=shortlong cls=long turn=9301350 resp=93831 run=4108142 nsched=16 level=2
+T wl=shortlong makespan=9308197 iters_per_tick=39489513
+$ schedbench shortlate 39489513
+schedbench shortlate 39489513
+R wl=shortlate cls=short turn=585579 resp=735 run=282978 nsched=2 level=1
+R wl=shortlate cls=short turn=901937 resp=200845 run=299281 nsched=2 level=1
+R wl=shortlate cls=short turn=1104525 resp=301298 run=300970 nsched=2 level=1
+R wl=shortlate cls=short turn=1684566 resp=100162 run=288630 nsched=3 level=0
+R wl=shortlate cls=long turn=8630150 resp=337 run=3823312 nsched=19 level=2
+R wl=shortlate cls=long turn=8881218 resp=68545 run=3843450 nsched=17 level=2
+T wl=shortlate makespan=8888203 iters_per_tick=39489513
+$ xQEMU: Terminated
+

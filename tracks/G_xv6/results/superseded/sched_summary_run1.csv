@@ -1,0 +1,39 @@
+workload,variant,metric,mean,std,n
+cpu,original,cpu turnaround (s),7.583,0.51,20
+cpu,original,cpu response (ms),118.0,102.4,20
+cpu,original,cpu times scheduled,20,1.6,20
+cpu,original,makespan (s),7.685,0.551,5
+cpu,mlfq,cpu turnaround (s),7.719,0.548,20
+cpu,mlfq,cpu response (ms),114.1,98.0,20
+cpu,mlfq,cpu times scheduled,8.1,0.2,20
+cpu,mlfq,makespan (s),8.241,0.388,5
+mixed,original,cpu turnaround (s),8.747,0.475,15
+mixed,original,cpu response (ms),73.3,68.6,15
+mixed,original,cpu times scheduled,30.2,1.9,15
+mixed,original,interactive turnaround (s),9.846,0.317,10
+mixed,original,interactive response (ms),260.9,25.1,10
+mixed,original,interactive sleep(1) latency (ms),237.6,7.4,10
+mixed,original,interactive worst latency (ms),315.0,12.5,10
+mixed,original,makespan (s),9.874,0.318,5
+mixed,mlfq,interactive turnaround (s),4.348,0.112,10
+mixed,mlfq,interactive response (ms),238.5,15.4,10
+mixed,mlfq,cpu turnaround (s),9.042,0.33,15
+mixed,mlfq,cpu response (ms),58.3,58.9,15
+mixed,mlfq,cpu times scheduled,20.6,0.6,15
+mixed,mlfq,interactive sleep(1) latency (ms),100.6,2.4,10
+mixed,mlfq,interactive worst latency (ms),183.1,94.2,10
+mixed,mlfq,makespan (s),9.264,0.315,5
+shortlong,original,short turnaround (s),1.881,0.227,20
+shortlong,original,short response (ms),352.3,113.4,20
+shortlong,original,short times scheduled,3.8,0.6,20
+shortlong,original,long turnaround (s),9.487,0.3,10
+shortlong,original,long response (ms),31.3,34.0,10
+shortlong,original,long times scheduled,42.4,1.4,10
+shortlong,original,makespan (s),9.531,0.302,5
+shortlong,mlfq,short turnaround (s),1.875,0.41,20
+shortlong,mlfq,short response (ms),150.4,111.8,20
+shortlong,mlfq,short times scheduled,2.9,0.4,20
+shortlong,mlfq,long turnaround (s),9.5,0.308,10
+shortlong,mlfq,long response (ms),20.4,26.4,10
+shortlong,mlfq,long times scheduled,14.4,0.7,10
+shortlong,mlfq,makespan (s),9.707,0.298,5

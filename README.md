@@ -52,7 +52,7 @@ Tracks G (xv6) and H (PostgreSQL) have their own setup notes in their folders.
 | D | Submodular / parallel / distributed | not started |
 | E | Exam timetabling (main case study) | baseline + 5 heuristics + 2 ILPs, 18 tests, first results |
 | F | Compiler optimization | not started |
-| G | xv6 OS optimization | not started |
+| G | xv6 OS optimization | MLFQ scheduler + copy-on-write fork; usertests pass on 4 kernels × 1/3 CPUs; patch + benchmarks |
 | H | DBMS optimization | not started |
 | I | Quantum algorithms and QML | DJ, BV, Grover, QFT, QPE, Shor (hand-written), annealing + embedding, QML vs classical; 33 tests (simulation only) |
 | J | Software-engineering optimization | not started |
@@ -63,7 +63,7 @@ Every AI tool used anywhere in this repository is listed here (Section 8 of the 
 
 | Tool | Model / version | Tracks | Dates | Kind of work |
 |---|---|---|---|---|
-| Claude (claude.ai) | Claude Opus 5.5 | B, C, E, I, repo scaffold | 2026-10-28 | planning, code generation, testing, debugging, documentation |
+| Claude (claude.ai) | Claude Opus 5.5 | B, C, E, G, I, repo scaffold | 2026-10-28 | planning, code generation, testing, debugging, documentation |
 | | | | | |
 
 ## Commit convention
@@ -120,7 +120,7 @@ match the exact Chapter 6 syllabus taught in class — add or remove rows to mat
 | Quantum | Quantum annealing; QUBO embedding limits | I | `tracks/I_quantum_algorithms_qml/qalgo/annealing.py` | I Exp. 4–5 |
 | Quantum | Variational classifier; quantum kernels | I | `tracks/I_quantum_algorithms_qml/qalgo/qml_models.py` | I Exp. 6 |
 | Submodular | Diminishing returns test; greedy; guarantee conditions | D | | |
-| Parallel | Load balancing, makespan, work stealing | D | | |
+| Parallel | Load balancing, makespan, work stealing | D, G | G: `tracks/G_xv6/patches/xv6-optimize.patch` (MLFQ, makespan) | G sched benchmark |
 | Parallel | Locality, synchronization, communication overhead | D | | |
 | Parallel | Data / model / pipeline parallelism | D | | |
 | Parallel | Speedup, efficiency, Amdahl, Gustafson | D | | |

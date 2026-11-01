@@ -1,0 +1,9 @@
+variant,cpus,cowtest,usertests,usertests_mode,minutes
+original,1,OK,ALL TESTS PASSED,full,3.1
+original,3,OK,ALL TESTS PASSED,full,3.9
+mlfq,1,OK,ALL TESTS PASSED,full,3.0
+mlfq,3,OK,ALL TESTS PASSED,full,3.6
+cow,1,OK,ALL TESTS PASSED,full,3.0
+cow,3,OK,ALL TESTS PASSED,full,3.7
+both,1,OK,ALL TESTS PASSED,full,3.0
+both,3,OK,ALL TESTS PASSED,full,3.7
