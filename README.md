@@ -9,7 +9,7 @@ slots with no student clashes while spreading each student's exams apart.
 
 | GitHub user | Role |
 |---|---|
-| [@akhil-gitcoder](https://github.com/akhil-gitcoder) | student |
+| [@akhil2409x](https://github.com/akhil2409x) | student |
 | [@akhilkulal4050](https://github.com/akhilkulal4050) | professor (reviewer) |
 
 ## Repository layout
