@@ -1,0 +1,28 @@
+# Track J: shrink the two slowest tests to the smallest inputs found that keep
+# their statement and branch coverage (results/exp5). Apply in more-itertools/ with patch -p1.
+diff -u a/tests/test_more.py b/tests/test_more.py
+--- a/tests/test_more.py	2026-10-31 03:29:00.281758047 +0000
++++ b/tests/test_more.py	2026-10-31 03:29:00.297734713 +0000
+@@ -7097,8 +7097,8 @@
+                 with result_lock:
+                     result += 1
+ 
+-        limit = 10**5
+-        num_threads = 100
++        limit = 10**4
++        num_threads = 10
+         non_concurrent_source = producer(limit)
+         tees = mi.concurrent_tee(non_concurrent_source, n=num_threads)
+ 
+diff -u a/tests/test_recipes.py b/tests/test_recipes.py
+--- a/tests/test_recipes.py	2026-10-31 03:29:00.281854351 +0000
++++ b/tests/test_recipes.py	2026-10-31 03:29:00.298035065 +0000
+@@ -1430,7 +1430,7 @@
+                 self.assertFalse(mi.is_prime(n))
+ 
+     def test_primes(self):
+-        for i, n in enumerate(mi.sieve(10**5)):
++        for i, n in enumerate(mi.sieve(10**4)):
+             with self.subTest(n=n):
+                 self.assertTrue(mi.is_prime(n))
+                 self.assertEqual(mi.nth_prime(i), n)

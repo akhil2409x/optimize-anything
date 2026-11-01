@@ -251,6 +251,40 @@ the spread between repeats before comparing medians.
 - **Lesson:** read generated code against its own comments, especially in
   the branches that are hardest to test.
 
+## F14 · Track J · "Statement coverage" that contained no statements
+
+- **Tool:** Claude (claude.ai, Claude Opus 5.5), 2026-10-31
+- **What happened:** the first coverage collection reported 2,937
+  requirements, all branch arcs and **zero statements**. The
+  "statement-coverage" minimization would have been solved over an empty
+  universe.
+- **Cause:** with branch coverage on, coverage.py stores only arcs in its
+  SQLite file; executed lines are derived from them. The generated reader
+  queried the line table, which was empty.
+- **How it was caught:** printing the requirement counts by kind before
+  using them.
+- **Fix:** derive statements from arc endpoints, as coverage.py does. A test
+  now checks that every statement requirement is an endpoint of some arc.
+
+## F15 · Track J · Mutation runs that never finished
+
+- **Tool:** Claude (claude.ai, Claude Opus 5.5), 2026-10-31
+- **What happened:** the first mutation-testing run used pytest-timeout
+  (30 s per test). After 45 minutes it had finished fewer than 10% of the
+  mutants, and one run on a single mutant didn't end within 10 minutes.
+- **Cause:** a mutant such as `x * x % n` → `x * x // n` in the Miller–Rabin
+  test makes the numbers double in length every iteration. The time goes
+  into one huge C-level multiplication, which pytest-timeout's signal can't
+  interrupt.
+- **Fix:**
+  - A wall-clock budget per mutant (3× the tests' normal time + 10 s),
+    enforced by killing the process.
+  - On overrun, each test is retried on its own to find which tests hang.
+  - Progress is logged per mutant, so an interrupted run resumes.
+  - The full run then took 60 minutes.
+- **Lesson:** a timeout inside the process under test isn't a timeout.
+  Enforce it from outside.
+
 ---
 
 *(Add entries from Tracks A–J below as they happen — xv6 and SQL rewrites usually supply several.)*

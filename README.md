@@ -55,7 +55,7 @@ Tracks G (xv6) and H (PostgreSQL) have their own setup notes in their folders.
 | G | xv6 OS optimization | MLFQ scheduler + copy-on-write fork; usertests pass on 4 kernels × 1/3 CPUs; patch + benchmarks |
 | H | DBMS optimization | TPC-H SF 0.1 index selection: knapsack DP, greedy, what-if greedy, ILP vs default; 9 tests; results identical |
 | I | Quantum algorithms and QML | DJ, BV, Grover, QFT, QPE, Shor (hand-written), annealing + embedding, QML vs classical; 33 tests (simulation only) |
-| J | Software-engineering optimization | not started |
+| J | Software-engineering optimization | more-itertools test-suite minimization as weighted set cover (greedy vs ILP), mutation testing (1,116 mutants), bottleneck fix, prioritization; 15 tests |
 
 ## AI tools register
 
@@ -63,7 +63,7 @@ Every AI tool used anywhere in this repository is listed here (Section 8 of the 
 
 | Tool | Model / version | Tracks | Dates | Kind of work |
 |---|---|---|---|---|
-| Claude (claude.ai) | Claude Opus 5.5 | A, B, C, D, E, F, G, H, I, repo scaffold | 2026-10-28 – 31 | planning, code generation, testing, debugging, documentation |
+| Claude (claude.ai) | Claude Opus 5.5 | A–J, repo scaffold | 2026-10-28 – 31 | planning, code generation, testing, debugging, documentation |
 | | | | | |
 
 ## Commit convention
@@ -98,11 +98,11 @@ match the exact Chapter 6 syllabus taught in class — add or remove rows to mat
 | Continuous | Fisher / diagonal / low-rank curvature, Hessian-vector products | A | `tracks/A_continuous/contopt/optimizers.py` (`natural_gradient`, `diag_newton`, `lbfgs`, `newton_cg`) | A Exp. 3 |
 | Continuous | Convergence: convex, strongly convex, non-convex | A | `tracks/A_continuous/run_experiments.py` (`exp1`) | A Exp. 1 |
 | Continuous | Step-size / optimizer tuning; noisy objectives | A, C | `tracks/A_continuous/run_experiments.py` (`exp6`, `exp7`) | A Exp. 6–7, C Exp. 2–3 |
-| Discrete | Greedy | B, E, F, H | `tracks/B_discrete/discrete/knapsack.py`, `tracks/E_exam_timetabling/timetabling/greedy.py`, `tracks/H_dbms/tpchopt/selection.py`, `tracks/F_compiler/tinyc/backend.py` (greedy colouring) | B Exp. 1, E Exp. 1, H, F Exp. 3 |
-| Discrete | Integer Linear Programming | B, E, F, H | `tracks/B_discrete/discrete/knapsack.py` (`ilp`), `tracks/E_exam_timetabling/timetabling/ilp.py`, `tracks/H_dbms/tpchopt/selection.py` (`ilp`), `tracks/F_compiler/tinyc/backend.py` (`allocate(..., 'ilp')`) | B Exp. 1, E Exp. 1–2, H, F Exp. 3 |
+| Discrete | Greedy | B, E, F, H, J | `tracks/B_discrete/discrete/knapsack.py`, `tracks/E_exam_timetabling/timetabling/greedy.py`, `tracks/H_dbms/tpchopt/selection.py`, `tracks/F_compiler/tinyc/backend.py` (greedy colouring), `tracks/J_software_engineering/tsmin/select.py` (`greedy`) | B Exp. 1, E Exp. 1, H, F Exp. 3, J Exp. 2 |
+| Discrete | Integer Linear Programming | B, E, F, H, J | `tracks/B_discrete/discrete/knapsack.py` (`ilp`), `tracks/E_exam_timetabling/timetabling/ilp.py`, `tracks/H_dbms/tpchopt/selection.py` (`ilp`), `tracks/F_compiler/tinyc/backend.py` (`allocate(..., 'ilp')`), `tracks/J_software_engineering/tsmin/select.py` (`ilp`) | B Exp. 1, E Exp. 1–2, H, F Exp. 3, J Exp. 2 |
 | Discrete | Branch-and-bound | B, E | `tracks/B_discrete/discrete/knapsack.py` (`branch_and_bound`, own code) | B Exp. 1–2 |
 | Discrete | Dynamic programming | B, H | `tracks/B_discrete/discrete/knapsack.py` (`dp`), `tracks/H_dbms/tpchopt/selection.py` (`knapsack_dp`) | B Exp. 1–2, H |
-| Discrete | Feature selection / combinatorial applications | B, D, J | `tracks/B_discrete/discrete/feature_selection.py`, `tracks/D_submodular_parallel_distributed/distopt/submodular.py` (`R2Selection`) | B Exp. 5, D Exp. 1–2 |
+| Discrete | Feature selection / combinatorial applications | B, D, J | `tracks/B_discrete/discrete/feature_selection.py`, `tracks/D_submodular_parallel_distributed/distopt/submodular.py` (`R2Selection`), `tracks/J_software_engineering/tsmin/select.py` (test selection = set cover) | B Exp. 5, D Exp. 1–2, J Exp. 2–6 |
 | Discrete | QUBO / Ising, binary-to-spin, penalty terms | B | `tracks/B_discrete/discrete/qubo.py` | B Exp. 3–4 |
 | Quantum | QAOA | C | `tracks/C_quantum_optimization/qopt/maxcut.py` | C Exp. 1–4 |
 | Quantum | VQE | C | `tracks/C_quantum_optimization/qopt/vqe.py` | C Exp. 2, 6 |
@@ -124,7 +124,7 @@ match the exact Chapter 6 syllabus taught in class — add or remove rows to mat
 | Parallel | Locality, synchronization, communication overhead | D | `tracks/D_submodular_parallel_distributed/distopt/parallel.py` (`locality`, `synchronization`, `overhead`) | D Exp. 5 |
 | Parallel | Data / model / pipeline parallelism | D | `tracks/D_submodular_parallel_distributed/distopt/parallel.py` (`data_parallel`, `model_parallel`, `pipeline`) | D Exp. 6 |
 | Parallel | Speedup, efficiency, Amdahl, Gustafson | D | `tracks/D_submodular_parallel_distributed/distopt/parallel.py` (`run_parallel`, `amdahl`, `gustafson`) | D Exp. 3 |
-| Strategy | Method selection by variable type, size, hardware … | E | `tracks/E_exam_timetabling/README.md` §3 | table |
+| Strategy | Method selection by variable type, size, hardware … | E, J | `tracks/E_exam_timetabling/README.md` §3, `tracks/J_software_engineering/README.md` (profile first: minimization vs fixing the bottleneck) | table, J Exp. 1, 5 |
 | Distributed | FedAvg vs centralized | D | `tracks/D_submodular_parallel_distributed/distopt/learning.py` (`fedavg`, `centralized`) | D Exp. 7 |
 | Multi-task | MGDA | D | `tracks/D_submodular_parallel_distributed/distopt/learning.py` (`mgda_alpha`, `train_multitask`) | D Exp. 8 |
 | Multi-task | GradNorm | D | `tracks/D_submodular_parallel_distributed/distopt/learning.py` (`train_multitask('gradnorm')`) | D Exp. 8 |

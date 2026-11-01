@@ -1,0 +1,156 @@
+[
+ {
+  "criterion": "statements",
+  "method": "random order until covered (10 seeds, mean)",
+  "tests": 328.5,
+  "tests_pct": 0.4294117647058823,
+  "test_time_s": 15.5687,
+  "time_pct": 0.9141926012918379,
+  "covers_all": true,
+  "solve_s": 0.0,
+  "both_slow_tests_kept": ""
+ },
+ {
+  "criterion": "statements",
+  "method": "greedy, most new requirements",
+  "tests": 266,
+  "tests_pct": 0.3477124183006536,
+  "test_time_s": 14.627,
+  "time_pct": 0.8588960657662947,
+  "covers_all": true,
+  "solve_s": 0.11863329300103942,
+  "both_slow_tests_kept": true
+ },
+ {
+  "criterion": "statements",
+  "method": "greedy, new requirements per second",
+  "tests": 284,
+  "tests_pct": 0.3712418300653595,
+  "test_time_s": 14.574,
+  "time_pct": 0.8557839107457428,
+  "covers_all": true,
+  "solve_s": 0.10340811199966993,
+  "both_slow_tests_kept": true
+ },
+ {
+  "criterion": "statements",
+  "method": "greedy per second + redundancy removal",
+  "tests": 268,
+  "tests_pct": 0.3503267973856209,
+  "test_time_s": 14.391,
+  "time_pct": 0.8450381679389313,
+  "covers_all": true,
+  "solve_s": 0.19645234000017808,
+  "both_slow_tests_kept": true
+ },
+ {
+  "criterion": "statements",
+  "method": "ILP, minimise number of tests",
+  "tests": 261,
+  "tests_pct": 0.3411764705882353,
+  "test_time_s": 14.861,
+  "time_pct": 0.872636523781562,
+  "covers_all": true,
+  "solve_s": 0.05911593000018911,
+  "both_slow_tests_kept": true
+ },
+ {
+  "criterion": "statements",
+  "method": "ILP, minimise time",
+  "tests": 263,
+  "tests_pct": 0.3437908496732026,
+  "test_time_s": 14.392,
+  "time_pct": 0.8450968878449794,
+  "covers_all": true,
+  "solve_s": 0.05513139299910108,
+  "both_slow_tests_kept": true
+ },
+ {
+  "criterion": "statements",
+  "method": "LP relaxation: lower bound 14.654 vs ILP objective 14.655 (both incl. 1 ms/test)",
+  "tests": "",
+  "tests_pct": "",
+  "test_time_s": "",
+  "time_pct": "",
+  "covers_all": "",
+  "solve_s": "",
+  "both_slow_tests_kept": ""
+ },
+ {
+  "criterion": "statements+branches",
+  "method": "random order until covered (10 seeds, mean)",
+  "tests": 367,
+  "tests_pct": 0.4797385620915033,
+  "test_time_s": 15.6654,
+  "time_pct": 0.919870816206694,
+  "covers_all": true,
+  "solve_s": 0.0,
+  "both_slow_tests_kept": ""
+ },
+ {
+  "criterion": "statements+branches",
+  "method": "greedy, most new requirements",
+  "tests": 302,
+  "tests_pct": 0.39477124183006534,
+  "test_time_s": 14.661,
+  "time_pct": 0.8608925425719318,
+  "covers_all": true,
+  "solve_s": 0.27050639700064494,
+  "both_slow_tests_kept": true
+ },
+ {
+  "criterion": "statements+branches",
+  "method": "greedy, new requirements per second",
+  "tests": 323,
+  "tests_pct": 0.4222222222222222,
+  "test_time_s": 14.599,
+  "time_pct": 0.8572519083969465,
+  "covers_all": true,
+  "solve_s": 0.24414228800014826,
+  "both_slow_tests_kept": true
+ },
+ {
+  "criterion": "statements+branches",
+  "method": "greedy per second + redundancy removal",
+  "tests": 304,
+  "tests_pct": 0.39738562091503266,
+  "test_time_s": 14.421000000000001,
+  "time_pct": 0.8467997651203758,
+  "covers_all": true,
+  "solve_s": 0.7140116390000912,
+  "both_slow_tests_kept": true
+ },
+ {
+  "criterion": "statements+branches",
+  "method": "ILP, minimise number of tests",
+  "tests": 296,
+  "tests_pct": 0.3869281045751634,
+  "test_time_s": 14.889000000000001,
+  "time_pct": 0.8742806811509102,
+  "covers_all": true,
+  "solve_s": 0.06144215499989514,
+  "both_slow_tests_kept": true
+ },
+ {
+  "criterion": "statements+branches",
+  "method": "ILP, minimise time",
+  "tests": 300,
+  "tests_pct": 0.39215686274509803,
+  "test_time_s": 14.421000000000001,
+  "time_pct": 0.8467997651203758,
+  "covers_all": true,
+  "solve_s": 0.07526638300078048,
+  "both_slow_tests_kept": true
+ },
+ {
+  "criterion": "statements+branches",
+  "method": "LP relaxation: lower bound 14.721 vs ILP objective 14.721 (both incl. 1 ms/test)",
+  "tests": "",
+  "tests_pct": "",
+  "test_time_s": "",
+  "time_pct": "",
+  "covers_all": "",
+  "solve_s": "",
+  "both_slow_tests_kept": ""
+ }
+]

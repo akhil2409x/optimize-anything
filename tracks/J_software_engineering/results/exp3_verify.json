@@ -1,0 +1,57 @@
+[
+ {
+  "suite": "full suite",
+  "tests": 765,
+  "wall_s_median": 31.351715548998982,
+  "wall_s_min": 12.183250717000192,
+  "wall_s_max": 40.07531385400034,
+  "test_time_s_median": 30.187,
+  "all_pass": true,
+  "missing_requirements": 0,
+  "missing_branches": 0
+ },
+ {
+  "suite": "statements+branches: ILP, minimise number of tests",
+  "tests": 296,
+  "wall_s_median": 20.214223326000138,
+  "wall_s_min": 9.143775384000037,
+  "wall_s_max": 49.35494308399939,
+  "test_time_s_median": 19.55,
+  "all_pass": true,
+  "missing_requirements": 0,
+  "missing_branches": 0
+ },
+ {
+  "suite": "statements+branches: ILP, minimise time",
+  "tests": 300,
+  "wall_s_median": 27.469633702001374,
+  "wall_s_min": 8.896937584000625,
+  "wall_s_max": 36.943613176001236,
+  "test_time_s_median": 26.759,
+  "all_pass": true,
+  "missing_requirements": 0,
+  "missing_branches": 0
+ },
+ {
+  "suite": "statements+branches: greedy per second + redundancy removal",
+  "tests": 304,
+  "wall_s_median": 18.860716630000752,
+  "wall_s_min": 8.600313418999576,
+  "wall_s_max": 36.4147341550015,
+  "test_time_s_median": 18.131,
+  "all_pass": true,
+  "missing_requirements": 0,
+  "missing_branches": 0
+ },
+ {
+  "suite": "statements: ILP, minimise time",
+  "tests": 263,
+  "wall_s_median": 23.397828006000054,
+  "wall_s_min": 8.535569253001086,
+  "wall_s_max": 25.174033597000744,
+  "test_time_s_median": 22.741,
+  "all_pass": true,
+  "missing_requirements": 59,
+  "missing_branches": 59
+ }
+]

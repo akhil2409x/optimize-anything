@@ -1,0 +1,74 @@
+{
+ "tests": [
+  {
+   "test": "TestConcurrentTee::test_concurrent_consumers",
+   "before_s": 7.272,
+   "after_s": 0.015,
+   "requirements_before": 63,
+   "lost": 0,
+   "gained": 0
+  },
+  {
+   "test": "PrimeFunctionTests::test_primes",
+   "before_s": 5.229,
+   "after_s": 0.186,
+   "requirements_before": 120,
+   "lost": 0,
+   "gained": 0
+  }
+ ],
+ "faults": [
+  {
+   "test": "TestConcurrentTee::test_concurrent_consumers",
+   "mutants_executed": 12,
+   "killed_before": 10,
+   "killed_after": 10,
+   "killed_only_by_this_test": 10
+  },
+  {
+   "test": "PrimeFunctionTests::test_primes",
+   "mutants_executed": 74,
+   "killed_before": 43,
+   "killed_after": 43,
+   "killed_only_by_this_test": 10
+  }
+ ],
+ "suites": [
+  {
+   "suite": "original full suite",
+   "tests": 765,
+   "test_time_s": 17.03,
+   "makespan_2_workers_lpt": 8.514999999999976,
+   "measured_wall_s_median": 32.66760953799894,
+   "measured_wall_s_min": 11.961528038000324,
+   "measured_wall_s_max": 44.85856832399986
+  },
+  {
+   "suite": "ILP-minimised (statements+branches), original tests",
+   "tests": 300,
+   "test_time_s": 14.421000000000001,
+   "makespan_2_workers_lpt": 7.272,
+   "measured_wall_s_median": 27.522055724999518,
+   "measured_wall_s_min": 21.091086491998794,
+   "measured_wall_s_max": 37.2512790030014
+  },
+  {
+   "suite": "full suite, two tests shrunk",
+   "tests": 765,
+   "test_time_s": 4.73,
+   "makespan_2_workers_lpt": 2.364999999999995,
+   "measured_wall_s_median": 6.139153401998556,
+   "measured_wall_s_min": 6.001431804999811,
+   "measured_wall_s_max": 6.393941330999951
+  },
+  {
+   "suite": "ILP-minimised + two tests shrunk",
+   "tests": 300,
+   "test_time_s": 2.121,
+   "makespan_2_workers_lpt": 1.0609999999999973,
+   "measured_wall_s_median": 3.106992770000943,
+   "measured_wall_s_min": 2.9396799330006615,
+   "measured_wall_s_max": 3.263681536000149
+  }
+ ]
+}

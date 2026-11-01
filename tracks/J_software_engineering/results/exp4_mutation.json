@@ -1,0 +1,102 @@
+[
+ {
+  "criterion": "statements",
+  "method": "ILP, minimise number of tests",
+  "tests": 261,
+  "killed": 869,
+  "kill_rate": 0.9052083333333333,
+  "random_same_size": 0.64734375,
+  "missed": 91,
+  "missed_ops": "arith: 18, bool: 8, cmp: 22, int: 43"
+ },
+ {
+  "criterion": "statements",
+  "method": "ILP, minimise time",
+  "tests": 263,
+  "killed": 831,
+  "kill_rate": 0.865625,
+  "random_same_size": 0.6618229166666667,
+  "missed": 129,
+  "missed_ops": "arith: 24, bool: 8, cmp: 33, int: 64"
+ },
+ {
+  "criterion": "statements",
+  "method": "greedy per second + redundancy removal",
+  "tests": 268,
+  "killed": 846,
+  "kill_rate": 0.88125,
+  "random_same_size": 0.6784375,
+  "missed": 114,
+  "missed_ops": "arith: 15, bool: 7, cmp: 30, int: 62"
+ },
+ {
+  "criterion": "statements",
+  "method": "greedy, most new requirements",
+  "tests": 266,
+  "killed": 877,
+  "kill_rate": 0.9135416666666667,
+  "random_same_size": 0.6480729166666667,
+  "missed": 83,
+  "missed_ops": "arith: 11, bool: 7, cmp: 25, int: 40"
+ },
+ {
+  "criterion": "statements",
+  "method": "greedy, new requirements per second",
+  "tests": 284,
+  "killed": 849,
+  "kill_rate": 0.884375,
+  "random_same_size": 0.67265625,
+  "missed": 111,
+  "missed_ops": "arith: 13, bool: 6, cmp: 30, int: 62"
+ },
+ {
+  "criterion": "statements+branches",
+  "method": "ILP, minimise number of tests",
+  "tests": 296,
+  "killed": 886,
+  "kill_rate": 0.9229166666666667,
+  "random_same_size": 0.6922395833333334,
+  "missed": 74,
+  "missed_ops": "arith: 13, bool: 9, cmp: 19, int: 33"
+ },
+ {
+  "criterion": "statements+branches",
+  "method": "ILP, minimise time",
+  "tests": 300,
+  "killed": 857,
+  "kill_rate": 0.8927083333333333,
+  "random_same_size": 0.6918229166666667,
+  "missed": 103,
+  "missed_ops": "arith: 17, bool: 8, cmp: 28, int: 50"
+ },
+ {
+  "criterion": "statements+branches",
+  "method": "greedy per second + redundancy removal",
+  "tests": 304,
+  "killed": 863,
+  "kill_rate": 0.8989583333333333,
+  "random_same_size": 0.7205208333333333,
+  "missed": 97,
+  "missed_ops": "arith: 13, bool: 7, cmp: 26, int: 51"
+ },
+ {
+  "criterion": "statements+branches",
+  "method": "greedy, most new requirements",
+  "tests": 302,
+  "killed": 891,
+  "kill_rate": 0.928125,
+  "random_same_size": 0.7125520833333333,
+  "missed": 69,
+  "missed_ops": "arith: 10, bool: 7, cmp: 22, int: 30"
+ },
+ {
+  "criterion": "statements+branches",
+  "method": "greedy, new requirements per second",
+  "tests": 323,
+  "killed": 869,
+  "kill_rate": 0.9052083333333333,
+  "random_same_size": 0.7220833333333333,
+  "missed": 91,
+  "missed_ops": "arith: 10, bool: 6, cmp: 24, int: 51"
+ }
+]

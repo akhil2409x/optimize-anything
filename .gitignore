@@ -13,3 +13,7 @@ tracks/G_xv6/xv6-riscv/
 
 # Track H: generated TPC-H data and the dbgen checkout (setup.sh recreates them)
 tracks/H_dbms/tpch-dbgen/
+
+# Track J: subject program checkout (setup.sh recreates it) and mutation work dirs
+tracks/J_software_engineering/more-itertools/
+tracks/J_software_engineering/work/

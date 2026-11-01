@@ -1,0 +1,58 @@
+[
+ {
+  "rank": 1,
+  "test": "TestConcurrentTee::test_concurrent_consumers",
+  "seconds": 7.272,
+  "share": 0.4270111567821491,
+  "cumulative": 0.4270111567821491
+ },
+ {
+  "rank": 2,
+  "test": "PrimeFunctionTests::test_primes",
+  "seconds": 5.229,
+  "share": 0.307046388725778,
+  "cumulative": 0.7340575455079272
+ },
+ {
+  "rank": 3,
+  "test": "PrimeFunctionTests::test_nth_prime_approximate",
+  "seconds": 0.694,
+  "share": 0.04075161479741632,
+  "cumulative": 0.7748091603053435
+ },
+ {
+  "rank": 4,
+  "test": "ExtractTests::test_all_orderings",
+  "seconds": 0.552,
+  "share": 0.032413388138578976,
+  "cumulative": 0.8072225484439224
+ },
+ {
+  "rank": 5,
+  "test": "TestRandomOrderedRange::test_lcg_mitigation",
+  "seconds": 0.352,
+  "share": 0.020669406928948912,
+  "cumulative": 0.8278919553728714
+ },
+ {
+  "rank": 6,
+  "test": "TestSynchronized::test_concurrent_calls",
+  "seconds": 0.332,
+  "share": 0.01949500880798591,
+  "cumulative": 0.8473869641808573
+ },
+ {
+  "rank": 7,
+  "test": "PolynomialFromRootsTests::test_large",
+  "seconds": 0.318,
+  "share": 0.018672930123311803,
+  "cumulative": 0.8660598943041691
+ },
+ {
+  "rank": 8,
+  "test": "RunningMedianTests::test_vs_statistics_median",
+  "seconds": 0.274,
+  "share": 0.016089254257193188,
+  "cumulative": 0.8821491485613622
+ }
+]
