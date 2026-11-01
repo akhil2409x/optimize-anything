@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+*.mps
+*.log
+tracks/E_exam_timetabling/data/*.stu
+tracks/E_exam_timetabling/data/*.crs
+.env

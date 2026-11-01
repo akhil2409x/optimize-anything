@@ -1,0 +1,9 @@
+# Track E (and shared)
+pulp==2.9.0          # pinned: PuLP 4.x rewrote the variable API (see docs/failure_log.md F3)
+highspy>=1.7
+matplotlib>=3.8
+pandas>=2.0
+pytest>=8.0
+
+# Add per-track dependencies as tracks are started, e.g.
+# numpy, torch (A, D); pennylane or qiskit, qiskit-aer (C, I); psycopg[binary] (H); coverage (J)

@@ -1,0 +1,101 @@
+instance,exams,students,slots_allowed,density,seed,method,feasible,cost,slots_used,seconds
+synth-e50-s400-t14-r0,50,400,14,0.4392,0,first_fit (baseline),True,49.895,13,0.0001
+synth-e50-s400-t14-r0,50,400,14,0.4392,0,largest_degree,True,49.455,11,0.0001
+synth-e50-s400-t14-r0,50,400,14,0.4392,0,dsatur,True,54.025,12,0.0021
+synth-e50-s400-t14-r0,50,400,14,0.4392,0,dsatur_proximity,True,33.3175,14,0.0031
+synth-e50-s400-t14-r0,50,400,14,0.4392,0,dsatur_proximity+hill_climb,True,33.3125,14,0.0011
+synth-e50-s400-t14-r1,50,400,14,0.458,1,first_fit (baseline),True,48.1525,14,0.0001
+synth-e50-s400-t14-r1,50,400,14,0.458,1,largest_degree,True,51.52,12,0.0001
+synth-e50-s400-t14-r1,50,400,14,0.458,1,dsatur,True,54.0775,12,0.0025
+synth-e50-s400-t14-r1,50,400,14,0.458,1,dsatur_proximity,True,33.2625,14,0.0034
+synth-e50-s400-t14-r1,50,400,14,0.458,1,dsatur_proximity+hill_climb,True,32.89,14,0.0011
+synth-e50-s400-t14-r2,50,400,14,0.4718,2,first_fit (baseline),False,,,0.0001
+synth-e50-s400-t14-r2,50,400,14,0.4718,2,largest_degree,True,44.9225,13,0.0001
+synth-e50-s400-t14-r2,50,400,14,0.4718,2,dsatur,True,50.99,12,0.0024
+synth-e50-s400-t14-r2,50,400,14,0.4718,2,dsatur_proximity,True,35.1525,14,0.0032
+synth-e50-s400-t14-r2,50,400,14,0.4718,2,dsatur_proximity+hill_climb,True,35.01,14,0.0015
+synth-e50-s400-t14-r3,50,400,14,0.4122,3,first_fit (baseline),True,48.8025,13,0.0001
+synth-e50-s400-t14-r3,50,400,14,0.4122,3,largest_degree,True,54.545,12,0.0001
+synth-e50-s400-t14-r3,50,400,14,0.4122,3,dsatur,True,55.445,10,0.0022
+synth-e50-s400-t14-r3,50,400,14,0.4122,3,dsatur_proximity,True,33.65,14,0.0033
+synth-e50-s400-t14-r3,50,400,14,0.4122,3,dsatur_proximity+hill_climb,True,33.3775,14,0.0018
+synth-e50-s400-t14-r4,50,400,14,0.4588,4,first_fit (baseline),False,,,0.0004
+synth-e50-s400-t14-r4,50,400,14,0.4588,4,largest_degree,True,47.305,14,0.0001
+synth-e50-s400-t14-r4,50,400,14,0.4588,4,dsatur,True,52.805,12,0.0022
+synth-e50-s400-t14-r4,50,400,14,0.4588,4,dsatur_proximity,True,33.9525,14,0.0033
+synth-e50-s400-t14-r4,50,400,14,0.4588,4,dsatur_proximity+hill_climb,True,33.215,14,0.0017
+synth-e100-s1000-t20-r0,100,1000,20,0.3374,0,first_fit (baseline),False,,,0.0003
+synth-e100-s1000-t20-r0,100,1000,20,0.3374,0,largest_degree,True,33.528,18,0.0003
+synth-e100-s1000-t20-r0,100,1000,20,0.3374,0,dsatur,True,33.562,18,0.0117
+synth-e100-s1000-t20-r0,100,1000,20,0.3374,0,dsatur_proximity,True,25.424,20,0.0163
+synth-e100-s1000-t20-r0,100,1000,20,0.3374,0,dsatur_proximity+hill_climb,True,24.82,20,0.0068
+synth-e100-s1000-t20-r1,100,1000,20,0.3457,1,first_fit (baseline),True,32.626,19,0.0003
+synth-e100-s1000-t20-r1,100,1000,20,0.3457,1,largest_degree,True,32.717,19,0.0003
+synth-e100-s1000-t20-r1,100,1000,20,0.3457,1,dsatur,True,32.717,17,0.0136
+synth-e100-s1000-t20-r1,100,1000,20,0.3457,1,dsatur_proximity,True,24.72,20,0.0182
+synth-e100-s1000-t20-r1,100,1000,20,0.3457,1,dsatur_proximity+hill_climb,True,24.306,20,0.0055
+synth-e100-s1000-t20-r2,100,1000,20,0.3632,2,first_fit (baseline),True,31.657,20,0.0004
+synth-e100-s1000-t20-r2,100,1000,20,0.3632,2,largest_degree,True,33.787,18,0.0005
+synth-e100-s1000-t20-r2,100,1000,20,0.3632,2,dsatur,True,34.698,18,0.0177
+synth-e100-s1000-t20-r2,100,1000,20,0.3632,2,dsatur_proximity,True,25.812,20,0.0162
+synth-e100-s1000-t20-r2,100,1000,20,0.3632,2,dsatur_proximity+hill_climb,True,25.441,20,0.005
+synth-e100-s1000-t20-r3,100,1000,20,0.3564,3,first_fit (baseline),True,31.264,20,0.0003
+synth-e100-s1000-t20-r3,100,1000,20,0.3564,3,largest_degree,True,35.664,17,0.0004
+synth-e100-s1000-t20-r3,100,1000,20,0.3564,3,dsatur,True,34.607,18,0.0122
+synth-e100-s1000-t20-r3,100,1000,20,0.3564,3,dsatur_proximity,True,26.408,20,0.0162
+synth-e100-s1000-t20-r3,100,1000,20,0.3564,3,dsatur_proximity+hill_climb,True,26.244,20,0.0049
+synth-e100-s1000-t20-r4,100,1000,20,0.378,4,first_fit (baseline),True,32.313,20,0.0006
+synth-e100-s1000-t20-r4,100,1000,20,0.378,4,largest_degree,True,33.483,18,0.0005
+synth-e100-s1000-t20-r4,100,1000,20,0.378,4,dsatur,True,33.921,18,0.0207
+synth-e100-s1000-t20-r4,100,1000,20,0.378,4,dsatur_proximity,True,26.554,20,0.0266
+synth-e100-s1000-t20-r4,100,1000,20,0.378,4,dsatur_proximity+hill_climb,True,25.797,20,0.0147
+synth-e200-s2500-t20-r0,200,2500,20,0.2177,0,first_fit (baseline),False,,,0.0006
+synth-e200-s2500-t20-r0,200,2500,20,0.2177,0,largest_degree,True,33.286,19,0.0007
+synth-e200-s2500-t20-r0,200,2500,20,0.2177,0,dsatur,True,35.1796,18,0.0648
+synth-e200-s2500-t20-r0,200,2500,20,0.2177,0,dsatur_proximity,True,25.4424,20,0.066
+synth-e200-s2500-t20-r0,200,2500,20,0.2177,0,dsatur_proximity+hill_climb,True,25.2304,20,0.0119
+synth-e200-s2500-t20-r1,200,2500,20,0.2109,1,first_fit (baseline),True,31.2352,20,0.0008
+synth-e200-s2500-t20-r1,200,2500,20,0.2109,1,largest_degree,True,32.9996,19,0.0007
+synth-e200-s2500-t20-r1,200,2500,20,0.2109,1,dsatur,True,34.6284,18,0.0616
+synth-e200-s2500-t20-r1,200,2500,20,0.2109,1,dsatur_proximity,True,25.9704,20,0.0744
+synth-e200-s2500-t20-r1,200,2500,20,0.2109,1,dsatur_proximity+hill_climb,True,25.572,20,0.0168
+synth-e200-s2500-t20-r2,200,2500,20,0.2219,2,first_fit (baseline),False,,,0.0006
+synth-e200-s2500-t20-r2,200,2500,20,0.2219,2,largest_degree,True,32.4772,20,0.0007
+synth-e200-s2500-t20-r2,200,2500,20,0.2219,2,dsatur,True,33.9216,19,0.0561
+synth-e200-s2500-t20-r2,200,2500,20,0.2219,2,dsatur_proximity,True,26.2856,20,0.0655
+synth-e200-s2500-t20-r2,200,2500,20,0.2219,2,dsatur_proximity+hill_climb,True,25.8948,20,0.0147
+synth-e200-s2500-t20-r3,200,2500,20,0.2148,3,first_fit (baseline),False,,,0.0006
+synth-e200-s2500-t20-r3,200,2500,20,0.2148,3,largest_degree,True,33.5016,19,0.0006
+synth-e200-s2500-t20-r3,200,2500,20,0.2148,3,dsatur,True,35.9448,17,0.0544
+synth-e200-s2500-t20-r3,200,2500,20,0.2148,3,dsatur_proximity,True,25.532,20,0.064
+synth-e200-s2500-t20-r3,200,2500,20,0.2148,3,dsatur_proximity+hill_climb,True,25.3084,20,0.0149
+synth-e200-s2500-t20-r4,200,2500,20,0.2231,4,first_fit (baseline),False,,,0.0006
+synth-e200-s2500-t20-r4,200,2500,20,0.2231,4,largest_degree,True,33.1792,19,0.0007
+synth-e200-s2500-t20-r4,200,2500,20,0.2231,4,dsatur,True,36.0576,18,0.0576
+synth-e200-s2500-t20-r4,200,2500,20,0.2231,4,dsatur_proximity,True,26.4464,20,0.0691
+synth-e200-s2500-t20-r4,200,2500,20,0.2231,4,dsatur_proximity+hill_climb,True,26.2224,20,0.0264
+synth-e400-s6000-t24-r0,400,6000,24,0.1297,0,first_fit (baseline),True,28.4697,23,0.0016
+synth-e400-s6000-t24-r0,400,6000,24,0.1297,0,largest_degree,True,30.4548,21,0.0017
+synth-e400-s6000-t24-r0,400,6000,24,0.1297,0,dsatur,True,31.987,20,0.2857
+synth-e400-s6000-t24-r0,400,6000,24,0.1297,0,dsatur_proximity,True,19.8082,24,0.3315
+synth-e400-s6000-t24-r0,400,6000,24,0.1297,0,dsatur_proximity+hill_climb,True,19.3833,24,0.0672
+synth-e400-s6000-t24-r1,400,6000,24,0.1303,1,first_fit (baseline),True,28.3895,23,0.0016
+synth-e400-s6000-t24-r1,400,6000,24,0.1303,1,largest_degree,True,30.5153,21,0.0018
+synth-e400-s6000-t24-r1,400,6000,24,0.1303,1,dsatur,True,32.6107,20,0.3082
+synth-e400-s6000-t24-r1,400,6000,24,0.1303,1,dsatur_proximity,True,20.4945,24,0.3409
+synth-e400-s6000-t24-r1,400,6000,24,0.1303,1,dsatur_proximity+hill_climb,True,19.808,24,0.1022
+synth-e400-s6000-t24-r2,400,6000,24,0.1323,2,first_fit (baseline),True,28.75,24,0.0016
+synth-e400-s6000-t24-r2,400,6000,24,0.1323,2,largest_degree,True,31.3005,21,0.0019
+synth-e400-s6000-t24-r2,400,6000,24,0.1323,2,dsatur,True,33.1098,20,0.298
+synth-e400-s6000-t24-r2,400,6000,24,0.1323,2,dsatur_proximity,True,20.1557,24,0.3423
+synth-e400-s6000-t24-r2,400,6000,24,0.1323,2,dsatur_proximity+hill_climb,True,19.8763,24,0.0686
+synth-e400-s6000-t24-r3,400,6000,24,0.1254,3,first_fit (baseline),True,28.9732,23,0.0015
+synth-e400-s6000-t24-r3,400,6000,24,0.1254,3,largest_degree,True,31.2317,20,0.0017
+synth-e400-s6000-t24-r3,400,6000,24,0.1254,3,dsatur,True,33.248,20,0.3047
+synth-e400-s6000-t24-r3,400,6000,24,0.1254,3,dsatur_proximity,True,19.818,24,0.3751
+synth-e400-s6000-t24-r3,400,6000,24,0.1254,3,dsatur_proximity+hill_climb,True,19.3723,24,0.08
+synth-e400-s6000-t24-r4,400,6000,24,0.1292,4,first_fit (baseline),True,29.7592,24,0.0017
+synth-e400-s6000-t24-r4,400,6000,24,0.1292,4,largest_degree,True,30.8832,22,0.0018
+synth-e400-s6000-t24-r4,400,6000,24,0.1292,4,dsatur,True,33.5743,20,0.2904
+synth-e400-s6000-t24-r4,400,6000,24,0.1292,4,dsatur_proximity,True,20.3895,24,0.3902
+synth-e400-s6000-t24-r4,400,6000,24,0.1292,4,dsatur_proximity+hill_climb,True,19.837,24,0.0693

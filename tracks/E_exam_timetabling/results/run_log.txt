@@ -1,0 +1,34 @@
+Python 3.13.18 on Linux-6.18.44-fc-v180-x86_64-with-glibc2.39, x86_64
+Experiment 1: heuristics at scale
+   synth-e50-s400-t14-r0: 50 exams, 400 students, 14 slots, 538 conflicting pairs, density 0.439
+   synth-e50-s400-t14-r1: 50 exams, 400 students, 14 slots, 561 conflicting pairs, density 0.458
+   synth-e50-s400-t14-r2: 50 exams, 400 students, 14 slots, 578 conflicting pairs, density 0.472
+   synth-e50-s400-t14-r3: 50 exams, 400 students, 14 slots, 505 conflicting pairs, density 0.412
+   synth-e50-s400-t14-r4: 50 exams, 400 students, 14 slots, 562 conflicting pairs, density 0.459
+   synth-e100-s1000-t20-r0: 100 exams, 1000 students, 20 slots, 1670 conflicting pairs, density 0.337
+   synth-e100-s1000-t20-r1: 100 exams, 1000 students, 20 slots, 1711 conflicting pairs, density 0.346
+   synth-e100-s1000-t20-r2: 100 exams, 1000 students, 20 slots, 1798 conflicting pairs, density 0.363
+   synth-e100-s1000-t20-r3: 100 exams, 1000 students, 20 slots, 1764 conflicting pairs, density 0.356
+   synth-e100-s1000-t20-r4: 100 exams, 1000 students, 20 slots, 1871 conflicting pairs, density 0.378
+   synth-e200-s2500-t20-r0: 200 exams, 2500 students, 20 slots, 4332 conflicting pairs, density 0.218
+   synth-e200-s2500-t20-r1: 200 exams, 2500 students, 20 slots, 4196 conflicting pairs, density 0.211
+   synth-e200-s2500-t20-r2: 200 exams, 2500 students, 20 slots, 4416 conflicting pairs, density 0.222
+   synth-e200-s2500-t20-r3: 200 exams, 2500 students, 20 slots, 4274 conflicting pairs, density 0.215
+   synth-e200-s2500-t20-r4: 200 exams, 2500 students, 20 slots, 4440 conflicting pairs, density 0.223
+   synth-e400-s6000-t24-r0: 400 exams, 6000 students, 24 slots, 10351 conflicting pairs, density 0.130
+   synth-e400-s6000-t24-r1: 400 exams, 6000 students, 24 slots, 10399 conflicting pairs, density 0.130
+   synth-e400-s6000-t24-r2: 400 exams, 6000 students, 24 slots, 10555 conflicting pairs, density 0.132
+   synth-e400-s6000-t24-r3: 400 exams, 6000 students, 24 slots, 10009 conflicting pairs, density 0.125
+   synth-e400-s6000-t24-r4: 400 exams, 6000 students, 24 slots, 10314 conflicting pairs, density 0.129
+Experiment 2: exact ILP vs heuristic (small instances)
+   synth-e12-s100-t10-r0: heuristic 9.35 | ILP 7.57 (cold) 8.12 (warm), bound 0.0
+   synth-e12-s100-t11-r1: heuristic 9.34 | ILP 6.79 (cold) 6.99 (warm), bound 0.0
+   synth-e12-s100-t11-r2: heuristic 7.59 | ILP 6.68 (cold) 6.28 (warm), bound 0.03
+   synth-e15-s150-t13-r0: heuristic 11.39 | ILP 10.9933 (cold) 11.22 (warm), bound 0.0
+   synth-e15-s150-t12-r1: heuristic 17.02 | ILP 11.72 (cold) 13.68 (warm), bound 0.0
+   synth-e15-s150-t12-r2: heuristic 17.35 | ILP 12.7267 (cold) 12.7267 (warm), bound 0.0
+   synth-e18-s150-t11-r0: heuristic 22.36 | ILP 23.28 (cold) 20.0533 (warm), bound 0.0
+   synth-e18-s150-t12-r1: heuristic 22.05 | ILP 21.3467 (cold) 21.5267 (warm), bound 0.0
+   synth-e18-s150-t13-r2: heuristic 19.09 | ILP 18.38 (cold) 17.2333 (warm), bound 0.0
+Done. See results/
+EXIT 0

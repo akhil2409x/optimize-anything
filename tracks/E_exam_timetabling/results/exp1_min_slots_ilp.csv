@@ -1,0 +1,11 @@
+instance,exams,status,ilp_slots,feasible,seconds
+synth-e50-s400-t14-r0,50,Optimal,10.0,True,3.32
+synth-e50-s400-t14-r1,50,Optimal,10.0,True,13.17
+synth-e50-s400-t14-r2,50,Optimal,11.0,True,4.99
+synth-e50-s400-t14-r3,50,Optimal,10.0,True,13.95
+synth-e50-s400-t14-r4,50,TimeLimit-Feasible,11.0,True,20.11
+synth-e100-s1000-t20-r0,100,TimeLimit-Feasible,18.0,True,20.52
+synth-e100-s1000-t20-r1,100,TimeLimit-Feasible,20.0,True,20.48
+synth-e100-s1000-t20-r2,100,TimeLimit-Feasible,17.0,True,20.43
+synth-e100-s1000-t20-r3,100,TimeLimit-Feasible,17.0,True,20.49
+synth-e100-s1000-t20-r4,100,TimeLimit-Feasible,18.0,True,20.57
