@@ -140,11 +140,22 @@ Full tables and plots are in `results/SUMMARY.md`.
 - **Strong classical baselines:** simulated annealing, an RBF SVM and plain
   local search (Track B) match or beat every quantum method at these sizes.
 
-**Contrast with parallel computing (Track D):** to be completed once Track D's
-speedup measurements exist. The point to make is that a parallel speedup is
-*measured* wall-clock time on real cores, limited by Amdahl's law, while the
-quantum advantages here are *query counts* that this hardware cannot turn into
-wall-clock gains.
+**Contrast with parallel computing (Track D):**
+
+- **What is measured.** A parallel speed-up is wall-clock time on real cores.
+  Track D measured 1.72× on 2 cores with no serial code, and 1.41× with 30%
+  serial code.
+- **Amdahl's limit.** That second case can never beat 1/(1−f) = 3.3×,
+  however many cores are added.
+- **The quantum advantages here are query counts.** Examples: one oracle
+  call instead of 2ⁿ⁻¹+1 (Deutsch–Jozsa), and √N Grover iterations instead of
+  N/2.
+- **No wall-clock gain on a simulator.** Simulating them classically costs
+  2ⁿ memory and time, so they show up as fewer queries, never as less time.
+- **Parallelism is a constant-factor gain** (at most the number of cores, and
+  less after overheads) that any problem can get. A quantum advantage is
+  asymptotic, but only for specific problem structures, and needs fault-
+  tolerant hardware to become a time saving.
 
 ## How to run
 

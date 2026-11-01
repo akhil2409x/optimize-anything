@@ -1,0 +1,3 @@
+access,seconds,ns_per_element
+row by row (contiguous),0.009002,1.0
+column by column (stride n*8 bytes),0.061447,6.83

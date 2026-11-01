@@ -1,0 +1,20 @@
+objective,k,exact_method,exact,exact_seconds,greedy,greedy_ratio,random_same_budget_ratio,greedy_evals,lazy_evals,lazy_same_answer,below_guarantee,status
+weighted coverage,2,ILP,630.781506,0.020999,630.781506,1.0,0.965339,79,44,True,False,Optimal
+weighted coverage,3,ILP,864.620088,0.01956,864.620088,1.0,0.775433,117,47,True,False,Optimal
+weighted coverage,4,ILP,1043.041049,0.017616,1043.041049,1.0,0.916882,154,52,True,False,Optimal
+weighted coverage,5,ILP,1212.047516,0.019084,1212.047516,1.0,0.728621,190,53,True,False,Optimal
+weighted coverage,6,ILP,1335.507987,0.018544,1335.507987,1.0,0.767363,225,60,True,False,Optimal
+weighted coverage,7,ILP,1421.251501,0.017666,1421.251501,1.0,0.797475,259,64,True,False,Optimal
+weighted coverage,8,ILP,1479.33923,0.017471,1479.33923,1.0,0.753034,292,71,True,False,Optimal
+facility location,2,brute force,69.789702,0.001611,65.724033,0.941744,0.99983,59,61,True,False,435 subsets
+facility location,3,brute force,85.174637,0.014859,81.048768,0.95156,0.981917,87,62,True,False,4060 subsets
+facility location,4,brute force,95.173794,0.115334,92.062584,0.96731,0.974854,114,75,True,False,27405 subsets
+synergy (supermodular),2,brute force,8.110124,8.2e-05,8.059433,0.99375,0.99375,23,14,True,False,66 subsets
+synergy (supermodular),3,brute force,17.336244,0.000176,14.110124,0.813909,0.942349,33,15,True,False,220 subsets
+synergy (supermodular),4,brute force,29.997001,0.000489,23.336244,0.777953,0.883662,42,16,True,False,495 subsets
+synergy (supermodular),5,brute force,44.97645,0.000824,35.997001,0.800352,0.939327,50,17,True,False,792 subsets
+synergy (supermodular),6,brute force,61.044284,0.001024,50.97645,0.835073,0.931529,57,18,True,False,924 subsets
+feature-selection R^2,2,brute force,0.600696,0.000846,0.302607,0.503761,1.0,19,13,True,True,45 subsets
+feature-selection R^2,3,brute force,0.751392,0.002629,0.416424,0.554204,0.800026,27,14,True,True,120 subsets
+feature-selection R^2,4,brute force,0.857751,0.005923,0.423183,0.493364,0.876004,34,17,True,True,210 subsets
+feature-selection R^2,5,brute force,0.965277,0.009053,0.965277,1.0,0.778891,40,19,True,False,252 subsets

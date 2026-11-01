@@ -1,0 +1,7 @@
+test,setting,seconds
+200k tiny tasks,serial loop,0.017757
+200k tiny tasks,"2 processes, chunksize 1",4.660881
+200k tiny tasks,"2 processes, chunksize 100",0.096016
+200k tiny tasks,"2 processes, chunksize 10000",0.031594
+sum 8 arrays of 16 MB,serial (no copying),0.009352
+sum 8 arrays of 16 MB,2 processes (arrays pickled to workers),0.236921

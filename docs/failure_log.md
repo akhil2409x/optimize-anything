@@ -222,6 +222,35 @@ the spread between repeats before comparing medians.
 - **Lesson:** check that an ablation's configurations really differ in what
   they execute.
 
+## F12 · Track D · Multi-task test set drawn from a different task
+
+- **Tool:** Claude (claude.ai, Claude Opus 5.5), 2026-10-31
+- **What happened:** task 2's training error fell to 2.2 while its test
+  error stayed at 650. That was *worse* than predicting 0 (551), which
+  suggested severe overfitting.
+- **Cause:** not overfitting. The test set was made by calling the data
+  generator with another seed. The seed also draws the target function's
+  weights, so the test set came from a different task altogether.
+- **How it was caught:** comparing test error with the trivial
+  predict-zero baseline. A model that has learned anything should beat it.
+- **Fix:** draw the data once and split it 50/25/25 into train, validation
+  and test. A regression test now checks that a model fit on train beats
+  predicting zero on test.
+- **Lesson:** always print a trivial baseline next to a test score. Check
+  that a seed controls only the sampling, not the problem itself.
+
+## F13 · Track D · GradNorm code contradicted its own docstring
+
+- **Tool:** Claude (claude.ai, Claude Opus 5.5), 2026-10-31
+- **What happened:** the docstring said each task head always trains on its
+  own gradient. The GradNorm branch scaled the heads by the learned weights
+  anyway, so when task 2's weight went to 0, task 2's head froze.
+- **Fix:** the weights now scale only the shared-layer gradient, as
+  documented. The weight collapse itself is real GradNorm behaviour here and
+  is reported in the README.
+- **Lesson:** read generated code against its own comments, especially in
+  the branches that are hardest to test.
+
 ---
 
 *(Add entries from Tracks A–J below as they happen — xv6 and SQL rewrites usually supply several.)*
