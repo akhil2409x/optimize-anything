@@ -45,7 +45,7 @@ default parameters, and wrote:
 ## Resulting code change
 
 Commit `[AI:claude] Track H: TPC-H index selection (knapsack DP, greedy, ILP)`
-= local commit `c4a0690` (on GitHub: `<repo URL>/commit/c4a0690`)
+= local commit `8617dbc` (on GitHub: `<repo URL>/commit/8617dbc`)
 
 ## Verification note
 

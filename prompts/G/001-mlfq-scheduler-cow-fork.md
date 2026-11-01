@@ -54,7 +54,7 @@ Design points Claude identified before coding:
 
 `tracks/G_xv6/patches/xv6-optimize.patch`, commit
 `[AI:claude] Track G: xv6 MLFQ scheduler and copy-on-write fork`
-= local commit `b5d38d9` (on GitHub: `<repo URL>/commit/b5d38d9`)
+= local commit `7242ec9` (on GitHub: `<repo URL>/commit/7242ec9`)
 
 ## Verification note
 
