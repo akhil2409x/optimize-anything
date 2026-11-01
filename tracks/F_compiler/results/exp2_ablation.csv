@@ -1,0 +1,113 @@
+config,program,cycles,speedup_vs_no_passes,same_output
+all passes,collatz,241128,1.129,True
+all passes,deadcode,11607,1.518,True
+all passes,fib,13476,1.298,True
+all passes,gcd,51781,1.085,True
+all passes,grid,46166,2.652,True
+all passes,poly,3106,2.329,True
+all passes,pressure,32294,1.033,True
+all passes,primes,274810,1.076,True
+no passes,collatz,272161,1.0,True
+no passes,deadcode,17615,1.0,True
+no passes,fib,17498,1.0,True
+no passes,gcd,56197,1.0,True
+no passes,grid,122422,1.0,True
+no passes,poly,7233,1.0,True
+no passes,pressure,33353,1.0,True
+no passes,primes,295781,1.0,True
+all but constprop,collatz,283932,0.959,True
+all but constprop,deadcode,16024,1.099,True
+all but constprop,fib,14214,1.231,True
+all but constprop,gcd,57882,0.971,True
+all but constprop,grid,100714,1.216,True
+all but constprop,poly,5240,1.38,True
+all but constprop,pressure,36837,0.905,True
+all but constprop,primes,282005,1.049,True
+all but copyprop,collatz,241128,1.129,True
+all but copyprop,deadcode,12407,1.42,True
+all but copyprop,fib,15366,1.139,True
+all but copyprop,gcd,52431,1.072,True
+all but copyprop,grid,46246,2.647,True
+all but copyprop,poly,4006,1.806,True
+all but copyprop,pressure,31844,1.047,True
+all but copyprop,primes,275408,1.074,True
+all but cse,collatz,241128,1.129,True
+all but cse,deadcode,11607,1.518,True
+all but cse,fib,13476,1.298,True
+all but cse,gcd,51781,1.085,True
+all but cse,grid,46326,2.643,True
+all but cse,poly,4906,1.474,True
+all but cse,pressure,32294,1.033,True
+all but cse,primes,274810,1.076,True
+all but strength,collatz,243000,1.12,True
+all but strength,deadcode,11607,1.518,True
+all but strength,fib,13476,1.298,True
+all but strength,gcd,51781,1.085,True
+all but strength,grid,49446,2.476,True
+all but strength,poly,3806,1.9,True
+all but strength,pressure,32294,1.033,True
+all but strength,primes,274810,1.076,True
+all but licm,collatz,241128,1.129,True
+all but licm,deadcode,11607,1.518,True
+all but licm,fib,13476,1.298,True
+all but licm,gcd,51781,1.085,True
+all but licm,grid,86726,1.412,True
+all but licm,poly,3106,2.329,True
+all but licm,pressure,32294,1.033,True
+all but licm,primes,274810,1.076,True
+all but dce,collatz,241139,1.129,True
+all but dce,deadcode,13620,1.293,True
+all but dce,fib,15314,1.143,True
+all but dce,gcd,53602,1.048,True
+all but dce,grid,46219,2.649,True
+all but dce,poly,5230,1.383,True
+all but dce,pressure,32313,1.032,True
+all but dce,primes,276192,1.071,True
+only constprop,collatz,274035,0.993,True
+only constprop,deadcode,17214,1.023,True
+only constprop,fib,17499,1.0,True
+only constprop,gcd,56222,1.0,True
+only constprop,grid,109254,1.121,True
+only constprop,poly,6423,1.126,True
+only constprop,pressure,33354,1.0,True
+only constprop,primes,298351,0.991,True
+only copyprop,collatz,272161,1.0,True
+only copyprop,deadcode,16811,1.048,True
+only copyprop,fib,17257,1.014,True
+only copyprop,gcd,57358,0.98,True
+only copyprop,grid,123938,0.988,True
+only copyprop,poly,7227,1.001,True
+only copyprop,pressure,33795,0.987,True
+only copyprop,primes,295182,1.002,True
+only cse,collatz,272161,1.0,True
+only cse,deadcode,17615,1.0,True
+only cse,fib,17498,1.0,True
+only cse,gcd,56197,1.0,True
+only cse,grid,125629,0.974,True
+only cse,poly,6339,1.141,True
+only cse,pressure,33353,1.0,True
+only cse,primes,295781,1.0,True
+only strength,collatz,272161,1.0,True
+only strength,deadcode,17615,1.0,True
+only strength,fib,17498,1.0,True
+only strength,gcd,56197,1.0,True
+only strength,grid,122422,1.0,True
+only strength,poly,7233,1.0,True
+only strength,pressure,33353,1.0,True
+only strength,primes,295781,1.0,True
+only licm,collatz,284083,0.958,True
+only licm,deadcode,20839,0.845,True
+only licm,fib,16718,1.047,True
+only licm,gcd,58613,0.959,True
+only licm,grid,101202,1.21,True
+only licm,poly,7643,0.946,True
+only licm,pressure,36395,0.916,True
+only licm,primes,314280,0.941,True
+only dce,collatz,272161,1.0,True
+only dce,deadcode,15214,1.158,True
+only dce,fib,17498,1.0,True
+only dce,gcd,56197,1.0,True
+only dce,grid,122422,1.0,True
+only dce,poly,7233,1.0,True
+only dce,pressure,33353,1.0,True
+only dce,primes,294408,1.005,True

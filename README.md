@@ -51,7 +51,7 @@ Tracks G (xv6) and H (PostgreSQL) have their own setup notes in their folders.
 | C | Quantum optimization | QAOA on Track B Max-Cut, VQE (H₂), GD/Adam/SPSA/QNG, shots, noise, barren plateaus; 13 tests (simulation only) |
 | D | Submodular / parallel / distributed | not started |
 | E | Exam timetabling (main case study) | baseline + 5 heuristics + 2 ILPs, 18 tests, first results |
-| F | Compiler optimization | not started |
+| F | Compiler optimization | Tiny compiler: 6 passes, greedy vs ILP register allocation, pass ordering; 32 tests + mutation testing; tool-comparison kit |
 | G | xv6 OS optimization | MLFQ scheduler + copy-on-write fork; usertests pass on 4 kernels × 1/3 CPUs; patch + benchmarks |
 | H | DBMS optimization | TPC-H SF 0.1 index selection: knapsack DP, greedy, what-if greedy, ILP vs default; 9 tests; results identical |
 | I | Quantum algorithms and QML | DJ, BV, Grover, QFT, QPE, Shor (hand-written), annealing + embedding, QML vs classical; 33 tests (simulation only) |
@@ -63,7 +63,7 @@ Every AI tool used anywhere in this repository is listed here (Section 8 of the 
 
 | Tool | Model / version | Tracks | Dates | Kind of work |
 |---|---|---|---|---|
-| Claude (claude.ai) | Claude Opus 5.5 | B, C, E, G, H, I, repo scaffold | 2026-10-28 – 29 | planning, code generation, testing, debugging, documentation |
+| Claude (claude.ai) | Claude Opus 5.5 | B, C, E, F, G, H, I, repo scaffold | 2026-10-28 – 29 | planning, code generation, testing, debugging, documentation |
 | | | | | |
 
 ## Commit convention
@@ -98,8 +98,8 @@ match the exact Chapter 6 syllabus taught in class — add or remove rows to mat
 | Continuous | Fisher / diagonal / low-rank curvature, Hessian-vector products | A | | |
 | Continuous | Convergence: convex, strongly convex, non-convex | A | | |
 | Continuous | Step-size / optimizer tuning; noisy objectives | A | | |
-| Discrete | Greedy | B, E, H | `tracks/B_discrete/discrete/knapsack.py`, `tracks/E_exam_timetabling/timetabling/greedy.py`, `tracks/H_dbms/tpchopt/selection.py` | B Exp. 1, E Exp. 1, H |
-| Discrete | Integer Linear Programming | B, E, H | `tracks/B_discrete/discrete/knapsack.py` (`ilp`), `tracks/E_exam_timetabling/timetabling/ilp.py`, `tracks/H_dbms/tpchopt/selection.py` (`ilp`) | B Exp. 1, E Exp. 1–2, H |
+| Discrete | Greedy | B, E, F, H | `tracks/B_discrete/discrete/knapsack.py`, `tracks/E_exam_timetabling/timetabling/greedy.py`, `tracks/H_dbms/tpchopt/selection.py`, `tracks/F_compiler/tinyc/backend.py` (greedy colouring) | B Exp. 1, E Exp. 1, H, F Exp. 3 |
+| Discrete | Integer Linear Programming | B, E, F, H | `tracks/B_discrete/discrete/knapsack.py` (`ilp`), `tracks/E_exam_timetabling/timetabling/ilp.py`, `tracks/H_dbms/tpchopt/selection.py` (`ilp`), `tracks/F_compiler/tinyc/backend.py` (`allocate(..., 'ilp')`) | B Exp. 1, E Exp. 1–2, H, F Exp. 3 |
 | Discrete | Branch-and-bound | B, E | `tracks/B_discrete/discrete/knapsack.py` (`branch_and_bound`, own code) | B Exp. 1–2 |
 | Discrete | Dynamic programming | B, H | `tracks/B_discrete/discrete/knapsack.py` (`dp`), `tracks/H_dbms/tpchopt/selection.py` (`knapsack_dp`) | B Exp. 1–2, H |
 | Discrete | Feature selection / combinatorial applications | B, J | `tracks/B_discrete/discrete/feature_selection.py` | B Exp. 5 |

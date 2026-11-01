@@ -1,0 +1,12 @@
+# debugging code behind a constant flag, unused temporaries (DCE + branch folding)
+debug = 0; trace = 0; s = 0; i = 0;
+while (i < 400) {
+  unused = i * 37 + 11;
+  sq = i * i;
+  if (debug) { print sq; trace = trace + sq; }
+  if (debug == 1) { print i; }
+  s = s + sq % 13;
+  i = i + 1;
+}
+print s;
+if (debug) { print trace; }

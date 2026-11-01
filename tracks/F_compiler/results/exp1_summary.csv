@@ -1,0 +1,5 @@
+level,programs,all_outputs_identical,geomean_cycle_speedup,geomean_instr_reduction,geomean_size_reduction,total_loads_stores,mean_compile_ms
+O0,8,True,1.0,1.0,1.0,565146,0.73
+O1,8,True,3.44,3.06,2.76,7334,0.95
+O2,8,True,4.89,4.95,4.7,2108,2.43
+O3,8,True,4.91,5.0,4.73,1808,14.17

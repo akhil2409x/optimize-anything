@@ -1,0 +1,45 @@
+Python 3.13.18, Linux-6.18.44-fc-v185-x86_64-with-glibc2.39
+Exp 1: optimization levels
+   collatz: O0 762273 -> O2 241128 cycles
+   deadcode: O0 67672 -> O2 11607 cycles
+   fib: O0 128955 -> O2 13476 cycles
+   gcd: O0 183142 -> O2 51781 cycles
+   grid: O0 359354 -> O2 46166 cycles
+   poly: O0 29830 -> O2 3106 cycles
+   pressure: O0 66150 -> O2 32294 cycles
+   primes: O0 933032 -> O2 274810 cycles
+Exp 2: ablation
+   all passes: geomean speed-up 1.42
+   no passes: geomean speed-up 1.00
+   all but constprop: geomean speed-up 1.09
+   all but copyprop: geomean speed-up 1.34
+   all but cse: geomean speed-up 1.34
+   all but strength: geomean speed-up 1.37
+   all but licm: geomean speed-up 1.31
+   all but dce: geomean speed-up 1.28
+   only constprop: geomean speed-up 1.03
+   only copyprop: geomean speed-up 1.00
+   only cse: geomean speed-up 1.01
+   only strength: geomean speed-up 1.00
+   only licm: geomean speed-up 0.97
+   only dce: geomean speed-up 1.02
+Exp 3: register allocation
+   collatz done
+   deadcode done
+   fib done
+   gcd done
+   grid done
+   poly done
+   pressure done
+   primes done
+Exp 4: pass ordering
+   collatz: best 241128 worst 243011 greedy 241128 fixpoint 241128
+   deadcode: best 11607 worst 12018 greedy 11607 fixpoint 11607
+   fib: best 13476 worst 15314 greedy 13476 fixpoint 13476
+   gcd: best 51781 worst 53602 greedy 51781 fixpoint 51781
+   grid: best 46206 worst 80853 greedy 77406 fixpoint 46166
+   poly: best 3706 worst 4824 greedy 3706 fixpoint 3106
+   pressure: best 32294 worst 32313 greedy 32294 fixpoint 32294
+   primes: best 274810 worst 274819 greedy 274810 fixpoint 274810
+Done. See results/
+EXIT 0

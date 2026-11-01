@@ -1,0 +1,8 @@
+# eight values live across a loop: high register pressure (register allocation)
+a = 1; b = 2; c = 3; d = 4; e = 5; f = 6; g = 7; h = 8; i = 0;
+while (i < 150) {
+  a = a + b % 5; b = b + c % 7; c = c + d % 3; d = d + e % 11;
+  e = e + f % 13; f = f + g % 17; g = g + h % 19; h = h + a % 23;
+  i = i + 1;
+}
+print a; print b; print c; print d; print e; print f; print g; print h;

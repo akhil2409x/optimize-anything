@@ -1,0 +1,9 @@
+# polynomial with constant coefficients and repeated sub-expressions (constprop + CSE)
+c0 = 3; c1 = 5; c2 = 7; c3 = 2; scale = 4 * 4; acc = 0; x = 0 - 50;
+while (x < 50) {
+  p = c0 + c1 * x + c2 * x * x + c3 * x * x * x;
+  q = c0 + c1 * x + c2 * x * x;
+  acc = acc + (p - q) * scale + (c1 * x) * (c1 * x);
+  x = x + 1;
+}
+print acc;

@@ -1,0 +1,7 @@
+k,programs,greedy_spill_cost,ilp_spill_cost,programs_where_ilp_better,greedy_cycles,ilp_cycles,programs_where_ilp_fewer_cycles,programs_where_ilp_more_cycles,greedy_ms,ilp_ms,ilp_all_optimal
+2,8,5224,5114,2,882571,876031,2,0,1.7,62.6,True
+3,8,1865,1845,1,735109,734059,1,0,1.9,68.1,True
+4,8,892,872,1,699130,698080,1,0,2.0,75.4,True
+5,8,373,353,1,678682,677632,1,0,2.0,84.7,True
+6,8,147,127,1,674368,673318,1,0,2.1,91.1,True
+8,8,83,63,1,671656,670606,1,0,2.0,106.2,True

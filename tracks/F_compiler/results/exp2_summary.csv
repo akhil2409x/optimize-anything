@@ -1,0 +1,15 @@
+config,geomean_speedup_vs_no_passes,best_program,all_outputs_identical
+all passes,1.42,grid,True
+no passes,1.0,collatz,True
+all but constprop,1.091,poly,True
+all but copyprop,1.342,grid,True
+all but cse,1.341,grid,True
+all but strength,1.372,grid,True
+all but licm,1.313,poly,True
+all but dce,1.277,grid,True
+only constprop,1.03,poly,True
+only copyprop,1.002,deadcode,True
+only cse,1.013,poly,True
+only strength,1.0,collatz,True
+only licm,0.973,grid,True
+only dce,1.019,deadcode,True

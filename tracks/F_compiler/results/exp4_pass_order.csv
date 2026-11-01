@@ -1,0 +1,9 @@
+program,no_passes,default_order_once,best_order,best_order_seq,worst_order,orders_tried,distinct_results,greedy_order,greedy_order_seq,default_to_fixpoint,search_seconds,greedy_seconds
+collatz,272161,241128,241128,constprop copyprop cse strength licm dce,243011,720,6,241128,constprop strength copyprop cse licm dce,241128,14.3,0.44
+deadcode,15214,11607,11607,constprop copyprop cse strength licm dce,12018,720,4,11607,constprop copyprop cse strength licm dce,11607,1.7,0.05
+fib,17498,13476,13476,constprop copyprop cse strength licm dce,15314,720,7,13476,constprop copyprop cse strength licm dce,13476,4.0,0.1
+gcd,56197,51781,51781,constprop copyprop cse strength licm dce,53602,720,7,51781,constprop copyprop cse strength licm dce,51781,4.9,0.13
+grid,122422,46206,46206,constprop copyprop cse strength licm dce,80853,720,22,77406,licm constprop strength cse copyprop dce,46166,5.0,0.22
+poly,7233,3906,3706,constprop cse copyprop strength licm dce,4824,720,14,3706,constprop cse strength copyprop licm dce,3106,1.6,0.05
+pressure,33353,32294,32294,constprop copyprop cse strength licm dce,32313,720,3,32294,constprop cse strength licm dce copyprop,32294,2.2,0.05
+primes,294408,274810,274810,constprop copyprop cse strength licm dce,274819,720,4,274810,constprop copyprop cse strength licm dce,274810,21.9,0.66

@@ -1,0 +1,13 @@
+# sum of gcd(x, y) over a 25 x 25 grid (Euclid with %)
+s = 0; x = 1;
+while (x <= 25) {
+  y = 1;
+  while (y <= 25) {
+    a = x; b = y;
+    while (b != 0) { t = a % b; a = b; b = t; }
+    s = s + a;
+    y = y + 1;
+  }
+  x = x + 1;
+}
+print s;

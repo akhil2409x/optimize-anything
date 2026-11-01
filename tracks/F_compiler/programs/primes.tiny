@@ -1,0 +1,12 @@
+# count primes below 600 by trial division (division-heavy)
+count = 0; n = 2;
+while (n < 600) {
+  isprime = 1; d = 2;
+  while (d * d <= n) {
+    if (n % d == 0) { isprime = 0; }
+    d = d + 1;
+  }
+  count = count + isprime;
+  n = n + 1;
+}
+print count;

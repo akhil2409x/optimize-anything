@@ -1,0 +1,11 @@
+# total Collatz steps for 1..150
+steps = 0; n = 1;
+while (n <= 150) {
+  m = n;
+  while (m != 1) {
+    if (m % 2 == 0) { m = m / 2; } else { m = 3 * m + 1; }
+    steps = steps + 1;
+  }
+  n = n + 1;
+}
+print steps;

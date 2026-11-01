@@ -178,6 +178,50 @@ workload 13% faster (44.8 s vs 51.6 s). The default configuration's own three
 passes ranged from 41.9 to 52.2 s, so the claim was dropped. Always look at
 the spread between repeats before comparing medians.
 
+## F10 · Track F · "0 mismatches" from a fuzzer that couldn't see two bugs
+
+- **Tool:** Claude (claude.ai, Claude Opus 5.5), 2026-10-29
+- **What happened:** the first random-program generator found 0 mismatches
+  in 400 programs across 11 compiler configurations, which looked like strong
+  evidence of correctness. Mutation testing (deliberately injecting known
+  optimizer bugs) showed it was not:
+  - **Missed entirely:** CSE that forgets to invalidate after an operand is
+    redefined, and the classic `x / 2^k → x >> k` rewrite, which is wrong for
+    negative x under truncating division.
+  - **Caught:** only the dead-division bug.
+  - **Another distortion:** 70% of the generated programs ended early on
+    divide-by-zero.
+- **Causes:**
+  - **No repeated expressions:** random expressions almost never repeat after
+    an operand changes, so stale-CSE cases never arose.
+  - **Divisions folded away:** most divisions were constant-folded before
+    strength reduction saw a variable dividend.
+  - **A masked bug:** in the full pipeline, copy propagation runs before CSE
+    and hides the CSE bug. It only shows when CSE runs alone or in another
+    order, as in the pass-ordering experiment.
+- **Fix:**
+  - **Generator:** re-uses earlier expressions, uses a small variable pool,
+    more negative values, and mostly safe divisors.
+  - **Configurations:** tests run every pass alone and in reversed order.
+  - **Targeted tests:** added for each hazard.
+  - **Result:** `tests/mutation_check.py` now shows each of 5 real mutants
+    caught by a targeted test. A sixth mutant is equivalent (it can't change
+    any Tiny program's behaviour) and is documented as such.
+- **Lesson:** a test suite that has never failed hasn't been shown to work.
+  Inject known bugs and check they are caught.
+
+## F11 · Track F · Ablation that couldn't remove the pass it claimed to remove
+
+- **Tool:** Claude (claude.ai, Claude Opus 5.5), 2026-10-29
+- **What happened:** the ablation reported "all passes except DCE" with
+  exactly the same speed-up as "all passes" (1.42×), which would mean DCE
+  contributes nothing.
+- **Cause:** the pipeline always ran one final clean-up DCE after the chosen
+  passes, so DCE was never actually absent.
+- **Fix:** `optimize(..., cleanup=False)` for the ablation, then a rerun.
+- **Lesson:** check that an ablation's configurations really differ in what
+  they execute.
+
 ---
 
 *(Add entries from Tracks A–J below as they happen — xv6 and SQL rewrites usually supply several.)*
