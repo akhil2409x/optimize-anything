@@ -46,7 +46,7 @@ Tracks G (xv6) and H (PostgreSQL) have their own setup notes in their folders.
 
 | Track | Topic | Status |
 |---|---|---|
-| A | Continuous optimization | not started |
+| A | Continuous optimization | 13 optimizers from scratch, hand-written backprop, curvature methods, 7 experiments; 19 tests vs autograd |
 | B | Discrete optimization | knapsack ×5 methods, QUBO/Ising, feature selection, 31 tests, results |
 | C | Quantum optimization | QAOA on Track B Max-Cut, VQE (H₂), GD/Adam/SPSA/QNG, shots, noise, barren plateaus; 13 tests (simulation only) |
 | D | Submodular / parallel / distributed | not started |
@@ -63,7 +63,7 @@ Every AI tool used anywhere in this repository is listed here (Section 8 of the 
 
 | Tool | Model / version | Tracks | Dates | Kind of work |
 |---|---|---|---|---|
-| Claude (claude.ai) | Claude Opus 5.5 | B, C, E, F, G, H, I, repo scaffold | 2026-10-28 – 29 | planning, code generation, testing, debugging, documentation |
+| Claude (claude.ai) | Claude Opus 5.5 | A, B, C, E, F, G, H, I, repo scaffold | 2026-10-28 – 30 | planning, code generation, testing, debugging, documentation |
 | | | | | |
 
 ## Commit convention
@@ -81,23 +81,23 @@ match the exact Chapter 6 syllabus taught in class — add or remove rows to mat
 
 | Area | Method / concept | Track | Code location | Result |
 |---|---|---|---|---|
-| Foundations | ML as optimization (params, loss, regularization) | A | | |
-| Foundations | Continuous vs discrete optimization | A, B | | |
-| Foundations | Convex vs non-convex; local/global minima; saddle points | A | | |
+| Foundations | ML as optimization (params, loss, regularization) | A | `tracks/A_continuous/contopt/objectives.py` (`LogisticRegression`) | A Exp. 3 (λ sweep) |
+| Foundations | Continuous vs discrete optimization | A, B | `tracks/A_continuous/`, `tracks/B_discrete/` | A all, B all |
+| Foundations | Convex vs non-convex; local/global minima; saddle points | A | `tracks/A_continuous/contopt/objectives.py` | A Exp. 1–2 |
 | Foundations | Quantum computing basics; optimization in QML | C, I | `tracks/C_quantum_optimization/README.md`, `tracks/I_quantum_algorithms_qml/qalgo/qml_models.py` | C Exp. 1–2, I Exp. 6 |
-| Continuous | Gradient descent | A | | |
-| Continuous | SGD, mini-batch SGD | A | | |
-| Continuous | Momentum | A | | |
-| Continuous | Nesterov (NAG) | A | | |
-| Continuous | AdaGrad | A | | |
-| Continuous | RMSProp | A | | |
-| Continuous | Adam | A | | |
-| Continuous | Newton's method | A | | |
-| Continuous | Gauss–Newton | A | | |
-| Continuous | Backpropagation (vs optimizer) | A | | |
-| Continuous | Fisher / diagonal / low-rank curvature, Hessian-vector products | A | | |
-| Continuous | Convergence: convex, strongly convex, non-convex | A | | |
-| Continuous | Step-size / optimizer tuning; noisy objectives | A | | |
+| Continuous | Gradient descent | A | `tracks/A_continuous/contopt/optimizers.py` (`GD`) | A Exp. 1, 3, 6 |
+| Continuous | SGD, mini-batch SGD | A | `tracks/A_continuous/contopt/optimizers.py` (`run_first_order(batch=…)`) | A Exp. 3, 5, 7 |
+| Continuous | Momentum | A | `tracks/A_continuous/contopt/optimizers.py` | A Exp. 1, 3, 5, 6 |
+| Continuous | Nesterov (NAG) | A | `tracks/A_continuous/contopt/optimizers.py` | A Exp. 1, 3, 5, 6 |
+| Continuous | AdaGrad | A | `tracks/A_continuous/contopt/optimizers.py` | A Exp. 3, 5, 6 |
+| Continuous | RMSProp | A | `tracks/A_continuous/contopt/optimizers.py` | A Exp. 3, 5, 6 |
+| Continuous | Adam | A, C | `tracks/A_continuous/contopt/optimizers.py` | A Exp. 3, 5–7 |
+| Continuous | Newton's method | A | `tracks/A_continuous/contopt/optimizers.py` (`newton`) | A Exp. 1–4 |
+| Continuous | Gauss–Newton | A | `tracks/A_continuous/contopt/optimizers.py` (`gauss_newton`, `levenberg_marquardt`) | A Exp. 4 |
+| Continuous | Backpropagation (vs optimizer) | A | `tracks/A_continuous/contopt/mlp.py` (`backprop`) | A Exp. 5 |
+| Continuous | Fisher / diagonal / low-rank curvature, Hessian-vector products | A | `tracks/A_continuous/contopt/optimizers.py` (`natural_gradient`, `diag_newton`, `lbfgs`, `newton_cg`) | A Exp. 3 |
+| Continuous | Convergence: convex, strongly convex, non-convex | A | `tracks/A_continuous/run_experiments.py` (`exp1`) | A Exp. 1 |
+| Continuous | Step-size / optimizer tuning; noisy objectives | A, C | `tracks/A_continuous/run_experiments.py` (`exp6`, `exp7`) | A Exp. 6–7, C Exp. 2–3 |
 | Discrete | Greedy | B, E, F, H | `tracks/B_discrete/discrete/knapsack.py`, `tracks/E_exam_timetabling/timetabling/greedy.py`, `tracks/H_dbms/tpchopt/selection.py`, `tracks/F_compiler/tinyc/backend.py` (greedy colouring) | B Exp. 1, E Exp. 1, H, F Exp. 3 |
 | Discrete | Integer Linear Programming | B, E, F, H | `tracks/B_discrete/discrete/knapsack.py` (`ilp`), `tracks/E_exam_timetabling/timetabling/ilp.py`, `tracks/H_dbms/tpchopt/selection.py` (`ilp`), `tracks/F_compiler/tinyc/backend.py` (`allocate(..., 'ilp')`) | B Exp. 1, E Exp. 1–2, H, F Exp. 3 |
 | Discrete | Branch-and-bound | B, E | `tracks/B_discrete/discrete/knapsack.py` (`branch_and_bound`, own code) | B Exp. 1–2 |

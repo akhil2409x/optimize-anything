@@ -1,0 +1,11 @@
+start,method,iterations_to_optimum,final_f,reached_optimum,theta
+"near start (1, 0.2, 0)",Gauss-Newton,11,0.0882581,True,"[2.499, 1.345, 0.519]"
+"near start (1, 0.2, 0)",Levenberg-Marquardt,4,0.0882581,True,"[2.499, 1.345, 0.519]"
+"near start (1, 0.2, 0)","Newton (damped, exact Hessian)",10,0.0882581,True,"[2.499, 1.345, 0.519]"
+"near start (1, 0.2, 0)",GD (tuned),302,0.0882581,True,"[2.499, 1.345, 0.519]"
+"near start (1, 0.2, 0)",Adam (tuned),811,0.0882581,True,"[2.499, 1.345, 0.519]"
+"far start (0.1, 4, -2)",Gauss-Newton,,17.0199,False,"[-0.0, -118.36, 0.635]"
+"far start (0.1, 4, -2)",Levenberg-Marquardt,12,0.0882581,True,"[2.499, 1.345, 0.519]"
+"far start (0.1, 4, -2)","Newton (damped, exact Hessian)",22,0.0882581,True,"[2.499, 1.345, 0.519]"
+"far start (0.1, 4, -2)",GD (tuned),465,0.0882581,True,"[2.499, 1.345, 0.519]"
+"far start (0.1, 4, -2)",Adam (tuned),218,0.0882581,True,"[2.499, 1.345, 0.519]"

@@ -1,0 +1,23 @@
+problem,method,iters_to_1e8_reduction,theory_iters,final_f
+quadratic kappa=10,GD (lr = 1/L),49,≤ 88 (bound),
+quadratic kappa=10,Momentum (Polyak optimal),17,≈ 15 (asymptotic),
+quadratic kappa=10,Nesterov (lr = 1/L),19,≤ 49 (bound),
+quadratic kappa=10,Newton,1,1 (exact on a quadratic),
+quadratic kappa=100,GD (lr = 1/L),383,≤ 917 (bound),
+quadratic kappa=100,Momentum (Polyak optimal),63,≈ 46 (asymptotic),
+quadratic kappa=100,Nesterov (lr = 1/L),55,≤ 175 (bound),
+quadratic kappa=100,Newton,1,1 (exact on a quadratic),
+quadratic kappa=1000,GD (lr = 1/L),2695,≤ 9206 (bound),
+quadratic kappa=1000,Momentum (Polyak optimal),220,≈ 146 (asymptotic),
+quadratic kappa=1000,Nesterov (lr = 1/L),138,≤ 574 (bound),
+quadratic kappa=1000,Newton,1,1 (exact on a quadratic),
+"quartic (convex, not strongly)",GD (lr 0.02),,sublinear; fitted f(k) ~ k^-1.96,
+Rosenbrock (non-convex),GD (lr 1e-03),,,1.9e-08
+Rosenbrock (non-convex),Momentum (lr 3e-03),551,,1.1e-29
+Rosenbrock (non-convex),Nesterov (lr 1e-03),1982,,7.7e-30
+Rosenbrock (non-convex),AdaGrad (lr 1e+00),11276,,4.2e-13
+Rosenbrock (non-convex),RMSProp (lr 1e-03),,,2.3e-04
+Rosenbrock (non-convex),Adam (lr 3e-02),2571,,5.3e-10
+Rosenbrock (non-convex),Newton (damped),20,,0.0e+00
+Rosenbrock (non-convex),L-BFGS,44,,4.6e-28
+Rosenbrock (non-convex),Newton-CG (HVP),20,,0.0e+00

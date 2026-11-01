@@ -1,0 +1,15 @@
+landscape,method,outcome,f_final,iters_to_f_below_minus_0_99
+saddle,Newton (pure),stops at [ 0. -0.],-0.0,
+saddle,Newton (damped: -g when H not PD),x = [0.     1.4142],-1.0,14
+saddle,GD (lr 0.1),x = [0.     1.4142],-1.0,83
+saddle,Momentum (lr 0.05),x = [-0.      1.4142],-1.0,54
+saddle,Nesterov (lr 0.05),x = [0.     1.4142],-1.0,54
+saddle,Adam (lr 0.05),x = [-0.      1.4142],-1.0,27
+saddle,RMSProp (lr 0.05),x = [0.025  1.4386],-0.99817,19
+saddle,AdaGrad (lr 0.5),x = [0.     1.4142],-1.0,4
+"six-hump camel, 200 random starts",GD,"global min 109, local min 91, saddle / max 0, not converged 0",,
+"six-hump camel, 200 random starts",Momentum,"global min 115, local min 85, saddle / max 0, not converged 0",,
+"six-hump camel, 200 random starts",Adam,"global min 108, local min 85, saddle / max 0, not converged 7",,
+"six-hump camel, 200 random starts",Newton (pure),"global min 39, local min 67, saddle / max 94, not converged 0",,
+"six-hump camel, 200 random starts",Newton (damped),"global min 115, local min 85, saddle / max 0, not converged 0",,
+"six-hump camel, 200 random starts",L-BFGS,"global min 127, local min 73, saddle / max 0, not converged 0",,

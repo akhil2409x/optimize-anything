@@ -1,0 +1,21 @@
+experiment,setting,epochs,gap_mean,gap_std
+SGD batch size,"batch 1, lr 0.05, constant lr",50,9.11e-01,2.4e-01
+SGD batch size,"batch 1, lr 0.05, lr/sqrt(k)",50,2.97e-03,6.4e-04
+SGD batch size,"batch 8, lr 0.05, constant lr",50,5.87e-02,1.9e-02
+SGD batch size,"batch 8, lr 0.05, lr/sqrt(k)",50,3.35e-03,2.5e-04
+SGD batch size,"batch 64, lr 0.05, constant lr",50,7.85e-03,3.9e-03
+SGD batch size,"batch 64, lr 0.05, lr/sqrt(k)",50,8.99e-03,3.9e-04
+SGD batch size,"batch full, lr 0.05, constant lr",50,6.73e-03,0.0e+00
+SGD batch size,"batch full, lr 0.05, lr/sqrt(k)",50,3.77e-02,0.0e+00
+additive gradient noise (quadratic kappa=100),"sigma 0.0, GD lr 0.01",3000 steps,6.37e-28,0.0e+00
+additive gradient noise (quadratic kappa=100),"sigma 0.0, Momentum lr 0.002",3000 steps,2.52e-71,0.0e+00
+additive gradient noise (quadratic kappa=100),"sigma 0.0, Adam lr 0.05",3000 steps,4.05e-12,0.0e+00
+additive gradient noise (quadratic kappa=100),"sigma 0.1, GD lr 0.01",3000 steps,7.87e-04,3.0e-04
+additive gradient noise (quadratic kappa=100),"sigma 0.1, Momentum lr 0.002",3000 steps,1.07e-03,3.8e-04
+additive gradient noise (quadratic kappa=100),"sigma 0.1, Adam lr 0.05",3000 steps,2.90e-03,9.6e-04
+additive gradient noise (quadratic kappa=100),"sigma 1.0, GD lr 0.01",3000 steps,7.87e-02,3.0e-02
+additive gradient noise (quadratic kappa=100),"sigma 1.0, Momentum lr 0.002",3000 steps,1.07e-01,3.8e-02
+additive gradient noise (quadratic kappa=100),"sigma 1.0, Adam lr 0.05",3000 steps,7.82e-02,2.9e-02
+additive gradient noise (quadratic kappa=100),"sigma 10.0, GD lr 0.01",3000 steps,7.87e+00,3.0e+00
+additive gradient noise (quadratic kappa=100),"sigma 10.0, Momentum lr 0.002",3000 steps,1.07e+01,3.8e+00
+additive gradient noise (quadratic kappa=100),"sigma 10.0, Adam lr 0.05",3000 steps,2.10e+00,5.1e-01
