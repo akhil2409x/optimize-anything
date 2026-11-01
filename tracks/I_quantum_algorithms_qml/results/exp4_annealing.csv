@@ -1,0 +1,16 @@
+method,setting,p_optimal,approx_ratio,seconds
+brute force (classical),all 2^10 states,1.0,1.0,0.000208
+quantum annealing (exact simulation),anneal time T = 1,0.0086,0.6855,0.0627
+quantum annealing (exact simulation),anneal time T = 3,0.0108,0.7029,0.0613
+quantum annealing (exact simulation),anneal time T = 10,0.0154,0.7284,0.0614
+quantum annealing (exact simulation),anneal time T = 30,0.0259,0.7649,0.186
+quantum annealing (exact simulation),anneal time T = 100,0.0596,0.8214,0.613
+quantum annealing (exact simulation),anneal time T = 300,0.1578,0.8857,2.01
+quantum annealing (exact simulation),anneal time T = 1000,0.4547,0.9525,6.49
+quantum annealing (exact simulation),anneal time T = 3000,0.8684,0.9904,19.6
+simulated annealing (classical),"3 sweeps, 100 reads",0.46,0.9536,0.00011
+simulated annealing (classical),"10 sweeps, 100 reads",0.77,0.9829,0.000252
+simulated annealing (classical),"30 sweeps, 100 reads",0.97,0.9979,0.000635
+simulated annealing (classical),"100 sweeps, 100 reads",1.0,1.0,0.00198
+simulated annealing (classical),"300 sweeps, 100 reads",1.0,1.0,0.00702
+simulated annealing (classical),"1000 sweeps, 100 reads",1.0,1.0,0.0225

@@ -1,0 +1,29 @@
+hardware,problem,logical_vars,logical_couplings,physical_qubits,overhead,max_chain,seconds
+pegasus_p6 (680 qubits),"Track B Max-Cut (10 nodes, 19 edges)",10,19,11,1.1,2,0.0
+pegasus_p6 (680 qubits),complete graph K5,5,10,6,1.2,2,0.0
+pegasus_p6 (680 qubits),complete graph K10,10,45,16,1.6,2,0.0
+pegasus_p6 (680 qubits),complete graph K15,15,105,36,2.4,3,0.1
+pegasus_p6 (680 qubits),complete graph K20,20,190,54,2.7,3,0.7
+pegasus_p6 (680 qubits),complete graph K25,25,300,90,3.6,4,0.9
+pegasus_p6 (680 qubits),complete graph K30,30,435,115,3.83,5,2.7
+pegasus_p6 (680 qubits),complete graph K35,35,595,158,4.51,6,6.2
+pegasus_p6 (680 qubits),complete graph K40,40,780,212,5.3,7,4.7
+pegasus_p6 (680 qubits),"knapsack QUBO, 4 items (+7 slack)",11,55,21,1.91,3,0.0
+pegasus_p6 (680 qubits),"knapsack QUBO, 8 items (+8 slack)",16,120,38,2.38,3,0.2
+pegasus_p6 (680 qubits),"knapsack QUBO, 12 items (+9 slack)",21,210,56,2.67,3,1.2
+pegasus_p6 (680 qubits),"knapsack QUBO, 16 items (+9 slack)",25,300,90,3.6,4,1.1
+pegasus_p6 (680 qubits),"knapsack QUBO, 20 items (+9 slack)",29,406,109,3.76,5,2.3
+chimera_c16 (2048 qubits),"Track B Max-Cut (10 nodes, 19 edges)",10,19,19,1.9,3,0.0
+chimera_c16 (2048 qubits),complete graph K5,5,10,8,1.6,2,0.0
+chimera_c16 (2048 qubits),complete graph K10,10,45,34,3.4,4,0.2
+chimera_c16 (2048 qubits),complete graph K15,15,105,74,4.93,6,0.6
+chimera_c16 (2048 qubits),complete graph K20,20,190,131,6.55,8,1.9
+chimera_c16 (2048 qubits),complete graph K25,25,300,205,8.2,10,3.2
+chimera_c16 (2048 qubits),complete graph K30,30,435,289,9.63,12,5.9
+chimera_c16 (2048 qubits),complete graph K35,35,595,384,10.97,13,8.3
+chimera_c16 (2048 qubits),complete graph K40,40,780,521,13.03,16,13.6
+chimera_c16 (2048 qubits),"knapsack QUBO, 4 items (+7 slack)",11,55,42,3.82,5,0.1
+chimera_c16 (2048 qubits),"knapsack QUBO, 8 items (+8 slack)",16,120,80,5.0,6,0.8
+chimera_c16 (2048 qubits),"knapsack QUBO, 12 items (+9 slack)",21,210,143,6.81,8,1.2
+chimera_c16 (2048 qubits),"knapsack QUBO, 16 items (+9 slack)",25,300,205,8.2,10,3.0
+chimera_c16 (2048 qubits),"knapsack QUBO, 20 items (+9 slack)",29,406,268,9.24,11,6.2

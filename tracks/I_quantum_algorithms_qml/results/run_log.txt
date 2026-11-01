@@ -1,0 +1,103 @@
+Python 3.13.18, PennyLane 0.45.1
+Exp 1: algorithms
+   Deutsch–Jozsa                      n=2: P(0..0): constant 1.000, balanced 0.000
+   Deutsch–Jozsa                      n=3: P(0..0): constant 1.000, balanced 0.000
+   Deutsch–Jozsa                      n=4: P(0..0): constant 1.000, balanced 0.000
+   Deutsch–Jozsa                      n=5: P(0..0): constant 1.000, balanced 0.000
+   Deutsch–Jozsa                      n=6: P(0..0): constant 1.000, balanced 0.000
+   Bernstein–Vazirani                 n=2: secret 01 recovered with P = 1.000
+   Bernstein–Vazirani                 n=4: secret 1001 recovered with P = 1.000
+   Bernstein–Vazirani                 n=6: secret 101110 recovered with P = 1.000
+   Bernstein–Vazirani                 n=8: secret 01010000 recovered with P = 1.000
+   QFT (hand-written)                 n=3: max |mine - qml.QFT| = 1.2e-16
+   QFT (hand-written)                 n=5: max |mine - qml.QFT| = 1.4e-16
+   QPE (hand-written)                 n=4: phase 0.6250 -> 0.6250 (P = 1.000, resolution 1/8)
+   QPE (hand-written)                 n=6: phase 0.3000 -> 0.3125 (P = 0.573, resolution 1/32)
+   QPE (hand-written)                 n=9: phase 0.3333 -> 0.3320 (P = 0.684, resolution 1/256)
+   Grover (hand-written)              n=3: P(target) = 0.945
+   Grover (hand-written)              n=4: P(target) = 0.961
+   Grover (hand-written)              n=5: P(target) = 0.999
+   Grover (hand-written)              n=6: P(target) = 0.997
+   Shor N=15 (order finding by QPE)   n=12: a=2: order 4, P(factors per run) = 0.50, factors [(3, 5)]
+   Shor N=15 (order finding by QPE)   n=12: a=7: order 4, P(factors per run) = 0.50, factors [(3, 5)]
+   Shor N=15 (order finding by QPE)   n=12: a=11: order 2, P(factors per run) = 0.50, factors [(3, 5)]
+   Shor N=15 (order finding by QPE)   n=12: a=13: order 4, P(factors per run) = 0.50, factors [(3, 5)]
+   Shor N=15 (order finding by QPE)   n=12: a=14: order 2, P(factors per run) = 0.00, factors none (a^(r/2) = -1 mod 15)
+Exp 2: Grover vs linear search
+   n=2: Grover 1 queries (P=1.000), linear mean 2.6, sim 0.00181s
+   n=3: Grover 2 queries (P=0.945), linear mean 4.5, sim 0.0023s
+   n=4: Grover 3 queries (P=0.961), linear mean 8.4, sim 0.00462s
+   n=5: Grover 4 queries (P=0.999), linear mean 16.3, sim 0.00663s
+   n=6: Grover 6 queries (P=0.997), linear mean 32.9, sim 0.0103s
+   n=7: Grover 8 queries (P=0.996), linear mean 64.6, sim 0.0207s
+   n=8: Grover 12 queries (P=1.000), linear mean 127.6, sim 0.0457s
+   n=9: Grover 17 queries (P=0.999), linear mean 254.9, sim 0.139s
+   n=10: Grover 25 queries (P=0.999), linear mean 512.6, sim 0.508s
+   n=11: Grover 35 queries (P=1.000), linear mean 1022.1, sim 4.07s
+   n=12: Grover 50 queries (P=1.000), linear mean 2019.4, sim 38.2s
+Exp 3: noise
+   Grover n=3 done
+   Grover n=4 done
+   Grover n=5 done
+   Grover n=6 done
+   BV n=4 done
+   BV n=6 done
+   BV n=8 done
+Exp 4: annealing
+   QA T=1: P(opt) 0.009
+   QA T=3: P(opt) 0.011
+   QA T=10: P(opt) 0.015
+   QA T=30: P(opt) 0.026
+   QA T=100: P(opt) 0.060
+   QA T=300: P(opt) 0.158
+   QA T=1000: P(opt) 0.455
+   QA T=3000: P(opt) 0.868
+   SA sweeps=3: P(opt) 0.460
+   SA sweeps=10: P(opt) 0.770
+   SA sweeps=30: P(opt) 0.970
+   SA sweeps=100: P(opt) 1.000
+   SA sweeps=300: P(opt) 1.000
+   SA sweeps=1000: P(opt) 1.000
+   min gap 0.0438 at s=0.99
+Exp 5: embedding
+   pegasus_p6 Track B Max-Cut (10 nodes, 19 edges): 11
+   pegasus_p6 complete graph K5: 6
+   pegasus_p6 complete graph K10: 16
+   pegasus_p6 complete graph K15: 36
+   pegasus_p6 complete graph K20: 54
+   pegasus_p6 complete graph K25: 90
+   pegasus_p6 complete graph K30: 115
+   pegasus_p6 complete graph K35: 158
+   pegasus_p6 complete graph K40: 212
+   pegasus_p6 knapsack QUBO, 4 items (+7 slack): 21
+   pegasus_p6 knapsack QUBO, 8 items (+8 slack): 38
+   pegasus_p6 knapsack QUBO, 12 items (+9 slack): 56
+   pegasus_p6 knapsack QUBO, 16 items (+9 slack): 90
+   pegasus_p6 knapsack QUBO, 20 items (+9 slack): 109
+   chimera_c16 Track B Max-Cut (10 nodes, 19 edges): 19
+   chimera_c16 complete graph K5: 8
+   chimera_c16 complete graph K10: 34
+   chimera_c16 complete graph K15: 74
+   chimera_c16 complete graph K20: 131
+   chimera_c16 complete graph K25: 205
+   chimera_c16 complete graph K30: 289
+   chimera_c16 complete graph K35: 384
+   chimera_c16 complete graph K40: 521
+   chimera_c16 knapsack QUBO, 4 items (+7 slack): 42
+   chimera_c16 knapsack QUBO, 8 items (+8 slack): 80
+   chimera_c16 knapsack QUBO, 12 items (+9 slack): 143
+   chimera_c16 knapsack QUBO, 16 items (+9 slack): 205
+   chimera_c16 knapsack QUBO, 20 items (+9 slack): 268
+Exp 6: QML vs classical
+   moons seed 0: logistic regression 0.88, SVM 0.93, MLP 0.87, variational classifier 0.88, quantum kernel + SVM 0.88
+   moons seed 1: logistic regression 0.85, SVM 0.97, MLP 0.88, variational classifier 0.92, quantum kernel + SVM 0.92
+   moons seed 2: logistic regression 0.88, SVM 0.95, MLP 0.88, variational classifier 0.85, quantum kernel + SVM 0.92
+   moons seed 3: logistic regression 0.87, SVM 0.95, MLP 0.83, variational classifier 0.85, quantum kernel + SVM 0.85
+   moons seed 4: logistic regression 0.87, SVM 0.95, MLP 0.83, variational classifier 0.88, quantum kernel + SVM 0.90
+   cancer seed 0: logistic regression 0.97, SVM 0.97, MLP 1.00, variational classifier 0.92, quantum kernel + SVM 0.90
+   cancer seed 1: logistic regression 0.85, SVM 0.88, MLP 0.90, variational classifier 0.87, quantum kernel + SVM 0.82
+   cancer seed 2: logistic regression 0.93, SVM 0.92, MLP 0.95, variational classifier 0.88, quantum kernel + SVM 0.87
+   cancer seed 3: logistic regression 0.98, SVM 0.98, MLP 1.00, variational classifier 0.95, quantum kernel + SVM 0.87
+   cancer seed 4: logistic regression 0.97, SVM 0.93, MLP 0.98, variational classifier 0.83, quantum kernel + SVM 0.82
+Done. See results/
+EXIT 0

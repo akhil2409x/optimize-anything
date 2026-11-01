@@ -1,0 +1,51 @@
+dataset,seed,model,kind,accuracy,train_seconds,params,circuit_evals_train,circuit_evals_test
+moons,0,logistic regression,classical,0.8833333333333333,0.0032311329998719884,3,0,0
+moons,0,SVM (RBF kernel),classical,0.9333333333333333,0.00127790500005176,48,0,0
+moons,0,"MLP (1 hidden layer, 8 units)",classical,0.8666666666666667,0.09697171799984972,33,0,0
+moons,0,variational classifier (VQC),quantum (simulated),0.8833333333333333,14.991224374000012,19,35520,60
+moons,0,quantum kernel + SVM,quantum (simulated),0.8833333333333333,26.059918374000063,63,9730,8400
+moons,1,logistic regression,classical,0.85,0.0022750299999643175,3,0,0
+moons,1,SVM (RBF kernel),classical,0.9666666666666667,0.0010058169998501398,47,0,0
+moons,1,"MLP (1 hidden layer, 8 units)",classical,0.8833333333333333,0.17070817300009367,33,0,0
+moons,1,variational classifier (VQC),quantum (simulated),0.9166666666666666,15.62200215300004,19,35520,60
+moons,1,quantum kernel + SVM,quantum (simulated),0.9166666666666666,26.80163850200006,65,9730,8400
+moons,2,logistic regression,classical,0.8833333333333333,0.0020115050001550117,3,0,0
+moons,2,SVM (RBF kernel),classical,0.95,0.0009772379999049008,47,0,0
+moons,2,"MLP (1 hidden layer, 8 units)",classical,0.8833333333333333,0.1815671869999278,33,0,0
+moons,2,variational classifier (VQC),quantum (simulated),0.85,14.77339890899998,19,35520,60
+moons,2,quantum kernel + SVM,quantum (simulated),0.9166666666666666,27.209645034000005,58,9730,8400
+moons,3,logistic regression,classical,0.8666666666666667,0.0024792090000573808,3,0,0
+moons,3,SVM (RBF kernel),classical,0.95,0.0013001039999380737,41,0,0
+moons,3,"MLP (1 hidden layer, 8 units)",classical,0.8333333333333334,0.2187695889999759,33,0,0
+moons,3,variational classifier (VQC),quantum (simulated),0.85,14.542753647999916,19,35520,60
+moons,3,quantum kernel + SVM,quantum (simulated),0.85,27.50777019399993,53,9730,8400
+moons,4,logistic regression,classical,0.8666666666666667,0.0021412290000171197,3,0,0
+moons,4,SVM (RBF kernel),classical,0.95,0.0011649279999801365,46,0,0
+moons,4,"MLP (1 hidden layer, 8 units)",classical,0.8333333333333334,0.18532078499993077,33,0,0
+moons,4,variational classifier (VQC),quantum (simulated),0.8833333333333333,14.73661968700003,19,35520,60
+moons,4,quantum kernel + SVM,quantum (simulated),0.9,27.206679244000043,57,9730,8400
+cancer,0,logistic regression,classical,0.9666666666666667,0.0031629100001282495,5,0,0
+cancer,0,SVM (RBF kernel),classical,0.9666666666666667,0.0016728769999190263,44,0,0
+cancer,0,"MLP (1 hidden layer, 8 units)",classical,1.0,0.4508129450000524,49,0,0
+cancer,0,variational classifier (VQC),quantum (simulated),0.9166666666666666,28.183857939000063,37,70080,60
+cancer,0,quantum kernel + SVM,quantum (simulated),0.9,82.66369389200008,84,9730,8400
+cancer,1,logistic regression,classical,0.85,0.0025198440000622213,5,0,0
+cancer,1,SVM (RBF kernel),classical,0.8833333333333333,0.0009622860000035871,43,0,0
+cancer,1,"MLP (1 hidden layer, 8 units)",classical,0.9,0.24111788599998363,49,0,0
+cancer,1,variational classifier (VQC),quantum (simulated),0.8666666666666667,28.199456306000002,37,70080,60
+cancer,1,quantum kernel + SVM,quantum (simulated),0.8166666666666667,84.21386004600004,82,9730,8400
+cancer,2,logistic regression,classical,0.9333333333333333,0.0025496630000816367,5,0,0
+cancer,2,SVM (RBF kernel),classical,0.9166666666666666,0.0009549899998546607,46,0,0
+cancer,2,"MLP (1 hidden layer, 8 units)",classical,0.95,0.21084194700006265,49,0,0
+cancer,2,variational classifier (VQC),quantum (simulated),0.8833333333333333,29.315973369000176,37,70080,60
+cancer,2,quantum kernel + SVM,quantum (simulated),0.8666666666666667,84.52953801600006,91,9730,8400
+cancer,3,logistic regression,classical,0.9833333333333333,0.0030239559998790355,5,0,0
+cancer,3,SVM (RBF kernel),classical,0.9833333333333333,0.0013134910000189848,48,0,0
+cancer,3,"MLP (1 hidden layer, 8 units)",classical,1.0,0.2723279960000582,49,0,0
+cancer,3,variational classifier (VQC),quantum (simulated),0.95,28.500223460999905,37,70080,60
+cancer,3,quantum kernel + SVM,quantum (simulated),0.8666666666666667,82.70310467800005,92,9730,8400
+cancer,4,logistic regression,classical,0.9666666666666667,0.002288209000198549,5,0,0
+cancer,4,SVM (RBF kernel),classical,0.9333333333333333,0.001191891999951622,54,0,0
+cancer,4,"MLP (1 hidden layer, 8 units)",classical,0.9833333333333333,0.34120398599998225,49,0,0
+cancer,4,variational classifier (VQC),quantum (simulated),0.8333333333333334,28.12280642399992,37,70080,60
+cancer,4,quantum kernel + SVM,quantum (simulated),0.8166666666666667,83.03287477100002,102,9730,8400

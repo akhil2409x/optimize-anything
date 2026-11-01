@@ -1,0 +1,11 @@
+dataset,model,kind,seeds,accuracy,train_seconds,params,circuit_evals_train,circuit_evals_test
+moons,logistic regression,classical,5,0.870 ± 0.012,0.00243,3,0,0
+moons,SVM (RBF kernel),classical,5,0.950 ± 0.011,0.00115,46,0,0
+moons,"MLP (1 hidden layer, 8 units)",classical,5,0.860 ± 0.023,0.171,33,0,0
+moons,variational classifier (VQC),quantum (simulated),5,0.877 ± 0.025,14.9,19,35520,60
+moons,quantum kernel + SVM,quantum (simulated),5,0.893 ± 0.025,27.0,59,9730,8400
+cancer,logistic regression,classical,5,0.940 ± 0.048,0.00271,5,0,0
+cancer,SVM (RBF kernel),classical,5,0.937 ± 0.036,0.00122,47,0,0
+cancer,"MLP (1 hidden layer, 8 units)",classical,5,0.967 ± 0.038,0.303,49,0,0
+cancer,variational classifier (VQC),quantum (simulated),5,0.890 ± 0.040,28.5,37,70080,60
+cancer,quantum kernel + SVM,quantum (simulated),5,0.853 ± 0.032,83.4,90,9730,8400

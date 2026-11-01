@@ -7,3 +7,6 @@ __pycache__/
 tracks/E_exam_timetabling/data/*.stu
 tracks/E_exam_timetabling/data/*.crs
 .env
+
+# Track G: upstream xv6 checkout and build outputs (the patch in tracks/G_xv6/patches is what is submitted)
+tracks/G_xv6/xv6-riscv/

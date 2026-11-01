@@ -102,6 +102,34 @@ produced, how the error was caught, the fix, and the lesson.
 - **Lesson:** AI-written comments can state plausible but false facts. Test
   the claim (here: evaluate the circuit at zero angles).
 
+## F7 · Track I · Trusted a library sampler that wasn't annealing
+
+- **Tool:** Claude (claude.ai, Claude Opus 5.5), 2026-10-28
+- **What happened:** the first version of the simulated-annealing baseline
+  called `dwave.samplers.SimulatedAnnealingSampler` (v1.8.0). A test on a
+  5-node cycle returned an average of only 0.82 of the optimal cut. Some of
+  the returned states could be improved by flipping a single spin, which a
+  finished anneal can never return.
+- **How it was caught:** a unit test on a graph small enough to know the
+  answer, followed by a check that the results did not change between 1 and
+  1,000 sweeps, and that even a 5-spin ferromagnetic chain came back
+  unaligned 4 times in 300.
+- **Cause:** not identified. The library behaved as if it stopped sweeping
+  after the first pass in this environment (Python 3.13, NumPy 2.5).
+  It may be a binary-compatibility issue.
+- **Fix:** a hand-written Metropolis simulated annealing (`qalgo/annealing.py`),
+  about 25 lines and easy to explain, plus a regression test.
+- **Lesson:** a heuristic baseline needs the same correctness checks as the
+  method being studied. A broken baseline makes the other method look good.
+
+## Note · Track I · Test expectation wrong, code right (Shor, a = 14)
+
+The test first expected Shor's algorithm to factor 15 for every coprime a.
+For a = 14 the order is 2 and 14¹ ≡ −1 (mod 15), the textbook case where
+the post-processing yields only trivial factors. The test was corrected to
+expect this failure. AI-written tests can encode wrong expectations as easily
+as AI-written code.
+
 ---
 
 *(Add entries from Tracks A–J below as they happen — xv6 and SQL rewrites usually supply several.)*

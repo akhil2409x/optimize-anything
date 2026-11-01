@@ -54,7 +54,7 @@ Tracks G (xv6) and H (PostgreSQL) have their own setup notes in their folders.
 | F | Compiler optimization | not started |
 | G | xv6 OS optimization | not started |
 | H | DBMS optimization | not started |
-| I | Quantum algorithms and QML | not started |
+| I | Quantum algorithms and QML | DJ, BV, Grover, QFT, QPE, Shor (hand-written), annealing + embedding, QML vs classical; 33 tests (simulation only) |
 | J | Software-engineering optimization | not started |
 
 ## AI tools register
@@ -63,7 +63,7 @@ Every AI tool used anywhere in this repository is listed here (Section 8 of the 
 
 | Tool | Model / version | Tracks | Dates | Kind of work |
 |---|---|---|---|---|
-| Claude (claude.ai) | Claude Opus 5.5 | B, C, E, repo scaffold | 2026-10-28 | planning, code generation, testing, debugging, documentation |
+| Claude (claude.ai) | Claude Opus 5.5 | B, C, E, I, repo scaffold | 2026-10-28 | planning, code generation, testing, debugging, documentation |
 | | | | | |
 
 ## Commit convention
@@ -84,7 +84,7 @@ match the exact Chapter 6 syllabus taught in class — add or remove rows to mat
 | Foundations | ML as optimization (params, loss, regularization) | A | | |
 | Foundations | Continuous vs discrete optimization | A, B | | |
 | Foundations | Convex vs non-convex; local/global minima; saddle points | A | | |
-| Foundations | Quantum computing basics; optimization in QML | C, I | `tracks/C_quantum_optimization/README.md` | C Exp. 1–2 |
+| Foundations | Quantum computing basics; optimization in QML | C, I | `tracks/C_quantum_optimization/README.md`, `tracks/I_quantum_algorithms_qml/qalgo/qml_models.py` | C Exp. 1–2, I Exp. 6 |
 | Continuous | Gradient descent | A | | |
 | Continuous | SGD, mini-batch SGD | A | | |
 | Continuous | Momentum | A | | |
@@ -111,14 +111,14 @@ match the exact Chapter 6 syllabus taught in class — add or remove rows to mat
 | Quantum | SPSA | C | `tracks/C_quantum_optimization/qopt/train.py` | C Exp. 2 |
 | Quantum | Quantum natural gradient | C | `tracks/C_quantum_optimization/qopt/train.py` | C Exp. 2 |
 | Quantum | Barren plateaus, finite shots, hardware noise | C | `tracks/C_quantum_optimization/qopt/barren.py`, `tracks/C_quantum_optimization/qopt/maxcut.py` | C Exp. 3–5 |
-| Quantum | Deutsch–Jozsa | I | | |
-| Quantum | Bernstein–Vazirani | I | | |
-| Quantum | Grover | I | | |
-| Quantum | Quantum Fourier Transform | I | | |
-| Quantum | Quantum Phase Estimation | I | | |
-| Quantum | Shor | I | | |
-| Quantum | Quantum annealing; QUBO embedding limits | I | | |
-| Quantum | Variational classifier; quantum kernels | I | | |
+| Quantum | Deutsch–Jozsa | I | `tracks/I_quantum_algorithms_qml/qalgo/algorithms.py` (hand-written) | I Exp. 1 |
+| Quantum | Bernstein–Vazirani | I | `tracks/I_quantum_algorithms_qml/qalgo/algorithms.py` (hand-written) | I Exp. 1, 3 |
+| Quantum | Grover | I | `tracks/I_quantum_algorithms_qml/qalgo/algorithms.py` (hand-written) | I Exp. 1–3 |
+| Quantum | Quantum Fourier Transform | I | `tracks/I_quantum_algorithms_qml/qalgo/algorithms.py` (hand-written) | I Exp. 1 |
+| Quantum | Quantum Phase Estimation | I | `tracks/I_quantum_algorithms_qml/qalgo/algorithms.py` (hand-written) | I Exp. 1 |
+| Quantum | Shor | I | `tracks/I_quantum_algorithms_qml/qalgo/algorithms.py` (order finding, N = 15) | I Exp. 1 |
+| Quantum | Quantum annealing; QUBO embedding limits | I | `tracks/I_quantum_algorithms_qml/qalgo/annealing.py` | I Exp. 4–5 |
+| Quantum | Variational classifier; quantum kernels | I | `tracks/I_quantum_algorithms_qml/qalgo/qml_models.py` | I Exp. 6 |
 | Submodular | Diminishing returns test; greedy; guarantee conditions | D | | |
 | Parallel | Load balancing, makespan, work stealing | D | | |
 | Parallel | Locality, synchronization, communication overhead | D | | |

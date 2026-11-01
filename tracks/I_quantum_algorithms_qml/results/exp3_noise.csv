@@ -1,0 +1,61 @@
+algorithm,n,noise,p_success,random_guess,iterations
+Grover,3,0.0,0.9453,0.125,
+Grover,3,0.001,0.9175,0.125,
+Grover,3,0.003,0.8647,0.125,
+Grover,3,0.01,0.7069,0.125,
+Grover,3,0.02,0.5393,0.125,
+Grover,3,0.05,0.2783,0.125,
+Grover,4,0.0,0.9613,0.0625,
+Grover,4,0.001,0.9078,0.0625,
+Grover,4,0.003,0.8106,0.0625,
+Grover,4,0.01,0.5536,0.0625,
+Grover,4,0.02,0.337,0.0625,
+Grover,4,0.05,0.118,0.0625,
+Grover,5,0.0,0.9992,0.0312,
+Grover,5,0.001,0.9089,0.0312,
+Grover,5,0.003,0.7541,0.0312,
+Grover,5,0.01,0.4047,0.0312,
+Grover,5,0.02,0.1847,0.0312,
+Grover,5,0.05,0.047,0.0312,
+Grover,6,0.0,0.9966,0.0156,
+Grover,6,0.001,0.844,0.0156,
+Grover,6,0.003,0.6096,0.0156,
+Grover,6,0.01,0.2127,0.0156,
+Grover,6,0.02,0.064,0.0156,
+Grover,6,0.05,0.0176,0.0156,
+Bernstein–Vazirani,4,0.0,1.0,0.0625,
+Bernstein–Vazirani,4,0.001,0.9914,0.0625,
+Bernstein–Vazirani,4,0.003,0.9744,0.0625,
+Bernstein–Vazirani,4,0.01,0.9172,0.0625,
+Bernstein–Vazirani,4,0.02,0.8418,0.0625,
+Bernstein–Vazirani,4,0.05,0.6534,0.0625,
+Bernstein–Vazirani,6,0.0,1.0,0.0156,
+Bernstein–Vazirani,6,0.001,0.9874,0.0156,
+Bernstein–Vazirani,6,0.003,0.9627,0.0156,
+Bernstein–Vazirani,6,0.01,0.8813,0.0156,
+Bernstein–Vazirani,6,0.02,0.7772,0.0156,
+Bernstein–Vazirani,6,0.05,0.5356,0.0156,
+Bernstein–Vazirani,8,0.0,1.0,0.0039,
+Bernstein–Vazirani,8,0.001,0.9835,0.0039,
+Bernstein–Vazirani,8,0.003,0.9513,0.0039,
+Bernstein–Vazirani,8,0.01,0.8468,0.0039,
+Bernstein–Vazirani,8,0.02,0.7176,0.0039,
+Bernstein–Vazirani,8,0.05,0.4392,0.0039,
+"Grover n=5, k iterations",5,0.0,0.2583,0.0312,1
+"Grover n=5, k iterations",5,0.0,0.6024,0.0312,2
+"Grover n=5, k iterations",5,0.0,0.8969,0.0312,3
+"Grover n=5, k iterations",5,0.0,0.9992,0.0312,4
+"Grover n=5, k iterations",5,0.0,0.8596,0.0312,5
+"Grover n=5, k iterations",5,0.0,0.5459,0.0312,6
+"Grover n=5, k iterations",5,0.01,0.2009,0.0312,1
+"Grover n=5, k iterations",5,0.01,0.3691,0.0312,2
+"Grover n=5, k iterations",5,0.01,0.4406,0.0312,3
+"Grover n=5, k iterations",5,0.01,0.4047,0.0312,4
+"Grover n=5, k iterations",5,0.01,0.304,0.0312,5
+"Grover n=5, k iterations",5,0.01,0.1942,0.0312,6
+"Grover n=5, k iterations",5,0.03,0.1264,0.0312,1
+"Grover n=5, k iterations",5,0.03,0.1538,0.0312,2
+"Grover n=5, k iterations",5,0.03,0.1317,0.0312,3
+"Grover n=5, k iterations",5,0.03,0.0986,0.0312,4
+"Grover n=5, k iterations",5,0.03,0.0724,0.0312,5
+"Grover n=5, k iterations",5,0.03,0.0562,0.0312,6
