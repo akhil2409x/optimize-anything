@@ -11,6 +11,8 @@ pennylane-lightning>=0.45
 minorminer>=0.2        # Track I embedding study
 dwave-networkx>=0.8    # Track I hardware graphs (Pegasus, Chimera)
 scipy>=1.11
+psycopg[binary]>=3.1   # Track H (PostgreSQL 16 + hypopg, see tracks/H_dbms/setup.sh)
+pexpect>=4.9          # Track G (drives QEMU)
 
 # Add per-track dependencies as tracks are started, e.g.
-# torch (A, D); psycopg[binary] (H); coverage (J)
+# torch (A, D); coverage (J)

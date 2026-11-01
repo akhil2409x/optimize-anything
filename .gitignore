@@ -10,3 +10,6 @@ tracks/E_exam_timetabling/data/*.crs
 
 # Track G: upstream xv6 checkout and build outputs (the patch in tracks/G_xv6/patches is what is submitted)
 tracks/G_xv6/xv6-riscv/
+
+# Track H: generated TPC-H data and the dbgen checkout (setup.sh recreates them)
+tracks/H_dbms/tpch-dbgen/

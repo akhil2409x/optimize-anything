@@ -53,7 +53,7 @@ Tracks G (xv6) and H (PostgreSQL) have their own setup notes in their folders.
 | E | Exam timetabling (main case study) | baseline + 5 heuristics + 2 ILPs, 18 tests, first results |
 | F | Compiler optimization | not started |
 | G | xv6 OS optimization | MLFQ scheduler + copy-on-write fork; usertests pass on 4 kernels × 1/3 CPUs; patch + benchmarks |
-| H | DBMS optimization | not started |
+| H | DBMS optimization | TPC-H SF 0.1 index selection: knapsack DP, greedy, what-if greedy, ILP vs default; 9 tests; results identical |
 | I | Quantum algorithms and QML | DJ, BV, Grover, QFT, QPE, Shor (hand-written), annealing + embedding, QML vs classical; 33 tests (simulation only) |
 | J | Software-engineering optimization | not started |
 
@@ -63,7 +63,7 @@ Every AI tool used anywhere in this repository is listed here (Section 8 of the 
 
 | Tool | Model / version | Tracks | Dates | Kind of work |
 |---|---|---|---|---|
-| Claude (claude.ai) | Claude Opus 5.5 | B, C, E, G, I, repo scaffold | 2026-10-28 | planning, code generation, testing, debugging, documentation |
+| Claude (claude.ai) | Claude Opus 5.5 | B, C, E, G, H, I, repo scaffold | 2026-10-28 – 29 | planning, code generation, testing, debugging, documentation |
 | | | | | |
 
 ## Commit convention
@@ -98,10 +98,10 @@ match the exact Chapter 6 syllabus taught in class — add or remove rows to mat
 | Continuous | Fisher / diagonal / low-rank curvature, Hessian-vector products | A | | |
 | Continuous | Convergence: convex, strongly convex, non-convex | A | | |
 | Continuous | Step-size / optimizer tuning; noisy objectives | A | | |
-| Discrete | Greedy | B, E | `tracks/B_discrete/discrete/knapsack.py`, `tracks/E_exam_timetabling/timetabling/greedy.py` | B Exp. 1, E Exp. 1 |
-| Discrete | Integer Linear Programming | B, E | `tracks/B_discrete/discrete/knapsack.py` (`ilp`), `tracks/E_exam_timetabling/timetabling/ilp.py` | B Exp. 1, E Exp. 1–2 |
+| Discrete | Greedy | B, E, H | `tracks/B_discrete/discrete/knapsack.py`, `tracks/E_exam_timetabling/timetabling/greedy.py`, `tracks/H_dbms/tpchopt/selection.py` | B Exp. 1, E Exp. 1, H |
+| Discrete | Integer Linear Programming | B, E, H | `tracks/B_discrete/discrete/knapsack.py` (`ilp`), `tracks/E_exam_timetabling/timetabling/ilp.py`, `tracks/H_dbms/tpchopt/selection.py` (`ilp`) | B Exp. 1, E Exp. 1–2, H |
 | Discrete | Branch-and-bound | B, E | `tracks/B_discrete/discrete/knapsack.py` (`branch_and_bound`, own code) | B Exp. 1–2 |
-| Discrete | Dynamic programming | B, F/H | `tracks/B_discrete/discrete/knapsack.py` (`dp`) | B Exp. 1–2 |
+| Discrete | Dynamic programming | B, H | `tracks/B_discrete/discrete/knapsack.py` (`dp`), `tracks/H_dbms/tpchopt/selection.py` (`knapsack_dp`) | B Exp. 1–2, H |
 | Discrete | Feature selection / combinatorial applications | B, J | `tracks/B_discrete/discrete/feature_selection.py` | B Exp. 5 |
 | Discrete | QUBO / Ising, binary-to-spin, penalty terms | B | `tracks/B_discrete/discrete/qubo.py` | B Exp. 3–4 |
 | Quantum | QAOA | C | `tracks/C_quantum_optimization/qopt/maxcut.py` | C Exp. 1–4 |

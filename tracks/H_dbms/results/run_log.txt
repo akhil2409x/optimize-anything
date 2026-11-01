@@ -1,0 +1,23 @@
+loaded in 3.1s
+selection @ 4 MB done
+selection @ 16 MB done
+selection @ 25 MB done
+selection @ 40 MB done
+C0: 0 idx, 0.0 MB, workload 51.59s, identical 22/22  [default (PK only) @ 4 MB]
+C1: 4 idx, 2.1 MB, workload 49.71s, identical 22/22  [knapsack DP (additive) @ 4 MB]
+C2: 6 idx, 1.2 MB, workload 44.80s, identical 22/22  [greedy ratio (additive) @ 4 MB]
+C3: 3 idx, 2.1 MB, workload 49.14s, identical 22/22  [ILP (one index per query per table) @ 4 MB]
+C4: 4 idx, 4.7 MB, workload 1.53s, identical 22/22  [knapsack DP (additive) @ 16 MB]
+C5: 5 idx, 4.8 MB, workload 1.48s, identical 22/22  [greedy ratio (additive) @ 16 MB]
+C6: 4 idx, 5.0 MB, workload 1.61s, identical 22/22  [greedy what-if @ 16 MB]
+C7: 4 idx, 6.2 MB, workload 1.58s, identical 22/22  [knapsack DP (additive) @ 25 MB]
+C8: 8 idx, 9.6 MB, workload 1.66s, identical 22/22  [greedy ratio (additive) @ 25 MB]
+C9: 11 idx, 7.5 MB, workload 1.69s, identical 22/22  [greedy what-if @ 25 MB]
+C10: 4 idx, 6.5 MB, workload 1.71s, identical 22/22  [ILP (one index per query per table) @ 25 MB]
+C11: 5 idx, 10.5 MB, workload 1.61s, identical 22/22  [knapsack DP (additive) @ 40 MB]
+C12: 9 idx, 13.7 MB, workload 1.60s, identical 22/22  [greedy ratio (additive) @ 40 MB]
+C13: 13 idx, 11.6 MB, workload 1.59s, identical 22/22  [greedy what-if @ 40 MB]
+C14: 11 idx, 11.5 MB, workload 1.64s, identical 22/22  [ILP (one index per query per table) @ 40 MB]
+C15: 44 idx, 201.4 MB, workload 1.35s, identical 22/22  [all candidates (no budget)]
+Done. See results/
+EXIT 0

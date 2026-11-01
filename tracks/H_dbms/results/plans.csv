@@ -1,0 +1,353 @@
+config_id,query,est_cost,explain_analyze_ms,nodes,indexes_used
+C0,1,24040,261.7,Aggregate Gather Merge Seq Scan Sort,
+C0,2,5596,28.1,Aggregate Hash Hash Join Index Scan Limit Nested Loop Seq Scan Sort,nation_pkey partsupp_pkey supplier_pkey
+C0,3,21493,64.1,Aggregate Gather Hash Hash Join Index Scan Limit Nested Loop Seq Scan Sort,lineitem_pkey
+C0,4,20647,121.1,Aggregate Gather Merge Hash Hash Join Seq Scan Sort,
+C0,5,13411,37.8,Aggregate Gather Merge Hash Hash Join Index Scan Nested Loop Seq Scan Sort,lineitem_pkey
+C0,6,17942,55.3,Aggregate Gather Seq Scan,
+C0,7,12042,51.5,Aggregate Gather Merge Hash Hash Join Index Scan Nested Loop Seq Scan Sort,lineitem_pkey
+C0,8,15710,44.8,Aggregate Gather Merge Hash Hash Join Index Scan Nested Loop Seq Scan Sort,lineitem_pkey
+C0,9,18962,178.9,Aggregate Gather Merge Hash Hash Join Index Scan Nested Loop Seq Scan Sort,orders_pkey supplier_pkey
+C0,10,21293,91.7,Aggregate Gather Merge Hash Hash Join Limit Seq Scan Sort,
+C0,11,6004,38.3,Aggregate Hash Hash Join Seq Scan Sort,
+C0,12,22038,99.4,Aggregate Gather Merge Hash Hash Join Seq Scan Sort,
+C0,13,6637,161.3,Aggregate Hash Hash Join Index Only Scan Seq Scan Sort,customer_pkey
+C0,14,16976,63.0,Aggregate Gather Hash Hash Join Seq Scan,
+C0,15,16543,54.8,Aggregate CTE Scan Gather Merge Hash Hash Join Seq Scan Sort,
+C0,16,3925,28.5,Aggregate Hash Hash Join Index Only Scan Seq Scan Sort,partsupp_pkey
+C0,17,207539,19147.2,Aggregate Hash Hash Join Seq Scan,
+C0,18,100998,267.5,Aggregate Hash Hash Join Index Scan Limit Seq Scan Sort,lineitem_pkey
+C0,19,21074,87.8,Aggregate Gather Hash Hash Join Seq Scan,
+C0,20,18832917,26720.0,Aggregate Index Scan Materialize Nested Loop Seq Scan Sort,partsupp_pkey
+C0,21,18206,117.0,Aggregate Gather Hash Hash Join Index Scan Limit Nested Loop Seq Scan Sort,lineitem_pkey orders_pkey
+C0,22,7135,43.1,Aggregate Hash Hash Join Seq Scan Sort,
+C1,1,24047,311.6,Aggregate Gather Merge Seq Scan Sort,
+C1,2,4040,39.4,Aggregate Hash Hash Join Index Only Scan Index Scan Limit Nested Loop Seq Scan Sort,opt_idx_0 opt_idx_1 opt_idx_2 partsupp_pkey
+C1,3,21958,69.5,Aggregate Gather Hash Hash Join Index Scan Limit Nested Loop Seq Scan Sort,lineitem_pkey
+C1,4,20645,126.2,Aggregate Gather Merge Hash Hash Join Seq Scan Sort,
+C1,5,12952,41.8,Aggregate Gather Merge Hash Hash Join Index Only Scan Index Scan Nested Loop Seq Scan Sort,lineitem_pkey opt_idx_3
+C1,6,17942,65.1,Aggregate Gather Seq Scan,
+C1,7,11508,64.2,Aggregate Gather Merge Hash Hash Join Index Only Scan Index Scan Nested Loop Seq Scan Sort,lineitem_pkey opt_idx_0 opt_idx_3
+C1,8,15183,51.1,Aggregate Gather Merge Hash Hash Join Index Only Scan Index Scan Nested Loop Seq Scan Sort,lineitem_pkey opt_idx_3
+C1,9,19178,222.5,Aggregate Gather Merge Hash Hash Join Index Scan Nested Loop Seq Scan Sort,orders_pkey supplier_pkey
+C1,10,21273,101.0,Aggregate Gather Merge Hash Hash Join Limit Seq Scan Sort,
+C1,11,1004,12.2,Aggregate Index Only Scan Index Scan Nested Loop Seq Scan Sort,opt_idx_0 opt_idx_2
+C1,12,22040,76.0,Aggregate Gather Merge Hash Hash Join Seq Scan Sort,
+C1,13,6614,110.6,Aggregate Hash Hash Join Index Only Scan Seq Scan Sort,customer_pkey
+C1,14,16972,52.8,Aggregate Gather Hash Hash Join Seq Scan,
+C1,15,16542,52.7,Aggregate CTE Scan Gather Merge Hash Hash Join Seq Scan Sort,
+C1,16,3924,28.0,Aggregate Hash Hash Join Index Only Scan Seq Scan Sort,partsupp_pkey
+C1,17,207539,21525.6,Aggregate Hash Hash Join Seq Scan,
+C1,18,100677,317.1,Aggregate Hash Hash Join Index Scan Limit Seq Scan Sort,lineitem_pkey
+C1,19,21074,73.4,Aggregate Gather Hash Hash Join Seq Scan,
+C1,20,18832903,30375.2,Aggregate Index Scan Materialize Nested Loop Seq Scan Sort,partsupp_pkey
+C1,21,18192,96.1,Aggregate Bitmap Heap Scan Bitmap Index Scan Gather Hash Hash Join Index Scan Limit Nested Loop Seq Scan Sort,lineitem_pkey opt_idx_1 orders_pkey
+C1,22,7133,33.9,Aggregate Hash Hash Join Seq Scan Sort,
+C2,1,24044,276.3,Aggregate Gather Merge Seq Scan Sort,
+C2,2,3643,32.1,Aggregate Bitmap Heap Scan Bitmap Index Scan Hash Hash Join Index Only Scan Index Scan Limit Nested Loop Seq Scan Sort,opt_idx_0 opt_idx_1 opt_idx_2 opt_idx_5 partsupp_pkey
+C2,3,21569,68.0,Aggregate Gather Hash Hash Join Index Scan Limit Nested Loop Seq Scan Sort,lineitem_pkey
+C2,4,20648,107.4,Aggregate Gather Merge Hash Hash Join Seq Scan Sort,
+C2,5,12932,36.0,Aggregate Gather Merge Hash Hash Join Index Only Scan Index Scan Nested Loop Seq Scan Sort,lineitem_pkey opt_idx_3
+C2,6,17943,56.2,Aggregate Gather Seq Scan,
+C2,7,11437,55.9,Aggregate Gather Merge Hash Hash Join Index Only Scan Index Scan Nested Loop Seq Scan Sort,lineitem_pkey opt_idx_0 opt_idx_3
+C2,8,15172,50.9,Aggregate Gather Merge Hash Hash Join Index Only Scan Index Scan Nested Loop Seq Scan Sort,lineitem_pkey opt_idx_3
+C2,9,19179,185.0,Aggregate Gather Merge Hash Hash Join Index Scan Nested Loop Seq Scan Sort,orders_pkey supplier_pkey
+C2,10,21305,95.4,Aggregate Gather Merge Hash Hash Join Limit Seq Scan Sort,
+C2,11,956,13.3,Aggregate Index Only Scan Index Scan Nested Loop Seq Scan Sort,opt_idx_0 opt_idx_2
+C2,12,22045,78.9,Aggregate Gather Merge Hash Hash Join Seq Scan Sort,
+C2,13,6614,107.1,Aggregate Hash Hash Join Index Only Scan Seq Scan Sort,customer_pkey
+C2,14,16965,62.5,Aggregate Gather Hash Hash Join Seq Scan,
+C2,15,16541,59.1,Aggregate CTE Scan Gather Merge Hash Hash Join Seq Scan Sort,
+C2,16,3559,34.7,Aggregate Bitmap Heap Scan Bitmap Index Scan Hash Hash Join Index Only Scan Seq Scan Sort,opt_idx_5 partsupp_pkey
+C2,17,207270,19352.1,Aggregate Bitmap Heap Scan Bitmap Index Scan Hash Hash Join Seq Scan,opt_idx_4
+C2,18,101507,298.4,Aggregate Hash Hash Join Index Scan Limit Seq Scan Sort,lineitem_pkey
+C2,19,20395,71.1,Aggregate Bitmap Heap Scan Bitmap Index Scan BitmapAnd BitmapOr Gather Hash Hash Join Seq Scan,opt_idx_4 opt_idx_5
+C2,20,18832918,23064.8,Aggregate Index Scan Materialize Nested Loop Seq Scan Sort,partsupp_pkey
+C2,21,18209,91.7,Aggregate Bitmap Heap Scan Bitmap Index Scan Gather Hash Hash Join Index Scan Limit Nested Loop Seq Scan Sort,lineitem_pkey opt_idx_1 orders_pkey
+C2,22,7138,32.6,Aggregate Hash Hash Join Seq Scan Sort,
+C3,1,24045,290.2,Aggregate Gather Merge Seq Scan Sort,
+C3,2,4043,39.6,Aggregate Hash Hash Join Index Only Scan Index Scan Limit Nested Loop Seq Scan Sort,opt_idx_1 opt_idx_2 partsupp_pkey
+C3,3,21959,65.5,Aggregate Gather Hash Hash Join Index Scan Limit Nested Loop Seq Scan Sort,lineitem_pkey
+C3,4,20657,113.9,Aggregate Gather Merge Hash Hash Join Seq Scan Sort,
+C3,5,12960,37.4,Aggregate Gather Merge Hash Hash Join Index Only Scan Index Scan Nested Loop Seq Scan Sort,lineitem_pkey opt_idx_0
+C3,6,17943,52.6,Aggregate Gather Seq Scan,
+C3,7,11439,58.3,Aggregate Gather Merge Hash Hash Join Index Only Scan Index Scan Nested Loop Seq Scan Sort,lineitem_pkey opt_idx_0 opt_idx_2
+C3,8,15173,50.5,Aggregate Gather Merge Hash Hash Join Index Only Scan Index Scan Nested Loop Seq Scan Sort,lineitem_pkey opt_idx_0
+C3,9,19178,178.6,Aggregate Gather Merge Hash Hash Join Index Scan Nested Loop Seq Scan Sort,orders_pkey supplier_pkey
+C3,10,21290,100.0,Aggregate Gather Merge Hash Hash Join Limit Seq Scan Sort,
+C3,11,1004,13.1,Aggregate Index Only Scan Index Scan Nested Loop Seq Scan Sort,opt_idx_1 opt_idx_2
+C3,12,22039,89.8,Aggregate Gather Merge Hash Hash Join Seq Scan Sort,
+C3,13,6602,119.6,Aggregate Hash Hash Join Index Only Scan Seq Scan Sort,customer_pkey
+C3,14,16974,70.5,Aggregate Gather Hash Hash Join Seq Scan,
+C3,15,16543,70.0,Aggregate CTE Scan Gather Merge Hash Hash Join Seq Scan Sort,
+C3,16,3926,37.5,Aggregate Hash Hash Join Index Only Scan Seq Scan Sort,partsupp_pkey
+C3,17,207539,21356.3,Aggregate Hash Hash Join Seq Scan,
+C3,18,101361,339.6,Aggregate Hash Hash Join Index Scan Limit Seq Scan Sort,lineitem_pkey
+C3,19,21074,71.4,Aggregate Gather Hash Hash Join Seq Scan,
+C3,20,18832918,26796.4,Aggregate Index Scan Materialize Nested Loop Seq Scan Sort,partsupp_pkey
+C3,21,18206,101.5,Aggregate Bitmap Heap Scan Bitmap Index Scan Gather Hash Hash Join Index Scan Limit Nested Loop Seq Scan Sort,lineitem_pkey opt_idx_2 orders_pkey
+C3,22,7132,33.2,Aggregate Hash Hash Join Seq Scan Sort,
+C4,1,24051,272.9,Aggregate Gather Merge Seq Scan Sort,
+C4,2,4978,26.7,Aggregate Hash Hash Join Index Only Scan Index Scan Limit Nested Loop Seq Scan Sort,opt_idx_0 opt_idx_1 partsupp_pkey
+C4,3,21465,64.1,Aggregate Gather Hash Hash Join Index Scan Limit Nested Loop Seq Scan Sort,lineitem_pkey
+C4,4,20635,120.5,Aggregate Gather Merge Hash Hash Join Seq Scan Sort,
+C4,5,12906,33.4,Aggregate Gather Merge Hash Hash Join Index Only Scan Index Scan Nested Loop Seq Scan Sort,lineitem_pkey opt_idx_3
+C4,6,17942,47.5,Aggregate Gather Seq Scan,
+C4,7,11510,42.3,Aggregate Gather Merge Hash Hash Join Index Only Scan Index Scan Nested Loop Seq Scan Sort,lineitem_pkey opt_idx_0 opt_idx_3
+C4,8,15189,38.3,Aggregate Gather Merge Hash Hash Join Index Only Scan Index Scan Nested Loop Seq Scan Sort,lineitem_pkey opt_idx_3
+C4,9,7959,156.5,Aggregate Gather Merge Hash Hash Join Index Scan Nested Loop Seq Scan Sort,opt_idx_2 orders_pkey supplier_pkey
+C4,10,21276,96.9,Aggregate Gather Merge Hash Hash Join Limit Seq Scan Sort,
+C4,11,5943,35.2,Aggregate Hash Hash Join Index Only Scan Nested Loop Seq Scan Sort,opt_idx_0
+C4,12,22040,68.6,Aggregate Gather Merge Hash Hash Join Seq Scan Sort,
+C4,13,6637,83.0,Aggregate Hash Hash Join Index Only Scan Seq Scan Sort,customer_pkey
+C4,14,16974,49.4,Aggregate Gather Hash Hash Join Seq Scan,
+C4,15,16544,50.8,Aggregate CTE Scan Gather Merge Hash Hash Join Seq Scan Sort,
+C4,16,3926,28.6,Aggregate Hash Hash Join Index Only Scan Seq Scan Sort,partsupp_pkey
+C4,17,20792,87.8,Aggregate Bitmap Heap Scan Bitmap Index Scan Hash Hash Join Seq Scan,opt_idx_2
+C4,18,100504,310.7,Aggregate Hash Hash Join Index Scan Limit Seq Scan Sort,lineitem_pkey
+C4,19,7010,4.6,Aggregate Index Scan Nested Loop Seq Scan,opt_idx_2
+C4,20,100591,39.6,Aggregate Bitmap Heap Scan Bitmap Index Scan Index Scan Materialize Nested Loop Seq Scan Sort,opt_idx_2 partsupp_pkey supplier_pkey
+C4,21,18189,86.7,Aggregate Bitmap Heap Scan Bitmap Index Scan Gather Hash Hash Join Index Scan Limit Nested Loop Seq Scan Sort,lineitem_pkey opt_idx_1 orders_pkey
+C4,22,7138,32.7,Aggregate Hash Hash Join Seq Scan Sort,
+C5,1,24043,273.4,Aggregate Gather Merge Seq Scan Sort,
+C5,2,4977,33.5,Aggregate Hash Hash Join Index Only Scan Index Scan Limit Nested Loop Seq Scan Sort,opt_idx_1 opt_idx_2 partsupp_pkey
+C5,3,21532,64.7,Aggregate Gather Hash Hash Join Index Scan Limit Nested Loop Seq Scan Sort,lineitem_pkey
+C5,4,20649,119.3,Aggregate Gather Merge Hash Hash Join Seq Scan Sort,
+C5,5,12993,35.7,Aggregate Gather Merge Hash Hash Join Index Only Scan Index Scan Nested Loop Seq Scan Sort,lineitem_pkey opt_idx_3
+C5,6,17943,53.0,Aggregate Gather Seq Scan,
+C5,7,11438,48.2,Aggregate Gather Merge Hash Hash Join Index Only Scan Index Scan Nested Loop Seq Scan Sort,lineitem_pkey opt_idx_1 opt_idx_3
+C5,8,15176,41.0,Aggregate Gather Merge Hash Hash Join Index Only Scan Index Scan Nested Loop Seq Scan Sort,lineitem_pkey opt_idx_3
+C5,9,7962,134.9,Aggregate Gather Merge Hash Hash Join Index Scan Nested Loop Seq Scan Sort,opt_idx_0 orders_pkey supplier_pkey
+C5,10,21289,87.8,Aggregate Gather Merge Hash Hash Join Limit Seq Scan Sort,
+C5,11,5943,32.9,Aggregate Hash Hash Join Index Only Scan Nested Loop Seq Scan Sort,opt_idx_1
+C5,12,22041,71.8,Aggregate Gather Merge Hash Hash Join Seq Scan Sort,
+C5,13,6637,100.5,Aggregate Hash Hash Join Index Only Scan Seq Scan Sort,customer_pkey
+C5,14,16968,59.9,Aggregate Gather Hash Hash Join Seq Scan,
+C5,15,16538,58.7,Aggregate CTE Scan Gather Merge Hash Hash Join Seq Scan Sort,
+C5,16,3926,34.4,Aggregate Hash Hash Join Index Only Scan Seq Scan Sort,partsupp_pkey
+C5,17,20792,100.1,Aggregate Bitmap Heap Scan Bitmap Index Scan Hash Hash Join Seq Scan,opt_idx_0
+C5,18,101573,282.3,Aggregate Hash Hash Join Index Scan Limit Seq Scan Sort,lineitem_pkey
+C5,19,7010,3.8,Aggregate Index Scan Nested Loop Seq Scan,opt_idx_0
+C5,20,100590,31.0,Aggregate Bitmap Heap Scan Bitmap Index Scan Index Scan Materialize Nested Loop Seq Scan Sort,opt_idx_0 partsupp_pkey supplier_pkey
+C5,21,18210,92.8,Aggregate Bitmap Heap Scan Bitmap Index Scan Gather Hash Hash Join Index Scan Limit Nested Loop Seq Scan Sort,lineitem_pkey opt_idx_2 orders_pkey
+C5,22,7139,32.9,Aggregate Hash Hash Join Seq Scan Sort,
+C6,1,24044,249.1,Aggregate Gather Merge Seq Scan Sort,
+C6,2,4980,26.0,Aggregate Hash Hash Join Index Only Scan Index Scan Limit Nested Loop Seq Scan Sort,opt_idx_1 partsupp_pkey
+C6,3,21462,57.6,Aggregate Gather Hash Hash Join Index Scan Limit Nested Loop Seq Scan Sort,lineitem_pkey
+C6,4,20639,125.6,Aggregate Gather Merge Hash Hash Join Seq Scan Sort,
+C6,5,12906,38.9,Aggregate Gather Merge Hash Hash Join Index Only Scan Index Scan Nested Loop Seq Scan Sort,lineitem_pkey opt_idx_2
+C6,6,17942,61.6,Aggregate Gather Seq Scan,
+C6,7,11439,49.3,Aggregate Gather Merge Hash Hash Join Index Only Scan Index Scan Nested Loop Seq Scan Sort,lineitem_pkey opt_idx_1 opt_idx_2
+C6,8,15194,46.1,Aggregate Gather Merge Hash Hash Join Index Only Scan Index Scan Nested Loop Seq Scan Sort,lineitem_pkey opt_idx_2
+C6,9,7955,136.6,Aggregate Gather Merge Hash Hash Join Index Scan Nested Loop Seq Scan Sort,opt_idx_0 orders_pkey supplier_pkey
+C6,10,21248,87.6,Aggregate Gather Merge Hash Hash Join Limit Seq Scan Sort,
+C6,11,5943,35.2,Aggregate Hash Hash Join Index Only Scan Nested Loop Seq Scan Sort,opt_idx_1
+C6,12,22039,76.6,Aggregate Gather Merge Hash Hash Join Seq Scan Sort,
+C6,13,6625,90.3,Aggregate Hash Hash Join Index Only Scan Seq Scan Sort,customer_pkey
+C6,14,16972,62.4,Aggregate Gather Hash Hash Join Seq Scan,
+C6,15,16540,54.3,Aggregate CTE Scan Gather Merge Hash Hash Join Seq Scan Sort,
+C6,16,3925,30.4,Aggregate Hash Hash Join Index Only Scan Seq Scan Sort,partsupp_pkey
+C6,17,20792,98.4,Aggregate Bitmap Heap Scan Bitmap Index Scan Hash Hash Join Seq Scan,opt_idx_0
+C6,18,101491,291.3,Aggregate Hash Hash Join Index Scan Limit Seq Scan Sort,lineitem_pkey
+C6,19,7010,5.1,Aggregate Index Scan Nested Loop Seq Scan,opt_idx_0
+C6,20,100590,41.3,Aggregate Bitmap Heap Scan Bitmap Index Scan Index Scan Materialize Nested Loop Seq Scan Sort,opt_idx_0 partsupp_pkey supplier_pkey
+C6,21,18208,106.6,Aggregate Bitmap Heap Scan Bitmap Index Scan Gather Hash Hash Join Index Scan Limit Nested Loop Seq Scan Sort,lineitem_pkey opt_idx_1 orders_pkey
+C6,22,6976,28.1,Aggregate Bitmap Heap Scan Bitmap Index Scan Hash Hash Join Seq Scan Sort,opt_idx_3
+C7,1,24044,263.0,Aggregate Gather Merge Seq Scan Sort,
+C7,2,4977,27.7,Aggregate Hash Hash Join Index Only Scan Index Scan Limit Nested Loop Seq Scan Sort,opt_idx_0 opt_idx_1 partsupp_pkey
+C7,3,21355,70.0,Aggregate Gather Hash Hash Join Index Scan Limit Nested Loop Seq Scan Sort,lineitem_pkey
+C7,4,20631,107.1,Aggregate Gather Merge Hash Hash Join Seq Scan Sort,
+C7,5,12882,36.3,Aggregate Gather Merge Hash Hash Join Index Only Scan Index Scan Nested Loop Seq Scan Sort,lineitem_pkey opt_idx_3
+C7,6,17942,47.8,Aggregate Gather Seq Scan,
+C7,7,11437,51.0,Aggregate Gather Merge Hash Hash Join Index Only Scan Index Scan Nested Loop Seq Scan Sort,lineitem_pkey opt_idx_0 opt_idx_3
+C7,8,15243,48.4,Aggregate Gather Merge Hash Hash Join Index Only Scan Index Scan Nested Loop Seq Scan Sort,lineitem_pkey opt_idx_3
+C7,9,6593,127.3,Aggregate Gather Merge Hash Hash Join Index Scan Nested Loop Seq Scan Sort,opt_idx_2 orders_pkey supplier_pkey
+C7,10,21300,118.6,Aggregate Gather Merge Hash Hash Join Limit Seq Scan Sort,
+C7,11,5943,34.3,Aggregate Hash Hash Join Index Only Scan Nested Loop Seq Scan Sort,opt_idx_0
+C7,12,22039,73.9,Aggregate Gather Merge Hash Hash Join Seq Scan Sort,
+C7,13,6614,106.5,Aggregate Hash Hash Join Index Only Scan Seq Scan Sort,customer_pkey
+C7,14,16969,64.6,Aggregate Gather Hash Hash Join Seq Scan,
+C7,15,16538,57.1,Aggregate CTE Scan Gather Merge Hash Hash Join Seq Scan Sort,
+C7,16,3923,35.7,Aggregate Hash Hash Join Index Only Scan Seq Scan Sort,partsupp_pkey
+C7,17,20830,105.1,Aggregate Bitmap Heap Scan Bitmap Index Scan Hash Hash Join Seq Scan,opt_idx_2
+C7,18,100957,273.2,Aggregate Hash Hash Join Index Scan Limit Seq Scan Sort,lineitem_pkey
+C7,19,7182,4.9,Aggregate Index Scan Nested Loop Seq Scan,opt_idx_2
+C7,20,9759,12.0,Aggregate Bitmap Heap Scan Bitmap Index Scan Hash Hash Join Index Scan Nested Loop Seq Scan Sort,opt_idx_1 opt_idx_2 partsupp_pkey
+C7,21,18198,91.6,Aggregate Bitmap Heap Scan Bitmap Index Scan Gather Hash Hash Join Index Scan Limit Nested Loop Seq Scan Sort,lineitem_pkey opt_idx_1 orders_pkey
+C7,22,7138,36.0,Aggregate Hash Hash Join Seq Scan Sort,
+C8,1,24037,346.6,Aggregate Gather Merge Seq Scan Sort,
+C8,2,3918,34.5,Aggregate Hash Hash Join Index Only Scan Index Scan Limit Nested Loop Seq Scan Sort,opt_idx_1 opt_idx_2 opt_idx_3 partsupp_pkey
+C8,3,21591,76.0,Aggregate Gather Hash Hash Join Index Scan Limit Nested Loop Seq Scan Sort,lineitem_pkey
+C8,4,20651,144.7,Aggregate Gather Merge Hash Hash Join Seq Scan Sort,
+C8,5,12913,34.2,Aggregate Gather Merge Hash Hash Join Index Only Scan Index Scan Nested Loop Seq Scan Sort,lineitem_pkey opt_idx_5
+C8,6,17943,54.5,Aggregate Gather Seq Scan,
+C8,7,11438,56.2,Aggregate Gather Merge Hash Hash Join Index Only Scan Index Scan Nested Loop Seq Scan Sort,lineitem_pkey opt_idx_1 opt_idx_5
+C8,8,15191,54.0,Aggregate Gather Merge Hash Hash Join Index Only Scan Index Scan Nested Loop Seq Scan Sort,lineitem_pkey opt_idx_5
+C8,9,7962,155.8,Aggregate Gather Merge Hash Hash Join Index Scan Nested Loop Seq Scan Sort,opt_idx_0 orders_pkey supplier_pkey
+C8,10,21318,90.3,Aggregate Gather Merge Hash Hash Join Limit Seq Scan Sort,
+C8,11,956,13.9,Aggregate Index Only Scan Index Scan Nested Loop Seq Scan Sort,opt_idx_1 opt_idx_3
+C8,12,22044,88.0,Aggregate Gather Merge Hash Hash Join Seq Scan Sort,
+C8,13,6637,125.2,Aggregate Hash Hash Join Index Only Scan Seq Scan Sort,customer_pkey
+C8,14,16968,67.8,Aggregate Gather Hash Hash Join Seq Scan,
+C8,15,16545,54.8,Aggregate CTE Scan Gather Merge Hash Hash Join Seq Scan Sort,
+C8,16,3926,34.5,Aggregate Hash Hash Join Index Only Scan Seq Scan Sort,partsupp_pkey
+C8,17,20522,111.1,Aggregate Bitmap Heap Scan Bitmap Index Scan Hash Hash Join Seq Scan,opt_idx_0 opt_idx_7
+C8,18,101238,334.2,Aggregate Hash Hash Join Index Scan Limit Seq Scan Sort,lineitem_pkey
+C8,19,6292,5.0,Aggregate Bitmap Heap Scan Bitmap Index Scan BitmapOr Index Scan Nested Loop,opt_idx_0 opt_idx_7
+C8,20,100590,43.8,Aggregate Bitmap Heap Scan Bitmap Index Scan Index Scan Materialize Nested Loop Seq Scan Sort,opt_idx_0 partsupp_pkey supplier_pkey
+C8,21,18203,100.1,Aggregate Bitmap Heap Scan Bitmap Index Scan Gather Hash Hash Join Index Scan Limit Nested Loop Seq Scan Sort,lineitem_pkey opt_idx_2 orders_pkey
+C8,22,7131,46.3,Aggregate Hash Hash Join Seq Scan Sort,
+C9,1,24042,282.2,Aggregate Gather Merge Seq Scan Sort,
+C9,2,3647,32.2,Aggregate Bitmap Heap Scan Bitmap Index Scan Hash Hash Join Index Only Scan Index Scan Limit Nested Loop Seq Scan Sort,opt_idx_1 opt_idx_2 opt_idx_6 partsupp_pkey
+C9,3,21499,58.3,Aggregate Bitmap Heap Scan Bitmap Index Scan Gather Hash Hash Join Index Scan Limit Nested Loop Seq Scan Sort,lineitem_pkey opt_idx_10
+C9,4,20648,126.6,Aggregate Gather Merge Hash Hash Join Seq Scan Sort,
+C9,5,12957,46.4,Aggregate Gather Merge Hash Hash Join Index Only Scan Index Scan Nested Loop Seq Scan Sort,lineitem_pkey opt_idx_3
+C9,6,17943,56.3,Aggregate Gather Seq Scan,
+C9,7,11437,53.9,Aggregate Gather Merge Hash Hash Join Index Only Scan Index Scan Nested Loop Seq Scan Sort,lineitem_pkey opt_idx_1 opt_idx_3
+C9,8,14827,47.2,Aggregate Bitmap Heap Scan Bitmap Index Scan Gather Merge Hash Hash Join Index Only Scan Index Scan Nested Loop Seq Scan Sort,lineitem_pkey opt_idx_3 opt_idx_8
+C9,9,8010,147.1,Aggregate Gather Merge Hash Hash Join Index Scan Nested Loop Seq Scan Sort,opt_idx_0 orders_pkey supplier_pkey
+C9,10,21322,89.2,Aggregate Gather Merge Hash Hash Join Limit Seq Scan Sort,
+C9,11,956,14.3,Aggregate Index Only Scan Index Scan Nested Loop Seq Scan Sort,opt_idx_1 opt_idx_2
+C9,12,22043,74.9,Aggregate Gather Merge Hash Hash Join Seq Scan Sort,
+C9,13,6614,99.5,Aggregate Hash Hash Join Index Only Scan Seq Scan Sort,customer_pkey
+C9,14,16971,68.4,Aggregate Gather Hash Hash Join Seq Scan,
+C9,15,16542,51.3,Aggregate CTE Scan Gather Merge Hash Hash Join Seq Scan Sort,
+C9,16,3559,28.3,Aggregate Bitmap Heap Scan Bitmap Index Scan Hash Hash Join Index Only Scan Seq Scan Sort,opt_idx_6 partsupp_pkey
+C9,17,20193,92.3,Aggregate Bitmap Heap Scan Bitmap Index Scan BitmapAnd Hash Hash Join Seq Scan,opt_idx_0 opt_idx_5 opt_idx_7
+C9,18,101215,265.7,Aggregate Hash Hash Join Index Scan Limit Seq Scan Sort,lineitem_pkey
+C9,19,6367,2.6,Aggregate Bitmap Heap Scan Bitmap Index Scan BitmapAnd BitmapOr Index Scan Nested Loop,opt_idx_0 opt_idx_5 opt_idx_6 opt_idx_7
+C9,20,103656,30.4,Aggregate Bitmap Heap Scan Bitmap Index Scan Index Scan Materialize Nested Loop Seq Scan Sort,opt_idx_0 partsupp_pkey supplier_pkey
+C9,21,18203,80.5,Aggregate Bitmap Heap Scan Bitmap Index Scan Gather Hash Hash Join Index Scan Limit Nested Loop Seq Scan Sort,lineitem_pkey opt_idx_1 orders_pkey
+C9,22,1464,8.5,Aggregate Bitmap Heap Scan Bitmap Index Scan Index Only Scan Nested Loop Seq Scan Sort,opt_idx_4 opt_idx_9
+C10,1,24042,296.1,Aggregate Gather Merge Seq Scan Sort,
+C10,2,4980,33.9,Aggregate Hash Hash Join Index Only Scan Index Scan Limit Nested Loop Seq Scan Sort,opt_idx_3 partsupp_pkey
+C10,3,21941,73.5,Aggregate Gather Hash Hash Join Index Scan Limit Nested Loop Seq Scan Sort,lineitem_pkey
+C10,4,20657,128.5,Aggregate Gather Merge Hash Hash Join Seq Scan Sort,
+C10,5,12949,41.0,Aggregate Gather Merge Hash Hash Join Index Only Scan Index Scan Nested Loop Seq Scan Sort,lineitem_pkey opt_idx_1
+C10,6,17943,68.1,Aggregate Gather Seq Scan,
+C10,7,11438,70.3,Aggregate Gather Merge Hash Hash Join Index Only Scan Index Scan Nested Loop Seq Scan Sort,lineitem_pkey opt_idx_1 opt_idx_3
+C10,8,15175,57.8,Aggregate Gather Merge Hash Hash Join Index Only Scan Index Scan Nested Loop Seq Scan Sort,lineitem_pkey opt_idx_1
+C10,9,6607,153.2,Aggregate Gather Merge Hash Hash Join Index Scan Nested Loop Seq Scan Sort,opt_idx_2 orders_pkey supplier_pkey
+C10,10,21239,112.0,Aggregate Gather Merge Hash Hash Join Limit Seq Scan Sort,
+C10,11,5943,35.0,Aggregate Hash Hash Join Index Only Scan Nested Loop Seq Scan Sort,opt_idx_3
+C10,12,22038,85.5,Aggregate Gather Merge Hash Hash Join Seq Scan Sort,
+C10,13,6602,98.1,Aggregate Hash Hash Join Index Only Scan Seq Scan Sort,customer_pkey
+C10,14,16971,65.7,Aggregate Gather Hash Hash Join Seq Scan,
+C10,15,16542,61.1,Aggregate CTE Scan Gather Merge Hash Hash Join Seq Scan Sort,
+C10,16,3926,35.6,Aggregate Hash Hash Join Index Only Scan Seq Scan Sort,partsupp_pkey
+C10,17,20792,121.5,Aggregate Bitmap Heap Scan Bitmap Index Scan Hash Hash Join Seq Scan,opt_idx_2
+C10,18,101231,344.8,Aggregate Hash Hash Join Index Scan Limit Seq Scan Sort,lineitem_pkey
+C10,19,7010,5.6,Aggregate Index Scan Nested Loop Seq Scan,opt_idx_2
+C10,20,9759,13.4,Aggregate Bitmap Heap Scan Bitmap Index Scan Hash Hash Join Index Scan Nested Loop Seq Scan Sort,opt_idx_2 opt_idx_3 partsupp_pkey
+C10,21,18203,115.5,Aggregate Bitmap Heap Scan Bitmap Index Scan Gather Hash Hash Join Index Scan Limit Nested Loop Seq Scan Sort,lineitem_pkey opt_idx_3 orders_pkey
+C10,22,6964,33.6,Aggregate Bitmap Heap Scan Bitmap Index Scan Hash Hash Join Seq Scan Sort,opt_idx_0
+C11,1,24042,267.9,Aggregate Gather Merge Seq Scan Sort,
+C11,2,4978,31.4,Aggregate Hash Hash Join Index Only Scan Index Scan Limit Nested Loop Seq Scan Sort,opt_idx_0 opt_idx_1 partsupp_pkey
+C11,3,21589,63.6,Aggregate Gather Hash Hash Join Index Scan Limit Nested Loop Seq Scan Sort,lineitem_pkey
+C11,4,20644,126.8,Aggregate Gather Merge Hash Hash Join Seq Scan Sort,
+C11,5,12960,37.4,Aggregate Gather Merge Hash Hash Join Index Only Scan Index Scan Nested Loop Seq Scan Sort,lineitem_pkey opt_idx_4
+C11,6,17943,57.7,Aggregate Gather Seq Scan,
+C11,7,11508,64.0,Aggregate Gather Merge Hash Hash Join Index Only Scan Index Scan Nested Loop Seq Scan Sort,lineitem_pkey opt_idx_0 opt_idx_4
+C11,8,15153,54.1,Aggregate Gather Merge Hash Hash Join Index Only Scan Index Scan Nested Loop Seq Scan Sort,lineitem_pkey opt_idx_4 supplier_pkey
+C11,9,6597,143.5,Aggregate Gather Merge Hash Hash Join Index Scan Nested Loop Seq Scan Sort,opt_idx_2 orders_pkey supplier_pkey
+C11,10,21350,104.4,Aggregate Gather Merge Hash Hash Join Limit Seq Scan Sort,
+C11,11,5943,30.5,Aggregate Hash Hash Join Index Only Scan Nested Loop Seq Scan Sort,opt_idx_0
+C11,12,22042,74.5,Aggregate Gather Merge Hash Hash Join Seq Scan Sort,
+C11,13,6637,108.5,Aggregate Hash Hash Join Index Only Scan Seq Scan Sort,customer_pkey
+C11,14,16973,76.5,Aggregate Gather Hash Hash Join Seq Scan,
+C11,15,16539,93.6,Aggregate CTE Scan Gather Merge Hash Hash Join Seq Scan Sort,
+C11,16,3924,52.0,Aggregate Hash Hash Join Index Only Scan Seq Scan Sort,partsupp_pkey
+C11,17,20792,131.1,Aggregate Bitmap Heap Scan Bitmap Index Scan Hash Hash Join Seq Scan,opt_idx_3
+C11,18,100903,350.2,Aggregate Hash Hash Join Index Scan Limit Seq Scan Sort,lineitem_pkey
+C11,19,7009,5.8,Aggregate Index Scan Nested Loop Seq Scan,opt_idx_3
+C11,20,9759,13.9,Aggregate Bitmap Heap Scan Bitmap Index Scan Hash Hash Join Index Scan Nested Loop Seq Scan Sort,opt_idx_1 opt_idx_2 partsupp_pkey
+C11,21,18197,93.3,Aggregate Bitmap Heap Scan Bitmap Index Scan Gather Hash Hash Join Index Scan Limit Nested Loop Seq Scan Sort,lineitem_pkey opt_idx_1 orders_pkey
+C11,22,7135,27.5,Aggregate Hash Hash Join Seq Scan Sort,
+C12,1,24054,251.4,Aggregate Gather Merge Seq Scan Sort,
+C12,2,3918,33.1,Aggregate Hash Hash Join Index Only Scan Index Scan Limit Nested Loop Seq Scan Sort,opt_idx_2 opt_idx_3 opt_idx_4 partsupp_pkey
+C12,3,21488,66.8,Aggregate Gather Hash Hash Join Index Scan Limit Nested Loop Seq Scan Sort,lineitem_pkey
+C12,4,20645,119.2,Aggregate Gather Merge Hash Hash Join Seq Scan Sort,
+C12,5,12941,41.6,Aggregate Gather Merge Hash Hash Join Index Only Scan Index Scan Nested Loop Seq Scan Sort,lineitem_pkey opt_idx_6
+C12,6,17942,55.2,Aggregate Gather Seq Scan,
+C12,7,10223,90.9,Aggregate Hash Hash Join Index Only Scan Index Scan Nested Loop Seq Scan Sort,opt_idx_1 opt_idx_2 opt_idx_6
+C12,8,15200,46.0,Aggregate Gather Merge Hash Hash Join Index Only Scan Index Scan Nested Loop Seq Scan Sort,lineitem_pkey opt_idx_6
+C12,9,7962,149.3,Aggregate Gather Merge Hash Hash Join Index Scan Nested Loop Seq Scan Sort,opt_idx_0 orders_pkey supplier_pkey
+C12,10,21340,98.2,Aggregate Gather Merge Hash Hash Join Limit Seq Scan Sort,
+C12,11,956,13.5,Aggregate Index Only Scan Index Scan Nested Loop Seq Scan Sort,opt_idx_2 opt_idx_4
+C12,12,22043,67.3,Aggregate Gather Merge Hash Hash Join Seq Scan Sort,
+C12,13,6637,103.0,Aggregate Hash Hash Join Index Only Scan Seq Scan Sort,customer_pkey
+C12,14,16976,69.6,Aggregate Gather Hash Hash Join Seq Scan,
+C12,15,16542,67.8,Aggregate CTE Scan Gather Merge Hash Hash Join Seq Scan Sort,
+C12,16,3926,41.8,Aggregate Hash Hash Join Index Only Scan Seq Scan Sort,partsupp_pkey
+C12,17,20522,126.0,Aggregate Bitmap Heap Scan Bitmap Index Scan Hash Hash Join Seq Scan,opt_idx_0 opt_idx_8
+C12,18,101173,367.6,Aggregate Hash Hash Join Index Scan Limit Seq Scan Sort,lineitem_pkey
+C12,19,6292,3.5,Aggregate Bitmap Heap Scan Bitmap Index Scan BitmapOr Index Scan Nested Loop,opt_idx_0 opt_idx_8
+C12,20,17356,39.6,Aggregate Bitmap Heap Scan Bitmap Index Scan BitmapAnd Hash Hash Join Index Scan Nested Loop Seq Scan Sort,opt_idx_0 opt_idx_1 opt_idx_3 partsupp_pkey
+C12,21,8292,92.7,Aggregate Index Scan Limit Nested Loop Seq Scan Sort,lineitem_pkey opt_idx_1 orders_pkey
+C12,22,7136,32.4,Aggregate Hash Hash Join Seq Scan Sort,
+C13,1,24044,252.4,Aggregate Gather Merge Seq Scan Sort,
+C13,2,3643,34.2,Aggregate Bitmap Heap Scan Bitmap Index Scan Hash Hash Join Index Only Scan Index Scan Limit Nested Loop Seq Scan Sort,opt_idx_1 opt_idx_12 opt_idx_3 opt_idx_7 partsupp_pkey
+C13,3,21432,63.2,Aggregate Bitmap Heap Scan Bitmap Index Scan Gather Hash Hash Join Index Scan Limit Nested Loop Seq Scan Sort,lineitem_pkey opt_idx_11
+C13,4,20645,116.5,Aggregate Gather Merge Hash Hash Join Seq Scan Sort,
+C13,5,12975,34.8,Aggregate Gather Merge Hash Hash Join Index Only Scan Index Scan Nested Loop Seq Scan Sort,lineitem_pkey opt_idx_4
+C13,6,17943,50.9,Aggregate Gather Seq Scan,
+C13,7,7155,70.3,Aggregate Hash Hash Join Index Only Scan Index Scan Nested Loop Seq Scan Sort,opt_idx_1 opt_idx_2 opt_idx_4 opt_idx_5
+C13,8,14820,47.6,Aggregate Bitmap Heap Scan Bitmap Index Scan Gather Merge Hash Hash Join Index Only Scan Index Scan Nested Loop Seq Scan Sort,lineitem_pkey opt_idx_4 opt_idx_9
+C13,9,8009,144.4,Aggregate Gather Merge Hash Hash Join Index Scan Nested Loop Seq Scan Sort,opt_idx_0 orders_pkey supplier_pkey
+C13,10,21297,114.1,Aggregate Gather Merge Hash Hash Join Limit Seq Scan Sort,
+C13,11,956,15.7,Aggregate Index Only Scan Index Scan Nested Loop Seq Scan Sort,opt_idx_1 opt_idx_3
+C13,12,22043,78.0,Aggregate Gather Merge Hash Hash Join Seq Scan Sort,
+C13,13,6637,102.0,Aggregate Hash Hash Join Index Only Scan Seq Scan Sort,customer_pkey
+C13,14,16967,64.1,Aggregate Gather Hash Hash Join Seq Scan,
+C13,15,16540,55.1,Aggregate CTE Scan Gather Merge Hash Hash Join Seq Scan Sort,
+C13,16,3559,33.9,Aggregate Bitmap Heap Scan Bitmap Index Scan Hash Hash Join Index Only Scan Seq Scan Sort,opt_idx_7 partsupp_pkey
+C13,17,20193,109.9,Aggregate Bitmap Heap Scan Bitmap Index Scan BitmapAnd Hash Hash Join Seq Scan,opt_idx_0 opt_idx_6 opt_idx_8
+C13,18,100758,325.1,Aggregate Hash Hash Join Index Scan Limit Seq Scan Sort,lineitem_pkey
+C13,19,6368,3.3,Aggregate Bitmap Heap Scan Bitmap Index Scan BitmapAnd BitmapOr Index Scan Nested Loop,opt_idx_0 opt_idx_6 opt_idx_7 opt_idx_8
+C13,20,17362,44.5,Aggregate Bitmap Heap Scan Bitmap Index Scan BitmapAnd Hash Hash Join Index Scan Nested Loop Seq Scan Sort,opt_idx_0 opt_idx_12 opt_idx_2 partsupp_pkey
+C13,21,8273,91.8,Aggregate Index Scan Limit Nested Loop Seq Scan Sort,lineitem_pkey opt_idx_2 orders_pkey
+C13,22,1464,10.5,Aggregate Bitmap Heap Scan Bitmap Index Scan Index Only Scan Nested Loop Seq Scan Sort,opt_idx_10 opt_idx_5
+C14,1,24049,303.5,Aggregate Gather Merge Seq Scan Sort,
+C14,2,3646,37.7,Aggregate Bitmap Heap Scan Bitmap Index Scan Hash Hash Join Index Only Scan Index Scan Limit Nested Loop Seq Scan Sort,opt_idx_10 opt_idx_6 opt_idx_8 partsupp_pkey
+C14,3,21566,71.3,Aggregate Gather Hash Hash Join Index Scan Limit Nested Loop Seq Scan Sort,lineitem_pkey
+C14,4,19453,142.8,Aggregate Bitmap Heap Scan Bitmap Index Scan Gather Merge Hash Hash Join Seq Scan Sort,opt_idx_4
+C14,5,12136,45.6,Aggregate Bitmap Heap Scan Bitmap Index Scan Gather Merge Hash Hash Join Index Only Scan Index Scan Nested Loop Seq Scan Sort,lineitem_pkey opt_idx_1 opt_idx_4
+C14,6,17942,70.0,Aggregate Gather Seq Scan,
+C14,7,11510,62.1,Aggregate Gather Merge Hash Hash Join Index Only Scan Index Scan Nested Loop Seq Scan Sort,lineitem_pkey opt_idx_1 opt_idx_10
+C14,8,14566,56.6,Aggregate Bitmap Heap Scan Bitmap Index Scan Gather Merge Hash Hash Join Index Only Scan Index Scan Nested Loop Seq Scan Sort,lineitem_pkey opt_idx_1 opt_idx_4 opt_idx_7
+C14,9,6604,157.3,Aggregate Gather Merge Hash Hash Join Index Scan Nested Loop Seq Scan Sort,opt_idx_2 orders_pkey supplier_pkey
+C14,10,20063,99.1,Aggregate Bitmap Heap Scan Bitmap Index Scan Gather Merge Hash Hash Join Limit Seq Scan Sort,opt_idx_4
+C14,11,956,16.2,Aggregate Index Only Scan Index Scan Nested Loop Seq Scan Sort,opt_idx_10 opt_idx_8
+C14,12,22037,101.9,Aggregate Gather Merge Hash Hash Join Seq Scan Sort,
+C14,13,6637,137.0,Aggregate Hash Hash Join Index Only Scan Seq Scan Sort,customer_pkey
+C14,14,16968,74.1,Aggregate Gather Hash Hash Join Seq Scan,
+C14,15,16542,61.1,Aggregate CTE Scan Gather Merge Hash Hash Join Seq Scan Sort,
+C14,16,3558,34.9,Aggregate Bitmap Heap Scan Bitmap Index Scan Hash Hash Join Index Only Scan Seq Scan Sort,opt_idx_6 partsupp_pkey
+C14,17,20560,119.3,Aggregate Bitmap Heap Scan Bitmap Index Scan Hash Hash Join Seq Scan,opt_idx_2 opt_idx_5
+C14,18,101218,288.7,Aggregate Hash Hash Join Index Scan Limit Seq Scan Sort,lineitem_pkey
+C14,19,6502,4.4,Aggregate Bitmap Heap Scan Bitmap Index Scan BitmapAnd BitmapOr Index Scan Nested Loop,opt_idx_2 opt_idx_5 opt_idx_6
+C14,20,9758,16.0,Aggregate Bitmap Heap Scan Bitmap Index Scan Hash Hash Join Index Scan Nested Loop Seq Scan Sort,opt_idx_10 opt_idx_2 partsupp_pkey
+C14,21,18203,115.5,Aggregate Bitmap Heap Scan Bitmap Index Scan Gather Hash Hash Join Index Scan Limit Nested Loop Seq Scan Sort,lineitem_pkey opt_idx_10 orders_pkey
+C14,22,1464,10.6,Aggregate Bitmap Heap Scan Bitmap Index Scan Index Only Scan Nested Loop Seq Scan Sort,opt_idx_0 opt_idx_3
+C15,1,24048,292.5,Aggregate Gather Merge Seq Scan Sort,
+C15,2,3220,5.7,Aggregate Bitmap Heap Scan Bitmap Index Scan Hash Hash Join Index Only Scan Index Scan Limit Nested Loop Seq Scan Sort,opt_idx_34 opt_idx_40 opt_idx_43 partsupp_pkey supplier_pkey
+C15,3,21455,56.2,Aggregate Bitmap Heap Scan Bitmap Index Scan Gather Hash Hash Join Index Scan Limit Nested Loop Seq Scan Sort,lineitem_pkey opt_idx_1
+C15,4,19443,121.2,Aggregate Bitmap Heap Scan Bitmap Index Scan Gather Merge Hash Hash Join Seq Scan Sort,opt_idx_29
+C15,5,12140,36.0,Aggregate Bitmap Heap Scan Bitmap Index Scan Gather Merge Hash Hash Join Index Only Scan Index Scan Nested Loop Seq Scan Sort,lineitem_pkey opt_idx_29 opt_idx_3
+C15,6,14459,47.1,Aggregate Bitmap Heap Scan Bitmap Index Scan Gather,opt_idx_17
+C15,7,5846,33.5,Aggregate Hash Hash Join Index Only Scan Index Scan Nested Loop Seq Scan Sort,opt_idx_25 opt_idx_28 opt_idx_3 opt_idx_43
+C15,8,14486,50.3,Aggregate Bitmap Heap Scan Bitmap Index Scan Gather Merge Hash Hash Join Index Only Scan Index Scan Nested Loop Seq Scan Sort,lineitem_pkey opt_idx_29 opt_idx_3 opt_idx_35 supplier_pkey
+C15,9,6599,143.3,Aggregate Gather Merge Hash Hash Join Index Scan Nested Loop Seq Scan Sort,opt_idx_23 orders_pkey supplier_pkey
+C15,10,19345,92.8,Aggregate Bitmap Heap Scan Bitmap Index Scan Hash Hash Join Index Scan Limit Memoize Nested Loop Seq Scan Sort,nation_pkey opt_idx_16 opt_idx_29
+C15,11,956,16.1,Aggregate Index Only Scan Index Scan Nested Loop Seq Scan Sort,opt_idx_37 opt_idx_43
+C15,12,18562,62.9,Aggregate Bitmap Heap Scan Bitmap Index Scan Gather Merge Hash Hash Join Seq Scan Sort,opt_idx_15
+C15,13,6602,107.5,Aggregate Hash Hash Join Index Only Scan Seq Scan Sort,customer_pkey
+C15,14,11900,19.7,Aggregate Bitmap Heap Scan Bitmap Index Scan Hash Hash Join Seq Scan,opt_idx_17
+C15,15,12264,25.3,Aggregate Bitmap Heap Scan Bitmap Index Scan CTE Scan Hash Hash Join Seq Scan Sort,opt_idx_17
+C15,16,3557,33.7,Aggregate Bitmap Heap Scan Bitmap Index Scan Hash Hash Join Index Only Scan Seq Scan Sort,opt_idx_34 partsupp_pkey
+C15,17,1044,0.6,Aggregate Bitmap Heap Scan Bitmap Index Scan BitmapAnd Index Only Scan Index Scan Nested Loop,opt_idx_31 opt_idx_32 opt_idx_9
+C15,18,100792,342.7,Aggregate Hash Hash Join Index Scan Limit Seq Scan Sort,lineitem_pkey
+C15,19,1641,1.6,Aggregate Bitmap Heap Scan Bitmap Index Scan BitmapAnd BitmapOr Index Scan Nested Loop,opt_idx_12 opt_idx_31 opt_idx_32 opt_idx_34
+C15,20,9759,16.7,Aggregate Bitmap Heap Scan Bitmap Index Scan Hash Hash Join Index Scan Nested Loop Seq Scan Sort,opt_idx_23 opt_idx_42 partsupp_pkey
+C15,21,8274,102.9,Aggregate Index Scan Limit Nested Loop Seq Scan Sort,lineitem_pkey opt_idx_20 orders_pkey
+C15,22,1464,11.8,Aggregate Bitmap Heap Scan Bitmap Index Scan Index Only Scan Nested Loop Seq Scan Sort,opt_idx_0 opt_idx_26

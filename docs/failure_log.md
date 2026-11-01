@@ -153,6 +153,31 @@ as AI-written code.
 - **Lesson:** a benchmark's own measurement step must not depend on the thing
   being measured. Check that both sides did the same work before comparing times.
 
+## F9 · Track H · ILP free to build useless indexes
+
+- **Tool:** Claude (claude.ai, Claude Opus 5.5), 2026-10-29
+- **What happened:** the index-selection ILP maximised Σ benefit·y with
+  y ≤ x and a budget on x, but nothing in the objective charged for x itself.
+  In a unit test with two overlapping indexes, it built both even though one
+  could never be used, because the budget had room and the objective didn't
+  change either way.
+- **How it was caught:** a small hand-made test case where the right answer
+  is known.
+- **Fix:** a tiny storage penalty (ε · size, with ε about 10⁻⁶ × the smallest
+  benefit), so among equally good solutions the smallest is chosen.
+- **Impact on the reported results:** none. On TPC-H every index the ILP chose
+  had positive benefit, and the selections were identical before and after the
+  fix.
+- **Lesson:** an optimization model gives you exactly what the objective asks
+  for. Unpriced resources get used arbitrarily.
+
+## Note · Track H · Noise larger than the effect
+
+The first reading of the benchmark suggested a 4 MB index set made the
+workload 13% faster (44.8 s vs 51.6 s). The default configuration's own three
+passes ranged from 41.9 to 52.2 s, so the claim was dropped. Always look at
+the spread between repeats before comparing medians.
+
 ---
 
 *(Add entries from Tracks A–J below as they happen — xv6 and SQL rewrites usually supply several.)*

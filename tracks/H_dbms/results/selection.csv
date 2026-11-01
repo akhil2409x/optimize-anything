@@ -1,0 +1,21 @@
+budget_mb,method,n_indexes,est_size_mb,est_cost,est_cost_reduction_pct,additive_model_value,solve_seconds,note,indexes,config_id
+4,default (PK only),0,0,19431542,0.0,0,0.0,,,C0
+4,knapsack DP (additive),4,3.8,19544867,-0.58,10018,0.0,exact for additive model,"supplier(s_nationkey, s_suppkey); supplier(s_nationkey); partsupp(ps_suppkey, ps_partkey); customer(c_nationkey, c_custkey)",C1
+4,greedy ratio (additive),6,3.8,19421991,0.05,9763,0.0,,"supplier(s_nationkey, s_suppkey); supplier(s_nationkey); partsupp(ps_suppkey); customer(c_nationkey, c_custkey); part(p_brand); part(p_size)",C2
+4,greedy what-if,6,3.8,19421991,0.05,9763,1.158,1188 EXPLAINs,"supplier(s_nationkey, s_suppkey); partsupp(ps_suppkey); customer(c_nationkey, c_custkey); part(p_brand); part(p_size); supplier(s_nationkey)",C2
+4,ILP (one index per query per table),3,3.8,19544869,-0.58,9930,0.011,Optimal,"customer(c_nationkey, c_custkey); partsupp(ps_suppkey, ps_partkey); supplier(s_nationkey, s_suppkey)",C3
+16,default (PK only),0,0,19431542,0.0,0,0.0,,,C0
+16,knapsack DP (additive),4,15.6,483947,97.51,18947682,0.0,exact for additive model,"supplier(s_nationkey, s_suppkey); supplier(s_nationkey); lineitem(l_partkey); customer(c_nationkey, c_custkey)",C4
+16,greedy ratio (additive),5,16.0,483947,97.51,18948134,0.0,,"lineitem(l_partkey); supplier(s_nationkey, s_suppkey); supplier(s_nationkey); customer(c_nationkey, c_custkey); customer(c_nationkey)",C5
+16,greedy what-if,4,16.0,483795,97.51,18947747,0.514,594 EXPLAINs,"lineitem(l_partkey); supplier(s_nationkey, s_suppkey); customer(c_nationkey, c_custkey); customer(c_acctbal)",C6
+16,ILP (one index per query per table),4,16.0,483795,97.51,18947747,0.02,Optimal,"customer(c_acctbal); customer(c_nationkey, c_custkey); lineitem(l_partkey); supplier(s_nationkey, s_suppkey)",C6
+25,default (PK only),0,0,19431542,0.0,0,0.0,,,C0
+25,knapsack DP (additive),4,24.6,391876,97.98,19039745,0.0,exact for additive model,"supplier(s_nationkey, s_suppkey); supplier(s_nationkey); lineitem(l_partkey, l_suppkey); customer(c_nationkey, c_custkey)",C7
+25,greedy ratio (additive),8,24.9,477098,97.54,18967969,0.0,,"lineitem(l_partkey); supplier(s_nationkey, s_suppkey); supplier(s_nationkey); partsupp(ps_suppkey); partsupp(ps_suppkey, ps_partkey); customer(c_nationkey, c_custkey); partsupp(ps_suppkey, ps_supplycost); part(p_brand)",C8
+25,greedy what-if,11,25.0,464502,97.61,18961874,2.514,2640 EXPLAINs,"lineitem(l_partkey); supplier(s_nationkey, s_suppkey); partsupp(ps_suppkey); customer(c_nationkey, c_custkey); orders(o_custkey); part(p_brand); part(p_size); part(p_container); part(p_type); customer(c_acctbal); customer(c_mktsegment)",C9
+25,ILP (one index per query per table),4,25.0,391725,97.98,19039810,0.012,Optimal,"customer(c_acctbal); customer(c_nationkey, c_custkey); lineitem(l_partkey, l_suppkey); supplier(s_nationkey, s_suppkey)",C10
+40,default (PK only),0,0,19431542,0.0,0,0.0,,,C0
+40,knapsack DP (additive),5,39.6,391876,97.98,37985160,0.001,exact for additive model,"supplier(s_nationkey, s_suppkey); supplier(s_nationkey); lineitem(l_partkey, l_suppkey); lineitem(l_partkey); customer(c_nationkey, c_custkey)",C11
+40,greedy ratio (additive),9,39.8,386013,98.01,36214540,0.0,,"lineitem(l_partkey); lineitem(l_suppkey); supplier(s_nationkey, s_suppkey); supplier(s_nationkey); partsupp(ps_suppkey); partsupp(ps_suppkey, ps_partkey); customer(c_nationkey, c_custkey); partsupp(ps_suppkey, ps_supplycost); part(p_brand)",C12
+40,greedy what-if,13,40.0,372738,98.08,36208533,3.134,3410 EXPLAINs,"lineitem(l_partkey); supplier(s_nationkey, s_suppkey); lineitem(l_suppkey); partsupp(ps_suppkey); customer(c_nationkey, c_custkey); orders(o_custkey); part(p_brand); part(p_size); part(p_container); part(p_type); customer(c_acctbal); customer(c_mktsegment); supplier(s_nationkey)",C13
+40,ILP (one index per query per table),11,39.7,370592,98.09,19063842,0.026,Optimal,"customer(c_acctbal); customer(c_nationkey, c_custkey); lineitem(l_partkey, l_suppkey); orders(o_custkey); orders(o_orderdate); part(p_brand); part(p_size); part(p_type); partsupp(ps_suppkey); partsupp(ps_suppkey, ps_partkey); supplier(s_nationkey, s_suppkey)",C14
