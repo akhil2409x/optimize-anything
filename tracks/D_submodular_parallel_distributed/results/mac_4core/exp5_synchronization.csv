@@ -1,0 +1,3 @@
+method,total,seconds
+"shared counter, lock per increment",160000,0.054732
+"local counts, one reduction at the end",160000,0.001175

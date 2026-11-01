@@ -51,7 +51,7 @@ Claude read the Track D and Chapter 6 requirements and wrote:
 
 ## Resulting code change
 
-Commit `[AI:claude] Track D: submodular greedy, parallel speed-up, FedAvg, MGDA/GradNorm` (fill in hash after pushing)
+Commit `[AI:claude] Track D: submodular greedy, parallel speed-up, FedAvg, MGDA/GradNorm` = local commit `ad72c94` (on GitHub: `<repo URL>/commit/ad72c94`)
 
 ## Verification note
 

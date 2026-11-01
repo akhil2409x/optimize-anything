@@ -1,0 +1,2 @@
+micro_batches,t_stage,sequential_s,pipelined_s,ideal_pipelined_s,bubble_fraction,in_order
+16,0.007258,0.229386,0.132245,0.123378,0.058824,True

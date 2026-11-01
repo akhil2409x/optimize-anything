@@ -151,3 +151,13 @@ Two regression tasks sharing a 16-unit tanh layer; task 2's targets are 30× lar
 | gradnorm | 0.03 | 0.284 | 0.020 | 0.0048 | 0.0004 |  | (2.00, 0.00) | -0.10 |
 
 Total run time 214s.
+
+## Exp 6 rerun after the F16 fix (contiguous shards), cloud container, 3 runs
+
+| run | data parallel: serial / shipped / resident (s) | model parallel: serial / shipped / resident (s) | pipeline: sequential / pipelined (s) |
+|---|---|---|---|
+| 1 | 0.531 / 8.920 / 0.221 | 0.378 / 16.681 / 0.284 | 0.413 / 0.194 |
+| 2 | 0.322 / 8.992 / 0.269 | 0.367 / 17.827 / 0.265 | 0.435 / 0.279 |
+| 3 | 0.421 / 9.158 / 0.320 | 0.520 / 16.003 / 0.251 | 0.351 / 0.216 |
+
+The 4-core rerun on the student's laptop is in `mac_4core/` (CSV files; machine details in `mac_4core/machine.txt`).

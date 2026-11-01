@@ -303,7 +303,9 @@ _RESIDENT = {}          # data placed here BEFORE the pool forks stays in every 
 
 def _grad_resident(args):
     i, procs, w = args
-    X, y = _RESIDENT["X"][i::procs], _RESIDENT["y"][i::procs]
+    # contiguous row blocks: an earlier version took every procs-th row (X[i::procs]),
+    # a strided view that made each matrix product ~9x slower (failure log F16)
+    X, y = np.array_split(_RESIDENT["X"], procs)[i], np.array_split(_RESIDENT["y"], procs)[i]
     return X.T @ (X @ w - y), len(y)
 
 
@@ -327,7 +329,7 @@ def data_parallel(n=400_000, d=50, procs=2, steps=20):
     y = X @ rng.standard_normal(d)
     full = X.T @ (X @ w - y) / n
     _, t1 = timed(lambda: [X.T @ (X @ w - y) / n for _ in range(steps)])
-    shards = [(X[i::procs], y[i::procs], w) for i in range(procs)]
+    shards = [(Xs, ys, w) for Xs, ys in zip(np.array_split(X, procs), np.array_split(y, procs))]
     with CTX.Pool(procs) as pool:
         parts, t_ship = timed(lambda: [pool.map(_grad_shard, shards) for _ in range(steps)][-1])
     g_ship = sum(p for p, _ in parts) / n

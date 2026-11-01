@@ -1,0 +1,11 @@
+<section id="negatives" data-transition="fade" style="background:#F7F5EF;color:#14213D;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;gap:48px">
+<h2 style="font-family:'Source Serif 4', Georgia, serif;font-size:72px;font-weight:600;line-height:1.1">Where optimizing didn’t pay</h2>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:28px">
+<div style="display:flex;flex-direction:column;gap:10px;border-left:6px solid #E07A2E;padding:8px 0 8px 32px"><h3 style="font-size:36px;font-weight:600">COW fork, child writes everything</h3><p style="font-size:30px;line-height:1.35;color:#3D4A5C">2.3× slower: 1,024 page faults instead of one bulk copy</p></div>
+<div style="display:flex;flex-direction:column;gap:10px;border-left:6px solid #E07A2E;padding:8px 0 8px 32px"><h3 style="font-size:36px;font-weight:600">QML vs classical</h3><p style="font-size:30px;line-height:1.35;color:#3D4A5C">Below the best classical model on both datasets; 15–83 s to train in simulation vs under 0.3 s</p></div>
+<div style="display:flex;flex-direction:column;gap:10px;border-left:6px solid #E07A2E;padding:8px 0 8px 32px"><h3 style="font-size:36px;font-weight:600">Test-suite minimization alone</h3><p style="font-size:30px;line-height:1.35;color:#3D4A5C">61% fewer tests but only 15% less time; 7–11% of seeded faults missed</p></div>
+<div style="display:flex;flex-direction:column;gap:10px;border-left:6px solid #E07A2E;padding:8px 0 8px 32px"><h3 style="font-size:36px;font-weight:600">Memory-bound parallel work</h3><p style="font-size:30px;line-height:1.35;color:#3D4A5C">Slower than serial on the 4-core VM: more cores, no more bandwidth</p></div>
+</div>
+<p style="font-size:32px;line-height:1.4;color:#3D4A5C">Profiling first found the real bottlenecks: two tests held 73% of test time, two TPC-H queries 97% of query time.</p>
+<aside>The brief rewards correct negative results; each of these is measured and explained in its track README.</aside>
+</section>

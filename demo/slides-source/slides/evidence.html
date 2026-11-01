@@ -1,0 +1,15 @@
+<section id="evidence" data-section="Evidence of improvement on real data" data-transition="fade" style="background:#F7F5EF;color:#14213D;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:40px">
+<h2 style="font-family:'Source Serif 4', Georgia, serif;font-size:72px;font-weight:600;line-height:1.1">Real data: seven institutions</h2>
+<table style="font-size:28px;color:#14213D">
+<tr><th style="width:28%">Instance (exams / slots)</th><th style="width:20%">First fit (baseline)</th><th style="width:18%">DSatur</th><th style="width:34%">DSatur-proximity + hill climb</th></tr>
+<tr><td>ear-f-83 (190 / 24)</td><td>infeasible</td><td>67.38</td><td><b>40.83 ± 0.24</b></td></tr>
+<tr><td>hec-s-92 (81 / 18)</td><td>infeasible</td><td>infeasible</td><td><b>15.79 ± 1.04</b> (with ILP repair)</td></tr>
+<tr><td>lse-f-91 (381 / 18)</td><td>infeasible</td><td>infeasible</td><td><b>13.00 ± 0.04</b></td></tr>
+<tr><td>sta-f-83 (139 / 13)</td><td>211.93</td><td>194.40</td><td><b>168.95 ± 0.29</b></td></tr>
+<tr><td>tre-s-92 (261 / 23)</td><td>infeasible</td><td>15.92</td><td><b>10.09</b></td></tr>
+<tr><td>ute-s-92 (184 / 10)</td><td>infeasible</td><td>58.82</td><td><b>31.70 ± 0.31</b></td></tr>
+<tr><td>yor-f-83 (181 / 21)</td><td>infeasible</td><td>61.66</td><td><b>46.30 ± 0.06</b></td></tr>
+</table>
+<p style="position:absolute;left:128px;bottom:64px;font-size:24px;color:#5B6676;width:1660px">Proximity cost per student, lower is better; 5 seeds; under 0.2 s per run. Best known: tre 7.75, yor 34.84, so ours are 30–33% higher.</p>
+<aside>Clash-free on all seven, against one for the baseline; 20% cheaper on the only instance where the baseline works. Honest gap: simple single-exam moves stay 30% above state-of-the-art metaheuristics that run for minutes or hours.</aside>
+</section>

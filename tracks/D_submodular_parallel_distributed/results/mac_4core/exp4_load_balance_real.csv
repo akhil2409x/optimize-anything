@@ -1,0 +1,5 @@
+policy,workers,makespan_s,imbalance,sim_makespan_s
+block,4,0.335767,1.832567,0.320971
+cyclic,4,0.206739,1.06746,0.185047
+dynamic,4,0.215869,1.062147,0.18695
+dynamic-big,4,0.349821,1.82608,0.320971

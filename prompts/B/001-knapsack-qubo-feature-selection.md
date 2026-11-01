@@ -37,7 +37,7 @@ yes do it
 
 ## Resulting code change
 
-Commit: `[AI:claude] Track B: knapsack methods, QUBO/Ising, feature selection` (fill in hash after pushing)
+Commit: `[AI:claude] Track B: knapsack methods, QUBO/Ising, feature selection` = local commit `143f75e` (on GitHub: `<repo URL>/commit/143f75e`)
 
 ## Verification note
 

@@ -39,7 +39,7 @@ Claude read the Track C requirements from the brief and built, with PennyLane 0.
 ## Resulting code change
 
 Commit: `[AI:claude] Track C: QAOA, VQE, optimizers, shots, noise, barren plateaus`
-(fill in hash after pushing)
+= local commit `7bd080d` (on GitHub: `<repo URL>/commit/7bd080d`)
 
 ## Verification note
 

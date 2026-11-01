@@ -56,7 +56,7 @@ library with ~7,300 lines of library code and ~9,200 lines of tests. It wrote:
 
 ## Resulting code change
 
-Commit `[AI:claude] Track J: test-suite minimization (set cover: greedy vs ILP) on more-itertools` (fill in hash after pushing)
+Commit `[AI:claude] Track J: test-suite minimization (set cover: greedy vs ILP) on more-itertools` = local commit `bd5c2ec` (on GitHub: `<repo URL>/commit/bd5c2ec`)
 
 ## Verification note
 

@@ -6,14 +6,14 @@ xv6-riscv under QEMU 8.2 (TCG emulation, 128 MB RAM). Times come from the RISC-V
 
 | variant | cpus | cowtest | usertests | usertests_mode | minutes |
 |---|---|---|---|---|---|
-| original | 1 | OK | ALL TESTS PASSED | full | 3.1 |
-| original | 3 | OK | ALL TESTS PASSED | full | 3.9 |
-| mlfq | 1 | OK | ALL TESTS PASSED | full | 3.0 |
-| mlfq | 3 | OK | ALL TESTS PASSED | full | 3.6 |
-| cow | 1 | OK | ALL TESTS PASSED | full | 3.0 |
-| cow | 3 | OK | ALL TESTS PASSED | full | 3.7 |
-| both | 1 | OK | ALL TESTS PASSED | full | 3.0 |
-| both | 3 | OK | ALL TESTS PASSED | full | 3.7 |
+| original | 1 | OK | ALL TESTS PASSED | full | 2.9 |
+| original | 3 | OK | ALL TESTS PASSED | full | 3.6 |
+| mlfq | 1 | OK | ALL TESTS PASSED | full | 2.7 |
+| mlfq | 3 | OK | ALL TESTS PASSED | full | 3.3 |
+| cow | 1 | OK | ALL TESTS PASSED | full | 2.7 |
+| cow | 3 | OK | ALL TESTS PASSED | full | 3.5 |
+| both | 1 | OK | ALL TESTS PASSED | full | 2.8 |
+| both | 3 | OK | ALL TESTS PASSED | full | 3.3 |
 
 ## Feature 1 — MLFQ scheduler vs round robin
 

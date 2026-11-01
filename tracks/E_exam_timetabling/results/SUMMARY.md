@@ -6,43 +6,92 @@ Cost = Carter proximity cost per student (lower is better), recomputed independe
 
 | exams | method | feasible | cost_mean | cost_std | slots_mean | seconds_mean |
 |---|---|---|---|---|---|---|
-| 50 | dsatur | 5/5 | 53.47 | 1.67 | 11.6 | 0.0023 |
-| 50 | dsatur_proximity | 5/5 | 33.87 | 0.77 | 14 | 0.0033 |
-| 50 | dsatur_proximity+hill_climb | 5/5 | 33.56 | 0.83 | 14 | 0.0014 |
-| 50 | first_fit (baseline) | 3/5 | 48.95 | 0.88 | 13.3 | 0.0002 |
+| 50 | dsatur | 5/5 | 53.47 | 1.67 | 11.6 | 0.002 |
+| 50 | dsatur_proximity | 5/5 | 33.87 | 0.77 | 14 | 0.0029 |
+| 50 | dsatur_proximity+hill_climb | 5/5 | 33.56 | 0.83 | 14 | 0.0012 |
+| 50 | first_fit (baseline) | 3/5 | 48.95 | 0.88 | 13.3 | 0.0001 |
 | 50 | largest_degree | 5/5 | 49.55 | 3.72 | 12.4 | 0.0001 |
-| 100 | dsatur | 5/5 | 33.9 | 0.81 | 17.8 | 0.0152 |
-| 100 | dsatur_proximity | 5/5 | 25.78 | 0.75 | 20 | 0.0187 |
-| 100 | dsatur_proximity+hill_climb | 5/5 | 25.32 | 0.77 | 20 | 0.0074 |
-| 100 | first_fit (baseline) | 4/5 | 31.96 | 0.62 | 19.8 | 0.0004 |
-| 100 | largest_degree | 5/5 | 33.84 | 1.1 | 18 | 0.0004 |
-| 200 | dsatur | 5/5 | 35.15 | 0.9 | 18 | 0.0589 |
-| 200 | dsatur_proximity | 5/5 | 25.94 | 0.44 | 20 | 0.0678 |
-| 200 | dsatur_proximity+hill_climb | 5/5 | 25.65 | 0.41 | 20 | 0.0169 |
-| 200 | first_fit (baseline) | 1/5 | 31.24 |  | 20 | 0.0006 |
-| 200 | largest_degree | 5/5 | 33.09 | 0.39 | 19.2 | 0.0007 |
-| 400 | dsatur | 5/5 | 32.91 | 0.62 | 20 | 0.2974 |
-| 400 | dsatur_proximity | 5/5 | 20.13 | 0.32 | 24 | 0.356 |
-| 400 | dsatur_proximity+hill_climb | 5/5 | 19.66 | 0.25 | 24 | 0.0775 |
-| 400 | first_fit (baseline) | 5/5 | 28.87 | 0.55 | 23.4 | 0.0016 |
-| 400 | largest_degree | 5/5 | 30.88 | 0.39 | 21 | 0.0018 |
+| 100 | dsatur | 5/5 | 33.9 | 0.81 | 17.8 | 0.012 |
+| 100 | dsatur_proximity | 5/5 | 25.78 | 0.75 | 20 | 0.0159 |
+| 100 | dsatur_proximity+hill_climb | 5/5 | 25.32 | 0.77 | 20 | 0.0052 |
+| 100 | first_fit (baseline) | 4/5 | 31.96 | 0.62 | 19.8 | 0.0003 |
+| 100 | largest_degree | 5/5 | 33.84 | 1.1 | 18 | 0.0003 |
+| 200 | dsatur | 5/5 | 35.15 | 0.9 | 18 | 0.0485 |
+| 200 | dsatur_proximity | 5/5 | 25.94 | 0.44 | 20 | 0.0572 |
+| 200 | dsatur_proximity+hill_climb | 5/5 | 25.65 | 0.41 | 20 | 0.0131 |
+| 200 | first_fit (baseline) | 1/5 | 31.24 |  | 20 | 0.0007 |
+| 200 | largest_degree | 5/5 | 33.09 | 0.39 | 19.2 | 0.0006 |
+| 400 | dsatur | 5/5 | 32.91 | 0.62 | 20 | 0.251 |
+| 400 | dsatur_proximity | 5/5 | 20.13 | 0.32 | 24 | 0.2727 |
+| 400 | dsatur_proximity+hill_climb | 5/5 | 19.66 | 0.25 | 24 | 0.0576 |
+| 400 | first_fit (baseline) | 5/5 | 28.87 | 0.55 | 23.4 | 0.0017 |
+| 400 | largest_degree | 5/5 | 30.88 | 0.39 | 21 | 0.0016 |
 
 ![cost by method](exp1_cost_by_method.png)
+
+## Experiment 1 — real Toronto (Carter) instances
+
+Same methods and seeds (hill climbing is the only random step). Data from the Toronto benchmark (Carter, Laporte and Lee 1996), see README.
+
+| instance | exams | students | slots | method | feasible | cost_mean | cost_std | seconds_mean |
+|---|---|---|---|---|---|---|---|---|
+| ear-f-83 | 190 | 1125 | 24 | dsatur | 5/5 | 67.38 | 0.0 | 0.0421 |
+| ear-f-83 | 190 | 1125 | 24 | dsatur_proximity | 5/5 | 41.3 | 0.0 | 0.0487 |
+| ear-f-83 | 190 | 1125 | 24 | dsatur_proximity+hill_climb | 5/5 | 40.83 | 0.24 | 0.0142 |
+| ear-f-83 | 190 | 1125 | 24 | first_fit (baseline) | 0/5 |  |  | 0.0005 |
+| ear-f-83 | 190 | 1125 | 24 | largest_degree | 0/5 |  |  | 0.0003 |
+| hec-s-92 | 81 | 2823 | 18 | dsatur | 0/5 |  |  | 0.005 |
+| hec-s-92 | 81 | 2823 | 18 | dsatur_proximity | 0/5 |  |  | 0.0056 |
+| hec-s-92 | 81 | 2823 | 18 | dsatur_proximity+hill_climb | 0/5 |  |  | 0.0056 |
+| hec-s-92 | 81 | 2823 | 18 | first_fit (baseline) | 0/5 |  |  | 0.0002 |
+| hec-s-92 | 81 | 2823 | 18 | largest_degree | 0/5 |  |  | 0.0001 |
+| lse-f-91 | 381 | 2726 | 18 | dsatur | 0/5 |  |  | 0.0172 |
+| lse-f-91 | 381 | 2726 | 18 | dsatur_proximity | 5/5 | 13.3 | 0.0 | 0.1109 |
+| lse-f-91 | 381 | 2726 | 18 | dsatur_proximity+hill_climb | 5/5 | 13.0 | 0.04 | 0.0356 |
+| lse-f-91 | 381 | 2726 | 18 | first_fit (baseline) | 0/5 |  |  | 0.0005 |
+| lse-f-91 | 381 | 2726 | 18 | largest_degree | 0/5 |  |  | 0.0004 |
+| sta-f-83 | 139 | 611 | 13 | dsatur | 5/5 | 194.4 | 0.0 | 0.0183 |
+| sta-f-83 | 139 | 611 | 13 | dsatur_proximity | 5/5 | 170.35 | 0.0 | 0.0188 |
+| sta-f-83 | 139 | 611 | 13 | dsatur_proximity+hill_climb | 5/5 | 168.95 | 0.29 | 0.0052 |
+| sta-f-83 | 139 | 611 | 13 | first_fit (baseline) | 5/5 | 211.93 | 0.0 | 0.0003 |
+| sta-f-83 | 139 | 611 | 13 | largest_degree | 5/5 | 194.4 | 0.0 | 0.0003 |
+| tre-s-92 | 261 | 4360 | 23 | dsatur | 5/5 | 15.92 | 0.0 | 0.1144 |
+| tre-s-92 | 261 | 4360 | 23 | dsatur_proximity | 5/5 | 10.14 | 0.0 | 0.1337 |
+| tre-s-92 | 261 | 4360 | 23 | dsatur_proximity+hill_climb | 5/5 | 10.09 | 0.0 | 0.0387 |
+| tre-s-92 | 261 | 4360 | 23 | first_fit (baseline) | 0/5 |  |  | 0.0009 |
+| tre-s-92 | 261 | 4360 | 23 | largest_degree | 5/5 | 15.9 | 0.0 | 0.0012 |
+| ute-s-92 | 184 | 2749 | 10 | dsatur | 5/5 | 58.82 | 0.0 | 0.0234 |
+| ute-s-92 | 184 | 2749 | 10 | dsatur_proximity | 5/5 | 33.62 | 0.0 | 0.028 |
+| ute-s-92 | 184 | 2749 | 10 | dsatur_proximity+hill_climb | 5/5 | 31.7 | 0.31 | 0.0083 |
+| ute-s-92 | 184 | 2749 | 10 | first_fit (baseline) | 0/5 |  |  | 0.0002 |
+| ute-s-92 | 184 | 2749 | 10 | largest_degree | 0/5 |  |  | 0.0003 |
+| yor-f-83 | 181 | 941 | 21 | dsatur | 5/5 | 61.66 | 0.0 | 0.0609 |
+| yor-f-83 | 181 | 941 | 21 | dsatur_proximity | 5/5 | 46.61 | 0.0 | 0.0716 |
+| yor-f-83 | 181 | 941 | 21 | dsatur_proximity+hill_climb | 5/5 | 46.3 | 0.06 | 0.019 |
+| yor-f-83 | 181 | 941 | 21 | first_fit (baseline) | 0/5 |  |  | 0.0007 |
+| yor-f-83 | 181 | 941 | 21 | largest_degree | 0/5 |  |  | 0.0006 |
+
+hec-s-92 (no greedy method finds a clash-free timetable in 18 slots): see `hybrid_hec.txt` (min-slots ILP for feasibility, then hill climbing).
 
 ## Experiment 1b — minimum slots needed (ILP, time-limited)
 
 | instance | status | ilp_slots | feasible | seconds |
 |---|---|---|---|---|
-| synth-e50-s400-t14-r0 | Optimal | 10.0 | True | 3.32 |
-| synth-e50-s400-t14-r1 | Optimal | 10.0 | True | 13.17 |
-| synth-e50-s400-t14-r2 | Optimal | 11.0 | True | 4.99 |
-| synth-e50-s400-t14-r3 | Optimal | 10.0 | True | 13.95 |
-| synth-e50-s400-t14-r4 | TimeLimit-Feasible | 11.0 | True | 20.11 |
-| synth-e100-s1000-t20-r0 | TimeLimit-Feasible | 18.0 | True | 20.52 |
-| synth-e100-s1000-t20-r1 | TimeLimit-Feasible | 20.0 | True | 20.48 |
-| synth-e100-s1000-t20-r2 | TimeLimit-Feasible | 17.0 | True | 20.43 |
-| synth-e100-s1000-t20-r3 | TimeLimit-Feasible | 17.0 | True | 20.49 |
-| synth-e100-s1000-t20-r4 | TimeLimit-Feasible | 18.0 | True | 20.57 |
+| synth-e50-s400-t14-r0 | Optimal | 10.0 | True | 3.17 |
+| synth-e50-s400-t14-r1 | Optimal | 10.0 | True | 11.78 |
+| synth-e50-s400-t14-r2 | Optimal | 11.0 | True | 4.07 |
+| synth-e50-s400-t14-r3 | Optimal | 10.0 | True | 12.82 |
+| synth-e50-s400-t14-r4 | TimeLimit-Feasible | 11.0 | True | 20.1 |
+| synth-e100-s1000-t20-r0 | TimeLimit-Feasible | 18.0 | True | 20.74 |
+| synth-e100-s1000-t20-r1 | TimeLimit-Feasible | 20.0 | True | 20.86 |
+| synth-e100-s1000-t20-r2 | TimeLimit-Feasible | 17.0 | True | 20.45 |
+| synth-e100-s1000-t20-r3 | TimeLimit-Feasible | 17.0 | True | 20.35 |
+| synth-e100-s1000-t20-r4 | TimeLimit-Feasible | 18.0 | True | 20.34 |
+| hec-s-92 | TimeLimit-Feasible | 18.0 | True | 20.19 |
+| hec-s-92 | TimeLimit-Feasible | 18.0 | True | 20.23 |
+| hec-s-92 | TimeLimit-Feasible | 18.0 | True | 20.22 |
+| hec-s-92 | TimeLimit-Feasible | 18.0 | True | 20.68 |
+| hec-s-92 | TimeLimit-Feasible | 18.0 | True | 20.22 |
 
 ## Experiment 2 — proximity ILP vs best heuristic (small instances)
 
@@ -51,10 +100,10 @@ Heuristic = DSatur-proximity + hill climbing. Lower bound is the best bound HiGH
 | instance | heuristic_cost | ilp_warm_start | ilp_status | ilp_cost | ilp_lower_bound | ilp_seconds |
 |---|---|---|---|---|---|---|
 | synth-e12-s100-t10-r0 | 9.35 | False | TimeLimit-Feasible | 7.57 | 0.0 | 30.0 |
-| synth-e12-s100-t10-r0 | 9.35 | True | TimeLimit-Feasible | 8.12 | 0.0 | 30.0 |
+| synth-e12-s100-t10-r0 | 9.35 | True | TimeLimit-Feasible | 7.86 | 0.0 | 30.0 |
 | synth-e12-s100-t11-r1 | 9.34 | False | TimeLimit-Feasible | 6.79 | 0.0 | 30.0 |
-| synth-e12-s100-t11-r1 | 9.34 | True | TimeLimit-Feasible | 6.99 | 0.0 | 30.1 |
-| synth-e12-s100-t11-r2 | 7.59 | False | TimeLimit-Feasible | 6.68 | 0.0 | 30.0 |
+| synth-e12-s100-t11-r1 | 9.34 | True | TimeLimit-Feasible | 6.99 | 0.0 | 30.0 |
+| synth-e12-s100-t11-r2 | 7.59 | False | TimeLimit-Feasible | 6.59 | 0.0 | 30.0 |
 | synth-e12-s100-t11-r2 | 7.59 | True | TimeLimit-Feasible | 6.28 | 0.03 | 30.0 |
 | synth-e15-s150-t13-r0 | 11.3933 | False | TimeLimit-Feasible | 10.9933 | 0.0 | 30.1 |
 | synth-e15-s150-t13-r0 | 11.3933 | True | TimeLimit-Feasible | 11.22 | 0.0 | 30.1 |
@@ -62,15 +111,9 @@ Heuristic = DSatur-proximity + hill climbing. Lower bound is the best bound HiGH
 | synth-e15-s150-t12-r1 | 17.02 | True | TimeLimit-Feasible | 13.68 | 0.0 | 30.1 |
 | synth-e15-s150-t12-r2 | 17.3533 | False | TimeLimit-Feasible | 12.7267 | 0.0 | 30.1 |
 | synth-e15-s150-t12-r2 | 17.3533 | True | TimeLimit-Feasible | 12.7267 | 0.0 | 30.1 |
-| synth-e18-s150-t11-r0 | 22.36 | False | TimeLimit-Feasible | 23.28 | 0.0 | 30.1 |
+| synth-e18-s150-t11-r0 | 22.36 | False | TimeLimit-Feasible | 22.4733 | 0.0 | 30.1 |
 | synth-e18-s150-t11-r0 | 22.36 | True | TimeLimit-Feasible | 20.0533 | 0.0 | 30.1 |
-| synth-e18-s150-t12-r1 | 22.0467 | False | TimeLimit-Feasible | 21.3467 | 0.0 | 30.1 |
-| synth-e18-s150-t12-r1 | 22.0467 | True | TimeLimit-Feasible | 21.5267 | 0.0 | 30.1 |
+| synth-e18-s150-t12-r1 | 22.0467 | False | TimeLimit-Feasible | 20.7933 | 0.0 | 30.1 |
+| synth-e18-s150-t12-r1 | 22.0467 | True | TimeLimit-Feasible | 20.9667 | 0.0 | 30.1 |
 | synth-e18-s150-t13-r2 | 19.0933 | False | TimeLimit-Feasible | 18.38 | 0.0 | 30.1 |
 | synth-e18-s150-t13-r2 | 19.0933 | True | TimeLimit-Feasible | 17.2333 | 0.0 | 30.1 |
-
-## Reading notes
-
-- The `hill_climb` time covers the climb only; add the `dsatur_proximity` time for the full pipeline.
-- Baseline cost means use feasible runs only. First-fit was feasible in 13 of 20 instances, so its mean flatters it.
-- Experiment 2: the proximity ILP beat the heuristic on 8 of 9 instances within 30 s (cold start), but never proved optimality. Warm starts helped on some instances and not others within the same time limit, so they are not a reliable win here.

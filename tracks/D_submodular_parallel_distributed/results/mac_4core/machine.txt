@@ -1,0 +1,2 @@
+machine: Linux-6.8.0-138-generic-aarch64-with-glibc2.35, 4 cores, Python Python 3.10.12, 3 GB RAM; host: Apple MacBook Air (arm64), Claude desktop Linux VM
+Sun Nov  1 15:30:04 UTC 2026

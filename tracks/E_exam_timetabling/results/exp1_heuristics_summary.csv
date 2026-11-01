@@ -1,21 +1,21 @@
 exams,method,runs,feasible,cost_mean,cost_std,slots_mean,seconds_mean
-50,dsatur,5,5/5,53.47,1.67,11.6,0.0023
-50,dsatur_proximity,5,5/5,33.87,0.77,14,0.0033
-50,dsatur_proximity+hill_climb,5,5/5,33.56,0.83,14,0.0014
-50,first_fit (baseline),5,3/5,48.95,0.88,13.3,0.0002
+50,dsatur,5,5/5,53.47,1.67,11.6,0.002
+50,dsatur_proximity,5,5/5,33.87,0.77,14,0.0029
+50,dsatur_proximity+hill_climb,5,5/5,33.56,0.83,14,0.0012
+50,first_fit (baseline),5,3/5,48.95,0.88,13.3,0.0001
 50,largest_degree,5,5/5,49.55,3.72,12.4,0.0001
-100,dsatur,5,5/5,33.9,0.81,17.8,0.0152
-100,dsatur_proximity,5,5/5,25.78,0.75,20,0.0187
-100,dsatur_proximity+hill_climb,5,5/5,25.32,0.77,20,0.0074
-100,first_fit (baseline),5,4/5,31.96,0.62,19.8,0.0004
-100,largest_degree,5,5/5,33.84,1.1,18,0.0004
-200,dsatur,5,5/5,35.15,0.9,18,0.0589
-200,dsatur_proximity,5,5/5,25.94,0.44,20,0.0678
-200,dsatur_proximity+hill_climb,5,5/5,25.65,0.41,20,0.0169
-200,first_fit (baseline),5,1/5,31.24,,20,0.0006
-200,largest_degree,5,5/5,33.09,0.39,19.2,0.0007
-400,dsatur,5,5/5,32.91,0.62,20,0.2974
-400,dsatur_proximity,5,5/5,20.13,0.32,24,0.356
-400,dsatur_proximity+hill_climb,5,5/5,19.66,0.25,24,0.0775
-400,first_fit (baseline),5,5/5,28.87,0.55,23.4,0.0016
-400,largest_degree,5,5/5,30.88,0.39,21,0.0018
+100,dsatur,5,5/5,33.9,0.81,17.8,0.012
+100,dsatur_proximity,5,5/5,25.78,0.75,20,0.0159
+100,dsatur_proximity+hill_climb,5,5/5,25.32,0.77,20,0.0052
+100,first_fit (baseline),5,4/5,31.96,0.62,19.8,0.0003
+100,largest_degree,5,5/5,33.84,1.1,18,0.0003
+200,dsatur,5,5/5,35.15,0.9,18,0.0485
+200,dsatur_proximity,5,5/5,25.94,0.44,20,0.0572
+200,dsatur_proximity+hill_climb,5,5/5,25.65,0.41,20,0.0131
+200,first_fit (baseline),5,1/5,31.24,,20,0.0007
+200,largest_degree,5,5/5,33.09,0.39,19.2,0.0006
+400,dsatur,5,5/5,32.91,0.62,20,0.251
+400,dsatur_proximity,5,5/5,20.13,0.32,24,0.2727
+400,dsatur_proximity+hill_climb,5,5/5,19.66,0.25,24,0.0576
+400,first_fit (baseline),5,5/5,28.87,0.55,23.4,0.0017
+400,largest_degree,5,5/5,30.88,0.39,21,0.0016

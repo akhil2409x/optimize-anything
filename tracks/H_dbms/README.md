@@ -85,7 +85,7 @@ Full tables are in `results/SUMMARY.md`; per-query timings and plans are in
   indexes that *raise* the estimated cost by 0.6%, because PostgreSQL's
   planner heuristics don't guarantee more indexes never hurt. Only the what-if
   greedy, which checks every step against the real planner, refuses them.
-- **The ILP was best or tied at every budget,** and it solved in under
+- **The ILP was best or tied at 16, 25 and 40 MB** (at 4 MB see above), and it solved in under
   0.05 s. The what-if greedy needed up to 3,410 EXPLAIN calls (about 3 s).
 
 **3. Comparing methods by measured time: the estimate's advantages mostly vanish.**

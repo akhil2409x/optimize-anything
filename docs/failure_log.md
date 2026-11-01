@@ -285,6 +285,25 @@ the spread between repeats before comparing medians.
 - **Lesson:** a timeout inside the process under test isn't a timeout.
   Enforce it from outside.
 
+## F16 · Track D · Strided data shards that undid data parallelism
+
+- **Tool:** Claude (claude.ai, Claude Opus 5.5), 2026-11-01
+- **What happened:** rerunning Track D on a 4-core VM on the student's
+  laptop, the data-parallel gradient with data resident in the workers was
+  slower than serial.
+- **Cause:** the generated code gave worker i the rows `X[i::p]`. That is a
+  strided NumPy view, so every matrix product walked memory with a stride of
+  p rows. On that machine, 20 products over a strided quarter took 0.26 s,
+  against 0.03 s for a contiguous quarter. On the 2-core cloud machine the
+  effect was small enough to go unnoticed.
+- **Fix:** contiguous row blocks (`np.array_split`).
+- **Remaining effect:** even with the fix, the 4-core VM shows no gain for
+  these memory-bound products. That is reported as a negative result, not
+  hidden.
+- **Lesson:** a locality problem (Exp 5 measures exactly this) hid inside
+  the parallel code itself. Benchmarks on a second machine catch what one
+  machine hides.
+
 ---
 
 *(Add entries from Tracks A–J below as they happen — xv6 and SQL rewrites usually supply several.)*

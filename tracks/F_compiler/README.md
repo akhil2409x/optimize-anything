@@ -99,7 +99,7 @@ they give 1.42×:
 - DCE then deletes the leftovers.
 
 **LICM alone is a real trade-off,** not a bug. It makes grid 21% faster but
-five other programs 4–16% slower. Hoisting constants out of loops keeps them
+six of the other seven programs 4–16% slower. Hoisting constants out of loops keeps them
 in registers across the whole loop, which causes spills with 6 registers.
 With constant propagation first, the constants become immediates and the
 problem disappears.

@@ -1,0 +1,2 @@
+{"submission": "submission_claude_sonnet.py", "unit_passed": "10/10", "unit_failed": [], "random_programs_wrong": 0, "crashes": 0, "first_failure": null, "executed_instructions": 281982, "reference_executed_instructions": 287385, "lines_of_code": 72, "check_seconds": 4.2}
+{"submission": "submission_claude_haiku.py", "unit_passed": "10/10", "unit_failed": [], "random_programs_wrong": 0, "crashes": 0, "first_failure": null, "executed_instructions": 281978, "reference_executed_instructions": 287385, "lines_of_code": 85, "check_seconds": 5.8}

@@ -26,10 +26,13 @@ tracks/
   H_dbms/                            PostgreSQL TPC-H index / join-order selection
   I_quantum_algorithms_qml/          DJ, BV, Grover, QFT, QPE, Shor, annealing, QML vs classical
   J_software_engineering/            test-suite minimization on an open-source project
-prompts/A … prompts/J/               prompt logs, one folder per track
-docs/failure_log.md                  AI-generated errors found and fixed
+prompts/A … prompts/J/               prompt logs, one folder per track (exports/ inside each)
+prompts/_session/                    verbatim export of the stored part of the AI session
+docs/failure_log.md                  AI-generated errors found and fixed (F1–F16)
 docs/tool_comparison.md              two AI tools compared on one task
-report/                              technical report (one section per track)
+report/REPORT.md, report/REPORT.pdf  technical report (one section per track, final questions answered)
+demo/                                demonstration deck (source) and live-demo commands
+tools/export_transcript.py           converts an AI session transcript to a redacted Markdown export
 ```
 
 ## Setup
@@ -40,7 +43,14 @@ pip install -r requirements.txt
 cd tracks/E_exam_timetabling && pytest -q && python run_experiments.py --quick
 ```
 
-Tracks G (xv6) and H (PostgreSQL) have their own setup notes in their folders.
+External code and data are fetched by scripts rather than committed:
+
+| Track | Script | What it fetches |
+|---|---|---|
+| E | `tracks/E_exam_timetabling/get_data.sh` | Toronto benchmark files |
+| G | `tracks/G_xv6/setup.sh` | xv6-riscv at a pinned commit; the patch is applied on top |
+| H | `tracks/H_dbms/setup.sh` | TPC-H dbgen (also needs PostgreSQL 16 + hypopg) |
+| J | `tracks/J_software_engineering/setup.sh` | more-itertools v11.2.1 |
 
 ## Status
 
@@ -49,8 +59,8 @@ Tracks G (xv6) and H (PostgreSQL) have their own setup notes in their folders.
 | A | Continuous optimization | 13 optimizers from scratch, hand-written backprop, curvature methods, 7 experiments; 19 tests vs autograd |
 | B | Discrete optimization | knapsack ×5 methods, QUBO/Ising, feature selection, 31 tests, results |
 | C | Quantum optimization | QAOA on Track B Max-Cut, VQE (H₂), GD/Adam/SPSA/QNG, shots, noise, barren plateaus; 13 tests (simulation only) |
-| D | Submodular / parallel / distributed | submodularity tests, greedy vs ILP, speed-up/Amdahl/Gustafson, load balancing + work stealing, FedAvg, MGDA/GradNorm; 22 tests (2 cores only) |
-| E | Exam timetabling (main case study) | baseline + 5 heuristics + 2 ILPs, 18 tests, first results |
+| D | Submodular / parallel / distributed | submodularity tests, greedy vs ILP, speed-up/Amdahl/Gustafson (2-core cloud + 4-core laptop VM), load balancing + work stealing, FedAvg, MGDA/GradNorm; 22 tests |
+| E | Exam timetabling (main case study) | baseline + 5 heuristics + 2 ILPs + ILP-repair hybrid; synthetic and **real Toronto data (7 institutions)**; 18 tests |
 | F | Compiler optimization | Tiny compiler: 6 passes, greedy vs ILP register allocation, pass ordering; 32 tests + mutation testing; tool-comparison kit |
 | G | xv6 OS optimization | MLFQ scheduler + copy-on-write fork; usertests pass on 4 kernels × 1/3 CPUs; patch + benchmarks |
 | H | DBMS optimization | TPC-H SF 0.1 index selection: knapsack DP, greedy, what-if greedy, ILP vs default; 9 tests; results identical |
@@ -63,8 +73,24 @@ Every AI tool used anywhere in this repository is listed here (Section 8 of the 
 
 | Tool | Model / version | Tracks | Dates | Kind of work |
 |---|---|---|---|---|
-| Claude (claude.ai) | Claude Opus 5.5 | A–J, repo scaffold | 2026-10-28 – 31 | planning, code generation, testing, debugging, documentation |
-| | | | | |
+| Claude (claude.ai) | Claude Opus 5.5 | A–J, repo scaffold, report, demo deck | 2026-10-28 – 11-01 | planning, code generation, testing, debugging, documentation |
+| Claude (fresh-context subagent) | Claude Sonnet 5.5 | F (tool comparison only) | 2026-11-01 | code generation for the CSE comparison task |
+| Claude (fresh-context subagent) | Claude Haiku 5.5 | F (tool comparison only) | 2026-11-01 | code generation for the CSE comparison task |
+
+## Publishing (student)
+
+The brief requires a public GitHub repository. From this folder, with the
+GitHub CLI logged in (`gh auth login`):
+
+```bash
+gh repo create optimize-anything --public --source=. --push
+gh api -X PUT repos/{owner}/optimize-anything/collaborators/akhil-gitcoder -f permission=push
+gh api -X PUT repos/{owner}/optimize-anything/collaborators/akhilkulal4050 -f permission=pull
+```
+
+`gh api` fills in `{owner}` from the current repository. Each
+`prompts/*/00*.md` names its commit hash. After pushing, replace
+`<repo URL>` there with the repository's address, so the links resolve.
 
 ## Commit convention
 

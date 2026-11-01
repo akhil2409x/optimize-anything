@@ -79,7 +79,7 @@ Generated tables and plots: `results/SUMMARY.md`. Main findings:
    cannot *prove* it: all item ratios are nearly equal, so the fractional
    bound prunes almost nothing.
 3. **DP is pseudo-polynomial.** With n fixed at 60, DP time grows in step with
-   capacity (≈15 s at C ≈ 3.2 million) while B&B and the ILP stay under 0.1 s.
+   capacity (16.7 s at C ≈ 3.2 million) while B&B and the ILP stay under 0.1 s.
 4. **The ILP is the most robust exact method**, but strongly correlated
    instances with 400+ items still exceed its 30 s limit.
 5. **QUBO penalty:** with P below about the largest item value, the ground

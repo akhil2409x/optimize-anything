@@ -1,0 +1,3 @@
+kind,serial_s,shipped_s,resident_s,max_abs_diff
+data parallel (gradient over data shards),0.318054,4.453841,0.802756,0.0
+model parallel (layer rows split),0.08307,6.232727,0.602183,0.0

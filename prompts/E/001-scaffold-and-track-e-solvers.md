@@ -40,7 +40,7 @@ Claude scaffolded the repository and wrote the Track E package:
 
 ## Resulting code change
 
-Commit: `[AI:claude] Track E: exam timetabling solvers, tests, experiments` (fill in hash after pushing)
+Commit: `[AI:claude] Track E: exam timetabling solvers, tests, experiments` = local commit `7b97d6d` (on GitHub: `<repo URL>/commit/7b97d6d`)
 
 ## Verification note
 

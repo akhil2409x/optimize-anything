@@ -143,8 +143,9 @@ Full tables and plots are in `results/SUMMARY.md`.
 **Contrast with parallel computing (Track D):**
 
 - **What is measured.** A parallel speed-up is wall-clock time on real cores.
-  Track D measured 1.72× on 2 cores with no serial code, and 1.41× with 30%
-  serial code.
+  Track D measured 1.72× on 2 cores and 3.40× on 4 cores with no serial
+  code, but only 1.41× (2 cores) to 1.76× (4 cores) with 30–40% serial
+  code.
 - **Amdahl's limit.** That second case can never beat 1/(1−f) = 3.3×,
   however many cores are added.
 - **The quantum advantages here are query counts.** Examples: one oracle
