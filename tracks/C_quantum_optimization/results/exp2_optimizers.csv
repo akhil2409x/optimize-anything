@@ -1,0 +1,17 @@
+problem,method,stepsize,shots,budget_circuits,seeds,final_cost_mean,final_cost_std,target,gap_mean
+QAOA p=2 (10 qubits),gd,0.03,exact,4000,3,-12.3267,0.0076,-14,1.6733
+QAOA p=2 (10 qubits),gd,0.03,1000,4000,3,-12.3241,0.0079,-14,1.6759
+QAOA p=2 (10 qubits),adam,0.1,exact,4000,3,-12.3055,0.0529,-14,1.6945
+QAOA p=2 (10 qubits),adam,0.1,1000,4000,3,-12.3181,0.0426,-14,1.6819
+QAOA p=2 (10 qubits),spsa,0.3,exact,4000,3,-12.4336,0.0952,-14,1.5664
+QAOA p=2 (10 qubits),spsa,0.3,1000,4000,3,-12.4947,0.0942,-14,1.5053
+QAOA p=2 (10 qubits),qng,0.1,exact,4000,3,-12.1972,0.264,-14,1.8028
+QAOA p=2 (10 qubits),qng,0.1,1000,4000,3,-12.2084,0.255,-14,1.7916
+"VQE H2, HEA 2 layers (4 qubits)",gd,0.03,exact,2500,3,0.0708,0.3675,-1.1373,1.208
+"VQE H2, HEA 2 layers (4 qubits)",gd,0.03,1000,2500,3,0.0636,0.3637,-1.1373,1.2009
+"VQE H2, HEA 2 layers (4 qubits)",adam,0.03,exact,2500,3,-0.7371,0.2813,-1.1373,0.4002
+"VQE H2, HEA 2 layers (4 qubits)",adam,0.03,1000,2500,3,-0.7557,0.2704,-1.1373,0.3815
+"VQE H2, HEA 2 layers (4 qubits)",spsa,1.0,exact,2500,3,-0.9337,0.2826,-1.1373,0.2036
+"VQE H2, HEA 2 layers (4 qubits)",spsa,1.0,1000,2500,3,-1.1354,0.0013,-1.1373,0.0018
+"VQE H2, HEA 2 layers (4 qubits)",qng,0.1,exact,2500,3,-0.9156,0.2795,-1.1373,0.2217
+"VQE H2, HEA 2 layers (4 qubits)",qng,0.1,1000,2500,3,-0.9041,0.2652,-1.1373,0.2332

@@ -1,0 +1,8 @@
+method,runs,approx_ratio,p_optimal,shots_for_99pct_to_see_optimum,params
+QAOA p=1,5,0.838 ± 0.000,0.076,59,2
+QAOA p=2,5,0.886 ± 0.006,0.165,26,4
+QAOA p=3,5,0.906 ± 0.017,0.227,18,6
+QAOA p=4,5,0.932 ± 0.003,0.334,12,8
+"brute force (classical, exact)",1,1.000,1.000,n/a,
+one-flip local search (Track B),200,0.949,78/200,n/a,
+uniformly random cut,exact,0.679,0.0078,588,

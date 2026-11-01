@@ -1,0 +1,19 @@
+qubits,layers,cost,series,samples,grad_mean,grad_variance
+2,2,global,"global cost, L = n",200,1.84e-02,1.218e-01
+2,2,local,"local cost, L = n",200,1.84e-02,1.218e-01
+2,2,local,"local cost, L = 2",200,1.84e-02,1.218e-01
+4,4,global,"global cost, L = n",200,1.90e-02,3.059e-02
+4,4,local,"local cost, L = n",200,-5.20e-03,3.357e-02
+4,2,local,"local cost, L = 2",200,-3.66e-02,9.663e-02
+6,6,global,"global cost, L = n",200,-1.14e-02,7.593e-03
+6,6,local,"local cost, L = n",200,7.15e-03,1.026e-02
+6,2,local,"local cost, L = 2",200,1.93e-02,1.136e-01
+8,8,global,"global cost, L = n",200,5.62e-03,2.072e-03
+8,8,local,"local cost, L = n",200,-4.30e-03,5.897e-03
+8,2,local,"local cost, L = 2",200,3.16e-03,1.067e-01
+10,10,global,"global cost, L = n",200,-9.18e-04,5.395e-04
+10,10,local,"local cost, L = n",200,-6.64e-03,2.056e-03
+10,2,local,"local cost, L = 2",200,-1.54e-02,1.112e-01
+12,12,global,"global cost, L = n",200,3.73e-04,1.161e-04
+12,12,local,"local cost, L = n",200,-1.55e-03,9.309e-04
+12,2,local,"local cost, L = 2",200,-3.61e-02,1.106e-01

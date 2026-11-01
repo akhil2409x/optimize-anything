@@ -71,6 +71,37 @@ produced, how the error was caught, the fix, and the lesson.
   Cross-check exact methods against each other at realistic sizes, not only on
   toy instances.
 
+## F5 · Track C · Quantum cost counted with the wrong metric (5× inflation)
+
+- **Tool:** Claude (claude.ai, Claude Opus 5.5), 2026-10-28
+- **What happened:** the first optimizer-comparison loop stopped each run
+  after a budget of `qml.Tracker` *executions*. A single QAOA cost evaluation
+  was counted as 5 executions and one gradient as 585, and the H₂ VQE run
+  with the hardware-efficient ansatz stopped after about 4 steps at −0.14 Ha
+  (true ground state −1.137 Ha). That looked like the method had failed.
+- **Cause:** in PennyLane 0.45 the Tracker's `executions` field counts per
+  measurement group, not per circuit. The number that matches theory is
+  `simulations`: one forward pass = 1 circuit, one parameter-shift gradient of
+  QAOA p=2 = 2 × 58 gate occurrences + 1 = 117 circuits.
+- **How it was caught:** checking the counter against a hand calculation of
+  what the parameter-shift rule must cost.
+- **Fix:** budgets now use `simulations` (`qopt/train.py`, documented in the
+  docstring); a test checks the budget is respected.
+- **Lesson:** verify what a library's counter measures before using it as the
+  basis of a "fair" comparison.
+
+## F6 · Track C · Comment claimed the ansatz starts at Hartree–Fock
+
+- **Tool:** Claude (claude.ai, Claude Opus 5.5), 2026-10-28
+- **What happened:** `vqe.py` said "near-identity start: small angles keep the
+  circuit close to the HF state". The measured starting energy was +0.89 Ha,
+  far above Hartree–Fock (−1.117 Ha).
+- **Cause:** the hardware-efficient ansatz ends every layer with a CNOT ladder,
+  which changes |1100⟩ even when all rotation angles are zero.
+- **Fix:** comment corrected; the README reports the real starting energy.
+- **Lesson:** AI-written comments can state plausible but false facts. Test
+  the claim (here: evaluate the circuit at zero angles).
+
 ---
 
 *(Add entries from Tracks A–J below as they happen — xv6 and SQL rewrites usually supply several.)*

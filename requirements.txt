@@ -6,6 +6,8 @@ pandas>=2.0
 pytest>=8.0
 numpy>=1.26
 scikit-learn>=1.4    # Track B feature selection
+pennylane==0.45.1    # Track C (pinned: Tracker fields and APIs change between versions)
+pennylane-lightning>=0.45
 
 # Add per-track dependencies as tracks are started, e.g.
-# torch (A, D); pennylane or qiskit, qiskit-aer (C, I); psycopg[binary] (H); coverage (J)
+# torch (A, D); qiskit/qiskit-aer if used (I); psycopg[binary] (H); coverage (J)

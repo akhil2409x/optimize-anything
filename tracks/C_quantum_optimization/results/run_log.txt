@@ -1,0 +1,67 @@
+Python 3.13.18, PennyLane 0.45.1, Linux-6.18.44-fc-v180-x86_64-with-glibc2.39
+Exp 1: QAOA depth vs classical baselines
+   QAOA p=1: ratio 0.838, P(opt) 0.076
+   QAOA p=2: ratio 0.886, P(opt) 0.165
+   QAOA p=3: ratio 0.906, P(opt) 0.227
+   QAOA p=4: ratio 0.932, P(opt) 0.334
+Exp 2: optimizers at equal circuit budget
+   QAOA p=2 (10 qubits) | gd   lr=0.03 shots=None: -12.3267 ± 0.0076 (target -14.0000)
+   QAOA p=2 (10 qubits) | gd   lr=0.03 shots=1000: -12.3241 ± 0.0079 (target -14.0000)
+   QAOA p=2 (10 qubits) | adam lr=0.1 shots=None: -12.3055 ± 0.0529 (target -14.0000)
+   QAOA p=2 (10 qubits) | adam lr=0.1 shots=1000: -12.3181 ± 0.0426 (target -14.0000)
+   QAOA p=2 (10 qubits) | spsa lr=0.3 shots=None: -12.4336 ± 0.0952 (target -14.0000)
+   QAOA p=2 (10 qubits) | spsa lr=0.3 shots=1000: -12.4947 ± 0.0942 (target -14.0000)
+   QAOA p=2 (10 qubits) | qng  lr=0.1 shots=None: -12.1972 ± 0.2640 (target -14.0000)
+   QAOA p=2 (10 qubits) | qng  lr=0.1 shots=1000: -12.2084 ± 0.2550 (target -14.0000)
+   VQE H2, HEA 2 layers (4 qubits) | gd   lr=0.03 shots=None: 0.0708 ± 0.3675 (target -1.1373)
+   VQE H2, HEA 2 layers (4 qubits) | gd   lr=0.03 shots=1000: 0.0636 ± 0.3637 (target -1.1373)
+   VQE H2, HEA 2 layers (4 qubits) | adam lr=0.03 shots=None: -0.7371 ± 0.2813 (target -1.1373)
+   VQE H2, HEA 2 layers (4 qubits) | adam lr=0.03 shots=1000: -0.7557 ± 0.2704 (target -1.1373)
+   VQE H2, HEA 2 layers (4 qubits) | spsa lr=1.0 shots=None: -0.9337 ± 0.2826 (target -1.1373)
+   VQE H2, HEA 2 layers (4 qubits) | spsa lr=1.0 shots=1000: -1.1354 ± 0.0013 (target -1.1373)
+   VQE H2, HEA 2 layers (4 qubits) | qng  lr=0.1 shots=None: -0.9156 ± 0.2795 (target -1.1373)
+   VQE H2, HEA 2 layers (4 qubits) | qng  lr=0.1 shots=1000: -0.9041 ± 0.2652 (target -1.1373)
+Exp 3: finite shots
+   shots=10: std 0.4541
+   shots=30: std 0.2711
+   shots=100: std 0.1679
+   shots=300: std 0.0974
+   shots=1000: std 0.0455
+   shots=3000: std 0.0283
+   shots=10000: std 0.0153
+Exp 4: noise
+   p=1 noise=0.0: ratio 0.785
+   p=1 noise=0.001: ratio 0.784
+   p=1 noise=0.003: ratio 0.780
+   p=1 noise=0.01: ratio 0.769
+   p=1 noise=0.02: ratio 0.753
+   p=1 noise=0.05: ratio 0.714
+   p=2 noise=0.0: ratio 0.844
+   p=2 noise=0.001: ratio 0.840
+   p=2 noise=0.003: ratio 0.830
+   p=2 noise=0.01: ratio 0.801
+   p=2 noise=0.02: ratio 0.766
+   p=2 noise=0.05: ratio 0.695
+   p=3 noise=0.0: ratio 0.899
+   p=3 noise=0.001: ratio 0.890
+   p=3 noise=0.003: ratio 0.874
+   p=3 noise=0.01: ratio 0.824
+   p=3 noise=0.02: ratio 0.769
+   p=3 noise=0.05: ratio 0.677
+Exp 5: barren plateaus
+   n=2 done
+   n=4 done
+   n=6 done
+   n=8 done
+   n=10 done
+   n=12 done
+Exp 6: VQE dissociation curve
+   d=0.3: VQE -0.601804, exact -0.601804, HF -0.593828
+   d=0.5: VQE -1.055160, exact -1.055160, HF -1.042996
+   d=0.7414: VQE -1.137270, exact -1.137270, HF -1.116684
+   d=1.0: VQE -1.101150, exact -1.101150, HF -1.066109
+   d=1.5: VQE -0.998149, exact -0.998149, HF -0.910874
+   d=2.0: VQE -0.948641, exact -0.948641, HF -0.783793
+   d=2.5: VQE -0.936055, exact -0.936055, HF -0.702944
+Done. See results/
+EXIT 0

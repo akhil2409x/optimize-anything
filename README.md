@@ -48,7 +48,7 @@ Tracks G (xv6) and H (PostgreSQL) have their own setup notes in their folders.
 |---|---|---|
 | A | Continuous optimization | not started |
 | B | Discrete optimization | knapsack ×5 methods, QUBO/Ising, feature selection, 31 tests, results |
-| C | Quantum optimization | not started |
+| C | Quantum optimization | QAOA on Track B Max-Cut, VQE (H₂), GD/Adam/SPSA/QNG, shots, noise, barren plateaus; 13 tests (simulation only) |
 | D | Submodular / parallel / distributed | not started |
 | E | Exam timetabling (main case study) | baseline + 5 heuristics + 2 ILPs, 18 tests, first results |
 | F | Compiler optimization | not started |
@@ -63,7 +63,7 @@ Every AI tool used anywhere in this repository is listed here (Section 8 of the 
 
 | Tool | Model / version | Tracks | Dates | Kind of work |
 |---|---|---|---|---|
-| Claude (claude.ai) | Claude Opus 5.5 | B, E, repo scaffold | 2026-10-28 | planning, code generation, testing, debugging, documentation |
+| Claude (claude.ai) | Claude Opus 5.5 | B, C, E, repo scaffold | 2026-10-28 | planning, code generation, testing, debugging, documentation |
 | | | | | |
 
 ## Commit convention
@@ -84,7 +84,7 @@ match the exact Chapter 6 syllabus taught in class — add or remove rows to mat
 | Foundations | ML as optimization (params, loss, regularization) | A | | |
 | Foundations | Continuous vs discrete optimization | A, B | | |
 | Foundations | Convex vs non-convex; local/global minima; saddle points | A | | |
-| Foundations | Quantum computing basics; optimization in QML | C, I | | |
+| Foundations | Quantum computing basics; optimization in QML | C, I | `tracks/C_quantum_optimization/README.md` | C Exp. 1–2 |
 | Continuous | Gradient descent | A | | |
 | Continuous | SGD, mini-batch SGD | A | | |
 | Continuous | Momentum | A | | |
@@ -104,13 +104,13 @@ match the exact Chapter 6 syllabus taught in class — add or remove rows to mat
 | Discrete | Dynamic programming | B, F/H | `tracks/B_discrete/discrete/knapsack.py` (`dp`) | B Exp. 1–2 |
 | Discrete | Feature selection / combinatorial applications | B, J | `tracks/B_discrete/discrete/feature_selection.py` | B Exp. 5 |
 | Discrete | QUBO / Ising, binary-to-spin, penalty terms | B | `tracks/B_discrete/discrete/qubo.py` | B Exp. 3–4 |
-| Quantum | QAOA | C | | |
-| Quantum | VQE | C | | |
-| Quantum | PQCs / QNNs | C | | |
-| Quantum | Parameter-shift rule | C | | |
-| Quantum | SPSA | C | | |
-| Quantum | Quantum natural gradient | C | | |
-| Quantum | Barren plateaus, finite shots, hardware noise | C | | |
+| Quantum | QAOA | C | `tracks/C_quantum_optimization/qopt/maxcut.py` | C Exp. 1–4 |
+| Quantum | VQE | C | `tracks/C_quantum_optimization/qopt/vqe.py` | C Exp. 2, 6 |
+| Quantum | PQCs / QNNs | C, I | `tracks/C_quantum_optimization/qopt/vqe.py` (HEA), `tracks/C_quantum_optimization/qopt/barren.py` | C Exp. 2, 5 |
+| Quantum | Parameter-shift rule | C | `tracks/C_quantum_optimization/qopt/train.py`, `tracks/C_quantum_optimization/qopt/barren.py` | C Exp. 2–3, 5 |
+| Quantum | SPSA | C | `tracks/C_quantum_optimization/qopt/train.py` | C Exp. 2 |
+| Quantum | Quantum natural gradient | C | `tracks/C_quantum_optimization/qopt/train.py` | C Exp. 2 |
+| Quantum | Barren plateaus, finite shots, hardware noise | C | `tracks/C_quantum_optimization/qopt/barren.py`, `tracks/C_quantum_optimization/qopt/maxcut.py` | C Exp. 3–5 |
 | Quantum | Deutsch–Jozsa | I | | |
 | Quantum | Bernstein–Vazirani | I | | |
 | Quantum | Grover | I | | |
