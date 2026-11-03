@@ -98,6 +98,8 @@ gh api -X PUT repos/{owner}/optimize-anything/collaborators/akhilkulal4050 -f pe
 - `[manual] …` — change written or corrected by hand
 - `[AI:claude+manual] …` — AI draft with hand edits; say what was edited in the body
 
+One earlier commit has no prefix: `9dbb434` ("edi1") is a manual edit to this README made on the GitHub website.
+
 Every AI commit should have a matching entry in `prompts/<track>/`.
 
 ## Chapter 6 coverage checklist
