@@ -48,7 +48,7 @@ Claude wrote the Tiny compiler in `tinyc/`:
 ## Resulting code change
 
 Commit `[AI:claude] Track F: Tiny compiler, 6 passes, greedy vs ILP register allocation`
-= local commit `9c9a64e` (on GitHub: `<repo URL>/commit/9c9a64e`)
+= local commit `9c9a64e` (on GitHub: `https://github.com/akhil2409x/optimize-anything/commit/9c9a64e`)
 
 ## Verification note
 

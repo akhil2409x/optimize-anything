@@ -37,7 +37,7 @@ yes do it
 
 ## Resulting code change
 
-Commit: `[AI:claude] Track B: knapsack methods, QUBO/Ising, feature selection` = local commit `c64ece9` (on GitHub: `<repo URL>/commit/c64ece9`)
+Commit: `[AI:claude] Track B: knapsack methods, QUBO/Ising, feature selection` = local commit `c64ece9` (on GitHub: `https://github.com/akhil2409x/optimize-anything/commit/c64ece9`)
 
 ## Verification note
 

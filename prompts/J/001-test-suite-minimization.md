@@ -56,7 +56,7 @@ library with ~7,300 lines of library code and ~9,200 lines of tests. It wrote:
 
 ## Resulting code change
 
-Commit `[AI:claude] Track J: test-suite minimization (set cover: greedy vs ILP) on more-itertools` = local commit `020818a` (on GitHub: `<repo URL>/commit/020818a`)
+Commit `[AI:claude] Track J: test-suite minimization (set cover: greedy vs ILP) on more-itertools` = local commit `020818a` (on GitHub: `https://github.com/akhil2409x/optimize-anything/commit/020818a`)
 
 ## Verification note
 

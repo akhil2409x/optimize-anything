@@ -41,7 +41,7 @@ Answer to the question: after Track I, six tracks remain (A, D, F, G, H, J).
 ## Resulting code change
 
 Commit: `[AI:claude] Track I: quantum algorithms, annealing, QML vs classical`
-= local commit `7803599` (on GitHub: `<repo URL>/commit/7803599`)
+= local commit `7803599` (on GitHub: `https://github.com/akhil2409x/optimize-anything/commit/7803599`)
 
 ## Verification note
 
